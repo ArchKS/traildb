@@ -1,0 +1,375 @@
+{
+  "id": "akeso",
+  "name": "康方生物",
+  "ticker": "9926.HK",
+  "focus": "双特异性抗体",
+  "pipelines": [
+    {
+      "id": "ak112",
+      "code": "AK112 / 依沃西",
+      "genericName": "Ivonescimab",
+      "target": "PD-1 / VEGF",
+      "modality": "四价双特异性抗体",
+      "stage": "III期 / 中国已上市",
+      "indications": ["非小细胞肺癌", "三阴性乳腺癌", "结直肠癌", "胆道癌", "头颈鳞癌"],
+      "trials": [
+        {
+          "id": "harmoni-a",
+          "name": "HARMONi-A / AK112-301",
+          "nct": "NCT05184712",
+          "phase": "III期",
+          "status": "已完成",
+          "indication": "EGFR-TKI治疗进展的局部晚期或转移性非鳞NSCLC",
+          "design": "中国55中心、随机、双盲、安慰剂对照III期；1:1分组",
+          "arms": "依沃西20 mg/kg Q3W + 培美曲塞/卡铂 vs 安慰剂 + 培美曲塞/卡铂；4周期后维持",
+          "population": "EGFR敏感突变非鳞NSCLC，既往EGFR-TKI治疗后进展；包括一/二代后序贯三代及一线三代TKI进展患者",
+          "eligibility": {
+            "keyInclusion": ["成人，局部晚期或转移性非鳞NSCLC", "EGFR敏感突变，EGFR-TKI治疗后疾病进展", "ECOG PS 0–1", "至少1个RECIST v1.1可测量病灶"],
+            "keyExclusion": ["既往接受PD-(L)1/CTLA-4免疫治疗", "有症状或需要治疗的活动性中枢神经系统转移", "显著出血、血栓或未控制高血压风险"],
+            "stratificationFactors": ["脑转移：有 vs 无", "既往第三代EGFR-TKI治疗路径", "EGFR突变类型"]
+          },
+          "baselineCharacteristics": [
+            {"label": "年龄", "value": "59.6 vs 59.4岁", "context": "中位数；范围32.3–74.9 vs 36.2–74.2"},
+            {"label": "≥65岁", "value": "31.1% vs 31.7%"},
+            {"label": "女性", "value": "52.2% vs 50.9%"},
+            {"label": "ECOG PS 1", "value": "85.1% vs 78.9%"},
+            {"label": "IV期", "value": "98.1% vs 96.9%"},
+            {"label": "基线脑转移", "value": "21.7% vs 23.0%"},
+            {"label": "基线肝转移", "value": "13.0% vs 10.6%"},
+            {"label": "≥3处远处转移", "value": "46.0% vs 42.2%"},
+            {"label": "EGFR 19del", "value": "57.1% vs 48.4%"},
+            {"label": "EGFR L858R", "value": "37.3% vs 48.4%"},
+            {"label": "既往三代TKI", "value": "86.3% vs 85.1%", "context": "一线三代或一/二代后序贯三代"}
+          ],
+          "subgroupAnalyses": [
+            {"dimension": "既往治疗", "subgroup": "第三代EGFR-TKI进展", "n": "约276", "endpoint": "PFS", "effect": "HR 0.48", "ci": "95% CI 0.35–0.66", "interactionP": "未报告", "conclusion": "预设亚组方向与总体一致"},
+            {"dimension": "脑转移", "subgroup": "基线有脑转移", "n": "72", "endpoint": "PFS", "effect": "HR 0.40", "ci": "95% CI 0.22–0.73", "interactionP": "未报告", "conclusion": "有脑转移患者仍观察到PFS获益；不代表组间异质性已证实"},
+            {"dimension": "EGFR突变", "subgroup": "19del", "n": "170", "endpoint": "PFS", "effect": "HR 0.48", "ci": "95% CI 0.32–0.73", "interactionP": "未报告", "conclusion": "与总体结果一致"},
+            {"dimension": "耐药突变", "subgroup": "T790M阳性", "n": "44", "endpoint": "PFS", "effect": "HR 0.22", "ci": "95% CI 0.09–0.54", "interactionP": "未报告", "conclusion": "样本较小，属于亚组估计，不宜跨亚组比较"},
+            {"dimension": "脑转移", "subgroup": "基线有脑转移", "n": "72", "endpoint": "颅内PFS", "effect": "mPFS 8.4 vs 4.8月", "ci": "HR 0.47；95% CI 0.27–0.83", "interactionP": "未报告", "conclusion": "探索性颅内疗效支持，需结合评估口径"}
+          ],
+          "enrollment": 322,
+          "primaryEndpoint": "独立影像评审委员会评估的PFS",
+          "secondaryEndpoints": ["OS", "ORR", "DoR", "安全性"],
+          "startDate": "2022-01-25",
+          "primaryCompletion": "2023",
+          "countries": ["中国"],
+          "sponsor": "康方生物",
+          "fda": {
+            "regulatoryId": "中国：已获批；美国：该中国单区域试验不单独用于BLA",
+            "designation": "中国注册性III期",
+            "submissionStatus": "中国2024-05获批EGFR-TKI进展后适应症",
+            "lastVerified": "2026-07"
+          },
+          "result": "PFS与最终OS均阳性",
+          "dataCut": "2025-04-12（最终OS）",
+          "evidenceLevel": "同行评议III期 / 最终OS",
+          "efficacyHighlights": [
+            {"label": "中位PFS", "value": "7.1 vs 4.8月", "context": "HR 0.46；95% CI 0.34–0.62；P<0.001"},
+            {"label": "中位OS", "value": "16.8 vs 14.1月", "context": "HR 0.74；95% CI 0.58–0.95；P=0.02"},
+            {"label": "ORR", "value": "50.6% vs 35.4%", "context": "初次JAMA分析；独立评审"},
+            {"label": "30个月OS率", "value": "29.1% vs 18.4%", "context": "最终OS分析"}
+          ],
+          "safetyHighlights": [
+            {"label": "≥3级TEAE", "value": "67.1% vs 54.7%", "context": "最终OS报告"},
+            {"label": "≥3级免疫相关AE", "value": "6.2% vs 2.5%", "context": "初次JAMA分析"},
+            {"label": "≥3级VEGF相关AE", "value": "3.1% vs 2.5%", "context": "初次JAMA分析"}
+          ],
+          "sources": [
+            {"label": "JAMA 2024主分析", "url": "https://jamanetwork.com/journals/jama/fullarticle/2819600"},
+            {"label": "JAMA 2026最终OS（PubMed）", "url": "https://pubmed.ncbi.nlm.nih.gov/42307937/"},
+            {"label": "ClinicalTrials.gov", "url": "https://clinicaltrials.gov/study/NCT05184712"}
+          ],
+          "source": "JAMA论文、会议更新与ClinicalTrials.gov；重复数据按最新截止日合并"
+        },
+        {
+          "id": "harmoni",
+          "name": "HARMONi",
+          "nct": "NCT06396065",
+          "phase": "III期",
+          "status": "活跃，未招募",
+          "indication": "第三代EGFR-TKI进展后的局部晚期或转移性非鳞NSCLC",
+          "design": "全球多区域、随机、双盲、安慰剂对照III期；1:1分组",
+          "arms": "依沃西 + 培美曲塞/卡铂 vs 安慰剂 + 培美曲塞/卡铂",
+          "population": "第三代EGFR-TKI治疗后进展的EGFR突变非鳞NSCLC；亚洲与北美/欧洲患者",
+          "eligibility": {
+            "keyInclusion": ["局部晚期或转移性EGFR突变非鳞NSCLC", "第三代EGFR-TKI治疗后进展", "ECOG PS 0–1", "至少1个可测量病灶"],
+            "keyExclusion": ["既往PD-(L)1免疫治疗", "活动性或未控制脑转移", "显著出血/血栓或VEGF抑制禁忌"],
+            "stratificationFactors": ["地区：北美/欧洲 vs 亚洲", "脑转移", "ECOG PS", "EGFR突变类型"]
+          },
+          "baselineCharacteristics": [
+            {"label": "年龄", "value": "62 vs 60岁", "context": "中位数；范围32–84 vs 36–84"},
+            {"label": "≥65岁", "value": "37.9% vs 40.2%"},
+            {"label": "女性", "value": "59.4% vs 58.0%"},
+            {"label": "北美/欧洲", "value": "37.9% vs 37.4%"},
+            {"label": "亚洲人", "value": "69.9% vs 69.9%"},
+            {"label": "ECOG PS 1", "value": "74.0% vs 71.7%"},
+            {"label": "从未吸烟", "value": "65.3% vs 70.8%"},
+            {"label": "IV期", "value": "98.2% vs 97.7%"},
+            {"label": "基线脑转移", "value": "24.7% vs 24.7%"},
+            {"label": "基线肝转移", "value": "14.6% vs 10.5%"},
+            {"label": "EGFR 19del", "value": "59.8% vs 53.9%"},
+            {"label": "EGFR L858R", "value": "33.8% vs 41.1%"}
+          ],
+          "subgroupAnalyses": [
+            {"dimension": "地区", "subgroup": "北美/欧洲", "n": "165", "endpoint": "PFS（较长随访）", "effect": "HR 0.67", "ci": "95% CI 0.45–1.00", "interactionP": "未报告", "conclusion": "方向与亚洲一致，西方样本量和随访更有限"},
+            {"dimension": "地区", "subgroup": "亚洲", "n": "273", "endpoint": "PFS（较长随访）", "effect": "HR 0.55", "ci": "95% CI 0.43–0.71", "interactionP": "未报告", "conclusion": "方向与总体一致"},
+            {"dimension": "脑转移", "subgroup": "基线有脑转移", "n": "83（主要PFS分析集）", "endpoint": "PFS", "effect": "HR 0.34", "ci": "95% CI 0.20–0.57", "interactionP": "未报告", "conclusion": "预设亚组获益；不可仅凭点估计判断脑转移存在更强疗效"},
+            {"dimension": "脑转移", "subgroup": "基线无脑转移", "n": "262（主要PFS分析集）", "endpoint": "PFS", "effect": "HR 0.59", "ci": "95% CI 0.45–0.77", "interactionP": "未报告", "conclusion": "方向与总体一致"},
+            {"dimension": "PD-L1", "subgroup": "TPS ≥1%（西方可评估）", "n": "106", "endpoint": "PFS", "effect": "HR 0.55", "ci": "95% CI 0.33–0.91", "interactionP": "未报告", "conclusion": "探索性分析；PD-L1仅要求北美/欧洲患者检测"},
+            {"dimension": "PD-L1", "subgroup": "TPS <1%（西方可评估）", "n": "54", "endpoint": "PFS", "effect": "HR 0.62", "ci": "95% CI 0.32–1.18", "interactionP": "未报告", "conclusion": "样本小且区间跨1，不能得出阴性或异质性结论"},
+            {"dimension": "OS地区", "subgroup": "北美", "n": "未单独披露", "endpoint": "OS（延长随访）", "effect": "HR 0.70", "ci": "未披露", "interactionP": "未报告", "conclusion": "描述性地区结果，不是独立显著性检验"}
+          ],
+          "enrollment": 438,
+          "primaryEndpoint": "独立评审PFS与OS双主要终点",
+          "secondaryEndpoints": ["ORR", "DoR", "安全性", "生活质量"],
+          "startDate": "2023-05",
+          "primaryCompletion": "2025",
+          "countries": ["美国", "加拿大", "中国", "欧洲"],
+          "sponsor": "Summit Therapeutics / 康方生物",
+          "fda": {
+            "regulatoryId": "BLA已受理；PDUFA 2026-11-14",
+            "designation": "FDA Fast Track",
+            "submissionStatus": "FDA完整审评中；尚未获美国批准",
+            "lastVerified": "2026-07"
+          },
+          "result": "PFS达到统计学显著；正式OS分析未达预设显著性",
+          "dataCut": "亚洲2025-04；西方2025-09（延长随访）",
+          "evidenceLevel": "全球III期 / 会议与监管披露",
+          "efficacyHighlights": [
+            {"label": "主要分析mPFS", "value": "6.8 vs 4.4月", "context": "HR 0.52；95% CI 0.41–0.66；P<0.0001"},
+            {"label": "正式OS", "value": "16.8 vs 14.0月", "context": "HR 0.79；95% CI 0.62–1.01；P=0.0570，未达显著"},
+            {"label": "延长随访OS", "value": "16.8 vs 14.0月", "context": "HR 0.78；95% CI 0.62–0.98；名义P=0.0332"},
+            {"label": "ORR", "value": "45% vs 34%", "context": "独立评审"}
+          ],
+          "safetyHighlights": [
+            {"label": "≥3级治疗相关AE", "value": "50.0% vs 42.2%"},
+            {"label": "严重治疗相关AE", "value": "28.0% vs 15.1%"},
+            {"label": "≥3级VEGF相关AE", "value": "7.3% vs 3.2%"}
+          ],
+          "sources": [
+            {"label": "WCLC 2025完整演示", "url": "https://s206.q4cdn.com/652410165/files/doc_downloads/publications/2025/FINAL-HARMONi-WCLC-2025-Presidential-Presentation-UNBRANDED_05Sep2025-1.pdf"},
+            {"label": "FDA受理BLA公告（SEC）", "url": "https://www.sec.gov/Archives/edgar/data/1599298/000159929826000006/a2026_prx0129xfdablaacce.htm"},
+            {"label": "ClinicalTrials.gov", "url": "https://clinicaltrials.gov/study/NCT06396065"}
+          ],
+          "source": "ClinicalTrials.gov、Summit SEC文件及WCLC原始演示；正式与延长随访OS分开记录"
+        },
+        {
+          "id": "harmoni-2",
+          "name": "HARMONi-2 / AK112-303",
+          "nct": "NCT05499390",
+          "phase": "III期",
+          "status": "已完成",
+          "indication": "PD-L1 TPS≥1%的局部晚期或转移性NSCLC一线",
+          "design": "中国55中心、随机、双盲、阳性对照III期；1:1分组",
+          "arms": "依沃西20 mg/kg Q3W单药 vs 帕博利珠单抗200 mg Q3W单药，最长24个月",
+          "population": "既往未接受晚期系统治疗、PD-L1 TPS≥1%、EGFR/ALK阴性的IIIB/C–IV期NSCLC",
+          "eligibility": {
+            "keyInclusion": ["成人IIIB/C–IV期NSCLC", "PD-L1 TPS≥1%", "既往未接受晚期疾病系统治疗", "ECOG PS 0–1"],
+            "keyExclusion": ["EGFR敏感突变或ALK重排", "既往晚期免疫治疗", "活动性脑转移或显著VEGF抑制相关风险"],
+            "stratificationFactors": ["分期：IIIB/C vs IV", "组织学：鳞 vs 非鳞", "PD-L1 TPS：1–49% vs ≥50%"]
+          },
+          "baselineCharacteristics": [
+            {"label": "≥65岁", "value": "51.0% vs 57.5%"},
+            {"label": "男性", "value": "82.8% vs 84.5%"},
+            {"label": "ECOG PS 1", "value": "87.4% vs 87.0%"},
+            {"label": "现/既往吸烟", "value": "80.3% vs 81.0%"},
+            {"label": "IV期", "value": "92.4% vs 92.0%"},
+            {"label": "鳞状组织学", "value": "45.5% vs 45.5%"},
+            {"label": "PD-L1 TPS≥50%", "value": "41.9% vs 42.5%"},
+            {"label": "基线肝转移", "value": "12.6% vs 14.0%"},
+            {"label": "基线脑转移", "value": "16.7% vs 19.5%"}
+          ],
+          "subgroupAnalyses": [
+            {"dimension": "年龄", "subgroup": "<65岁 / ≥65岁", "n": "182 / 216", "endpoint": "PFS", "effect": "HR 0.53 / 0.52", "ci": "0.34–0.81 / 0.34–0.79", "interactionP": "未报告", "conclusion": "年龄两层点估计一致"},
+            {"dimension": "PD-L1", "subgroup": "TPS 1–49%", "n": "230", "endpoint": "PFS", "effect": "HR 0.54", "ci": "95% CI 0.37–0.79", "interactionP": "未报告", "conclusion": "低表达亚组仍显示PFS获益"},
+            {"dimension": "PD-L1", "subgroup": "TPS ≥50%", "n": "168", "endpoint": "PFS", "effect": "HR 0.46", "ci": "95% CI 0.28–0.75", "interactionP": "未报告", "conclusion": "高表达亚组方向与总体一致"},
+            {"dimension": "组织学", "subgroup": "鳞状", "n": "181", "endpoint": "PFS", "effect": "HR 0.48", "ci": "95% CI 0.31–0.74", "interactionP": "未报告", "conclusion": "鳞癌亚组PFS获益"},
+            {"dimension": "组织学", "subgroup": "非鳞状", "n": "217", "endpoint": "PFS", "effect": "HR 0.54", "ci": "95% CI 0.36–0.82", "interactionP": "未报告", "conclusion": "非鳞亚组方向与总体一致"},
+            {"dimension": "脑转移", "subgroup": "基线有脑转移", "n": "72", "endpoint": "PFS", "effect": "HR 0.47", "ci": "95% CI 0.23–0.98", "interactionP": "未报告", "conclusion": "区间较宽，仍为亚组估计"},
+            {"dimension": "肝转移", "subgroup": "基线有肝转移", "n": "53", "endpoint": "PFS", "effect": "HR 0.51", "ci": "95% CI 0.24–1.07", "interactionP": "未报告", "conclusion": "样本小、区间跨1，不能单独确认显著获益"},
+            {"dimension": "ECOG PS", "subgroup": "0 / 1", "n": "51 / 347", "endpoint": "PFS", "effect": "HR 0.18 / 0.60", "ci": "0.06–0.54 / 0.44–0.82", "interactionP": "未报告", "conclusion": "ECOG 0样本很小；不可用点估计作跨亚组优劣判断"}
+          ],
+          "enrollment": 398,
+          "primaryEndpoint": "盲态独立评审PFS",
+          "secondaryEndpoints": ["OS", "研究者评估PFS", "ORR", "DoR", "安全性", "生活质量"],
+          "startDate": "2022-11-09",
+          "primaryCompletion": "2024",
+          "countries": ["中国"],
+          "sponsor": "康方生物",
+          "fda": {
+            "regulatoryId": "中国已获批；无美国BLA",
+            "designation": "中国注册性III期",
+            "submissionStatus": "中国2025-04获批一线PD-L1阳性NSCLC",
+            "lastVerified": "2026-07"
+          },
+          "result": "PFS主要终点阳性；OS尚未成熟",
+          "dataCut": "2024-01-29（主要PFS）",
+          "evidenceLevel": "同行评议III期 / OS未成熟",
+          "efficacyHighlights": [
+            {"label": "中位PFS", "value": "11.14 vs 5.82月", "context": "HR 0.51；95% CI 0.38–0.69；P<0.0001"},
+            {"label": "ORR", "value": "50.0% vs 38.5%"},
+            {"label": "DCR", "value": "89.9% vs 70.5%"},
+            {"label": "期中OS", "value": "HR约0.777", "context": "约39%成熟度；非正式最终分析，不作显著性结论"}
+          ],
+          "safetyHighlights": [
+            {"label": "≥3级治疗相关AE", "value": "29.4% vs 15.6%"},
+            {"label": "≥3级免疫相关AE", "value": "7.1% vs 8.0%"},
+            {"label": "≥3级VEGF相关AE", "value": "10.2% vs 1.0%"},
+            {"label": "≥3级出血", "value": "1.0% vs 0.5%"}
+          ],
+          "sources": [
+            {"label": "Lancet 2025（PubMed）", "url": "https://pubmed.ncbi.nlm.nih.gov/40057343/"},
+            {"label": "WCLC 2024原始演示（SEC）", "url": "https://www.sec.gov/Archives/edgar/data/1599298/000159929824000128/wclcupdatecalldeck_draft.htm"},
+            {"label": "ClinicalTrials.gov", "url": "https://clinicaltrials.gov/study/NCT05499390"}
+          ],
+          "source": "Lancet论文与WCLC原始演示；亚组采用预设PFS森林图"
+        },
+        {
+          "id": "harmoni-3",
+          "name": "HARMONi-3",
+          "nct": "NCT05899608",
+          "phase": "III期",
+          "status": "招募中",
+          "indication": "一线转移性鳞状及非鳞状NSCLC（不限PD-L1）",
+          "design": "全球多区域、随机、双盲III期；鳞状与非鳞状为两个独立ITT队列并分别检验",
+          "arms": "依沃西 + 铂类双药化疗 vs 帕博利珠单抗 + 铂类双药化疗",
+          "population": "既往未接受转移性疾病系统治疗、无可用已批准一线靶向治疗驱动基因的转移性NSCLC",
+          "eligibility": {
+            "keyInclusion": ["转移性鳞状或非鳞状NSCLC", "一线治疗场景", "ECOG PS 0–1", "无已批准一线靶向治疗的可操作驱动基因"],
+            "keyExclusion": ["既往转移性疾病系统治疗", "活动性自身免疫病", "未控制脑转移或显著出血/血栓风险"],
+            "stratificationFactors": ["年龄<65 vs ≥65", "性别", "地区：东亚 vs 其他", "脑/肝转移", "PD-L1 TPS", "既往早期PD-(L)1治疗"]
+          },
+          "subgroupAnalyses": [
+            {"dimension": "结果状态", "subgroup": "鳞状队列", "n": "计划600", "endpoint": "PFS / OS", "effect": "未披露", "ci": "未披露", "interactionP": "不适用", "conclusion": "2026年早期期中PFS未越过严格阈值；iDMC建议继续，盲态未揭示，不能推断HR或疗效方向"},
+            {"dimension": "结果状态", "subgroup": "非鳞状队列", "n": "计划1000", "endpoint": "PFS / OS", "effect": "未披露", "ci": "未披露", "interactionP": "不适用", "conclusion": "尚无基线与疗效亚组数据；PFS读出预期在2027年上半年"}
+          ],
+          "enrollment": "计划约1600例（鳞状600；非鳞1000）",
+          "primaryEndpoint": "各组织学队列分别检验研究者评估PFS与OS",
+          "secondaryEndpoints": ["ORR", "DCR", "DoR", "安全性", "药代动力学", "免疫原性"],
+          "startDate": "2023-10-26",
+          "primaryCompletion": "预计2028-12-31",
+          "countries": ["美国", "加拿大", "中国", "欧洲", "澳大利亚"],
+          "sponsor": "Summit Therapeutics",
+          "fda": {
+            "regulatoryId": "美国IND下全球III期",
+            "designation": "尚无本适应症FDA特殊认定披露",
+            "submissionStatus": "注册性III期进行中",
+            "lastVerified": "2026-07"
+          },
+          "result": "尚无揭盲疗效结果；未公开实际入组基线",
+          "evidenceLevel": "注册信息 / 盲态进行中",
+          "sources": [
+            {"label": "ClinicalTrials.gov", "url": "https://clinicaltrials.gov/study/NCT05899608"},
+            {"label": "Summit 2026Q1 SEC披露", "url": "https://www.sec.gov/Archives/edgar/data/1599298/000159929826000039/smmt-20260331.htm"}
+          ],
+          "source": "ClinicalTrials.gov与Summit SEC文件；未将市场推测写入临床结果"
+        },
+        {
+          "id": "harmoni-6",
+          "name": "HARMONi-6 / AK112-306",
+          "nct": "NCT05840016",
+          "phase": "III期",
+          "status": "活跃，未招募",
+          "indication": "既往未治疗的局部晚期或转移性鳞状NSCLC一线",
+          "design": "中国50中心、随机、双盲、阳性对照III期；1:1分组",
+          "arms": "依沃西 + 卡铂/紫杉类化疗 vs 替雷利珠单抗 + 卡铂/紫杉类化疗",
+          "population": "不限PD-L1表达的初治晚期鳞状NSCLC；排除显著大血管侵犯、明显空洞/坏死及显著咯血高风险",
+          "eligibility": {
+            "keyInclusion": ["成人局部晚期或转移性鳞状NSCLC", "既往未接受晚期系统治疗", "ECOG PS 0–1", "RECIST v1.1可测量病灶"],
+            "keyExclusion": ["大血管显著侵犯/包绕", "显著肿瘤空洞或坏死", "具有临床意义的咯血或出血风险"],
+            "stratificationFactors": ["PD-L1 TPS", "临床分期", "脑/肝转移及转移负荷"]
+          },
+          "baselineCharacteristics": [
+            {"label": "年龄", "value": "64岁", "context": "总体中位数；IQR 59–69"},
+            {"label": "男性", "value": "92.9%", "context": "494/532"},
+            {"label": "IV期", "value": "92.3%"},
+            {"label": "中央型鳞癌", "value": "约63%"},
+            {"label": "PD-L1 TPS<1%", "value": "39.5%", "context": "210/532"},
+            {"label": "PD-L1 TPS≥1%", "value": "60.5%", "context": "322/532"}
+          ],
+          "subgroupAnalyses": [
+            {"dimension": "PD-L1", "subgroup": "TPS <1%", "n": "210", "endpoint": "OS", "effect": "HR 0.64", "ci": "未披露", "interactionP": "未报告", "conclusion": "描述性亚组；研究未为该亚组单独把握度设计"},
+            {"dimension": "PD-L1", "subgroup": "TPS ≥1%", "n": "322", "endpoint": "OS", "effect": "HR 0.68", "ci": "未披露", "interactionP": "未报告", "conclusion": "与总体方向一致"},
+            {"dimension": "PD-L1", "subgroup": "TPS 1–49%", "n": "未披露", "endpoint": "OS", "effect": "HR 0.67", "ci": "未披露", "interactionP": "未报告", "conclusion": "描述性亚组"},
+            {"dimension": "PD-L1", "subgroup": "TPS ≥50%", "n": "未披露", "endpoint": "OS", "effect": "HR 0.64", "ci": "未披露", "interactionP": "未报告", "conclusion": "描述性亚组"},
+            {"dimension": "转移负荷", "subgroup": "≥3处转移", "n": "未披露", "endpoint": "OS", "effect": "HR 0.47", "ci": "未披露", "interactionP": "未报告", "conclusion": "高风险亚组点估计；不能与其他亚组直接比较"},
+            {"dimension": "肝转移", "subgroup": "基线有肝转移", "n": "未披露", "endpoint": "OS", "effect": "HR 0.69", "ci": "未披露", "interactionP": "未报告", "conclusion": "方向与总体一致，精确度未公开"}
+          ],
+          "enrollment": 532,
+          "primaryEndpoint": "盲态独立评审PFS",
+          "secondaryEndpoints": ["OS（关键）", "ORR", "DoR", "安全性"],
+          "startDate": "2023-08-17",
+          "primaryCompletion": "2025",
+          "countries": ["中国"],
+          "sponsor": "康方生物",
+          "fda": {
+            "regulatoryId": "中国sNDA审评；无美国BLA",
+            "designation": "中国注册性III期",
+            "submissionStatus": "中国sNDA已受理并进入后期审评",
+            "lastVerified": "2026-07"
+          },
+          "result": "PFS阳性；预设期中OS越过显著性边界",
+          "dataCut": "2026-02-27（期中OS）",
+          "evidenceLevel": "同行评议III期 / 预设期中OS",
+          "efficacyHighlights": [
+            {"label": "中位PFS", "value": "11.1 vs 6.9月", "context": "HR 0.60；95% CI 0.46–0.78；P<0.0001"},
+            {"label": "中位OS", "value": "27.9 vs 23.7月", "context": "HR 0.66；95% CI 0.50–0.87；P=0.0017，越过0.0049边界"},
+            {"label": "12个月OS率", "value": "78.9% vs 72.2%"},
+            {"label": "24个月OS率", "value": "64.7% vs 48.6%"}
+          ],
+          "safetyHighlights": [
+            {"label": "≥3级治疗相关AE", "value": "69.2% vs 58.9%"},
+            {"label": "≥3级出血", "value": "约3% vs 1%"},
+            {"label": "停药/死亡AE", "value": "两组相近", "context": "公司与论文摘要表述"}
+          ],
+          "sources": [
+            {"label": "Lancet 2026期中OS（摘要）", "url": "https://www.sciencedirect.com/science/article/abs/pii/S0140673626009669"},
+            {"label": "康方港交所公告", "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0601/2026060100005.pdf"},
+            {"label": "ClinicalTrials.gov", "url": "https://clinicaltrials.gov/study/NCT05840016"}
+          ],
+          "source": "Lancet论文、ASCO 2026及港交所公告；OS明确标注为预设期中分析"
+        },
+        {
+          "id": "harmoni-7",
+          "name": "HARMONi-7",
+          "nct": "NCT06767514",
+          "phase": "III期",
+          "status": "招募中",
+          "indication": "高PD-L1表达转移性NSCLC一线",
+          "design": "全球多区域、随机、双盲、阳性对照III期",
+          "arms": "依沃西单药 vs 帕博利珠单抗单药",
+          "population": "既往未接受转移性疾病系统治疗、肿瘤PD-L1高表达的鳞状或非鳞状NSCLC",
+          "eligibility": {
+            "keyInclusion": ["转移性NSCLC", "PD-L1高表达", "一线治疗场景", "无适用获批靶向治疗的驱动改变"],
+            "keyExclusion": ["既往转移性系统治疗", "活动性自身免疫病", "未控制脑转移或显著VEGF抑制相关风险"],
+            "stratificationFactors": ["组织学", "地区", "脑/肝转移", "吸烟史"]
+          },
+          "subgroupAnalyses": [
+            {"dimension": "结果状态", "subgroup": "全部预设亚组", "n": "尚未入组完成", "endpoint": "PFS / OS", "effect": "未披露", "ci": "未披露", "interactionP": "不适用", "conclusion": "尚无实际基线与亚组疗效数据；当前只能记录方案预设分层"}
+          ],
+          "enrollment": 780,
+          "primaryEndpoint": "PFS与OS双主要终点",
+          "secondaryEndpoints": ["ORR", "DoR", "安全性", "生活质量"],
+          "startDate": "2025-02-27",
+          "primaryCompletion": "预计2028-04",
+          "countries": ["美国", "中国", "日本", "欧洲"],
+          "sponsor": "Summit Therapeutics",
+          "fda": {
+            "regulatoryId": "美国IND下全球III期",
+            "designation": "尚无本适应症FDA特殊认定披露",
+            "submissionStatus": "注册性III期招募中",
+            "lastVerified": "2026-07"
+          },
+          "result": "尚无实际入组基线与疗效数据",
+          "evidenceLevel": "注册信息 / 招募中",
+          "sources": [
+            {"label": "ClinicalTrials.gov", "url": "https://clinicaltrials.gov/study/NCT06767514"},
+            {"label": "Summit 2026Q1 SEC披露", "url": "https://www.sec.gov/Archives/edgar/data/1599298/000159929826000039/smmt-20260331.htm"}
+          ],
+          "source": "ClinicalTrials.gov与Summit SEC文件；未把HARMONi-2结果外推为HARMONi-7结论"
+        }
+      ]
+    }
+  ]
+}

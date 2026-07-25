@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import data from "./trials.json";
+import akesoCompany from "./akeso.json";
 import lisaftoclaxCompany from "./lisaftoclax.json";
 
 type FDA = {
@@ -29,6 +30,12 @@ type SubgroupAnalysis = {
 };
 
 type ResultMetric = {
+  label: string;
+  value: string;
+  context?: string;
+};
+
+type BaselineCharacteristic = {
   label: string;
   value: string;
   context?: string;
@@ -63,6 +70,7 @@ type Trial = {
   source: string;
   dataCut?: string;
   evidenceLevel?: string;
+  baselineCharacteristics?: BaselineCharacteristic[];
   efficacyHighlights?: ResultMetric[];
   safetyHighlights?: ResultMetric[];
   pkHighlights?: ResultMetric[];
@@ -94,7 +102,11 @@ type FlatTrial = Trial & {
   pipelineId: string;
 };
 
-const companies = [...(data.companies as Company[]), lisaftoclaxCompany as Company];
+const companies = [
+  ...(data.companies as Company[]).filter((company) => company.id !== "akeso"),
+  akesoCompany as Company,
+  lisaftoclaxCompany as Company,
+];
 const allPipelines = companies.flatMap((company) =>
   company.pipelines.map((pipeline) => ({ ...pipeline, company }))
 );
@@ -317,6 +329,23 @@ function TrialDocument({
             <EligibilityBlock title="关键排除标准" marker="EX" items={trial.eligibility.keyExclusion} tone="exclude" />
             <EligibilityBlock title="随机分层因素" marker="ST" items={trial.eligibility.stratificationFactors} tone="stratify" />
           </div>
+          {trial.baselineCharacteristics && trial.baselineCharacteristics.length > 0 && (
+            <div className="baseline-block">
+              <div className="baseline-heading">
+                <strong>实际入组基线</strong>
+                <span>分母为 ITT；“未披露”不等于无该类患者</span>
+              </div>
+              <div className="baseline-grid">
+                {trial.baselineCharacteristics.map((item) => (
+                  <div className="baseline-item" key={`${item.label}-${item.value}`}>
+                    <span>{item.label}</span>
+                    <strong>{item.value}</strong>
+                    {item.context && <small>{item.context}</small>}
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </section>
 
         <section className="detail-section">
@@ -708,6 +737,7 @@ function CompareDrawer({
                   ["适应症", (t: FlatTrial) => t.indication],
                   ["研究设计", (t: FlatTrial) => t.design],
                   ["目标入组人群", (t: FlatTrial) => t.population],
+                  ["实际入组基线", (t: FlatTrial) => t.baselineCharacteristics?.map((item) => `${item.label}：${item.value}`).join("；") || "尚未披露"],
                   ["关键纳入标准", (t: FlatTrial) => t.eligibility.keyInclusion.join("；")],
                   ["关键排除标准", (t: FlatTrial) => t.eligibility.keyExclusion.join("；")],
                   ["分层因素", (t: FlatTrial) => t.eligibility.stratificationFactors.join("；")],

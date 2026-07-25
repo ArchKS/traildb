@@ -341,6 +341,15 @@ button { color: inherit; }
 .eligibility-block.stratify > div span { background: #e8e9f8; color: #555b9c; }
 .eligibility-block strong { font-size: 11px; }
 .eligibility-block ul { margin: 13px 0 0; padding: 0 0 0 17px; color: #53655d; font-size: 9px; line-height: 1.8; }
+.baseline-block { margin-top: 8px; border: 1px solid var(--line); background: white; }
+.baseline-heading { display: flex; align-items: center; justify-content: space-between; padding: 9px 11px; border-bottom: 1px solid var(--line); background: #f1f5f3; }
+.baseline-heading strong { color: #244f41; }
+.baseline-heading span { color: #738079; }
+.baseline-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
+.baseline-item { min-width: 0; padding: 9px 11px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.baseline-item:nth-child(4n) { border-right: 0; }
+.baseline-item span, .baseline-item small { display: block; color: #7b8983; }
+.baseline-item strong { display: block; margin: 3px 0 2px; color: #173f32; font-family: var(--font-geist-mono); }
 .subgroup-heading { display: flex; align-items: center; justify-content: space-between; }
 .subgroup-heading > span { font-family: var(--font-geist-mono); font-size: 8px; letter-spacing: .1em; color: #73877e; }
 .subgroup-table-wrap { overflow-x: auto; border: 1px solid var(--line); }
@@ -445,6 +454,9 @@ footer { max-width: 1240px; margin: 0 auto; padding: 24px 42px; border-top: 1px 
   .clinical-document .eligibility-block > div span { width: 23px; height: 23px; font-size: 8.5px; }
   .clinical-document .eligibility-block strong { font-size: 11.5px; }
   .clinical-document .eligibility-block ul { margin-top: 6px; font-size: 9.5px; line-height: 1.5; }
+  .clinical-document .baseline-block { margin-top: 6px; }
+  .clinical-document .baseline-heading,
+  .clinical-document .baseline-item { padding: 7px 9px; }
 
   .clinical-document .results-heading > div span,
   .clinical-document .results-heading > div b { font-size: 9px; }
@@ -490,6 +502,9 @@ footer { max-width: 1240px; margin: 0 auto; padding: 24px 42px; border-top: 1px 
   .clinical-document .info-field.wide { grid-column: span 2; }
   .clinical-document .eligibility-grid { grid-template-columns: 1fr; }
   .clinical-document .eligibility-block.stratify { grid-column: span 1; }
+  .clinical-document .baseline-grid { grid-template-columns: 1fr 1fr; }
+  .clinical-document .baseline-item:nth-child(4n) { border-right: 1px solid var(--line); }
+  .clinical-document .baseline-item:nth-child(2n) { border-right: 0; }
 }
 
 @media (max-width: 560px) {
@@ -532,6 +547,11 @@ footer { max-width: 1240px; margin: 0 auto; padding: 24px 42px; border-top: 1px 
   .clinical-document .fda-section { padding-left: 16px; padding-right: 16px; }
   .clinical-document .field-grid { grid-template-columns: 1fr; }
   .clinical-document .info-field.wide { grid-column: span 1; }
+  .clinical-document .baseline-heading { align-items: flex-start; flex-direction: column; gap: 4px; }
+  .clinical-document .baseline-grid { grid-template-columns: 1fr; }
+  .clinical-document .baseline-item,
+  .clinical-document .baseline-item:nth-child(2n),
+  .clinical-document .baseline-item:nth-child(4n) { border-right: 0; }
   .clinical-datacut { display: none; }
   footer { padding: 22px 24px; flex-direction: column; gap: 8px; }
 }
@@ -553,7 +573,13 @@ footer { max-width: 1240px; margin: 0 auto; padding: 24px 42px; border-top: 1px 
 .clinical-page .info-field strong,
 .clinical-page .eligibility-block > div span,
 .clinical-page .eligibility-block strong,
+.clinical-page .eligibility-block ul,
 .clinical-page .eligibility-block li,
+.clinical-page .baseline-heading strong,
+.clinical-page .baseline-heading span,
+.clinical-page .baseline-item span,
+.clinical-page .baseline-item strong,
+.clinical-page .baseline-item small,
 .clinical-page .results-heading > div span,
 .clinical-page .results-heading > div b,
 .clinical-page .result-metrics h4,
