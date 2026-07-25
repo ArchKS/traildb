@@ -1,0 +1,645 @@
+"use client";
+
+import { useEffect, useMemo, useState } from "react";
+import data from "./trials.json";
+
+type FDA = {
+  regulatoryId: string;
+  designation: string;
+  submissionStatus: string;
+  lastVerified: string;
+};
+
+type Trial = {
+  id: string;
+  name: string;
+  nct: string;
+  phase: string;
+  status: string;
+  indication: string;
+  design: string;
+  arms: string;
+  population: string;
+  enrollment: number;
+  primaryEndpoint: string;
+  secondaryEndpoints: string[];
+  startDate: string;
+  primaryCompletion: string;
+  countries: string[];
+  sponsor: string;
+  fda: FDA;
+  result: string;
+  source: string;
+};
+
+type Pipeline = {
+  id: string;
+  code: string;
+  genericName: string;
+  target: string;
+  modality: string;
+  stage: string;
+  indications: string[];
+  trials: Trial[];
+};
+
+type Company = {
+  id: string;
+  name: string;
+  ticker: string;
+  focus: string;
+  pipelines: Pipeline[];
+};
+
+type FlatTrial = Trial & {
+  companyName: string;
+  pipelineCode: string;
+  pipelineId: string;
+};
+
+const companies = data.companies as Company[];
+const allPipelines = companies.flatMap((company) =>
+  company.pipelines.map((pipeline) => ({ ...pipeline, company }))
+);
+const allTrials: FlatTrial[] = allPipelines.flatMap(({ company, ...pipeline }) =>
+  pipeline.trials.map((trial) => ({
+    ...trial,
+    companyName: company.name,
+    pipelineCode: pipeline.code,
+    pipelineId: pipeline.id,
+  }))
+);
+
+const toneClass = (status: string) => {
+  if (status.includes("完成") || status.includes("获批")) return "status status-done";
+  if (status.includes("招募")) return "status status-live";
+  return "status status-hold";
+};
+
+function Header({
+  onHome,
+  onCompare,
+  compareCount,
+}: {
+  onHome: () => void;
+  onCompare: () => void;
+  compareCount: number;
+}) {
+  return (
+    <header className="topbar">
+      <button className="brand" onClick={onHome} aria-label="返回首页">
+        <span className="brand-mark">TS</span>
+        <span>
+          <b>TrialScope</b>
+          <small>Clinical Intelligence</small>
+        </span>
+      </button>
+      <nav>
+        <button onClick={onHome}>管线图谱</button>
+        <button className="compare-nav" onClick={onCompare}>
+          临床对比
+          <span>{compareCount}</span>
+        </button>
+        <span className="source-badge">LOCAL DATA</span>
+      </nav>
+    </header>
+  );
+}
+
+function Home({
+  onPipeline,
+}: {
+  onPipeline: (pipelineId: string) => void;
+}) {
+  const [query, setQuery] = useState("");
+  const [recent, setRecent] = useState<string[]>(["ak112"]);
+
+  useEffect(() => {
+    const saved = localStorage.getItem("trialscope-recent");
+    if (saved) setRecent(JSON.parse(saved));
+  }, []);
+
+  const visibleCompanies = useMemo(() => {
+    const keyword = query.trim().toLowerCase();
+    if (!keyword) return companies;
+    return companies
+      .map((company) => ({
+        ...company,
+        pipelines: company.pipelines.filter((pipeline) =>
+          [
+            company.name,
+            company.ticker,
+            pipeline.code,
+            pipeline.genericName,
+            pipeline.target,
+            ...pipeline.indications,
+          ]
+            .join(" ")
+            .toLowerCase()
+            .includes(keyword)
+        ),
+      }))
+      .filter((company) => company.pipelines.length > 0);
+  }, [query]);
+
+  const recentPipelines = recent
+    .map((id) => allPipelines.find((item) => item.id === id))
+    .filter(Boolean)
+    .slice(0, 4) as (Pipeline & { company: Company })[];
+
+  return (
+    <main>
+      <section className="hero">
+        <div className="hero-copy">
+          <span className="eyebrow">临床研发情报 · 本地数据驱动</span>
+          <h1>
+            从公司到临床，
+            <br />
+            一屏看清药物管线。
+          </h1>
+          <p>
+            统一整理关键试验设计、终点、入组与 FDA 注册信息，
+            快速追踪竞争格局并完成跨项目对比。
+          </p>
+          <label className="search">
+            <span>⌕</span>
+            <input
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
+              placeholder="搜索公司、药物、靶点或适应症"
+              aria-label="搜索公司、药物、靶点或适应症"
+            />
+            <kbd>⌘ K</kbd>
+          </label>
+        </div>
+        <div className="hero-metrics">
+          <div>
+            <strong>{companies.length}</strong>
+            <span>家公司</span>
+          </div>
+          <div>
+            <strong>{allPipelines.length}</strong>
+            <span>条管线</span>
+          </div>
+          <div>
+            <strong>{allTrials.length}</strong>
+            <span>项临床</span>
+          </div>
+          <small>
+            <i />
+            数据更新于 {data.updatedAt}
+          </small>
+        </div>
+      </section>
+
+      <section className="content-section recent-section">
+        <div className="section-heading">
+          <div>
+            <span className="section-kicker">RECENT</span>
+            <h2>最近访问管线</h2>
+          </div>
+          <span className="muted">保存在当前设备</span>
+        </div>
+        <div className="recent-grid">
+          {recentPipelines.map((pipeline) => (
+            <button
+              key={pipeline.id}
+              className="recent-card"
+              onClick={() => onPipeline(pipeline.id)}
+            >
+              <div>
+                <span className="molecule-dot" />
+                <span>{pipeline.company.name}</span>
+              </div>
+              <strong>{pipeline.code}</strong>
+              <p>{pipeline.target}</p>
+              <span className="arrow">↗</span>
+            </button>
+          ))}
+          <div className="recent-empty">
+            <span>+</span>
+            <p>访问更多管线后<br />将显示在这里</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="content-section companies-section">
+        <div className="section-heading">
+          <div>
+            <span className="section-kicker">COMPANIES</span>
+            <h2>公司与研发管线</h2>
+          </div>
+          <span className="muted">{visibleCompanies.length} 家公司</span>
+        </div>
+        <div className="company-grid">
+          {visibleCompanies.map((company, index) => (
+            <article className="company-card" key={company.id}>
+              <div className="company-head">
+                <span className={`company-avatar avatar-${index + 1}`}>
+                  {company.name.slice(0, 1)}
+                </span>
+                <div>
+                  <h3>{company.name}</h3>
+                  <p>{company.ticker} · {company.focus}</p>
+                </div>
+                <span className="pipeline-count">{company.pipelines.length} PIPELINES</span>
+              </div>
+              <div className="pipeline-list">
+                {company.pipelines.map((pipeline) => (
+                  <button key={pipeline.id} onClick={() => onPipeline(pipeline.id)}>
+                    <span>
+                      <b>{pipeline.code}</b>
+                      <small>{pipeline.modality} · {pipeline.target}</small>
+                    </span>
+                    <span className="pipeline-meta">
+                      <em>{pipeline.stage}</em>
+                      <i>→</i>
+                    </span>
+                  </button>
+                ))}
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+    </main>
+  );
+}
+
+function TrialDetail({
+  trial,
+  pipeline,
+  company,
+  selected,
+  onToggle,
+  onClose,
+}: {
+  trial: Trial;
+  pipeline: Pipeline;
+  company: Company;
+  selected: boolean;
+  onToggle: () => void;
+  onClose: () => void;
+}) {
+  return (
+    <div className="detail-overlay" role="dialog" aria-modal="true" aria-label={`${trial.name} 临床详情`}>
+      <div className="detail-panel">
+        <div className="detail-top">
+          <div>
+            <span className="section-kicker">FDA CLINICAL TEMPLATE</span>
+            <h2>{trial.name}</h2>
+            <p>{company.name} · {pipeline.code} · {trial.nct}</p>
+          </div>
+          <button className="close-button" onClick={onClose} aria-label="关闭">×</button>
+        </div>
+
+        <div className="detail-status-row">
+          <span className={toneClass(trial.status)}>{trial.status}</span>
+          <span className="phase-pill">{trial.phase}</span>
+          <button className={selected ? "select-trial selected" : "select-trial"} onClick={onToggle}>
+            {selected ? "✓ 已加入对比" : "+ 加入对比"}
+          </button>
+        </div>
+
+        <section className="detail-section">
+          <h3><span>01</span>试验识别</h3>
+          <div className="field-grid">
+            <Info label="官方标题 / 项目名" value={trial.name} />
+            <Info label="ClinicalTrials.gov ID" value={trial.nct} mono />
+            <Info label="申办方" value={trial.sponsor} />
+            <Info label="研究阶段" value={trial.phase} />
+          </div>
+        </section>
+
+        <section className="detail-section">
+          <h3><span>02</span>研究设计与人群</h3>
+          <div className="field-grid">
+            <Info label="适应症" value={trial.indication} wide />
+            <Info label="试验设计" value={trial.design} wide />
+            <Info label="研究人群" value={trial.population} wide />
+            <Info label="治疗组 / 对照组" value={trial.arms} wide />
+            <Info label="计划入组" value={`${trial.enrollment} 例`} />
+            <Info label="研究国家 / 地区" value={trial.countries.join("、")} />
+          </div>
+        </section>
+
+        <section className="detail-section">
+          <h3><span>03</span>终点与时间轴</h3>
+          <div className="field-grid">
+            <Info label="主要终点" value={trial.primaryEndpoint} wide />
+            <Info label="次要终点" value={trial.secondaryEndpoints.join(" · ")} wide />
+            <Info label="研究启动" value={trial.startDate} />
+            <Info label="主要完成日期" value={trial.primaryCompletion} />
+          </div>
+        </section>
+
+        <section className="detail-section fda-section">
+          <div className="fda-heading">
+            <h3><span>04</span>FDA 注册信息</h3>
+            <span>REGULATORY</span>
+          </div>
+          <div className="field-grid">
+            <Info label="IND / 监管识别" value={trial.fda.regulatoryId} />
+            <Info label="监管认定" value={trial.fda.designation} />
+            <Info label="申报状态" value={trial.fda.submissionStatus} />
+            <Info label="最后核验" value={trial.fda.lastVerified} />
+          </div>
+        </section>
+
+        <section className="detail-section">
+          <h3><span>05</span>结果与溯源</h3>
+          <div className="field-grid">
+            <Info label="结果摘要" value={trial.result} wide />
+            <Info label="数据来源" value={trial.source} />
+            <Info label="本地数据核验" value={`更新于 ${data.updatedAt}`} />
+          </div>
+          <p className="template-note">
+            模板建议：正式使用时补充 FDA Drugs@FDA、FDA 公告、研究方案版本、
+            统计分析计划、关键安全性事件及原始来源链接。
+          </p>
+        </section>
+      </div>
+    </div>
+  );
+}
+
+function Info({
+  label,
+  value,
+  wide,
+  mono,
+}: {
+  label: string;
+  value: string;
+  wide?: boolean;
+  mono?: boolean;
+}) {
+  return (
+    <div className={wide ? "info-field wide" : "info-field"}>
+      <span>{label}</span>
+      <strong className={mono ? "mono" : ""}>{value}</strong>
+    </div>
+  );
+}
+
+function PipelinePage({
+  pipelineId,
+  selectedIds,
+  onToggle,
+  onBack,
+  onCompare,
+}: {
+  pipelineId: string;
+  selectedIds: string[];
+  onToggle: (id: string) => void;
+  onBack: () => void;
+  onCompare: () => void;
+}) {
+  const found = allPipelines.find((item) => item.id === pipelineId) ?? allPipelines[0];
+  const pipeline = found as Pipeline & { company: Company };
+  const [activeTrial, setActiveTrial] = useState<Trial | null>(null);
+
+  return (
+    <main className="pipeline-page">
+      <section className="pipeline-hero">
+        <button className="back-link" onClick={onBack}>← 返回管线图谱</button>
+        <div className="pipeline-title-row">
+          <div>
+            <span className="eyebrow">{pipeline.company.name} · {pipeline.company.ticker}</span>
+            <h1>{pipeline.code}</h1>
+            <p>{pipeline.genericName} · {pipeline.modality}</p>
+          </div>
+          <div className="target-seal">
+            <span>TARGET</span>
+            <strong>{pipeline.target}</strong>
+          </div>
+        </div>
+        <div className="pipeline-stats">
+          <div><span>最高阶段</span><strong>{pipeline.stage}</strong></div>
+          <div><span>临床试验</span><strong>{pipeline.trials.length} 项</strong></div>
+          <div><span>适应症</span><strong>{pipeline.indications.length} 个</strong></div>
+          <div><span>数据来源</span><strong>本地文件</strong></div>
+        </div>
+      </section>
+
+      <section className="content-section pipeline-content">
+        <div className="pipeline-toolbar">
+          <div>
+            <span className="section-kicker">CLINICAL PROGRAMS</span>
+            <h2>临床试验项目</h2>
+            <p>点击试验名称查看 FDA 临床信息模板</p>
+          </div>
+          <button className="primary-button" onClick={onCompare}>
+            对比临床 <span>{selectedIds.length}</span>
+          </button>
+        </div>
+
+        <div className="trial-table">
+          <div className="trial-table-head">
+            <span>试验 / 注册号</span>
+            <span>阶段</span>
+            <span>适应症</span>
+            <span>状态</span>
+            <span>入组</span>
+            <span />
+          </div>
+          {pipeline.trials.map((trial) => (
+            <div className="trial-row" key={trial.id}>
+              <button className="trial-name" onClick={() => setActiveTrial(trial)}>
+                <strong>{trial.name}</strong>
+                <small>{trial.nct}</small>
+              </button>
+              <span className="phase-pill">{trial.phase}</span>
+              <p>{trial.indication}</p>
+              <span className={toneClass(trial.status)}>{trial.status}</span>
+              <b>{trial.enrollment}</b>
+              <label className="compare-check">
+                <input
+                  type="checkbox"
+                  checked={selectedIds.includes(trial.id)}
+                  onChange={() => onToggle(trial.id)}
+                />
+                <span>对比</span>
+              </label>
+            </div>
+          ))}
+        </div>
+
+        <div className="indication-strip">
+          <span>覆盖适应症</span>
+          {pipeline.indications.map((indication) => <b key={indication}>{indication}</b>)}
+        </div>
+      </section>
+
+      {activeTrial && (
+        <TrialDetail
+          trial={activeTrial}
+          pipeline={pipeline}
+          company={pipeline.company}
+          selected={selectedIds.includes(activeTrial.id)}
+          onToggle={() => onToggle(activeTrial.id)}
+          onClose={() => setActiveTrial(null)}
+        />
+      )}
+    </main>
+  );
+}
+
+function CompareDrawer({
+  selectedIds,
+  onToggle,
+  onClose,
+}: {
+  selectedIds: string[];
+  onToggle: (id: string) => void;
+  onClose: () => void;
+}) {
+  const selected = allTrials.filter((trial) => selectedIds.includes(trial.id));
+  return (
+    <div className="compare-overlay" role="dialog" aria-modal="true" aria-label="临床试验对比">
+      <div className="compare-panel">
+        <div className="compare-header">
+          <div>
+            <span className="section-kicker">CROSS-PIPELINE COMPARISON</span>
+            <h2>临床试验对比</h2>
+            <p>可跨公司、跨药物管线选择，最多建议同时查看 4 项。</p>
+          </div>
+          <button className="close-button" onClick={onClose} aria-label="关闭">×</button>
+        </div>
+
+        <div className="compare-picker">
+          <span>选择临床</span>
+          <div>
+            {allTrials.map((trial) => (
+              <label key={trial.id} className={selectedIds.includes(trial.id) ? "trial-chip active" : "trial-chip"}>
+                <input
+                  type="checkbox"
+                  checked={selectedIds.includes(trial.id)}
+                  onChange={() => onToggle(trial.id)}
+                />
+                <span>
+                  <b>{trial.name}</b>
+                  <small>{trial.companyName} · {trial.pipelineCode}</small>
+                </span>
+              </label>
+            ))}
+          </div>
+        </div>
+
+        {selected.length ? (
+          <div className="comparison-table-wrap">
+            <table className="comparison-table">
+              <thead>
+                <tr>
+                  <th>对比维度</th>
+                  {selected.map((trial) => (
+                    <th key={trial.id}>
+                      <span>{trial.companyName}</span>
+                      <strong>{trial.name}</strong>
+                      <small>{trial.pipelineCode}</small>
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  ["阶段 / 状态", (t: FlatTrial) => `${t.phase} · ${t.status}`],
+                  ["适应症", (t: FlatTrial) => t.indication],
+                  ["研究设计", (t: FlatTrial) => t.design],
+                  ["治疗方案", (t: FlatTrial) => t.arms],
+                  ["计划入组", (t: FlatTrial) => `${t.enrollment} 例`],
+                  ["主要终点", (t: FlatTrial) => t.primaryEndpoint],
+                  ["主要完成", (t: FlatTrial) => t.primaryCompletion],
+                  ["FDA / 申报", (t: FlatTrial) => `${t.fda.regulatoryId} · ${t.fda.submissionStatus}`],
+                ].map(([label, getter]) => (
+                  <tr key={label as string}>
+                    <th>{label as string}</th>
+                    {selected.map((trial) => (
+                      <td key={trial.id}>{(getter as (t: FlatTrial) => string)(trial)}</td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        ) : (
+          <div className="compare-empty">
+            <span>⇄</span>
+            <h3>选择至少一项临床开始对比</h3>
+            <p>上方已列出当前本地数据中的全部临床试验。</p>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+export function TrialAtlas() {
+  const [pipelineId, setPipelineId] = useState<string | null>(null);
+  const [selectedIds, setSelectedIds] = useState<string[]>(["harmoni-3", "keynote-189"]);
+  const [compareOpen, setCompareOpen] = useState(false);
+
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash.startsWith("#pipeline/")) setPipelineId(hash.replace("#pipeline/", ""));
+    const handleHash = () => {
+      const next = window.location.hash;
+      setPipelineId(next.startsWith("#pipeline/") ? next.replace("#pipeline/", "") : null);
+    };
+    window.addEventListener("hashchange", handleHash);
+    return () => window.removeEventListener("hashchange", handleHash);
+  }, []);
+
+  const openPipeline = (id: string) => {
+    setPipelineId(id);
+    window.location.hash = `pipeline/${id}`;
+    const saved = JSON.parse(localStorage.getItem("trialscope-recent") ?? "[]") as string[];
+    localStorage.setItem("trialscope-recent", JSON.stringify([id, ...saved.filter((item) => item !== id)].slice(0, 4)));
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const goHome = () => {
+    setPipelineId(null);
+    history.pushState(null, "", window.location.pathname);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const toggleTrial = (id: string) => {
+    setSelectedIds((current) =>
+      current.includes(id) ? current.filter((item) => item !== id) : [...current, id]
+    );
+  };
+
+  return (
+    <div className="app-shell">
+      <Header
+        onHome={goHome}
+        onCompare={() => setCompareOpen(true)}
+        compareCount={selectedIds.length}
+      />
+      {pipelineId ? (
+        <PipelinePage
+          pipelineId={pipelineId}
+          selectedIds={selectedIds}
+          onToggle={toggleTrial}
+          onBack={goHome}
+          onCompare={() => setCompareOpen(true)}
+        />
+      ) : (
+        <Home onPipeline={openPipeline} />
+      )}
+      <footer>
+        <span><b>TrialScope</b> · 本地临床情报模板</span>
+        <span>JSON / CSV / Markdown / Excel Ready</span>
+        <span>仅供研究，不构成医疗建议</span>
+      </footer>
+      {compareOpen && (
+        <CompareDrawer
+          selectedIds={selectedIds}
+          onToggle={toggleTrial}
+          onClose={() => setCompareOpen(false)}
+        />
+      )}
+    </div>
+  );
+}

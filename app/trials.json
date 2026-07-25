@@ -1,0 +1,229 @@
+{
+  "updatedAt": "2026-07-18",
+  "companies": [
+    {
+      "id": "akeso",
+      "name": "康方生物",
+      "ticker": "9926.HK",
+      "focus": "双特异性抗体",
+      "pipelines": [
+        {
+          "id": "ak112",
+          "code": "AK112 / 依沃西",
+          "genericName": "Ivonescimab",
+          "target": "PD-1 / VEGF",
+          "modality": "四价双特异性抗体",
+          "stage": "III期 / 已上市",
+          "indications": ["非小细胞肺癌", "头颈鳞癌", "结直肠癌"],
+          "trials": [
+            {
+              "id": "harmoni",
+              "name": "HARMONi",
+              "nct": "NCT05184712",
+              "phase": "III期",
+              "status": "活跃，未招募",
+              "indication": "EGFR-TKI 治疗失败的晚期非鳞 NSCLC",
+              "design": "随机、双盲、安慰剂对照、多中心",
+              "arms": "依沃西 + 化疗 vs 安慰剂 + 化疗",
+              "population": "EGFR突变、第三代EGFR-TKI治疗进展",
+              "enrollment": 322,
+              "primaryEndpoint": "IRC评估的PFS",
+              "secondaryEndpoints": ["OS", "ORR", "DoR", "安全性"],
+              "startDate": "2022-01",
+              "primaryCompletion": "2023-11",
+              "countries": ["中国"],
+              "sponsor": "康方生物",
+              "fda": {
+                "regulatoryId": "IND 信息待补充",
+                "designation": "待录入",
+                "submissionStatus": "国际多中心研究支持注册申报",
+                "lastVerified": "2026-07"
+              },
+              "result": "主要终点达到；示例数据仅用于模板展示",
+              "source": "本地示例数据"
+            },
+            {
+              "id": "harmoni-a",
+              "name": "HARMONi-A",
+              "nct": "NCT05499390",
+              "phase": "III期",
+              "status": "活跃，未招募",
+              "indication": "EGFR-TKI 治疗失败的晚期非鳞 NSCLC",
+              "design": "随机、双盲、安慰剂对照、多中心",
+              "arms": "依沃西 + 化疗 vs 安慰剂 + 化疗",
+              "population": "EGFR突变、既往接受EGFR-TKI治疗",
+              "enrollment": 391,
+              "primaryEndpoint": "BICR评估的PFS",
+              "secondaryEndpoints": ["OS", "ORR", "DoR", "安全性"],
+              "startDate": "2022-09",
+              "primaryCompletion": "2024-01",
+              "countries": ["中国"],
+              "sponsor": "康方生物",
+              "fda": {
+                "regulatoryId": "IND 信息待补充",
+                "designation": "待录入",
+                "submissionStatus": "数据整理中",
+                "lastVerified": "2026-07"
+              },
+              "result": "示例占位：请以来源文件中的最新披露为准",
+              "source": "本地示例数据"
+            },
+            {
+              "id": "harmoni-3",
+              "name": "HARMONi-3",
+              "nct": "NCT05899608",
+              "phase": "III期",
+              "status": "招募中",
+              "indication": "一线转移性鳞状 NSCLC",
+              "design": "随机、双盲、全球多中心",
+              "arms": "依沃西 + 化疗 vs 帕博利珠单抗 + 化疗",
+              "population": "既往未接受系统治疗的转移性鳞状NSCLC",
+              "enrollment": 420,
+              "primaryEndpoint": "BICR评估的PFS与OS",
+              "secondaryEndpoints": ["ORR", "DoR", "安全性", "生活质量"],
+              "startDate": "2023-06",
+              "primaryCompletion": "2026-03",
+              "countries": ["美国", "中国", "澳大利亚", "欧洲"],
+              "sponsor": "Summit Therapeutics",
+              "fda": {
+                "regulatoryId": "美国 IND 已激活",
+                "designation": "Fast Track（示例字段）",
+                "submissionStatus": "全球III期进行中",
+                "lastVerified": "2026-07"
+              },
+              "result": "尚未披露",
+              "source": "本地示例数据"
+            }
+          ]
+        },
+        {
+          "id": "ak104",
+          "code": "AK104 / 卡度尼利",
+          "genericName": "Cadonilimab",
+          "target": "PD-1 / CTLA-4",
+          "modality": "四价双特异性抗体",
+          "stage": "III期 / 已上市",
+          "indications": ["宫颈癌", "胃癌", "肝细胞癌"],
+          "trials": [
+            {
+              "id": "compass-cervix",
+              "name": "COMPASS-Cervix",
+              "nct": "NCT04982237",
+              "phase": "III期",
+              "status": "活跃，未招募",
+              "indication": "持续、复发或转移性宫颈癌一线",
+              "design": "随机、双盲、多中心",
+              "arms": "卡度尼利 + 化疗 ± 贝伐珠单抗 vs 安慰剂 + 化疗 ± 贝伐珠单抗",
+              "population": "未接受系统治疗的晚期宫颈癌",
+              "enrollment": 445,
+              "primaryEndpoint": "PFS与OS",
+              "secondaryEndpoints": ["ORR", "DoR", "安全性"],
+              "startDate": "2021-07",
+              "primaryCompletion": "2024-03",
+              "countries": ["中国"],
+              "sponsor": "康方生物",
+              "fda": {
+                "regulatoryId": "待补充",
+                "designation": "待补充",
+                "submissionStatus": "区域注册研究",
+                "lastVerified": "2026-07"
+              },
+              "result": "示例数据",
+              "source": "本地示例数据"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "summit",
+      "name": "Summit Therapeutics",
+      "ticker": "NASDAQ: SMMT",
+      "focus": "肿瘤创新疗法",
+      "pipelines": [
+        {
+          "id": "ivonescimab-global",
+          "code": "Ivonescimab Global",
+          "genericName": "Ivonescimab",
+          "target": "PD-1 / VEGF",
+          "modality": "四价双特异性抗体",
+          "stage": "III期",
+          "indications": ["非小细胞肺癌"],
+          "trials": [
+            {
+              "id": "harmoni-2-global",
+              "name": "HARMONi-2 Global",
+              "nct": "NCT06090864",
+              "phase": "III期",
+              "status": "招募中",
+              "indication": "PD-L1阳性晚期NSCLC一线",
+              "design": "随机、双盲、全球多中心",
+              "arms": "依沃西 vs 帕博利珠单抗",
+              "population": "PD-L1 TPS≥1%，无可靶向驱动基因",
+              "enrollment": 612,
+              "primaryEndpoint": "BICR评估的PFS",
+              "secondaryEndpoints": ["OS", "ORR", "DoR", "安全性"],
+              "startDate": "2023-10",
+              "primaryCompletion": "2026-08",
+              "countries": ["美国", "加拿大", "欧洲", "澳大利亚"],
+              "sponsor": "Summit Therapeutics",
+              "fda": {
+                "regulatoryId": "美国 IND 已激活",
+                "designation": "待录入",
+                "submissionStatus": "全球III期进行中",
+                "lastVerified": "2026-07"
+              },
+              "result": "尚未披露",
+              "source": "本地示例数据"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "merck",
+      "name": "Merck & Co.",
+      "ticker": "NYSE: MRK",
+      "focus": "肿瘤免疫治疗",
+      "pipelines": [
+        {
+          "id": "keytruda",
+          "code": "KEYTRUDA",
+          "genericName": "Pembrolizumab",
+          "target": "PD-1",
+          "modality": "单克隆抗体",
+          "stage": "全球已上市",
+          "indications": ["肺癌", "黑色素瘤", "头颈癌"],
+          "trials": [
+            {
+              "id": "keynote-189",
+              "name": "KEYNOTE-189",
+              "nct": "NCT02578680",
+              "phase": "III期",
+              "status": "已完成",
+              "indication": "转移性非鳞NSCLC一线",
+              "design": "随机、双盲、安慰剂对照",
+              "arms": "帕博利珠单抗 + 化疗 vs 安慰剂 + 化疗",
+              "population": "无EGFR/ALK敏感突变的转移性非鳞NSCLC",
+              "enrollment": 616,
+              "primaryEndpoint": "OS与PFS",
+              "secondaryEndpoints": ["ORR", "DoR", "安全性"],
+              "startDate": "2016-02",
+              "primaryCompletion": "2017-11",
+              "countries": ["美国", "日本", "欧洲", "澳大利亚"],
+              "sponsor": "Merck Sharp & Dohme LLC",
+              "fda": {
+                "regulatoryId": "FDA批准标签支持性研究",
+                "designation": "常规批准",
+                "submissionStatus": "已获批",
+                "lastVerified": "2026-07"
+              },
+              "result": "已发表并支持适应症批准",
+              "source": "本地示例数据"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
