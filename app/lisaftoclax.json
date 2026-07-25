@@ -86,11 +86,75 @@
             {"label": "≥3级中性粒细胞减少", "value": "26.1%（6/23）", "context": "CLL/SLL队列"},
             {"label": "≥3级血小板减少", "value": "13.5%（7/52）", "context": "全人群"}
           ],
+          "pkHighlights": [
+            {"label": "50 mg", "value": "t½ 2.84h · Tmax 3h", "context": "Cmax 0.039 μg/mL · AUC 0.261 h·μg/mL"},
+            {"label": "100 mg", "value": "t½ 3.85h · Tmax 6h", "context": "Cmax 0.229 μg/mL · AUC 1.80 h·μg/mL"},
+            {"label": "200 mg", "value": "t½ 3.84h · Tmax 4h", "context": "Cmax 0.294 μg/mL · AUC 2.41 h·μg/mL · n=2"},
+            {"label": "400 mg", "value": "t½ 4.43h · Tmax 6h", "context": "Cmax 0.822 μg/mL · AUC 6.85 h·μg/mL · n=8"},
+            {"label": "600 mg", "value": "t½ 4.68h · Tmax 6h", "context": "Cmax 0.761 μg/mL · AUC 7.81 h·μg/mL · n=7"},
+            {"label": "800 mg", "value": "t½ 4.34h · Tmax 4h", "context": "Cmax 0.982 μg/mL · AUC 7.25 h·μg/mL · n=7"},
+            {"label": "1000 mg", "value": "t½ 6.10h · Tmax 8h", "context": "Cmax 1.69 μg/mL · AUC 18.3 h·μg/mL · n=6"},
+            {"label": "1200 mg", "value": "t½ 6h · Tmax 6h", "context": "Cmax 1.20 μg/mL · AUC 12.3 h·μg/mL · n=6"}
+          ],
           "result": "首次人体研究确认20–1200 mg剂量范围内的临床活性与可管理安全性；去重后仅保留最终发表口径。",
           "source": "用户提供的亚盛_临床数据_Lisaftoclax.md，经NCT与数据截止日去重",
           "sources": [
             {"label": "ClinicalTrials.gov", "url": "https://clinicaltrials.gov/study/NCT03537482"},
             {"label": "PubMed（FIH研究）", "url": "https://pubmed.ncbi.nlm.nih.gov/37074726/"}
+          ]
+        },
+        {
+          "id": "apg2575-china-pooled",
+          "name": "中国CLL单药研究（ASH 2023汇总组成研究）",
+          "nct": "NCT04494503",
+          "phase": "Ib/II期",
+          "status": "已披露汇总数据",
+          "indication": "复发/难治性CLL/SLL",
+          "design": "中国单药研究；源文件仅提供与NCT03913949合并后的ASH 2023汇总结果",
+          "arms": "利沙托克拉单药",
+          "population": "本研究与NCT03913949合计47例CLL患者，45例疗效可评估；无法由源文件拆分本研究单独样本",
+          "eligibility": {
+            "keyInclusion": ["R/R CLL/SLL", "既往多线系统治疗"],
+            "keyExclusion": ["源文件未提供完整排除标准"],
+            "stratificationFactors": ["剂量", "既往治疗线数", "BTKi及CD20单抗经治", "高危遗传学"]
+          },
+          "subgroupAnalyses": [
+            {"dimension": "汇总人群", "subgroup": "两项中国研究合计", "n": "45可评估", "endpoint": "ORR / CR或CRi", "effect": "73.3% / 24.4%", "ci": "未报告", "interactionP": "未报告", "conclusion": "数据不能拆分归因至单个NCT"},
+            {"dimension": "MRD", "subgroup": "外周血 / 骨髓可评估", "n": "18 / 6", "endpoint": "MRD阴性率", "effect": "38.9% / 66.7%", "ci": "未报告", "interactionP": "未报告", "conclusion": "ASH 2023两研究汇总"}
+          ],
+          "enrollment": "与NCT03913949合计47例",
+          "primaryEndpoint": "安全性与ORR",
+          "secondaryEndpoints": ["CR/CRi", "PFS", "OS", "MRD阴性率", "TTR"],
+          "startDate": "2020",
+          "primaryCompletion": "已披露ASH 2023汇总",
+          "countries": ["中国"],
+          "sponsor": "亚盛医药",
+          "fda": {
+            "regulatoryId": "中国早期临床",
+            "designation": "不适用",
+            "submissionStatus": "早期研究完成/随访",
+            "lastVerified": "2023-04-27数据截止"
+          },
+          "dataCut": "2023-04-27",
+          "evidenceLevel": "Phase 1b/2 · 两研究汇总",
+          "efficacyHighlights": [
+            {"label": "汇总ORR", "value": "73.3%（33/45）", "context": "NCT03913949 + NCT04494503"},
+            {"label": "CR/CRi", "value": "24.4%（11/45）", "context": "两研究汇总"},
+            {"label": "中位PFS", "value": "18.53个月", "context": "12月/24月PFS率58.0%/39.4%"},
+            {"label": "30月OS率", "value": "86.3%", "context": "12月OS率94.8%"},
+            {"label": "中位起效时间", "value": "2.07个月", "context": "两研究汇总"},
+            {"label": "PB / BM MRD阴性", "value": "38.9% / 66.7%", "context": "7/18与4/6"}
+          ],
+          "safetyHighlights": [
+            {"label": "≥3级AE", "value": "76.6%", "context": "两研究汇总"},
+            {"label": "≥3级TRAE", "value": "68.1%", "context": "两研究汇总"},
+            {"label": "TLS", "value": "2.1%（1例）", "context": "两研究汇总"}
+          ],
+          "result": "为避免遗漏独立NCT而保留本条；所有结果均明确标注为NCT03913949与NCT04494503汇总，未虚构单研究拆分值。",
+          "source": "用户提供的亚盛_临床数据_Lisaftoclax.md",
+          "sources": [
+            {"label": "ClinicalTrials.gov", "url": "https://clinicaltrials.gov/study/NCT04494503"},
+            {"label": "ASH 2023 / Blood", "url": "https://www.sciencedirect.com/science/article/pii/S0006497123085038"}
           ]
         },
         {

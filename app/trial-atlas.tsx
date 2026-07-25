@@ -65,6 +65,7 @@ type Trial = {
   evidenceLevel?: string;
   efficacyHighlights?: ResultMetric[];
   safetyHighlights?: ResultMetric[];
+  pkHighlights?: ResultMetric[];
   sources?: EvidenceSource[];
 };
 
@@ -377,7 +378,7 @@ function TrialDetail({
           </div>
         </section>
 
-        {(trial.efficacyHighlights?.length || trial.safetyHighlights?.length) && (
+        {(trial.efficacyHighlights?.length || trial.safetyHighlights?.length || trial.pkHighlights?.length) && (
           <section className="detail-section results-section">
             <div className="results-heading">
               <h3><span>04</span>临床结果摘要</h3>
@@ -389,6 +390,9 @@ function TrialDetail({
             <div className="results-columns">
               <ResultMetrics title="疗效结果" metrics={trial.efficacyHighlights ?? []} tone="efficacy" />
               <ResultMetrics title="安全性结果" metrics={trial.safetyHighlights ?? []} tone="safety" />
+              {trial.pkHighlights && trial.pkHighlights.length > 0 && (
+                <ResultMetrics title="药代动力学（单次口服）" metrics={trial.pkHighlights} tone="pk" />
+              )}
             </div>
           </section>
         )}
@@ -483,7 +487,7 @@ function ResultMetrics({
 }: {
   title: string;
   metrics: ResultMetric[];
-  tone: "efficacy" | "safety";
+  tone: "efficacy" | "safety" | "pk";
 }) {
   return (
     <div className={`result-metrics ${tone}`}>
