@@ -127,12 +127,8 @@ const toneClass = (status: string) => {
 
 function Header({
   onHome,
-  onCompare,
-  compareCount,
 }: {
   onHome: () => void;
-  onCompare: () => void;
-  compareCount: number;
 }) {
   return (
     <header className="topbar">
@@ -145,10 +141,7 @@ function Header({
       </button>
       <nav>
         <button onClick={onHome}>管线图谱</button>
-        <button className="compare-nav" onClick={onCompare}>
-          临床对比
-          <span>{compareCount}</span>
-        </button>
+        <a href="/compare">临床对比</a>
         <span className="source-badge">LOCAL DATA</span>
       </nav>
     </header>
@@ -675,107 +668,246 @@ function PipelinePage({
   );
 }
 
-function CompareDrawer({
-  selectedIds,
-  onToggle,
-  onClose,
-}: {
-  selectedIds: string[];
-  onToggle: (id: string) => void;
-  onClose: () => void;
-}) {
-  const selected = allTrials.filter((trial) => selectedIds.includes(trial.id));
+const comparisonRows: [string, (trial: FlatTrial) => string][] = [
+  ["阶段 / 状态", (trial) => `${trial.phase} · ${trial.status}`],
+  ["适应症", (trial) => trial.indication],
+  ["研究设计", (trial) => trial.design],
+  ["目标入组人群", (trial) => trial.population],
+  ["实际入组基线", (trial) => trial.baselineCharacteristics?.map((item) => `${item.label}：${item.value}`).join("；") || "尚未披露"],
+  ["关键纳入标准", (trial) => trial.eligibility.keyInclusion.join("；")],
+  ["关键排除标准", (trial) => trial.eligibility.keyExclusion.join("；")],
+  ["分层因素", (trial) => trial.eligibility.stratificationFactors.join("；")],
+  ["治疗方案", (trial) => trial.arms],
+  ["计划 / 实际入组", (trial) => typeof trial.enrollment === "number" ? `${trial.enrollment} 例` : trial.enrollment],
+  ["主要终点", (trial) => trial.primaryEndpoint],
+  ["主要完成", (trial) => trial.primaryCompletion],
+  ["疗效摘要", (trial) => (trial.efficacyHighlights ?? []).map((item) => `${item.label} ${item.value}`).join("；") || "尚未披露"],
+  ["安全性摘要", (trial) => (trial.safetyHighlights ?? []).map((item) => `${item.label} ${item.value}`).join("；") || "尚未披露"],
+  ["亚组分析", (trial) => trial.subgroupAnalyses.map((item) => `${item.dimension}：${item.subgroup}，${item.effect}`).join("；")],
+  ["FDA / 申报", (trial) => `${trial.fda.regulatoryId} · ${trial.fda.submissionStatus}`],
+];
+
+function ComparisonTable({ trials }: { trials: FlatTrial[] }) {
+  if (!trials.length) {
+    return (
+      <div className="compare-empty">
+        <span>⇄</span>
+        <h3>先选择需要对比的临床</h3>
+        <p>可按公司、管线或关键词缩小范围，最多同时选择4项。</p>
+      </div>
+    );
+  }
+
   return (
-    <div className="compare-overlay" role="dialog" aria-modal="true" aria-label="临床试验对比">
-      <div className="compare-panel">
-        <div className="compare-header">
+    <div className="comparison-table-wrap">
+      <table className="comparison-table">
+        <thead>
+          <tr>
+            <th>对比维度</th>
+            {trials.map((trial) => (
+              <th key={trial.id}>
+                <span>{trial.companyName}</span>
+                <strong>{trial.name}</strong>
+                <small>{trial.pipelineCode}</small>
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {comparisonRows.map(([label, getter]) => (
+            <tr key={label}>
+              <th>{label}</th>
+              {trials.map((trial) => <td key={trial.id}>{getter(trial)}</td>)}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+export function ClinicalComparePage() {
+  const [selectedIds, setSelectedIds] = useState<string[]>([]);
+  const [query, setQuery] = useState("");
+  const [companyFilter, setCompanyFilter] = useState("all");
+  const [pipelineFilter, setPipelineFilter] = useState("all");
+  const [visibleLimit, setVisibleLimit] = useState(8);
+
+  useEffect(() => {
+    const ids = (new URLSearchParams(window.location.search).get("trials") ?? "")
+      .split(",")
+      .filter((id) => allTrials.some((trial) => trial.id === id))
+      .slice(0, 4);
+    setSelectedIds(ids);
+  }, []);
+
+  useEffect(() => {
+    const url = selectedIds.length ? `/compare?trials=${selectedIds.join(",")}` : "/compare";
+    window.history.replaceState(null, "", url);
+  }, [selectedIds]);
+
+  const pipelineOptions = useMemo(
+    () => allPipelines.filter(({ company }) => companyFilter === "all" || company.id === companyFilter),
+    [companyFilter]
+  );
+
+  const filteredTrials = useMemo(() => {
+    const keyword = query.trim().toLowerCase();
+    return allTrials.filter((trial) => {
+      const pipeline = allPipelines.find((item) => item.id === trial.pipelineId);
+      const companyMatches = companyFilter === "all" || pipeline?.company.id === companyFilter;
+      const pipelineMatches = pipelineFilter === "all" || trial.pipelineId === pipelineFilter;
+      const keywordMatches = !keyword || [
+        trial.name,
+        trial.nct,
+        trial.companyName,
+        trial.pipelineCode,
+        trial.indication,
+        trial.phase,
+        trial.status,
+      ].join(" ").toLowerCase().includes(keyword);
+      return companyMatches && pipelineMatches && keywordMatches;
+    });
+  }, [companyFilter, pipelineFilter, query]);
+
+  const selected = allTrials.filter((trial) => selectedIds.includes(trial.id));
+
+  const toggleTrial = (id: string) => {
+    setSelectedIds((current) => {
+      if (current.includes(id)) return current.filter((item) => item !== id);
+      if (current.length >= 4) return current;
+      return [...current, id];
+    });
+  };
+
+  const changeCompany = (value: string) => {
+    setCompanyFilter(value);
+    setPipelineFilter("all");
+    setVisibleLimit(8);
+  };
+
+  return (
+    <div className="app-shell compare-app">
+      <header className="topbar">
+        <a className="brand" href="/">
+          <span className="brand-mark">TS</span>
+          <span><b>TrialScope</b><small>Clinical Intelligence</small></span>
+        </a>
+        <nav>
+          <a href="/">管线图谱</a>
+          <a className="nav-active" href="/compare">临床对比</a>
+          <span className="source-badge">LOCAL DATA</span>
+        </nav>
+      </header>
+
+      <main className="compare-page">
+        <section className="compare-page-header">
           <div>
             <span className="section-kicker">CROSS-PIPELINE COMPARISON</span>
-            <h2>临床试验对比</h2>
-            <p>可跨公司、跨药物管线选择，最多建议同时查看 4 项。</p>
+            <h1>临床试验对比</h1>
+            <p>跨公司、跨管线筛选临床；候选列表按需加载，避免数据增长后页面拥挤。</p>
           </div>
-          <button className="close-button" onClick={onClose} aria-label="关闭">×</button>
-        </div>
+          <div className="compare-counter"><strong>{selected.length}</strong><span>/ 4 已选</span></div>
+        </section>
 
-        <div className="compare-picker">
-          <span>选择临床</span>
-          <div>
-            {allTrials.map((trial) => (
-              <label key={trial.id} className={selectedIds.includes(trial.id) ? "trial-chip active" : "trial-chip"}>
-                <input
-                  type="checkbox"
-                  checked={selectedIds.includes(trial.id)}
-                  onChange={() => onToggle(trial.id)}
-                />
-                <span>
-                  <b>{trial.name}</b>
-                  <small>{trial.companyName} · {trial.pipelineCode}</small>
-                </span>
+        <section className="compare-workspace">
+          <aside className="compare-selector">
+            <div className="selector-title">
+              <div><span>SELECT TRIALS</span><h2>选择临床</h2></div>
+              <b>{filteredTrials.length} 项匹配</b>
+            </div>
+
+            <label className="compare-search">
+              <span>搜索</span>
+              <input
+                value={query}
+                onChange={(event) => { setQuery(event.target.value); setVisibleLimit(8); }}
+                placeholder="试验名、NCT、适应症…"
+              />
+            </label>
+            <div className="compare-filters">
+              <label>
+                <span>公司</span>
+                <select value={companyFilter} onChange={(event) => changeCompany(event.target.value)}>
+                  <option value="all">全部公司</option>
+                  {companies.map((company) => <option key={company.id} value={company.id}>{company.name}</option>)}
+                </select>
               </label>
-            ))}
-          </div>
-        </div>
+              <label>
+                <span>管线</span>
+                <select
+                  value={pipelineFilter}
+                  onChange={(event) => { setPipelineFilter(event.target.value); setVisibleLimit(8); }}
+                >
+                  <option value="all">全部管线</option>
+                  {pipelineOptions.map((pipeline) => <option key={pipeline.id} value={pipeline.id}>{pipeline.code}</option>)}
+                </select>
+              </label>
+            </div>
 
-        {selected.length ? (
-          <div className="comparison-table-wrap">
-            <table className="comparison-table">
-              <thead>
-                <tr>
-                  <th>对比维度</th>
-                  {selected.map((trial) => (
-                    <th key={trial.id}>
-                      <span>{trial.companyName}</span>
-                      <strong>{trial.name}</strong>
-                      <small>{trial.pipelineCode}</small>
-                    </th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {[
-                  ["阶段 / 状态", (t: FlatTrial) => `${t.phase} · ${t.status}`],
-                  ["适应症", (t: FlatTrial) => t.indication],
-                  ["研究设计", (t: FlatTrial) => t.design],
-                  ["目标入组人群", (t: FlatTrial) => t.population],
-                  ["实际入组基线", (t: FlatTrial) => t.baselineCharacteristics?.map((item) => `${item.label}：${item.value}`).join("；") || "尚未披露"],
-                  ["关键纳入标准", (t: FlatTrial) => t.eligibility.keyInclusion.join("；")],
-                  ["关键排除标准", (t: FlatTrial) => t.eligibility.keyExclusion.join("；")],
-                  ["分层因素", (t: FlatTrial) => t.eligibility.stratificationFactors.join("；")],
-                  ["治疗方案", (t: FlatTrial) => t.arms],
-                  ["计划 / 实际入组", (t: FlatTrial) => typeof t.enrollment === "number" ? `${t.enrollment} 例` : t.enrollment],
-                  ["主要终点", (t: FlatTrial) => t.primaryEndpoint],
-                  ["主要完成", (t: FlatTrial) => t.primaryCompletion],
-                  ["疗效摘要", (t: FlatTrial) => (t.efficacyHighlights ?? []).map((item) => `${item.label} ${item.value}`).join("；") || "尚未披露"],
-                  ["安全性摘要", (t: FlatTrial) => (t.safetyHighlights ?? []).map((item) => `${item.label} ${item.value}`).join("；") || "尚未披露"],
-                  ["亚组分析", (t: FlatTrial) => t.subgroupAnalyses.map((item) => `${item.dimension}：${item.subgroup}，${item.effect}`).join("；")],
-                  ["FDA / 申报", (t: FlatTrial) => `${t.fda.regulatoryId} · ${t.fda.submissionStatus}`],
-                ].map(([label, getter]) => (
-                  <tr key={label as string}>
-                    <th>{label as string}</th>
-                    {selected.map((trial) => (
-                      <td key={trial.id}>{(getter as (t: FlatTrial) => string)(trial)}</td>
-                    ))}
-                  </tr>
+            <div className="candidate-list">
+              {filteredTrials.slice(0, visibleLimit).map((trial) => {
+                const isSelected = selectedIds.includes(trial.id);
+                const selectionFull = selectedIds.length >= 4 && !isSelected;
+                return (
+                  <button
+                    key={trial.id}
+                    className={isSelected ? "candidate-row selected" : "candidate-row"}
+                    onClick={() => toggleTrial(trial.id)}
+                    disabled={selectionFull}
+                  >
+                    <span>
+                      <b>{trial.name}</b>
+                      <small>{trial.companyName} · {trial.pipelineCode}</small>
+                      <em>{trial.nct} · {trial.phase}</em>
+                    </span>
+                    <i>{isSelected ? "已选" : selectionFull ? "已满" : "加入"}</i>
+                  </button>
+                );
+              })}
+              {!filteredTrials.length && <p className="candidate-empty">没有符合条件的临床</p>}
+            </div>
+
+            {visibleLimit < filteredTrials.length && (
+              <button className="load-more" onClick={() => setVisibleLimit((limit) => limit + 8)}>
+                再显示 {Math.min(8, filteredTrials.length - visibleLimit)} 项
+              </button>
+            )}
+          </aside>
+
+          <section className="compare-results">
+            <div className="selected-trials">
+              <div className="selected-heading">
+                <span>当前对比</span>
+                {selected.length > 0 && <button onClick={() => setSelectedIds([])}>清空</button>}
+              </div>
+              <div>
+                {selected.map((trial) => (
+                  <button key={trial.id} onClick={() => toggleTrial(trial.id)}>
+                    <span><b>{trial.name}</b><small>{trial.companyName}</small></span>
+                    <i aria-hidden="true">×</i>
+                  </button>
                 ))}
-              </tbody>
-            </table>
-          </div>
-        ) : (
-          <div className="compare-empty">
-            <span>⇄</span>
-            <h3>选择至少一项临床开始对比</h3>
-            <p>上方已列出当前本地数据中的全部临床试验。</p>
-          </div>
-        )}
-      </div>
+                {!selected.length && <p>从左侧搜索并加入临床，最多4项。</p>}
+              </div>
+            </div>
+            <ComparisonTable trials={selected} />
+          </section>
+        </section>
+      </main>
+
+      <footer>
+        <span><b>TrialScope</b> · 临床试验对比</span>
+        <span>{allTrials.length} 项本地临床可检索</span>
+        <span>仅供研究，不构成医疗建议</span>
+      </footer>
     </div>
   );
 }
 
 export function TrialAtlas() {
   const [pipelineId, setPipelineId] = useState<string | null>(null);
-  const [selectedIds, setSelectedIds] = useState<string[]>(["harmoni-3", "keynote-189"]);
-  const [compareOpen, setCompareOpen] = useState(false);
+  const [selectedIds, setSelectedIds] = useState<string[]>([]);
 
   useEffect(() => {
     const hash = window.location.hash;
@@ -810,8 +942,6 @@ export function TrialAtlas() {
     <div className="app-shell">
       <Header
         onHome={goHome}
-        onCompare={() => setCompareOpen(true)}
-        compareCount={selectedIds.length}
       />
       {pipelineId ? (
         <PipelinePage
@@ -819,7 +949,10 @@ export function TrialAtlas() {
           selectedIds={selectedIds}
           onToggle={toggleTrial}
           onBack={goHome}
-          onCompare={() => setCompareOpen(true)}
+          onCompare={() => {
+            const query = selectedIds.length ? `?trials=${selectedIds.join(",")}` : "";
+            window.location.href = `/compare${query}`;
+          }}
         />
       ) : (
         <Home onPipeline={openPipeline} />
@@ -829,13 +962,6 @@ export function TrialAtlas() {
         <span>JSON / CSV / Markdown / Excel Ready</span>
         <span>仅供研究，不构成医疗建议</span>
       </footer>
-      {compareOpen && (
-        <CompareDrawer
-          selectedIds={selectedIds}
-          onToggle={toggleTrial}
-          onClose={() => setCompareOpen(false)}
-        />
-      )}
     </div>
   );
 }
