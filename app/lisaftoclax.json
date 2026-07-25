@@ -1,0 +1,689 @@
+{
+  "id": "ascentage",
+  "name": "亚盛医药",
+  "ticker": "6855.HK",
+  "focus": "血液肿瘤与细胞凋亡靶向药物",
+  "pipelines": [
+    {
+      "id": "apg-2575",
+      "code": "APG-2575 / 利沙托克拉",
+      "genericName": "Lisaftoclax（利生妥®）",
+      "target": "BCL-2",
+      "modality": "高选择性口服BCL-2抑制剂",
+      "stage": "III期 / 中国已上市",
+      "indications": ["CLL/SLL", "AML", "MDS", "MM", "WM", "NHL"],
+      "trials": [
+        {
+          "id": "apg2575-fih",
+          "name": "全球首次人体 Phase 1",
+          "nct": "NCT03537482",
+          "phase": "I期",
+          "status": "已完成",
+          "indication": "复发/难治性血液恶性肿瘤，包括CLL/SLL、MM、WM、FL、MCL和DLBCL",
+          "design": "全球多中心、开放标签、3+3剂量爬坡；20–1200 mg/天，28天周期",
+          "arms": "利沙托克拉单药，每日口服并快速剂量递增",
+          "population": "52例R/R血液肿瘤患者，其中CLL/SLL 23例；CLL/SLL疗效可评估22例",
+          "eligibility": {
+            "keyInclusion": ["复发或难治性血液恶性肿瘤", "既往标准治疗后进展或无适用标准治疗", "可接受20–1200 mg剂量递增"],
+            "keyExclusion": ["源文件未提供完整排除标准", "正式使用时应以研究方案及注册页为准"],
+            "stratificationFactors": ["剂量水平", "疾病亚型", "既往BTKi治疗状态", "del(17p)/TP53状态"]
+          },
+          "subgroupAnalyses": [
+            {
+              "dimension": "疾病亚型",
+              "subgroup": "R/R CLL/SLL",
+              "n": "22",
+              "endpoint": "ORR",
+              "effect": "63.6%",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "CLL/SLL总体疗效可评估人群"
+            },
+            {
+              "dimension": "既往治疗",
+              "subgroup": "BTKi不耐受",
+              "n": "5",
+              "endpoint": "ORR",
+              "effect": "80.0%",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "小样本探索性亚组"
+            },
+            {
+              "dimension": "高危遗传学",
+              "subgroup": "del(17p)/TP53突变",
+              "n": "3",
+              "endpoint": "ORR",
+              "effect": "66.7%",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "样本量极小，仅作信号观察"
+            }
+          ],
+          "enrollment": 52,
+          "primaryEndpoint": "安全性、DLT、MTD及推荐剂量",
+          "secondaryEndpoints": ["ORR", "缓解时间", "药代动力学", "TLS发生率"],
+          "startDate": "2018",
+          "primaryCompletion": "已完成",
+          "countries": ["全球多中心"],
+          "sponsor": "亚盛医药",
+          "fda": {
+            "regulatoryId": "美国IND下开展",
+            "designation": "利沙托克拉获WM、CLL、MM、AML、FL五项FDA孤儿药认定",
+            "submissionStatus": "早期临床完成",
+            "lastVerified": "源文件更新至2026-07"
+          },
+          "dataCut": "最终/已发表数据",
+          "evidenceLevel": "Phase 1 · 已发表",
+          "efficacyHighlights": [
+            {"label": "CLL/SLL ORR", "value": "63.6%（14/22）", "context": "可评估R/R CLL/SLL"},
+            {"label": "中位至缓解时间", "value": "2个周期", "context": "范围2–8个周期"},
+            {"label": "最低活性剂量", "value": "20 mg/天", "context": "可观察到ALC下降"}
+          ],
+          "safetyHighlights": [
+            {"label": "TLS", "value": "0例（0%）", "context": "临床及实验室TLS"},
+            {"label": "DLT / MTD", "value": "未观察 / 未达到", "context": "1200 mg仍未达MTD"},
+            {"label": "≥3级中性粒细胞减少", "value": "26.1%（6/23）", "context": "CLL/SLL队列"},
+            {"label": "≥3级血小板减少", "value": "13.5%（7/52）", "context": "全人群"}
+          ],
+          "result": "首次人体研究确认20–1200 mg剂量范围内的临床活性与可管理安全性；去重后仅保留最终发表口径。",
+          "source": "用户提供的亚盛_临床数据_Lisaftoclax.md，经NCT与数据截止日去重",
+          "sources": [
+            {"label": "ClinicalTrials.gov", "url": "https://clinicaltrials.gov/study/NCT03537482"},
+            {"label": "PubMed（FIH研究）", "url": "https://pubmed.ncbi.nlm.nih.gov/37074726/"}
+          ]
+        },
+        {
+          "id": "apg2575-china-p1",
+          "name": "中国R/R NHL Phase 1",
+          "nct": "NCT03913949",
+          "phase": "I期",
+          "status": "已完成",
+          "indication": "复发/难治性NHL，包括CLL/SLL、MCL和MZL",
+          "design": "中国多中心、开放标签、剂量递增研究；20–800 mg/天",
+          "arms": "利沙托克拉单药",
+          "population": "51例R/R NHL，其中CLL/SLL 14例、MCL 13例、MZL 4例",
+          "eligibility": {
+            "keyInclusion": ["R/R非霍奇金淋巴瘤", "包含CLL/SLL、MCL、MZL等亚型", "接受20–800 mg剂量递增"],
+            "keyExclusion": ["源文件未提供完整排除标准", "正式使用时应以研究方案及注册页为准"],
+            "stratificationFactors": ["疾病亚型", "剂量水平（<200 mg vs ≥200 mg）"]
+          },
+          "subgroupAnalyses": [
+            {
+              "dimension": "疾病亚型",
+              "subgroup": "CLL/SLL总体",
+              "n": "14",
+              "endpoint": "ORR / CR",
+              "effect": "71.4% / 28.6%",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "CLL/SLL队列显示单药活性"
+            },
+            {
+              "dimension": "剂量",
+              "subgroup": "CLL ≥200 mg",
+              "n": "8",
+              "endpoint": "ORR",
+              "effect": "87.5%",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "3例CR、4例PR；小样本剂量亚组"
+            },
+            {
+              "dimension": "疾病亚型",
+              "subgroup": "MCL / MZL",
+              "n": "未完整披露",
+              "endpoint": "ORR",
+              "effect": "50.0% / 50.0%",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "探索性NHL亚组"
+            }
+          ],
+          "enrollment": 51,
+          "primaryEndpoint": "安全性、DLT、MTD及推荐剂量",
+          "secondaryEndpoints": ["ORR", "CR率", "药代动力学", "TLS发生率"],
+          "startDate": "2019",
+          "primaryCompletion": "已完成",
+          "countries": ["中国"],
+          "sponsor": "亚盛医药",
+          "fda": {
+            "regulatoryId": "中国I期研究",
+            "designation": "不适用",
+            "submissionStatus": "研究已完成并发表",
+            "lastVerified": "源文件更新至2026-07"
+          },
+          "dataCut": "最终/已发表数据",
+          "evidenceLevel": "Phase 1 · 已发表",
+          "efficacyHighlights": [
+            {"label": "CLL/SLL ORR", "value": "71.4%", "context": "n=14"},
+            {"label": "CLL/SLL CR", "value": "28.6%", "context": "n=14"},
+            {"label": "≥200 mg CLL ORR", "value": "87.5%", "context": "3 CR + 4 PR / 8"}
+          ],
+          "safetyHighlights": [
+            {"label": "TLS", "value": "0例", "context": "全队列"},
+            {"label": "DLT", "value": "未观察到", "context": "20–800 mg"}
+          ],
+          "result": "中国Phase 1在CLL/SLL及部分NHL亚型中观察到剂量相关的单药活性，未观察到TLS或DLT。",
+          "source": "用户提供的亚盛_临床数据_Lisaftoclax.md，经重复表格合并",
+          "sources": [
+            {"label": "ClinicalTrials.gov", "url": "https://clinicaltrials.gov/study/NCT03913949"},
+            {"label": "PubMed（中国Phase 1）", "url": "https://pubmed.ncbi.nlm.nih.gov/42000210/"}
+          ]
+        },
+        {
+          "id": "apg2575-cll-combo",
+          "name": "CLL/SLL Phase 1b/2 联合研究",
+          "nct": "NCT04215809",
+          "phase": "Ib/II期",
+          "status": "活跃，已披露数据",
+          "indication": "初治或复发/难治性CLL/SLL",
+          "design": "多队列、开放标签研究；利沙托克拉单药或联合利妥昔单抗/阿可替尼",
+          "arms": "单药（n=46）；+利妥昔单抗（n=39）；+阿可替尼（n=91）",
+          "population": "176例CLL/SLL患者，截至2024-06-27；87.5%为R/R，联合阿可替尼队列含初治及R/R患者",
+          "eligibility": {
+            "keyInclusion": ["CLL/SLL确诊患者", "初治或复发/难治人群", "可进入单药、抗CD20或BTKi联合队列"],
+            "keyExclusion": ["源文件未提供完整排除标准", "正式使用时应核对方案版本"],
+            "stratificationFactors": ["治疗方案", "初治 vs R/R", "既往BTKi", "既往venetoclax", "TP53/del(17p)", "IGHV状态"]
+          },
+          "subgroupAnalyses": [
+            {
+              "dimension": "治疗方案",
+              "subgroup": "联合阿可替尼，R/R CLL",
+              "n": "87",
+              "endpoint": "ORR",
+              "effect": "96.6%（84/87）",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "ASH 2024更新口径；覆盖旧版97.7%读出"
+            },
+            {
+              "dimension": "治疗线",
+              "subgroup": "初治CLL/SLL",
+              "n": "16",
+              "endpoint": "ORR / 18月PFS率",
+              "effect": "100% / 86%",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "样本量较小，等待GLORA-2验证"
+            },
+            {
+              "dimension": "既往venetoclax",
+              "subgroup": "VEN经治总体",
+              "n": "14",
+              "endpoint": "ORR / 12月 / 18月PFS率",
+              "effect": "85.7% / 89% / 73%",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "包含VEN难治与双重经治患者"
+            },
+            {
+              "dimension": "既往venetoclax",
+              "subgroup": "VEN+BTKi双经治",
+              "n": "6",
+              "endpoint": "ORR",
+              "effect": "66.7%（4/6）",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "高度难治小样本"
+            },
+            {
+              "dimension": "高危遗传学",
+              "subgroup": "TP53突变或del(17p)",
+              "n": "联合治疗组约41%",
+              "endpoint": "基线分布",
+              "effect": "疗效值未单独披露",
+              "ci": "不适用",
+              "interactionP": "未报告",
+              "conclusion": "高危患者代表性较高，但源文件未给出独立效应量"
+            }
+          ],
+          "enrollment": 176,
+          "primaryEndpoint": "安全性、耐受性与ORR",
+          "secondaryEndpoints": ["PFS", "DoR", "不同联合队列疗效", "高危及既往治疗亚组"],
+          "startDate": "2020",
+          "primaryCompletion": "持续随访",
+          "countries": ["全球多中心"],
+          "sponsor": "亚盛医药",
+          "fda": {
+            "regulatoryId": "美国IND下全球研究",
+            "designation": "CLL孤儿药认定适应症",
+            "submissionStatus": "支持GLORA与GLORA-2注册开发",
+            "lastVerified": "2024-06-27数据截止"
+          },
+          "dataCut": "2024-06-27",
+          "evidenceLevel": "Phase 1b/2 · ASH 2024更新",
+          "efficacyHighlights": [
+            {"label": "+阿可替尼 R/R ORR", "value": "96.6%（84/87）", "context": "中位随访22.3个月"},
+            {"label": "12月 / 18月PFS率", "value": "89% / 86%", "context": "联合阿可替尼总体"},
+            {"label": "+利妥昔单抗 ORR", "value": "87%", "context": "n=39"},
+            {"label": "初治 ORR", "value": "100%（16/16）", "context": "18月PFS率86%"},
+            {"label": "VEN经治 ORR", "value": "85.7%（12/14）", "context": "12月/18月PFS率89%/73%"},
+            {"label": "中位PFS / DoR", "value": "均未达到", "context": "联合阿可替尼"}
+          ],
+          "safetyHighlights": [
+            {"label": "TLS", "value": "2.8%（5/176）", "context": "临床+实验室"},
+            {"label": "≥3级中性粒细胞减少", "value": "32.6% / 25.6% / 24.2%", "context": "单药 / +利妥昔 / +阿可替尼"},
+            {"label": "≥3级贫血", "value": "21.7% / 12.8% / 13.2%", "context": "单药 / +利妥昔 / +阿可替尼"},
+            {"label": "因药物AE停药", "value": "0例", "context": "归因利沙托克拉"},
+            {"label": "DDI", "value": "未观察到", "context": "联合队列"}
+          ],
+          "result": "同一研究的多次披露已合并，以ASH 2024、2024-06-27数据截止的较新结果为主；旧版ORR仅在去重说明中保留。",
+          "source": "用户提供的亚盛_临床数据_Lisaftoclax.md，按研究和数据截止日去重",
+          "sources": [
+            {"label": "ClinicalTrials.gov", "url": "https://clinicaltrials.gov/study/NCT04215809"},
+            {"label": "ASH 2024 #4614", "url": "https://ash.confex.com/ash/2024/webprogram/Paper207408.html"},
+            {"label": "PubMed（CLL Phase 1b/2）", "url": "https://pubmed.ncbi.nlm.nih.gov/41109219/"}
+          ]
+        },
+        {
+          "id": "apg2575-cc201",
+          "name": "APG2575CC201 中国关键注册研究",
+          "nct": "NCT05147467",
+          "phase": "II期",
+          "status": "已完成 / 支持获批",
+          "indication": "既往至少一线系统治疗（含BTKi）的成人R/R CLL/SLL",
+          "design": "中国多中心、单臂、开放标签关键注册II期；利沙托克拉单药",
+          "arms": "利沙托克拉单药",
+          "population": "77例入组、72例疗效可评估；中位既往3线，87% BTKi耐药，39% del(17p)/TP53突变",
+          "eligibility": {
+            "keyInclusion": ["成人R/R CLL/SLL", "既往接受≥1线系统治疗", "既往治疗包含BTKi", "允许高危遗传学及较差体能状态患者"],
+            "keyExclusion": ["源文件未提供完整排除标准", "正式使用时应以注册方案和NMPA审评资料为准"],
+            "stratificationFactors": ["TP53/del(17p)", "复杂核型", "IGHV状态", "既往治疗线数", "BTKi耐药"]
+          },
+          "subgroupAnalyses": [
+            {
+              "dimension": "高危遗传学",
+              "subgroup": "del(17p)/TP53突变",
+              "n": "30",
+              "endpoint": "中位PFS",
+              "effect": "11.2个月；HR 5.0",
+              "ci": "未报告",
+              "interactionP": "P=.018",
+              "conclusion": "较非高危人群预后更差；源文件给出的为组间风险比较"
+            },
+            {
+              "dimension": "高危遗传学",
+              "subgroup": "无TP53突变且无复杂核型",
+              "n": "未报告",
+              "endpoint": "中位PFS",
+              "effect": "29.6个月（ref）",
+              "ci": "未报告",
+              "interactionP": "不适用",
+              "conclusion": "参考组"
+            },
+            {
+              "dimension": "复杂核型",
+              "subgroup": "高复杂核型（≥5种异常）",
+              "n": "未报告",
+              "endpoint": "中位PFS",
+              "effect": "12.9个月；HR 2.7",
+              "ci": "未报告",
+              "interactionP": "P=.001",
+              "conclusion": "高复杂核型与较短PFS相关"
+            },
+            {
+              "dimension": "复杂核型",
+              "subgroup": "无高复杂核型",
+              "n": "未报告",
+              "endpoint": "中位PFS",
+              "effect": "25.7个月（ref）",
+              "ci": "未报告",
+              "interactionP": "不适用",
+              "conclusion": "参考组"
+            }
+          ],
+          "enrollment": 77,
+          "primaryEndpoint": "IRC确认的ORR",
+          "secondaryEndpoints": ["PFS", "DoR", "TTR", "OS", "MRD阴性率", "安全性"],
+          "startDate": "2021",
+          "primaryCompletion": "已完成；2025-07-10支持NMPA附条件批准",
+          "countries": ["中国"],
+          "sponsor": "亚盛医药",
+          "fda": {
+            "regulatoryId": "中国关键注册II期",
+            "designation": "FDA CLL孤儿药认定；本研究主要支持中国注册",
+            "submissionStatus": "NMPA已附条件批准",
+            "lastVerified": "2025-07-10"
+          },
+          "dataCut": "中位随访22.01个月",
+          "evidenceLevel": "关键注册Phase 2 · 支持NMPA批准",
+          "efficacyHighlights": [
+            {"label": "IRC确认ORR", "value": "62.5%", "context": "72例可评估"},
+            {"label": "研究者评估ORR", "value": "58.3%", "context": "R/R CLL/SLL"},
+            {"label": "中位PFS", "value": "23.89个月", "context": "95% CI 13.01–NR"},
+            {"label": "中位DoR", "value": "18.53个月", "context": "95% CI 14.75–NR"},
+            {"label": "12月PFS率", "value": "66.4%", "context": "95% CI 53.1%–76.7%"},
+            {"label": "30月OS率", "value": "78.0%", "context": "95% CI 66.1%–86.2%"},
+            {"label": "外周血MRD阴性", "value": "21.8%（12/55）", "context": "可评估人群"},
+            {"label": "骨髓MRD阴性", "value": "54.5%（6/11）", "context": "PB已阴性者"}
+          ],
+          "safetyHighlights": [
+            {"label": "TLS", "value": "0例（0%）", "context": "关键注册研究"},
+            {"label": "治疗相关死亡", "value": "0例", "context": "关键注册研究"}
+          ],
+          "result": "该研究为2025年7月中国附条件批准的核心证据。早期两项I/II期汇总数据未与本研究终局数据混合。",
+          "source": "用户提供的亚盛_临床数据_Lisaftoclax.md，以关键注册研究最新口径为准",
+          "sources": [
+            {"label": "ClinicalTrials.gov", "url": "https://clinicaltrials.gov/study/NCT05147467"},
+            {"label": "Blood / ASH 2025摘要", "url": "https://www.sciencedirect.com/science/article/pii/S0006497125026631"},
+            {"label": "NMPA批准信息", "url": "https://www.nmpa.gov.cn/zwfw/sdxx/sdxxyp/yppjfb/20250710152744189.html"}
+          ]
+        },
+        {
+          "id": "apg2575-au101",
+          "name": "APG2575AU101 AML/MDS联合AZA",
+          "nct": "NCT04964518",
+          "phase": "Ib/II期",
+          "status": "活跃，已披露数据",
+          "indication": "初治或R/R AML、MDS、CMML及venetoclax难治髓系肿瘤",
+          "design": "全球多中心、开放标签、多队列研究；利沙托克拉联合阿扎胞苷",
+          "arms": "利沙托克拉400–800 mg + AZA；包含28天持续给药与14天间歇给药",
+          "population": "103例髓系恶性肿瘤（截至2025-07-01），覆盖TN/R/R AML、MDS/CMML及VEN难治患者",
+          "eligibility": {
+            "keyInclusion": ["AML、MDS、CMML或其他髓系恶性肿瘤", "初治或复发/难治患者", "包含venetoclax难治队列", "不适合或已失败标准治疗"],
+            "keyExclusion": ["源文件未提供完整排除标准", "正式使用时应以研究方案及各队列版本为准"],
+            "stratificationFactors": ["疾病类型", "初治 vs R/R", "利沙托克拉剂量", "28天持续 vs 14天间歇", "既往venetoclax", "TP53/复杂核型"]
+          },
+          "subgroupAnalyses": [
+            {
+              "dimension": "AML治疗线",
+              "subgroup": "新诊断AML",
+              "n": "39",
+              "endpoint": "ORR / CRc",
+              "effect": "64.1% / 51.3%",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "600 mg亚组中位PFS和OS尚未达到"
+            },
+            {
+              "dimension": "AML治疗线",
+              "subgroup": "R/R AML",
+              "n": "37",
+              "endpoint": "ORR / CRc",
+              "effect": "72.7% / 45.5%",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "600 mg组ORR 76.7%、CRc 50.0%"
+            },
+            {
+              "dimension": "给药方案",
+              "subgroup": "R/R AML 14天间歇 vs 28天持续",
+              "n": "未报告",
+              "endpoint": "ORR / CR",
+              "effect": "50% / 37.5% vs 39% / 28%",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "非随机队列间比较，不能据此直接确认方案优效"
+            },
+            {
+              "dimension": "既往BCL-2抑制剂",
+              "subgroup": "VEN难治AML/MPAL",
+              "n": "22–24",
+              "endpoint": "ORR / CR或CRi",
+              "effect": "31.8% / 22.7%",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "源文件存在29.2%与31.8%两个更新口径，本条保留较新汇总口径"
+            },
+            {
+              "dimension": "MDS治疗线",
+              "subgroup": "TN MDS 600 mg",
+              "n": "23",
+              "endpoint": "ORR / CR / 复合CR",
+              "effect": "73.9% / 30.4% / 69.6%",
+              "ci": "mPFS 95% CI 7.1–NR",
+              "interactionP": "未报告",
+              "conclusion": "复合CR采用IWG 2023标准"
+            },
+            {
+              "dimension": "MDS/CMML扩展",
+              "subgroup": "新诊断 vs R/R",
+              "n": "15 vs 22",
+              "endpoint": "ORR / CR",
+              "effect": "80% / 40% vs 50% / 27.3%",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "ASCO 2025扩展队列"
+            }
+          ],
+          "enrollment": 103,
+          "primaryEndpoint": "安全性、推荐剂量及各疾病队列ORR/CRc",
+          "secondaryEndpoints": ["PFS", "OS", "至CR时间", "不同给药方案", "VEN难治亚组", "早期死亡率"],
+          "startDate": "2021",
+          "primaryCompletion": "持续随访",
+          "countries": ["全球多中心"],
+          "sponsor": "亚盛医药",
+          "fda": {
+            "regulatoryId": "美国IND下全球研究",
+            "designation": "AML获FDA孤儿药认定",
+            "submissionStatus": "支持GLORA-3与GLORA-4注册开发",
+            "lastVerified": "2025-07-01"
+          },
+          "dataCut": "2025-07-01",
+          "evidenceLevel": "Phase 1b/2 · ASCO/ASH更新",
+          "efficacyHighlights": [
+            {"label": "TN AML ORR / CRc", "value": "64.1% / 51.3%", "context": "n=39"},
+            {"label": "R/R AML ORR / CRc", "value": "72.7% / 45.5%", "context": "n=37"},
+            {"label": "R/R AML 600 mg", "value": "ORR 76.7% / CRc 50.0%", "context": "mPFS 10.2月，mOS 14.7月"},
+            {"label": "TN MDS ORR / CR", "value": "77.5% / 25.0%", "context": "n=40"},
+            {"label": "TN MDS 600 mg复合CR", "value": "69.6%", "context": "n=23，IWG 2023"},
+            {"label": "VEN难治AML/MPAL ORR", "value": "31.8%", "context": "CR/CRi 22.7%，n=22–24"},
+            {"label": "ND MDS/CMML ORR", "value": "80.0%", "context": "n=15，CR和mCR各40%"},
+            {"label": "R/R MDS/CMML ORR", "value": "50.0%", "context": "n=22，CR 27.3%"}
+          ],
+          "safetyHighlights": [
+            {"label": "TLS", "value": "0%", "context": "AML/MDS全人群"},
+            {"label": "30天 / 60天死亡率", "value": "1.3% / 3.9%", "context": "全人群"},
+            {"label": "≥3级中性粒细胞减少", "value": "57.9%", "context": "AML/MDS全人群"},
+            {"label": "≥3级血小板减少", "value": "50.0%", "context": "AML/MDS全人群"},
+            {"label": "≥3级贫血", "value": "27.6%", "context": "AML/MDS全人群"},
+            {"label": "发热性中性粒细胞减少", "value": "10.5%", "context": "AML/MDS全人群"},
+            {"label": "MDS ≥3级感染", "value": "46.9%", "context": "治疗相关26.5%，n=49"},
+            {"label": "MDS因TRAE减量", "value": "6.1%", "context": "因不耐受出组0例"}
+          ],
+          "result": "AML、MDS和CMML的重复表格已合并到同一NCT记录；不同数据截止日并存时保留最新103例口径，并在亚组中注明非随机队列比较限制。",
+          "source": "用户提供的亚盛_临床数据_Lisaftoclax.md，按NCT04964518统一去重",
+          "sources": [
+            {"label": "ClinicalTrials.gov", "url": "https://clinicaltrials.gov/study/NCT04964518"},
+            {"label": "ASCO 2025 #6505", "url": "https://ascopubs.org/doi/10.1200/JCO.2025.43.16_suppl.6505"},
+            {"label": "ASH 2024 MDS数据", "url": "https://www.ascentage.com/live-from-ash-2024-ascentage-pharma-releases-updated-data-of-bcl-2-inhibitor-lisaftoclax-in-mds-that-demonstrates-potential-clinical-benefits-and-favorable-safety/"}
+          ]
+        },
+        {
+          "id": "glora",
+          "name": "GLORA",
+          "nct": "NCT06104566",
+          "phase": "III期",
+          "status": "招募中",
+          "indication": "BTKi经治但疗效不佳的CLL/SLL",
+          "design": "全球多中心、开放标签、随机对照III期；覆盖约126个中心、18个国家",
+          "arms": "利沙托克拉 + 继续BTKi（阿可替尼/泽布替尼/伊布替尼）vs 继续BTKi单药",
+          "population": "BTKi经治≥12个月、未达CR且未进展的CLL/SLL“1.5线”人群",
+          "eligibility": {
+            "keyInclusion": ["CLL/SLL", "BTKi持续治疗≥12个月", "未达到完全缓解", "尚未发生疾病进展"],
+            "keyExclusion": ["源文件未提供完整排除标准", "正式使用时应核对ClinicalTrials.gov方案"],
+            "stratificationFactors": ["BTKi种类", "既往BTKi疗程", "高危遗传学", "地区"]
+          },
+          "subgroupAnalyses": [
+            {"dimension": "结果状态", "subgroup": "所有预设亚组", "n": "约440例计划", "endpoint": "PFS", "effect": "尚未披露", "ci": "尚未披露", "interactionP": "尚未披露", "conclusion": "III期进行中，禁止以早期单臂数据替代随机结果"}
+          ],
+          "enrollment": "计划约440例",
+          "primaryEndpoint": "IRC评估的PFS（iwCLL 2018）",
+          "secondaryEndpoints": ["OS", "ORR", "DoR", "安全性"],
+          "startDate": "2023",
+          "primaryCompletion": "源文件预计2028年Q2–Q3读出",
+          "countries": ["18个国家，约126个中心"],
+          "sponsor": "亚盛医药",
+          "fda": {
+            "regulatoryId": "全球注册III期",
+            "designation": "FDA/EMA许可",
+            "submissionStatus": "招募中",
+            "lastVerified": "源文件更新至2026-07"
+          },
+          "evidenceLevel": "随机Phase 3 · 尚无结果",
+          "efficacyHighlights": [],
+          "safetyHighlights": [],
+          "result": "进行中的全球注册III期；未将Phase 1b/2联合阿可替尼结果重复写入本试验。",
+          "source": "用户提供的亚盛_临床数据_Lisaftoclax.md",
+          "sources": [{"label": "ClinicalTrials.gov", "url": "https://clinicaltrials.gov/study/NCT06104566"}]
+        },
+        {
+          "id": "glora-2",
+          "name": "GLORA-2",
+          "nct": "NCT06319456",
+          "phase": "III期",
+          "status": "招募中",
+          "indication": "初治CLL/SLL",
+          "design": "全球多中心、开放标签、随机III期确证性研究；固定疗程策略",
+          "arms": "利沙托克拉 + 阿可替尼 vs FCR免疫化疗",
+          "population": "既往未接受系统治疗的CLL/SLL患者",
+          "eligibility": {
+            "keyInclusion": ["初治CLL/SLL", "适合研究规定的固定疗程联合治疗", "适合随机至FCR对照"],
+            "keyExclusion": ["源文件未提供完整排除标准", "正式使用时应核对ClinicalTrials.gov方案"],
+            "stratificationFactors": ["高危遗传学", "年龄/体能状态", "地区"]
+          },
+          "subgroupAnalyses": [
+            {"dimension": "结果状态", "subgroup": "所有预设亚组", "n": "344例计划", "endpoint": "PFS", "effect": "尚未披露", "ci": "尚未披露", "interactionP": "尚未披露", "conclusion": "III期进行中"}
+          ],
+          "enrollment": 344,
+          "primaryEndpoint": "PFS",
+          "secondaryEndpoints": ["OS", "ORR", "MRD阴性", "固定疗程后缓解持久性", "安全性"],
+          "startDate": "2023",
+          "primaryCompletion": "源文件预计2028年末读出",
+          "countries": ["全球多中心"],
+          "sponsor": "亚盛医药",
+          "fda": {
+            "regulatoryId": "全球注册III期",
+            "designation": "CDE于2023-10批准开展",
+            "submissionStatus": "招募中",
+            "lastVerified": "源文件更新至2026-07"
+          },
+          "evidenceLevel": "随机Phase 3 · 尚无结果",
+          "efficacyHighlights": [],
+          "safetyHighlights": [],
+          "result": "进行中的初治CLL/SLL固定疗程III期；早期16例初治数据保留在NCT04215809，不在此重复。",
+          "source": "用户提供的亚盛_临床数据_Lisaftoclax.md",
+          "sources": [{"label": "ClinicalTrials.gov", "url": "https://clinicaltrials.gov/study/NCT06319456"}]
+        },
+        {
+          "id": "glora-3",
+          "name": "GLORA-3",
+          "nct": "NCT06389292",
+          "phase": "III期",
+          "status": "招募中",
+          "indication": "新诊断老年或体弱、不适合强化疗的AML",
+          "design": "全球多中心、随机、双盲、安慰剂对照III期，1:1随机",
+          "arms": "利沙托克拉 + AZA vs 安慰剂 + AZA",
+          "population": "新诊断、≥75岁或因合并症/体能状态不适合强化诱导治疗的AML患者",
+          "eligibility": {
+            "keyInclusion": ["新诊断AML", "≥75岁或不适合强化诱导化疗", "适合接受AZA为基础治疗"],
+            "keyExclusion": ["源文件未提供完整排除标准", "正式使用时应核对ClinicalTrials.gov方案"],
+            "stratificationFactors": ["年龄与fitness", "AML分子亚型", "地区"]
+          },
+          "subgroupAnalyses": [
+            {"dimension": "结果状态", "subgroup": "所有预设亚组", "n": "约486例计划", "endpoint": "OS", "effect": "尚未披露", "ci": "尚未披露", "interactionP": "尚未披露", "conclusion": "III期进行中"}
+          ],
+          "enrollment": "计划约486例",
+          "primaryEndpoint": "OS",
+          "secondaryEndpoints": ["CR/CRi/CRh", "EFS", "PFS", "安全性"],
+          "startDate": "2024-04-24",
+          "primaryCompletion": "源文件预计2028年读出",
+          "countries": ["全球多中心"],
+          "sponsor": "亚盛医药",
+          "fda": {
+            "regulatoryId": "全球注册III期",
+            "designation": "FDA/EMA/CDE许可",
+            "submissionStatus": "招募中",
+            "lastVerified": "源文件更新至2026-07"
+          },
+          "evidenceLevel": "随机双盲Phase 3 · 尚无结果",
+          "efficacyHighlights": [],
+          "safetyHighlights": [],
+          "result": "进行中的AML注册III期；NCT04964518的早期AML数据作为支持证据独立展示，不并入本试验结果。",
+          "source": "用户提供的亚盛_临床数据_Lisaftoclax.md",
+          "sources": [{"label": "ClinicalTrials.gov", "url": "https://clinicaltrials.gov/study/NCT06389292"}]
+        },
+        {
+          "id": "glora-4",
+          "name": "GLORA-4",
+          "nct": "NCT06641414",
+          "phase": "III期",
+          "status": "招募中",
+          "indication": "新诊断中高危、高危或极高危MDS",
+          "design": "全球多中心、随机、双盲、安慰剂对照III期；双主要终点",
+          "arms": "利沙托克拉600 mg（D1–14）+ AZA 75 mg/m²（D1–7）vs 安慰剂 + AZA",
+          "population": "新诊断IPSS-R >3的MDS患者",
+          "eligibility": {
+            "keyInclusion": ["新诊断MDS", "IPSS-R评分>3", "中危/高危/极高危", "适合接受AZA治疗"],
+            "keyExclusion": ["源文件未提供完整排除标准", "正式使用时应核对ClinicalTrials.gov方案"],
+            "stratificationFactors": ["IPSS-R风险层级", "原始细胞比例", "TP53状态", "地区"]
+          },
+          "subgroupAnalyses": [
+            {"dimension": "结果状态", "subgroup": "所有预设亚组", "n": "464例计划", "endpoint": "CR率 / OS", "effect": "尚未披露", "ci": "尚未披露", "interactionP": "尚未披露", "conclusion": "III期进行中；不得将VERONA竞品亚组结果归入本研究"}
+          ],
+          "enrollment": 464,
+          "primaryEndpoint": "CR率 + OS（双主要终点）",
+          "secondaryEndpoints": ["PFS", "输血独立", "DoR", "安全性"],
+          "startDate": "2024",
+          "primaryCompletion": "源文件预计2029年CR率、2029–2030年OS读出",
+          "countries": ["全球多中心"],
+          "sponsor": "亚盛医药",
+          "fda": {
+            "regulatoryId": "全球注册III期",
+            "designation": "CDE（2024-08）、FDA/EMA（2025-08）许可",
+            "submissionStatus": "招募中",
+            "lastVerified": "源文件更新至2026-07"
+          },
+          "evidenceLevel": "随机双盲Phase 3 · 尚无结果",
+          "efficacyHighlights": [],
+          "safetyHighlights": [],
+          "result": "进行中的MDS注册III期，采用CR率和OS双主要终点；早期MDS疗效与安全性统一保留在NCT04964518。",
+          "source": "用户提供的亚盛_临床数据_Lisaftoclax.md",
+          "sources": [{"label": "ClinicalTrials.gov", "url": "https://clinicaltrials.gov/study/NCT06641414"}]
+        },
+        {
+          "id": "apg2575-mm-pd",
+          "name": "R/R MM 联合Pd早期队列",
+          "nct": "源文件未明确NCT",
+          "phase": "I/II期",
+          "status": "早期数据已披露",
+          "indication": "复发/难治性多发性骨髓瘤",
+          "design": "早期联合治疗队列；源文件未提供完整研究标识和方案",
+          "arms": "利沙托克拉 + 泊马度胺 + 地塞米松（Pd）",
+          "population": "R/R MM；源文件未提供完整基线及样本量",
+          "eligibility": {
+            "keyInclusion": ["R/R多发性骨髓瘤", "接受Pd为基础的联合方案"],
+            "keyExclusion": ["未披露"],
+            "stratificationFactors": ["未披露"]
+          },
+          "subgroupAnalyses": [
+            {"dimension": "结果完整性", "subgroup": "总体队列", "n": "未披露", "endpoint": "ORR / PFS", "effect": "63.9% / 9.7个月", "ci": "未报告", "interactionP": "未报告", "conclusion": "缺少明确NCT及完整来源，作为待补证据记录"}
+          ],
+          "enrollment": "未披露",
+          "primaryEndpoint": "源文件未披露",
+          "secondaryEndpoints": ["ORR", "PFS", "安全性"],
+          "startDate": "未披露",
+          "primaryCompletion": "早期数据已披露",
+          "countries": ["未披露"],
+          "sponsor": "亚盛医药",
+          "fda": {
+            "regulatoryId": "待补充",
+            "designation": "MM获FDA孤儿药认定",
+            "submissionStatus": "早期临床",
+            "lastVerified": "源文件更新至2026-07"
+          },
+          "evidenceLevel": "早期队列 · 研究标识待补",
+          "efficacyHighlights": [
+            {"label": "ORR", "value": "63.9%", "context": "利沙托克拉+Pd"},
+            {"label": "中位PFS", "value": "9.7个月", "context": "源文件未提供CI"}
+          ],
+          "safetyHighlights": [],
+          "result": "保留为待补证据条目；由于源文件未给出明确NCT、样本量和完整来源，未与其他试验合并。",
+          "source": "用户提供的亚盛_临床数据_Lisaftoclax.md",
+          "sources": []
+        }
+      ]
+    }
+  ]
+}

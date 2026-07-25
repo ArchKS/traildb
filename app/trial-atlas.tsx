@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import data from "./trials.json";
+import lisaftoclaxCompany from "./lisaftoclax.json";
 
 type FDA = {
   regulatoryId: string;
@@ -27,6 +28,17 @@ type SubgroupAnalysis = {
   conclusion: string;
 };
 
+type ResultMetric = {
+  label: string;
+  value: string;
+  context?: string;
+};
+
+type EvidenceSource = {
+  label: string;
+  url: string;
+};
+
 type Trial = {
   id: string;
   name: string;
@@ -39,7 +51,7 @@ type Trial = {
   population: string;
   eligibility: Eligibility;
   subgroupAnalyses: SubgroupAnalysis[];
-  enrollment: number;
+  enrollment: number | string;
   primaryEndpoint: string;
   secondaryEndpoints: string[];
   startDate: string;
@@ -49,6 +61,11 @@ type Trial = {
   fda: FDA;
   result: string;
   source: string;
+  dataCut?: string;
+  evidenceLevel?: string;
+  efficacyHighlights?: ResultMetric[];
+  safetyHighlights?: ResultMetric[];
+  sources?: EvidenceSource[];
 };
 
 type Pipeline = {
@@ -76,7 +93,7 @@ type FlatTrial = Trial & {
   pipelineId: string;
 };
 
-const companies = data.companies as Company[];
+const companies = [...(data.companies as Company[]), lisaftoclaxCompany as Company];
 const allPipelines = companies.flatMap((company) =>
   company.pipelines.map((pipeline) => ({ ...pipeline, company }))
 );
@@ -337,7 +354,10 @@ function TrialDetail({
             <Info label="试验设计" value={trial.design} wide />
             <Info label="目标入组人群" value={trial.population} wide />
             <Info label="治疗组 / 对照组" value={trial.arms} wide />
-            <Info label="计划入组" value={`${trial.enrollment} 例`} />
+            <Info
+              label="计划 / 实际入组"
+              value={typeof trial.enrollment === "number" ? `${trial.enrollment} 例` : trial.enrollment}
+            />
             <Info label="研究国家 / 地区" value={trial.countries.join("、")} />
           </div>
           <div className="eligibility-grid">
@@ -357,9 +377,25 @@ function TrialDetail({
           </div>
         </section>
 
+        {(trial.efficacyHighlights?.length || trial.safetyHighlights?.length) && (
+          <section className="detail-section results-section">
+            <div className="results-heading">
+              <h3><span>04</span>临床结果摘要</h3>
+              <div>
+                {trial.dataCut && <span>数据截止 {trial.dataCut}</span>}
+                {trial.evidenceLevel && <b>{trial.evidenceLevel}</b>}
+              </div>
+            </div>
+            <div className="results-columns">
+              <ResultMetrics title="疗效结果" metrics={trial.efficacyHighlights ?? []} tone="efficacy" />
+              <ResultMetrics title="安全性结果" metrics={trial.safetyHighlights ?? []} tone="safety" />
+            </div>
+          </section>
+        )}
+
         <section className="detail-section subgroup-section">
           <div className="subgroup-heading">
-            <h3><span>04</span>亚组分析</h3>
+            <h3><span>05</span>亚组分析</h3>
             <span>SUBGROUP / INTERACTION</span>
           </div>
           <div className="subgroup-table-wrap">
@@ -400,7 +436,7 @@ function TrialDetail({
 
         <section className="detail-section fda-section">
           <div className="fda-heading">
-            <h3><span>05</span>FDA 注册信息</h3>
+            <h3><span>06</span>FDA 注册信息</h3>
             <span>REGULATORY</span>
           </div>
           <div className="field-grid">
@@ -412,7 +448,7 @@ function TrialDetail({
         </section>
 
         <section className="detail-section">
-          <h3><span>06</span>结果与溯源</h3>
+          <h3><span>07</span>结果与溯源</h3>
           <div className="field-grid">
             <Info label="结果摘要" value={trial.result} wide />
             <Info label="数据来源" value={trial.source} />
@@ -422,8 +458,49 @@ function TrialDetail({
             模板建议：正式使用时补充 FDA Drugs@FDA、FDA 公告、研究方案版本、
             统计分析计划、关键安全性事件及原始来源链接。
           </p>
+          {trial.sources && trial.sources.length > 0 && (
+            <div className="source-links">
+              <span>原始来源</span>
+              <div>
+                {trial.sources.map((source) => (
+                  <a key={source.url} href={source.url} target="_blank" rel="noreferrer">
+                    {source.label} ↗
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
         </section>
       </div>
+    </div>
+  );
+}
+
+function ResultMetrics({
+  title,
+  metrics,
+  tone,
+}: {
+  title: string;
+  metrics: ResultMetric[];
+  tone: "efficacy" | "safety";
+}) {
+  return (
+    <div className={`result-metrics ${tone}`}>
+      <h4>{title}</h4>
+      {metrics.length ? (
+        <div>
+          {metrics.map((metric) => (
+            <div className="result-metric" key={`${metric.label}-${metric.value}`}>
+              <span>{metric.label}</span>
+              <strong>{metric.value}</strong>
+              {metric.context && <small>{metric.context}</small>}
+            </div>
+          ))}
+        </div>
+      ) : (
+        <p>尚未披露结果</p>
+      )}
     </div>
   );
 }
@@ -640,9 +717,11 @@ function CompareDrawer({
                   ["关键排除标准", (t: FlatTrial) => t.eligibility.keyExclusion.join("；")],
                   ["分层因素", (t: FlatTrial) => t.eligibility.stratificationFactors.join("；")],
                   ["治疗方案", (t: FlatTrial) => t.arms],
-                  ["计划入组", (t: FlatTrial) => `${t.enrollment} 例`],
+                  ["计划 / 实际入组", (t: FlatTrial) => typeof t.enrollment === "number" ? `${t.enrollment} 例` : t.enrollment],
                   ["主要终点", (t: FlatTrial) => t.primaryEndpoint],
                   ["主要完成", (t: FlatTrial) => t.primaryCompletion],
+                  ["疗效摘要", (t: FlatTrial) => (t.efficacyHighlights ?? []).map((item) => `${item.label} ${item.value}`).join("；") || "尚未披露"],
+                  ["安全性摘要", (t: FlatTrial) => (t.safetyHighlights ?? []).map((item) => `${item.label} ${item.value}`).join("；") || "尚未披露"],
                   ["亚组分析", (t: FlatTrial) => t.subgroupAnalyses.map((item) => `${item.dimension}：${item.subgroup}，${item.effect}`).join("；")],
                   ["FDA / 申报", (t: FlatTrial) => `${t.fda.regulatoryId} · ${t.fda.submissionStatus}`],
                 ].map(([label, getter]) => (
