@@ -149,12 +149,6 @@ function Home({
   onPipeline: (pipelineId: string) => void;
 }) {
   const [query, setQuery] = useState("");
-  const [recent, setRecent] = useState<string[]>(["ak112"]);
-
-  useEffect(() => {
-    const saved = localStorage.getItem("trialscope-recent");
-    if (saved) setRecent(JSON.parse(saved));
-  }, []);
 
   const visibleCompanies = useMemo(() => {
     const keyword = query.trim().toLowerCase();
@@ -178,11 +172,6 @@ function Home({
       }))
       .filter((company) => company.pipelines.length > 0);
   }, [query]);
-
-  const recentPipelines = recent
-    .map((id) => allPipelines.find((item) => item.id === id))
-    .filter(Boolean)
-    .slice(0, 4) as (Pipeline & { company: Company })[];
 
   return (
     <main>
@@ -229,37 +218,6 @@ function Home({
         </div>
       </section>
 
-      <section className="content-section recent-section">
-        <div className="section-heading">
-          <div>
-            <span className="section-kicker">RECENT</span>
-            <h2>最近访问管线</h2>
-          </div>
-          <span className="muted">保存在当前设备</span>
-        </div>
-        <div className="recent-grid">
-          {recentPipelines.map((pipeline) => (
-            <button
-              key={pipeline.id}
-              className="recent-card"
-              onClick={() => onPipeline(pipeline.id)}
-            >
-              <div>
-                <span className="molecule-dot" />
-                <span>{pipeline.company.name}</span>
-              </div>
-              <strong>{pipeline.code}</strong>
-              <p>{pipeline.target}</p>
-              <span className="arrow">↗</span>
-            </button>
-          ))}
-          <div className="recent-empty">
-            <span>+</span>
-            <p>访问更多管线后<br />将显示在这里</p>
-          </div>
-        </div>
-      </section>
-
       <section className="content-section companies-section">
         <div className="section-heading">
           <div>
@@ -303,39 +261,32 @@ function Home({
   );
 }
 
-function TrialDetail({
+function TrialDocument({
   trial,
   pipeline,
   company,
-  selected,
-  onToggle,
-  onClose,
 }: {
   trial: Trial;
   pipeline: Pipeline;
   company: Company;
-  selected: boolean;
-  onToggle: () => void;
-  onClose: () => void;
 }) {
   return (
-    <div className="detail-overlay" role="dialog" aria-modal="true" aria-label={`${trial.name} 临床详情`}>
-      <div className="detail-panel">
+    <main className="clinical-page" aria-label={`${trial.name} 临床详情`}>
+      <div className="clinical-document">
         <div className="detail-top">
           <div>
             <span className="section-kicker">FDA CLINICAL TEMPLATE</span>
             <h2>{trial.name}</h2>
             <p>{company.name} · {pipeline.code} · {trial.nct}</p>
           </div>
-          <button className="close-button" onClick={onClose} aria-label="关闭">×</button>
+          <a className="clinical-back" href={`/#pipeline/${pipeline.id}`}>← 返回管线</a>
         </div>
 
         <div className="detail-status-row">
           <span className={toneClass(trial.status)}>{trial.status}</span>
           <span className="phase-pill">{trial.phase}</span>
-          <button className={selected ? "select-trial selected" : "select-trial"} onClick={onToggle}>
-            {selected ? "✓ 已加入对比" : "+ 加入对比"}
-          </button>
+          {trial.dataCut && <span className="clinical-datacut">数据截止 {trial.dataCut}</span>}
+          {trial.evidenceLevel && <span className="clinical-evidence">{trial.evidenceLevel}</span>}
         </div>
 
         <section className="detail-section">
@@ -476,6 +427,57 @@ function TrialDetail({
           )}
         </section>
       </div>
+    </main>
+  );
+}
+
+export function ClinicalTrialPage() {
+  const [trialId, setTrialId] = useState<string | null>(null);
+
+  useEffect(() => {
+    setTrialId(new URLSearchParams(window.location.search).get("trial"));
+  }, []);
+
+  const flatTrial = allTrials.find((trial) => trial.id === trialId);
+  const pipelineRecord = flatTrial
+    ? allPipelines.find((pipeline) => pipeline.id === flatTrial.pipelineId)
+    : undefined;
+
+  if (!flatTrial || !pipelineRecord) {
+    return (
+      <div className="clinical-loading">
+        <span className="brand-mark">TS</span>
+        <p>{trialId === null ? "正在读取临床数据…" : "未找到该临床记录"}</p>
+        {trialId !== null && <a href="/">返回管线图谱</a>}
+      </div>
+    );
+  }
+
+  return (
+    <div className="app-shell clinical-app">
+      <header className="topbar">
+        <a className="brand" href="/">
+          <span className="brand-mark">TS</span>
+          <span>
+            <b>TrialScope</b>
+            <small>Clinical Intelligence</small>
+          </span>
+        </a>
+        <nav>
+          <a href={`/#pipeline/${pipelineRecord.id}`}>返回 {pipelineRecord.code}</a>
+          <span className="source-badge">LOCAL DATA</span>
+        </nav>
+      </header>
+      <TrialDocument
+        trial={flatTrial}
+        pipeline={pipelineRecord}
+        company={pipelineRecord.company}
+      />
+      <footer>
+        <span><b>TrialScope</b> · 本地临床情报模板</span>
+        <span>{flatTrial.nct}</span>
+        <span>仅供研究，不构成医疗建议</span>
+      </footer>
     </div>
   );
 }
@@ -567,7 +569,6 @@ function PipelinePage({
 }) {
   const found = allPipelines.find((item) => item.id === pipelineId) ?? allPipelines[0];
   const pipeline = found as Pipeline & { company: Company };
-  const [activeTrial, setActiveTrial] = useState<Trial | null>(null);
 
   return (
     <main className="pipeline-page">
@@ -615,10 +616,10 @@ function PipelinePage({
           </div>
           {pipeline.trials.map((trial) => (
             <div className="trial-row" key={trial.id}>
-              <button className="trial-name" onClick={() => setActiveTrial(trial)}>
+              <a className="trial-name" href={`/clinical?trial=${encodeURIComponent(trial.id)}`}>
                 <strong>{trial.name}</strong>
                 <small>{trial.nct}</small>
-              </button>
+              </a>
               <span className="phase-pill">{trial.phase}</span>
               <p>{trial.indication}</p>
               <span className={toneClass(trial.status)}>{trial.status}</span>
@@ -641,16 +642,6 @@ function PipelinePage({
         </div>
       </section>
 
-      {activeTrial && (
-        <TrialDetail
-          trial={activeTrial}
-          pipeline={pipeline}
-          company={pipeline.company}
-          selected={selectedIds.includes(activeTrial.id)}
-          onToggle={() => onToggle(activeTrial.id)}
-          onClose={() => setActiveTrial(null)}
-        />
-      )}
     </main>
   );
 }
@@ -770,8 +761,6 @@ export function TrialAtlas() {
   const openPipeline = (id: string) => {
     setPipelineId(id);
     window.location.hash = `pipeline/${id}`;
-    const saved = JSON.parse(localStorage.getItem("trialscope-recent") ?? "[]") as string[];
-    localStorage.setItem("trialscope-recent", JSON.stringify([id, ...saved.filter((item) => item !== id)].slice(0, 4)));
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 

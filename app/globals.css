@@ -50,6 +50,7 @@ button { color: inherit; }
   cursor: pointer;
   padding: 0;
   text-align: left;
+  text-decoration: none;
 }
 
 .brand-mark {
@@ -75,6 +76,13 @@ button { color: inherit; }
   background: transparent;
   padding: 10px 13px;
   cursor: pointer;
+  font-size: 13px;
+  font-weight: 650;
+}
+.topbar nav a {
+  color: var(--ink);
+  padding: 10px 13px;
+  text-decoration: none;
   font-size: 13px;
   font-weight: 650;
 }
@@ -104,9 +112,9 @@ button { color: inherit; }
 
 .hero {
   max-width: 1240px;
-  min-height: 490px;
+  min-height: 430px;
   margin: 0 auto;
-  padding: 84px 42px 66px;
+  padding: 64px 42px 54px;
   display: grid;
   grid-template-columns: 1.5fr .65fr;
   gap: 90px;
@@ -190,9 +198,9 @@ button { color: inherit; }
 .hero-metrics small { display: flex; align-items: center; gap: 8px; color: #668175; font-size: 10px; margin-top: 22px; }
 .hero-metrics i { width: 7px; height: 7px; background: #28b57a; border-radius: 50%; box-shadow: 0 0 0 5px rgba(40, 181, 122, .12); }
 
-.content-section { max-width: 1240px; margin: 0 auto; padding: 62px 42px; }
+.content-section { max-width: 1240px; margin: 0 auto; padding: 46px 42px; }
 .recent-section { border-top: 1px solid var(--line); }
-.companies-section { padding-bottom: 90px; }
+.companies-section { padding-top: 34px; padding-bottom: 90px; border-top: 1px solid var(--line); }
 
 .section-heading { display: flex; align-items: end; justify-content: space-between; margin-bottom: 24px; }
 .section-heading h2, .pipeline-toolbar h2 { margin: 7px 0 0; font-size: 28px; letter-spacing: -.045em; }
@@ -263,7 +271,7 @@ button { color: inherit; }
 .trial-table-head, .trial-row { display: grid; grid-template-columns: 1.15fr .55fr 1.5fr .75fr .4fr .45fr; align-items: center; gap: 15px; }
 .trial-table-head { padding: 13px 18px; background: #edf2ef; color: #7a8982; font-family: var(--font-geist-mono); font-size: 8px; letter-spacing: .08em; }
 .trial-row { min-height: 94px; padding: 16px 18px; border-top: 1px solid #e8eeea; }
-.trial-name { border: 0; background: transparent; padding: 0; text-align: left; cursor: pointer; }
+.trial-name { border: 0; background: transparent; padding: 0; text-align: left; cursor: pointer; text-decoration: none; }
 .trial-name strong { display: block; font-size: 15px; color: #1d604c; }
 .trial-name small { display: block; color: var(--muted); margin-top: 6px; font-family: var(--font-geist-mono); font-size: 9px; }
 .trial-row > p { font-size: 11px; line-height: 1.55; margin: 0; color: #4f6159; }
@@ -353,6 +361,40 @@ button { color: inherit; }
 .source-links a { color: #245f4b; background: white; border: 1px solid #cbdad2; border-radius: 4px; padding: 7px 9px; font-size: 8px; text-decoration: none; }
 .source-links a:hover { border-color: #6f9c88; background: #edf7f2; }
 
+.clinical-app { background: #edf1ee; }
+.clinical-page { max-width: 1440px; margin: 0 auto; padding: 28px 32px 54px; }
+.clinical-document { background: #f8f9f7; border: 1px solid #d7e0db; box-shadow: 0 16px 50px rgba(18, 63, 52, .07); }
+.clinical-document .detail-top { padding: 26px 30px 22px; align-items: flex-start; }
+.clinical-document .detail-top h2 { margin: 6px 0 4px; font-size: 32px; }
+.clinical-document .detail-top p { font-size: 10px; }
+.clinical-back { color: #d3e8de; border: 1px solid rgba(255,255,255,.25); border-radius: 4px; padding: 8px 11px; text-decoration: none; font-size: 9px; white-space: nowrap; }
+.clinical-document .detail-status-row { padding: 10px 24px; background: white; }
+.clinical-datacut { color: #6e7e76; font-size: 8px; margin-left: auto; }
+.clinical-evidence { color: #4a5793; background: #e8edf9; border-radius: 100px; padding: 5px 8px; font-size: 8px; }
+.clinical-document .detail-section { margin: 0; padding: 19px 24px; border-bottom: 1px solid var(--line); }
+.clinical-document .detail-section h3 { margin-bottom: 12px; font-size: 12px; }
+.clinical-document .field-grid { grid-template-columns: repeat(4, 1fr); }
+.clinical-document .info-field { min-height: 61px; padding: 11px 13px; }
+.clinical-document .info-field.wide { grid-column: span 2; min-height: 61px; }
+.clinical-document .info-field span { margin-bottom: 5px; font-size: 8px; }
+.clinical-document .info-field strong { font-size: 10px; line-height: 1.45; }
+.clinical-document .eligibility-grid { grid-template-columns: repeat(3, 1fr); gap: 7px; margin-top: 8px; }
+.clinical-document .eligibility-block { padding: 11px 13px; }
+.clinical-document .eligibility-block.stratify { grid-column: span 1; }
+.clinical-document .eligibility-block ul { margin-top: 8px; font-size: 8px; line-height: 1.65; }
+.clinical-document .results-columns { gap: 7px; }
+.clinical-document .result-metric { min-height: 67px; padding: 9px 11px; }
+.clinical-document .result-metric strong { margin: 4px 0 3px; font-size: 11px; }
+.clinical-document .result-metrics.pk .result-metric strong { font-size: 9px; }
+.clinical-document .subgroup-table th,
+.clinical-document .subgroup-table td { padding: 8px 9px; font-size: 7.5px; }
+.clinical-document .analysis-note { margin-top: 7px; padding: 8px 11px; }
+.clinical-document .fda-section { margin: 0; padding: 19px 24px; border-radius: 0; }
+.clinical-document .template-note { margin: 8px 0 0; padding: 10px 12px; }
+.clinical-loading { min-height: 100vh; display: grid; place-items: center; align-content: center; gap: 14px; background: var(--paper); color: var(--muted); }
+.clinical-loading p { margin: 0; font-size: 12px; }
+.clinical-loading a { color: var(--forest); font-size: 11px; }
+
 .compare-panel { width: min(1180px, 98vw); height: 100%; overflow-y: auto; background: #f6f7f5; box-shadow: -20px 0 60px rgba(0,0,0,.18); }
 .compare-header { padding: 35px 40px 28px; display: flex; justify-content: space-between; background: var(--forest); color: white; }
 .compare-picker { padding: 24px 40px; border-bottom: 1px solid var(--line); }
@@ -397,6 +439,11 @@ footer { max-width: 1240px; margin: 0 auto; padding: 24px 42px; border-top: 1px 
   .trial-row > b { display: none; }
   .trial-row .status { grid-column: 1; }
   .compare-check { grid-column: 2; grid-row: 3; }
+  .clinical-page { padding: 18px; }
+  .clinical-document .field-grid { grid-template-columns: 1fr 1fr; }
+  .clinical-document .info-field.wide { grid-column: span 2; }
+  .clinical-document .eligibility-grid { grid-template-columns: 1fr; }
+  .clinical-document .eligibility-block.stratify { grid-column: span 1; }
 }
 
 @media (max-width: 560px) {
@@ -429,6 +476,17 @@ footer { max-width: 1240px; margin: 0 auto; padding: 24px 42px; border-top: 1px 
   .detail-section { margin: 0 22px; }
   .fda-section { margin: 0 12px; padding: 25px 10px 10px; }
   .compare-picker, .comparison-table-wrap { padding-left: 20px; padding-right: 20px; }
+  .clinical-page { padding: 0; }
+  .clinical-document { border-left: 0; border-right: 0; }
+  .clinical-document .detail-top { padding: 22px 20px 18px; }
+  .clinical-document .detail-top h2 { font-size: 26px; }
+  .clinical-back { padding: 7px 8px; }
+  .clinical-document .detail-status-row,
+  .clinical-document .detail-section,
+  .clinical-document .fda-section { padding-left: 16px; padding-right: 16px; }
+  .clinical-document .field-grid { grid-template-columns: 1fr; }
+  .clinical-document .info-field.wide { grid-column: span 1; }
+  .clinical-datacut { display: none; }
   footer { padding: 22px 24px; flex-direction: column; gap: 8px; }
 }
 
