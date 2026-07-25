@@ -536,6 +536,42 @@ footer { max-width: 1240px; margin: 0 auto; padding: 24px 42px; border-top: 1px 
   footer { padding: 22px 24px; flex-direction: column; gap: 8px; }
 }
 
+/* Clinical page accessibility floor: no readable text below 12px. */
+.clinical-app .topbar small,
+.clinical-app .topbar nav a,
+.clinical-app .source-badge,
+.clinical-app footer,
+.clinical-page .section-kicker,
+.clinical-page .detail-top p,
+.clinical-page .clinical-back,
+.clinical-page .status,
+.clinical-page .phase-pill,
+.clinical-page .clinical-datacut,
+.clinical-page .clinical-evidence,
+.clinical-page .detail-section h3 span,
+.clinical-page .info-field span,
+.clinical-page .info-field strong,
+.clinical-page .eligibility-block > div span,
+.clinical-page .eligibility-block strong,
+.clinical-page .eligibility-block li,
+.clinical-page .results-heading > div span,
+.clinical-page .results-heading > div b,
+.clinical-page .result-metrics h4,
+.clinical-page .result-metric span,
+.clinical-page .result-metric strong,
+.clinical-page .result-metric small,
+.clinical-page .result-metrics > p,
+.clinical-page .subgroup-heading > span,
+.clinical-page .subgroup-table th,
+.clinical-page .subgroup-table td,
+.clinical-page .analysis-note,
+.clinical-page .fda-heading > span,
+.clinical-page .template-note,
+.clinical-page .source-links > span,
+.clinical-page .source-links a {
+  font-size: 12px !important;
+}
+
 @media (prefers-reduced-motion: reduce) {
   * { scroll-behavior: auto !important; transition: none !important; }
 }
