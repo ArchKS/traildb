@@ -269,12 +269,13 @@ button { color: inherit; }
 .pipeline-toolbar p { margin: 8px 0 0; color: var(--muted); font-size: 11px; }
 .primary-button { border: 0; border-radius: 4px; background: var(--forest); color: white; padding: 12px 16px; font-weight: 650; font-size: 11px; cursor: pointer; }
 .trial-table { background: white; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
-.trial-table-head, .trial-row { display: grid; grid-template-columns: 1.15fr .55fr 1.5fr .75fr .4fr .45fr; align-items: center; gap: 15px; }
+.trial-table-head, .trial-row { display: grid; grid-template-columns: 1.12fr .48fr .62fr 1.35fr .7fr .36fr .42fr; align-items: center; gap: 13px; }
 .trial-table-head { padding: 13px 18px; background: #edf2ef; color: #7a8982; font-family: var(--font-geist-mono); font-size: 8px; letter-spacing: .08em; }
 .trial-row { min-height: 94px; padding: 16px 18px; border-top: 1px solid #e8eeea; }
 .trial-name { border: 0; background: transparent; padding: 0; text-align: left; cursor: pointer; text-decoration: none; }
 .trial-name strong { display: block; font-size: 15px; color: #1d604c; }
 .trial-name small { display: block; color: var(--muted); margin-top: 6px; font-family: var(--font-geist-mono); font-size: 9px; }
+.trial-start { color: #556860; font-family: var(--font-geist-mono); font-size: 11px; white-space: nowrap; }
 .trial-row > p { font-size: 11px; line-height: 1.55; margin: 0; color: #4f6159; }
 .trial-row > b { font-size: 13px; }
 .phase-pill { width: fit-content; display: inline-block; background: #e4f3eb; color: #236a51; padding: 5px 8px; border-radius: 3px; font-size: 9px; font-weight: 700; }
@@ -585,8 +586,9 @@ footer { max-width: 1240px; margin: 0 auto; padding: 24px 42px; border-top: 1px 
   .trial-row { grid-template-columns: 1fr auto; gap: 10px; }
   .trial-row > p { grid-column: 1 / -1; }
   .trial-row > b { display: none; }
+  .trial-row .trial-start { grid-column: 1; }
   .trial-row .status { grid-column: 1; }
-  .compare-check { grid-column: 2; grid-row: 3; }
+  .compare-check { grid-column: 2; grid-row: 4; }
   .clinical-page { padding: 18px; }
   .clinical-document .field-grid { grid-template-columns: 1fr 1fr; }
   .clinical-document .info-field.wide { grid-column: span 2; }

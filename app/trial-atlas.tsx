@@ -631,6 +631,7 @@ function PipelinePage({
           <div className="trial-table-head">
             <span>试验 / 注册号</span>
             <span>阶段</span>
+            <span>开始时间</span>
             <span>适应症</span>
             <span>状态</span>
             <span>入组</span>
@@ -643,6 +644,7 @@ function PipelinePage({
                 <small>{trial.nct}</small>
               </a>
               <span className="phase-pill">{trial.phase}</span>
+              <time className="trial-start" dateTime={trial.startDate}>{trial.startDate}</time>
               <p>{trial.indication}</p>
               <span className={toneClass(trial.status)}>{trial.status}</span>
               <b>{trial.enrollment}</b>
