@@ -12,3 +12,12 @@
 
 
 所有数据支持从本地读取，不要用数据库，可以用csv、markdown、json、excel
+
+
+
+主要写在这里：
+APG-2575结构化临床数据：[app/lisaftoclax.json](/Users/zendu/Documents/trialdb/app/lisaftoclax.json)
+去重及冲突处理说明：[data/lisaftoclax-dedup-notes.md](/Users/zendu/Documents/trialdb/data/lisaftoclax-dedup-notes.md)
+原有其他公司临床数据：[app/trials.json](/Users/zendu/Documents/trialdb/app/trials.json)
+CSV字段模板：[data/trials-template.csv](/Users/zendu/Documents/trialdb/data/trials-template.csv)
+网站读取 trials.json 和 lisaftoclax.json，在页面中合并展示。
