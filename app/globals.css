@@ -420,6 +420,52 @@ button { color: inherit; }
 
 footer { max-width: 1240px; margin: 0 auto; padding: 24px 42px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; color: #83918b; font-size: 9px; }
 
+/* 13-inch laptop tuning: larger type, tighter vertical rhythm. */
+@media (min-width: 901px) and (max-width: 1440px) {
+  .clinical-page { max-width: 1320px; padding: 14px 18px 30px; }
+  .clinical-document .detail-top { padding: 18px 22px 16px; }
+  .clinical-document .detail-top h2 { margin: 5px 0 3px; font-size: 31px; }
+  .clinical-document .detail-top p { font-size: 11px; }
+  .clinical-back { padding: 7px 10px; font-size: 10px; }
+  .clinical-document .detail-status-row { padding: 8px 18px; }
+  .clinical-datacut, .clinical-evidence { font-size: 9px; }
+
+  .clinical-document .detail-section,
+  .clinical-document .fda-section { padding: 13px 18px; }
+  .clinical-document .detail-section h3 { margin-bottom: 9px; font-size: 13px; }
+
+  .clinical-document .info-field,
+  .clinical-document .info-field.wide { min-height: 0; padding: 9px 11px; }
+  .clinical-document .info-field span { margin-bottom: 4px; font-size: 9.5px; }
+  .clinical-document .info-field strong { font-size: 11.5px; line-height: 1.4; }
+
+  .clinical-document .eligibility-grid { gap: 6px; margin-top: 6px; }
+  .clinical-document .eligibility-block { padding: 9px 10px; }
+  .clinical-document .eligibility-block > div { gap: 7px; }
+  .clinical-document .eligibility-block > div span { width: 23px; height: 23px; font-size: 8.5px; }
+  .clinical-document .eligibility-block strong { font-size: 11.5px; }
+  .clinical-document .eligibility-block ul { margin-top: 6px; font-size: 9.5px; line-height: 1.5; }
+
+  .clinical-document .results-heading > div span,
+  .clinical-document .results-heading > div b { font-size: 9px; }
+  .clinical-document .result-metrics h4 { padding: 9px 11px; font-size: 11px; }
+  .clinical-document .result-metric { min-height: 0; padding: 8px 10px; }
+  .clinical-document .result-metric span { font-size: 9px; }
+  .clinical-document .result-metric strong { margin: 3px 0 2px; font-size: 12px; line-height: 1.25; }
+  .clinical-document .result-metric small { font-size: 8.5px; line-height: 1.35; }
+  .clinical-document .result-metrics.pk .result-metric strong { font-size: 10.5px; }
+
+  .clinical-document .subgroup-table { min-width: 1040px; }
+  .clinical-document .subgroup-table th,
+  .clinical-document .subgroup-table td { padding: 7px 8px; font-size: 9px; line-height: 1.4; }
+  .clinical-document .subgroup-table thead th { font-size: 8.5px; }
+  .clinical-document .analysis-note { margin-top: 6px; padding: 7px 10px; font-size: 9px; }
+  .clinical-document .template-note { margin-top: 6px; padding: 8px 10px; font-size: 9.5px; }
+  .clinical-document .source-links { margin-top: 8px; padding-top: 9px; }
+  .clinical-document .source-links > span { margin-bottom: 6px; font-size: 9px; }
+  .clinical-document .source-links a { padding: 6px 8px; font-size: 9px; }
+}
+
 @media (max-width: 900px) {
   .topbar { padding: 0 20px; }
   .topbar nav > button:first-child, .source-badge { display: none; }
