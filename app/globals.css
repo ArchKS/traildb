@@ -299,6 +299,26 @@ button { color: inherit; }
 .info-field span { display: block; color: #87958f; font-size: 9px; margin-bottom: 8px; }
 .info-field strong { display: block; font-size: 11px; line-height: 1.55; }
 .info-field .mono { font-family: var(--font-geist-mono); color: #285d4c; }
+.eligibility-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 12px; }
+.eligibility-block { background: white; border: 1px solid var(--line); border-radius: 5px; padding: 16px; }
+.eligibility-block.stratify { grid-column: span 2; }
+.eligibility-block > div { display: flex; align-items: center; gap: 9px; }
+.eligibility-block > div span { width: 25px; height: 25px; display: grid; place-items: center; border-radius: 50%; font-family: var(--font-geist-mono); font-size: 8px; font-weight: 800; }
+.eligibility-block.include > div span { background: #dff4e9; color: #18714e; }
+.eligibility-block.exclude > div span { background: #fff0e7; color: #b0572e; }
+.eligibility-block.stratify > div span { background: #e8e9f8; color: #555b9c; }
+.eligibility-block strong { font-size: 11px; }
+.eligibility-block ul { margin: 13px 0 0; padding: 0 0 0 17px; color: #53655d; font-size: 9px; line-height: 1.8; }
+.subgroup-heading { display: flex; align-items: center; justify-content: space-between; }
+.subgroup-heading > span { font-family: var(--font-geist-mono); font-size: 8px; letter-spacing: .1em; color: #73877e; }
+.subgroup-table-wrap { overflow-x: auto; border: 1px solid var(--line); }
+.subgroup-table { width: 100%; min-width: 930px; border-collapse: collapse; background: white; }
+.subgroup-table th, .subgroup-table td { border-right: 1px solid #e3e9e6; border-bottom: 1px solid #e3e9e6; padding: 11px 10px; text-align: left; vertical-align: top; font-size: 8px; line-height: 1.55; }
+.subgroup-table thead th { background: #eaf1ed; color: #687a72; font-family: var(--font-geist-mono); font-size: 7px; letter-spacing: .04em; white-space: nowrap; }
+.subgroup-table tbody th { color: #235d49; background: #f7faf8; min-width: 80px; }
+.subgroup-table td:last-child { min-width: 190px; }
+.subgroup-table .effect-cell { color: #c34e24; font-family: var(--font-geist-mono); font-weight: 700; white-space: nowrap; }
+.analysis-note { margin: 10px 0 0; padding: 11px 13px; background: #f0f2fb; border-left: 3px solid #6972ad; color: #5d6280; font-size: 8px; line-height: 1.65; }
 .fda-section { background: #e9f3ee; margin-left: 24px; margin-right: 24px; padding: 26px 14px 14px; border-radius: 6px; }
 .fda-heading { display: flex; justify-content: space-between; align-items: center; }
 .fda-heading > span { font-family: var(--font-geist-mono); font-size: 8px; letter-spacing: .12em; color: #608577; }
@@ -367,6 +387,8 @@ footer { max-width: 1240px; margin: 0 auto; padding: 24px 42px; border-top: 1px 
   .pipeline-toolbar h2 { font-size: 23px; }
   .field-grid { grid-template-columns: 1fr; }
   .info-field.wide { grid-column: span 1; }
+  .eligibility-grid { grid-template-columns: 1fr; }
+  .eligibility-block.stratify { grid-column: span 1; }
   .detail-top, .compare-header { padding: 28px 22px 22px; }
   .detail-status-row { padding: 15px 22px; }
   .detail-section { margin: 0 22px; }

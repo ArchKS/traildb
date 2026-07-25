@@ -7,8 +7,12 @@
 - `companies[]`：公司资料及旗下管线
 - `pipelines[]`：药物名称、靶点、技术类型、阶段、适应症
 - `trials[]`：临床试验与 FDA 信息模板
+  - `eligibility`：关键纳入标准、关键排除标准、随机分层因素
+  - `subgroupAnalyses[]`：分析维度、亚组、样本量、终点、效应值、
+    95% CI、交互 P 值与结论
 
 `trials-template.csv` 提供扁平化字段示例，适合在 Excel 中编辑后导出 CSV。
+同一临床如有多个亚组，可复制为多行，保持 `trial_id` 一致并分别填写亚组字段。
 如需直接使用 `.xlsx`，建议在发布前将 Excel 转换为同字段 CSV 或 JSON；
 这样浏览器端无需额外解析依赖，版本管理也更清晰。
 

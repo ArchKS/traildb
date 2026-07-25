@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-18",
+  "updatedAt": "2026-07-25",
   "companies": [
     {
       "id": "akeso",
@@ -26,6 +26,16 @@
               "design": "随机、双盲、安慰剂对照、多中心",
               "arms": "依沃西 + 化疗 vs 安慰剂 + 化疗",
               "population": "EGFR突变、第三代EGFR-TKI治疗进展",
+              "eligibility": {
+                "keyInclusion": ["组织学或细胞学确诊的晚期非鳞NSCLC", "存在EGFR敏感突变", "第三代EGFR-TKI治疗后疾病进展", "ECOG PS 0–1"],
+                "keyExclusion": ["既往接受过PD-(L)1或VEGF通路联合治疗", "存在未控制的中枢神经系统转移", "活动性自身免疫性疾病"],
+                "stratificationFactors": ["脑转移：有 vs 无", "EGFR突变类型：19del vs L858R vs 其他", "既往奥希替尼治疗：是 vs 否"]
+              },
+              "subgroupAnalyses": [
+                {"dimension": "脑转移", "subgroup": "有脑转移", "n": "待录入", "endpoint": "PFS", "effect": "HR 待录入", "ci": "95% CI 待录入", "interactionP": "待录入", "conclusion": "模板占位：描述方向、一致性与不确定性"},
+                {"dimension": "EGFR突变", "subgroup": "19del / L858R", "n": "待录入", "endpoint": "PFS", "effect": "HR 待录入", "ci": "95% CI 待录入", "interactionP": "待录入", "conclusion": "模板占位：同时报告各层效应值与交互检验"},
+                {"dimension": "PD-L1表达", "subgroup": "TPS <1% / 1–49% / ≥50%", "n": "待录入", "endpoint": "PFS", "effect": "HR 待录入", "ci": "95% CI 待录入", "interactionP": "待录入", "conclusion": "探索性分析，需注明是否预设及多重性控制"}
+              ],
               "enrollment": 322,
               "primaryEndpoint": "IRC评估的PFS",
               "secondaryEndpoints": ["OS", "ORR", "DoR", "安全性"],
@@ -52,6 +62,15 @@
               "design": "随机、双盲、安慰剂对照、多中心",
               "arms": "依沃西 + 化疗 vs 安慰剂 + 化疗",
               "population": "EGFR突变、既往接受EGFR-TKI治疗",
+              "eligibility": {
+                "keyInclusion": ["晚期或转移性非鳞NSCLC", "EGFR突变阳性", "既往EGFR-TKI治疗失败", "至少一个可测量病灶"],
+                "keyExclusion": ["既往接受免疫检查点抑制剂", "严重出血风险", "未控制的脑转移"],
+                "stratificationFactors": ["EGFR-TKI类型", "脑转移状态", "EGFR突变亚型"]
+              },
+              "subgroupAnalyses": [
+                {"dimension": "脑转移", "subgroup": "有 vs 无", "n": "待录入", "endpoint": "PFS", "effect": "HR 待录入", "ci": "95% CI 待录入", "interactionP": "待录入", "conclusion": "模板占位"},
+                {"dimension": "EGFR突变", "subgroup": "19del vs L858R", "n": "待录入", "endpoint": "PFS", "effect": "HR 待录入", "ci": "95% CI 待录入", "interactionP": "待录入", "conclusion": "模板占位"}
+              ],
               "enrollment": 391,
               "primaryEndpoint": "BICR评估的PFS",
               "secondaryEndpoints": ["OS", "ORR", "DoR", "安全性"],
@@ -78,6 +97,16 @@
               "design": "随机、双盲、全球多中心",
               "arms": "依沃西 + 化疗 vs 帕博利珠单抗 + 化疗",
               "population": "既往未接受系统治疗的转移性鳞状NSCLC",
+              "eligibility": {
+                "keyInclusion": ["组织学确诊的转移性鳞状NSCLC", "一线治疗场景", "无可靶向驱动基因改变", "ECOG PS 0–1"],
+                "keyExclusion": ["既往接受晚期疾病系统治疗", "活动性自身免疫性疾病", "存在显著出血或血栓风险"],
+                "stratificationFactors": ["PD-L1 TPS", "地区", "脑转移状态", "吸烟史"]
+              },
+              "subgroupAnalyses": [
+                {"dimension": "PD-L1表达", "subgroup": "TPS <1% / 1–49% / ≥50%", "n": "待录入", "endpoint": "PFS / OS", "effect": "HR 待录入", "ci": "95% CI 待录入", "interactionP": "待录入", "conclusion": "关键预设亚组，正式数据需注明分析层级"},
+                {"dimension": "地区", "subgroup": "亚洲 vs 非亚洲", "n": "待录入", "endpoint": "PFS / OS", "effect": "HR 待录入", "ci": "95% CI 待录入", "interactionP": "待录入", "conclusion": "模板占位"},
+                {"dimension": "脑转移", "subgroup": "有 vs 无", "n": "待录入", "endpoint": "PFS", "effect": "HR 待录入", "ci": "95% CI 待录入", "interactionP": "待录入", "conclusion": "模板占位"}
+              ],
               "enrollment": 420,
               "primaryEndpoint": "BICR评估的PFS与OS",
               "secondaryEndpoints": ["ORR", "DoR", "安全性", "生活质量"],
@@ -115,6 +144,15 @@
               "design": "随机、双盲、多中心",
               "arms": "卡度尼利 + 化疗 ± 贝伐珠单抗 vs 安慰剂 + 化疗 ± 贝伐珠单抗",
               "population": "未接受系统治疗的晚期宫颈癌",
+              "eligibility": {
+                "keyInclusion": ["持续、复发或转移性宫颈癌", "既往未接受晚期疾病系统治疗", "至少一个可测量病灶", "ECOG PS 0–1"],
+                "keyExclusion": ["既往接受免疫检查点抑制剂", "不受控制的出血", "活动性自身免疫性疾病"],
+                "stratificationFactors": ["PD-L1表达", "贝伐珠单抗使用", "既往放化疗"]
+              },
+              "subgroupAnalyses": [
+                {"dimension": "PD-L1表达", "subgroup": "阳性 vs 阴性", "n": "待录入", "endpoint": "PFS / OS", "effect": "HR 待录入", "ci": "95% CI 待录入", "interactionP": "待录入", "conclusion": "模板占位"},
+                {"dimension": "贝伐珠单抗", "subgroup": "使用 vs 未使用", "n": "待录入", "endpoint": "PFS / OS", "effect": "HR 待录入", "ci": "95% CI 待录入", "interactionP": "待录入", "conclusion": "模板占位"}
+              ],
               "enrollment": 445,
               "primaryEndpoint": "PFS与OS",
               "secondaryEndpoints": ["ORR", "DoR", "安全性"],
@@ -160,6 +198,15 @@
               "design": "随机、双盲、全球多中心",
               "arms": "依沃西 vs 帕博利珠单抗",
               "population": "PD-L1 TPS≥1%，无可靶向驱动基因",
+              "eligibility": {
+                "keyInclusion": ["晚期或转移性NSCLC", "PD-L1 TPS ≥1%", "无可靶向驱动基因改变", "一线治疗场景"],
+                "keyExclusion": ["既往接受晚期系统治疗", "活动性自身免疫性疾病", "未控制的中枢神经系统转移"],
+                "stratificationFactors": ["PD-L1 TPS", "组织学类型", "地区", "脑转移状态"]
+              },
+              "subgroupAnalyses": [
+                {"dimension": "PD-L1表达", "subgroup": "TPS 1–49% vs ≥50%", "n": "待录入", "endpoint": "PFS", "effect": "HR 待录入", "ci": "95% CI 待录入", "interactionP": "待录入", "conclusion": "模板占位"},
+                {"dimension": "组织学", "subgroup": "鳞状 vs 非鳞状", "n": "待录入", "endpoint": "PFS", "effect": "HR 待录入", "ci": "95% CI 待录入", "interactionP": "待录入", "conclusion": "模板占位"}
+              ],
               "enrollment": 612,
               "primaryEndpoint": "BICR评估的PFS",
               "secondaryEndpoints": ["OS", "ORR", "DoR", "安全性"],
@@ -205,6 +252,16 @@
               "design": "随机、双盲、安慰剂对照",
               "arms": "帕博利珠单抗 + 化疗 vs 安慰剂 + 化疗",
               "population": "无EGFR/ALK敏感突变的转移性非鳞NSCLC",
+              "eligibility": {
+                "keyInclusion": ["转移性非鳞NSCLC", "无EGFR或ALK敏感改变", "既往未接受转移性疾病系统治疗", "ECOG PS 0–1"],
+                "keyExclusion": ["既往接受PD-(L)1治疗", "活动性自身免疫性疾病", "需系统性免疫抑制治疗"],
+                "stratificationFactors": ["PD-L1 TPS", "铂类方案", "吸烟史"]
+              },
+              "subgroupAnalyses": [
+                {"dimension": "PD-L1表达", "subgroup": "TPS <1% / 1–49% / ≥50%", "n": "待录入", "endpoint": "OS / PFS", "effect": "HR 待录入", "ci": "95% CI 待录入", "interactionP": "待录入", "conclusion": "模板占位：正式使用时录入原始发表数据"},
+                {"dimension": "年龄", "subgroup": "<65岁 vs ≥65岁", "n": "待录入", "endpoint": "OS", "effect": "HR 待录入", "ci": "95% CI 待录入", "interactionP": "待录入", "conclusion": "模板占位"},
+                {"dimension": "性别", "subgroup": "男性 vs 女性", "n": "待录入", "endpoint": "OS", "effect": "HR 待录入", "ci": "95% CI 待录入", "interactionP": "待录入", "conclusion": "模板占位"}
+              ],
               "enrollment": 616,
               "primaryEndpoint": "OS与PFS",
               "secondaryEndpoints": ["ORR", "DoR", "安全性"],
