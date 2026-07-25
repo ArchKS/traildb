@@ -303,8 +303,20 @@ button { color: inherit; }
 .detail-section { margin: 0 38px; padding: 28px 0; border-bottom: 1px solid var(--line); }
 .detail-section h3 { display: flex; align-items: center; gap: 10px; margin: 0 0 18px; font-size: 14px; }
 .detail-section h3 span { color: #83a396; font-family: var(--font-geist-mono); font-size: 9px; }
-.field-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: #dce5e0; border: 1px solid #dce5e0; }
-.info-field { min-height: 80px; padding: 16px; background: white; }
+.field-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: row dense;
+  gap: 0;
+  background: transparent;
+  border: 1px solid #dce5e0;
+}
+.info-field {
+  min-height: 80px;
+  padding: 16px;
+  background: white;
+  box-shadow: inset -1px -1px 0 #dce5e0;
+}
 .info-field.wide { grid-column: span 2; min-height: 72px; }
 .info-field span { display: block; color: #87958f; font-size: 9px; margin-bottom: 8px; }
 .info-field strong { display: block; font-size: 11px; line-height: 1.55; }
