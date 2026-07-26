@@ -278,13 +278,16 @@ button { color: inherit; }
 .study-category-filters button.active { border-color: #2a755b; background: #dff0e7; color: #195e47; box-shadow: inset 0 0 0 1px #2a755b; }
 .study-category-filters button.active b { color: #195e47; }
 .study-category-filters small { flex: 1 1 360px; color: #728179; font-size: 12px; line-height: 1.55; }
-.indication-filters { display: flex; gap: 10px; margin: -4px 0 18px; padding: 4px 1px 8px; overflow-x: auto; scrollbar-width: none; }
+.indication-filters { display: flex; align-items: center; gap: 10px; margin: -4px 0 12px; padding: 4px 1px 8px; overflow-x: auto; scrollbar-width: none; }
 .indication-filters::-webkit-scrollbar { display: none; }
+.filter-prefix { min-width: 64px; flex: 0 0 auto; color: #62736b; font-size: 12px; }
 .indication-filters button { min-height: 44px; flex: 0 0 auto; padding: 0 18px; border: 1px solid #d2ddd7; border-radius: 999px; background: white; color: #25342e; font-size: 13px; font-weight: 650; cursor: pointer; transition: border-color .16s, background .16s, color .16s, box-shadow .16s; }
 .indication-filters button:hover { border-color: #82a897; background: #f6faf8; }
 .indication-filters button.active { border-color: #2a755b; background: #e4f3eb; color: #1d654d; box-shadow: inset 0 0 0 1px #2a755b; }
 .indication-filters button span { color: #71837a; font-weight: 600; }
 .indication-filters button.active span { color: #2a755b; }
+.phase-filters { margin-bottom: 18px; }
+.filter-union-note { margin: -7px 0 16px; padding: 9px 12px; border-left: 3px solid #538b73; background: #edf5f1; color: #53675e; font-size: 12px; line-height: 1.55; }
 .trial-table { background: white; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
 .trial-table-head, .trial-row { display: grid; grid-template-columns: 1.12fr .48fr .62fr 1.35fr .7fr .36fr .42fr; align-items: center; gap: 13px; }
 .trial-table-head { padding: 13px 18px; background: #edf2ef; color: #7a8982; font-family: var(--font-geist-mono); font-size: 8px; letter-spacing: .08em; }

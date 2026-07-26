@@ -714,6 +714,7 @@ function PipelinePage({
   onCompare: () => void;
 }) {
   const [indicationFilter, setIndicationFilter] = useState("all");
+  const [phaseFilter, setPhaseFilter] = useState("all");
   const [categoryFilter, setCategoryFilter] = useState(
     pipelineId === "sonrotoclax" ? "关键注册/读出" : "all",
   );
@@ -738,17 +739,36 @@ function PipelinePage({
     return counts;
   }, new Map<string, number>());
   const indicationOptions = [...indicationCounts.entries()];
-  const visibleTrials = indicationFilter === "all"
-    ? categoryTrials
-    : categoryTrials.filter((trial) => canonicalIndication(trial.indication) === indicationFilter);
+  const phaseOrder = ["III期", "IIIb期", "II/III期", "II期", "Ib/II期", "I/II期", "I期"];
+  const phaseCounts = categoryTrials.reduce((counts, trial) => {
+    counts.set(trial.phase, (counts.get(trial.phase) ?? 0) + 1);
+    return counts;
+  }, new Map<string, number>());
+  const phaseOptions = [...phaseCounts.entries()].sort(([a], [b]) => {
+    const aIndex = phaseOrder.indexOf(a);
+    const bIndex = phaseOrder.indexOf(b);
+    return (aIndex === -1 ? phaseOrder.length : aIndex)
+      - (bIndex === -1 ? phaseOrder.length : bIndex);
+  });
+  const indicationSelected = indicationFilter !== "all";
+  const phaseSelected = phaseFilter !== "all";
+  const visibleTrials = categoryTrials.filter((trial) => {
+    if (!indicationSelected && !phaseSelected) return true;
+    const matchesIndication = indicationSelected
+      && canonicalIndication(trial.indication) === indicationFilter;
+    const matchesPhase = phaseSelected && trial.phase === phaseFilter;
+    return matchesIndication || matchesPhase;
+  });
 
   useEffect(() => {
     setIndicationFilter("all");
+    setPhaseFilter("all");
     setCategoryFilter(pipeline.id === "sonrotoclax" ? "关键注册/读出" : "all");
   }, [pipeline.id]);
 
   useEffect(() => {
     setIndicationFilter("all");
+    setPhaseFilter("all");
   }, [categoryFilter]);
 
   return (
@@ -811,6 +831,7 @@ function PipelinePage({
         )}
 
         <div className="indication-filters" aria-label="按适应症筛选临床">
+          <strong className="filter-prefix">适应症</strong>
           <button
             className={indicationFilter === "all" ? "active" : ""}
             aria-pressed={indicationFilter === "all"}
@@ -829,6 +850,33 @@ function PipelinePage({
             </button>
           ))}
         </div>
+
+        <div className="indication-filters phase-filters" aria-label="按临床阶段筛选临床">
+          <strong className="filter-prefix">临床阶段</strong>
+          <button
+            className={phaseFilter === "all" ? "active" : ""}
+            aria-pressed={phaseFilter === "all"}
+            onClick={() => setPhaseFilter("all")}
+          >
+            全部 <span>({categoryTrials.length})</span>
+          </button>
+          {phaseOptions.map(([phase, count]) => (
+            <button
+              key={phase}
+              className={phaseFilter === phase ? "active" : ""}
+              aria-pressed={phaseFilter === phase}
+              onClick={() => setPhaseFilter(phase)}
+            >
+              {phase} <span>({count})</span>
+            </button>
+          ))}
+        </div>
+
+        {indicationSelected && phaseSelected && (
+          <p className="filter-union-note">
+            当前按并集展示：符合“{indicationFilter}”或“{phaseFilter}”任一条件的临床，共 {visibleTrials.length} 项。
+          </p>
+        )}
 
         <div className="trial-table">
           <div className="trial-table-head">
