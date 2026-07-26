@@ -737,24 +737,34 @@ function PipelinePage({
   const categoryTrials = categoryFilter === "all"
     ? sortedTrials
     : sortedTrials.filter((trial) => (trial.studyCategory ?? "常规临床") === categoryFilter);
-  const indicationCounts = categoryTrials.reduce((counts, trial) => {
+  const indicationSelected = indicationFilter !== "all";
+  const phaseSelected = phaseFilter !== "all";
+  const trialsForIndicationCounts = phaseSelected
+    ? categoryTrials.filter((trial) => trial.phase === phaseFilter)
+    : categoryTrials;
+  const indicationCounts = trialsForIndicationCounts.reduce((counts, trial) => {
     const indication = canonicalIndication(trial.indication);
     counts.set(indication, (counts.get(indication) ?? 0) + 1);
     return counts;
   }, new Map<string, number>());
-  const indicationOptions = [...indicationCounts.entries()];
-  const phaseCounts = categoryTrials.reduce((counts, trial) => {
+  const indicationOptions = [...new Set(
+    categoryTrials.map((trial) => canonicalIndication(trial.indication)),
+  )];
+  const trialsForPhaseCounts = indicationSelected
+    ? categoryTrials.filter(
+      (trial) => canonicalIndication(trial.indication) === indicationFilter,
+    )
+    : categoryTrials;
+  const phaseCounts = trialsForPhaseCounts.reduce((counts, trial) => {
     counts.set(trial.phase, (counts.get(trial.phase) ?? 0) + 1);
     return counts;
   }, new Map<string, number>());
-  const phaseOptions = [...phaseCounts.entries()].sort(([a], [b]) => {
+  const phaseOptions = [...new Set(categoryTrials.map((trial) => trial.phase))].sort((a, b) => {
     const aIndex = clinicalPhaseOrder.indexOf(a);
     const bIndex = clinicalPhaseOrder.indexOf(b);
     return (aIndex === -1 ? clinicalPhaseOrder.length : aIndex)
       - (bIndex === -1 ? clinicalPhaseOrder.length : bIndex);
   });
-  const indicationSelected = indicationFilter !== "all";
-  const phaseSelected = phaseFilter !== "all";
   const visibleTrials = categoryTrials.filter((trial) => {
     if (!indicationSelected && !phaseSelected) return true;
     const matchesIndication = indicationSelected
@@ -762,6 +772,11 @@ function PipelinePage({
     const matchesPhase = phaseSelected && trial.phase === phaseFilter;
     return matchesIndication || matchesPhase;
   });
+  const visibleIndicationCounts = visibleTrials.reduce((counts, trial) => {
+    const indication = canonicalIndication(trial.indication);
+    counts.set(indication, (counts.get(indication) ?? 0) + 1);
+    return counts;
+  }, new Map<string, number>());
 
   useEffect(() => {
     setIndicationFilter("all");
@@ -840,16 +855,16 @@ function PipelinePage({
             aria-pressed={indicationFilter === "all"}
             onClick={() => setIndicationFilter("all")}
           >
-            全部 <span>({categoryTrials.length})</span>
+            全部 <span>({trialsForIndicationCounts.length})</span>
           </button>
-          {indicationOptions.map(([indication, count]) => (
+          {indicationOptions.map((indication) => (
             <button
               key={indication}
               className={indicationFilter === indication ? "active" : ""}
               aria-pressed={indicationFilter === indication}
               onClick={() => setIndicationFilter(indication)}
             >
-              {indication} <span>({count})</span>
+              {indication} <span>({indicationCounts.get(indication) ?? 0})</span>
             </button>
           ))}
         </div>
@@ -861,16 +876,16 @@ function PipelinePage({
             aria-pressed={phaseFilter === "all"}
             onClick={() => setPhaseFilter("all")}
           >
-            全部 <span>({categoryTrials.length})</span>
+            全部 <span>({trialsForPhaseCounts.length})</span>
           </button>
-          {phaseOptions.map(([phase, count]) => (
+          {phaseOptions.map((phase) => (
             <button
               key={phase}
               className={phaseFilter === phase ? "active" : ""}
               aria-pressed={phaseFilter === phase}
               onClick={() => setPhaseFilter(phase)}
             >
-              {phase} <span>({count})</span>
+              {phase} <span>({phaseCounts.get(phase) ?? 0})</span>
             </button>
           ))}
         </div>
@@ -901,7 +916,7 @@ function PipelinePage({
                 {indication !== previousIndication && (
                   <div className="trial-group-row">
                     <strong>{indication}</strong>
-                    <span>{indicationCounts.get(indication)} 项临床</span>
+                    <span>{visibleIndicationCounts.get(indication)} 项临床</span>
                   </div>
                 )}
                 <div className="trial-row">
