@@ -109,6 +109,7 @@ type Company = {
 };
 
 type FlatTrial = Trial & {
+  companyId: string;
   companyName: string;
   pipelineCode: string;
   pipelineId: string;
@@ -129,6 +130,7 @@ const allPipelines = companies.flatMap((company) =>
 const allTrials: FlatTrial[] = allPipelines.flatMap(({ company, ...pipeline }) =>
   pipeline.trials.map((trial) => ({
     ...trial,
+    companyId: company.id,
     companyName: company.name,
     pipelineCode: pipeline.code,
     pipelineId: pipeline.id,
@@ -1027,54 +1029,24 @@ export function ClinicalComparePage() {
     window.history.replaceState(null, "", url);
   }, [selectedIds]);
 
-  const pipelineOptions = useMemo(
-    () => allPipelines.filter(({ company }) => companyFilter === "all" || company.id === companyFilter),
-    [companyFilter]
-  );
-
-  const scopedTrials = useMemo(
-    () => allTrials.filter((trial) => {
-      const pipeline = allPipelines.find((item) => item.id === trial.pipelineId);
-      const companyMatches = companyFilter === "all" || pipeline?.company.id === companyFilter;
-      const pipelineMatches = pipelineFilter === "all" || trial.pipelineId === pipelineFilter;
-      return companyMatches && pipelineMatches;
-    }),
-    [companyFilter, pipelineFilter],
-  );
-
-  const compareIndicationOptions = useMemo(() => {
-    const counts = scopedTrials.reduce((result, trial) => {
-      const indication = canonicalIndication(trial.indication);
-      result.set(indication, (result.get(indication) ?? 0) + 1);
-      return result;
-    }, new Map<string, number>());
-    return [...counts.entries()].sort(([a], [b]) => {
-      const aIndex = indicationOrder.indexOf(a);
-      const bIndex = indicationOrder.indexOf(b);
-      return (aIndex === -1 ? indicationOrder.length : aIndex)
-        - (bIndex === -1 ? indicationOrder.length : bIndex);
-    });
-  }, [scopedTrials]);
-
-  const comparePhaseOptions = useMemo(() => {
-    const counts = scopedTrials.reduce((result, trial) => {
-      result.set(trial.phase, (result.get(trial.phase) ?? 0) + 1);
-      return result;
-    }, new Map<string, number>());
-    return [...counts.entries()].sort(([a], [b]) => {
-      const aIndex = clinicalPhaseOrder.indexOf(a);
-      const bIndex = clinicalPhaseOrder.indexOf(b);
-      return (aIndex === -1 ? clinicalPhaseOrder.length : aIndex)
-        - (bIndex === -1 ? clinicalPhaseOrder.length : bIndex);
-    });
-  }, [scopedTrials]);
-
-  const filteredTrials = useMemo(() => {
+  const facetData = useMemo(() => {
     const keyword = query.trim().toLowerCase();
-    return scopedTrials.filter((trial) => {
-      const indicationMatches = indicationFilter === "all"
+    const matches = (
+      trial: FlatTrial,
+      omitted?: "company" | "pipeline" | "indication" | "phase",
+    ) => {
+      const companyMatches = omitted === "company"
+        || companyFilter === "all"
+        || trial.companyId === companyFilter;
+      const pipelineMatches = omitted === "pipeline"
+        || pipelineFilter === "all"
+        || trial.pipelineId === pipelineFilter;
+      const indicationMatches = omitted === "indication"
+        || indicationFilter === "all"
         || canonicalIndication(trial.indication) === indicationFilter;
-      const phaseMatches = phaseFilter === "all" || trial.phase === phaseFilter;
+      const phaseMatches = omitted === "phase"
+        || phaseFilter === "all"
+        || trial.phase === phaseFilter;
       const keywordMatches = !keyword || [
         trial.name,
         trial.nct,
@@ -1084,9 +1056,48 @@ export function ClinicalComparePage() {
         trial.phase,
         trial.status,
       ].join(" ").toLowerCase().includes(keyword);
-      return indicationMatches && phaseMatches && keywordMatches;
-    }).sort(compareTrialOrder);
-  }, [scopedTrials, indicationFilter, phaseFilter, query]);
+      return companyMatches
+        && pipelineMatches
+        && indicationMatches
+        && phaseMatches
+        && keywordMatches;
+    };
+    const countBy = (
+      omitted: "company" | "pipeline" | "indication" | "phase",
+      getKey: (trial: FlatTrial) => string,
+    ) => allTrials.reduce((counts, trial) => {
+      if (!matches(trial, omitted)) return counts;
+      const key = getKey(trial);
+      counts.set(key, (counts.get(key) ?? 0) + 1);
+      return counts;
+    }, new Map<string, number>());
+    return {
+      filteredTrials: allTrials.filter((trial) => matches(trial)).sort(compareTrialOrder),
+      companyCounts: countBy("company", (trial) => trial.companyId),
+      pipelineCounts: countBy("pipeline", (trial) => trial.pipelineId),
+      indicationCounts: countBy("indication", (trial) => canonicalIndication(trial.indication)),
+      phaseCounts: countBy("phase", (trial) => trial.phase),
+    };
+  }, [companyFilter, pipelineFilter, indicationFilter, phaseFilter, query]);
+
+  const filteredTrials = facetData.filteredTrials;
+  const pipelineOptions = allPipelines.filter(({ company }) =>
+    companyFilter === "all" || company.id === companyFilter
+  );
+  const compareIndicationOptions = [...new Set(allTrials.map((trial) => canonicalIndication(trial.indication)))]
+    .sort((a, b) => {
+      const aIndex = indicationOrder.indexOf(a);
+      const bIndex = indicationOrder.indexOf(b);
+      return (aIndex === -1 ? indicationOrder.length : aIndex)
+        - (bIndex === -1 ? indicationOrder.length : bIndex);
+    });
+  const comparePhaseOptions = [...new Set(allTrials.map((trial) => trial.phase))]
+    .sort((a, b) => {
+      const aIndex = clinicalPhaseOrder.indexOf(a);
+      const bIndex = clinicalPhaseOrder.indexOf(b);
+      return (aIndex === -1 ? clinicalPhaseOrder.length : aIndex)
+        - (bIndex === -1 ? clinicalPhaseOrder.length : bIndex);
+    });
 
   const selected = allTrials.filter((trial) => selectedIds.includes(trial.id));
 
@@ -1108,15 +1119,11 @@ export function ClinicalComparePage() {
   const changeCompany = (value: string) => {
     setCompanyFilter(value);
     setPipelineFilter("all");
-    setIndicationFilter("all");
-    setPhaseFilter("all");
     setVisibleLimit(8);
   };
 
   const changePipeline = (value: string) => {
     setPipelineFilter(value);
-    setIndicationFilter("all");
-    setPhaseFilter("all");
     setVisibleLimit(8);
   };
 
@@ -1163,8 +1170,14 @@ export function ClinicalComparePage() {
               <label>
                 <span>公司</span>
                 <select value={companyFilter} onChange={(event) => changeCompany(event.target.value)}>
-                  <option value="all">全部公司</option>
-                  {companies.map((company) => <option key={company.id} value={company.id}>{company.name}</option>)}
+                  <option value="all">
+                    全部公司（{[...facetData.companyCounts.values()].reduce((sum, count) => sum + count, 0)}）
+                  </option>
+                  {companies.map((company) => (
+                      <option key={company.id} value={company.id}>
+                        {company.name}（{facetData.companyCounts.get(company.id) ?? 0}）
+                      </option>
+                    ))}
                 </select>
               </label>
               <label>
@@ -1173,8 +1186,14 @@ export function ClinicalComparePage() {
                   value={pipelineFilter}
                   onChange={(event) => changePipeline(event.target.value)}
                 >
-                  <option value="all">全部管线</option>
-                  {pipelineOptions.map((pipeline) => <option key={pipeline.id} value={pipeline.id}>{pipeline.code}</option>)}
+                  <option value="all">
+                    全部管线（{[...facetData.pipelineCounts.values()].reduce((sum, count) => sum + count, 0)}）
+                  </option>
+                  {pipelineOptions.map((pipeline) => (
+                    <option key={pipeline.id} value={pipeline.id}>
+                      {pipeline.code}（{facetData.pipelineCounts.get(pipeline.id) ?? 0}）
+                    </option>
+                  ))}
                 </select>
               </label>
               <label>
@@ -1183,9 +1202,13 @@ export function ClinicalComparePage() {
                   value={indicationFilter}
                   onChange={(event) => { setIndicationFilter(event.target.value); setVisibleLimit(8); }}
                 >
-                  <option value="all">全部适应症（{scopedTrials.length}）</option>
-                  {compareIndicationOptions.map(([indication, count]) => (
-                    <option key={indication} value={indication}>{indication}（{count}）</option>
+                  <option value="all">
+                    全部适应症（{[...facetData.indicationCounts.values()].reduce((sum, count) => sum + count, 0)}）
+                  </option>
+                  {compareIndicationOptions.map((indication) => (
+                    <option key={indication} value={indication}>
+                      {indication}（{facetData.indicationCounts.get(indication) ?? 0}）
+                    </option>
                   ))}
                 </select>
               </label>
@@ -1195,9 +1218,13 @@ export function ClinicalComparePage() {
                   value={phaseFilter}
                   onChange={(event) => { setPhaseFilter(event.target.value); setVisibleLimit(8); }}
                 >
-                  <option value="all">全部阶段（{scopedTrials.length}）</option>
-                  {comparePhaseOptions.map(([phase, count]) => (
-                    <option key={phase} value={phase}>{phase}（{count}）</option>
+                  <option value="all">
+                    全部阶段（{[...facetData.phaseCounts.values()].reduce((sum, count) => sum + count, 0)}）
+                  </option>
+                  {comparePhaseOptions.map((phase) => (
+                    <option key={phase} value={phase}>
+                      {phase}（{facetData.phaseCounts.get(phase) ?? 0}）
+                    </option>
                   ))}
                 </select>
               </label>
