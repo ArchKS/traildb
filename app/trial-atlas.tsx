@@ -766,11 +766,10 @@ function PipelinePage({
       - (bIndex === -1 ? clinicalPhaseOrder.length : bIndex);
   });
   const visibleTrials = categoryTrials.filter((trial) => {
-    if (!indicationSelected && !phaseSelected) return true;
-    const matchesIndication = indicationSelected
-      && canonicalIndication(trial.indication) === indicationFilter;
-    const matchesPhase = phaseSelected && trial.phase === phaseFilter;
-    return matchesIndication || matchesPhase;
+    const matchesIndication = !indicationSelected
+      || canonicalIndication(trial.indication) === indicationFilter;
+    const matchesPhase = !phaseSelected || trial.phase === phaseFilter;
+    return matchesIndication && matchesPhase;
   });
   const visibleIndicationCounts = visibleTrials.reduce((counts, trial) => {
     const indication = canonicalIndication(trial.indication);
@@ -892,7 +891,7 @@ function PipelinePage({
 
         {indicationSelected && phaseSelected && (
           <p className="filter-union-note">
-            当前按并集展示：符合“{indicationFilter}”或“{phaseFilter}”任一条件的临床，共 {visibleTrials.length} 项。
+            当前按交集展示：同时符合“{indicationFilter}”和“{phaseFilter}”的临床，共 {visibleTrials.length} 项。
           </p>
         )}
 
