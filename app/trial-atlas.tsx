@@ -50,6 +50,11 @@ type EvidenceSource = {
   url: string;
 };
 
+type TrialMilestone = {
+  date: string;
+  event: string;
+};
+
 type Trial = {
   id: string;
   name: string;
@@ -79,6 +84,9 @@ type Trial = {
   safetyHighlights?: ResultMetric[];
   pkHighlights?: ResultMetric[];
   sources?: EvidenceSource[];
+  milestones?: TrialMilestone[];
+  resultNotes?: string[];
+  studyCategory?: string;
 };
 
 type Pipeline = {
@@ -450,6 +458,16 @@ function TrialDocument({
             <Info label="研究启动" value={trial.startDate} />
             <Info label="主要完成日期" value={trial.primaryCompletion} />
           </div>
+          {trial.milestones && trial.milestones.length > 0 && (
+            <div className="milestone-list">
+              {trial.milestones.map((milestone) => (
+                <div className="milestone-item" key={`${milestone.date}-${milestone.event}`}>
+                  <time>{milestone.date}</time>
+                  <span>{milestone.event}</span>
+                </div>
+              ))}
+            </div>
+          )}
         </section>
 
         {(trial.efficacyHighlights?.length || trial.safetyHighlights?.length || trial.pkHighlights?.length) && (
@@ -468,6 +486,11 @@ function TrialDocument({
                 <ResultMetrics title="药代动力学（单次口服）" metrics={trial.pkHighlights} tone="pk" />
               )}
             </div>
+            {trial.resultNotes && trial.resultNotes.length > 0 && (
+              <ul className="result-notes">
+                {trial.resultNotes.map((note) => <li key={note}>{note}</li>)}
+              </ul>
+            )}
           </section>
         )}
 
@@ -691,22 +714,42 @@ function PipelinePage({
   onCompare: () => void;
 }) {
   const [indicationFilter, setIndicationFilter] = useState("all");
+  const [categoryFilter, setCategoryFilter] = useState(
+    pipelineId === "sonrotoclax" ? "关键注册/读出" : "all",
+  );
   const found = allPipelines.find((item) => item.id === pipelineId) ?? allPipelines[0];
   const pipeline = found as Pipeline & { company: Company };
   const sortedTrials = [...pipeline.trials].sort(compareTrialOrder);
-  const indicationCounts = sortedTrials.reduce((counts, trial) => {
+  const categoryOrder = ["关键注册/读出", "公司探索", "研究者发起", "药理/药代"];
+  const categoryCounts = sortedTrials.reduce((counts, trial) => {
+    const category = trial.studyCategory ?? "常规临床";
+    counts.set(category, (counts.get(category) ?? 0) + 1);
+    return counts;
+  }, new Map<string, number>());
+  const categoryOptions = [...categoryCounts.entries()].sort(
+    ([a], [b]) => categoryOrder.indexOf(a) - categoryOrder.indexOf(b),
+  );
+  const categoryTrials = categoryFilter === "all"
+    ? sortedTrials
+    : sortedTrials.filter((trial) => (trial.studyCategory ?? "常规临床") === categoryFilter);
+  const indicationCounts = categoryTrials.reduce((counts, trial) => {
     const indication = canonicalIndication(trial.indication);
     counts.set(indication, (counts.get(indication) ?? 0) + 1);
     return counts;
   }, new Map<string, number>());
   const indicationOptions = [...indicationCounts.entries()];
   const visibleTrials = indicationFilter === "all"
-    ? sortedTrials
-    : sortedTrials.filter((trial) => canonicalIndication(trial.indication) === indicationFilter);
+    ? categoryTrials
+    : categoryTrials.filter((trial) => canonicalIndication(trial.indication) === indicationFilter);
 
   useEffect(() => {
     setIndicationFilter("all");
+    setCategoryFilter(pipeline.id === "sonrotoclax" ? "关键注册/读出" : "all");
   }, [pipeline.id]);
+
+  useEffect(() => {
+    setIndicationFilter("all");
+  }, [categoryFilter]);
 
   return (
     <main className="pipeline-page">
@@ -743,13 +786,37 @@ function PipelinePage({
           </button>
         </div>
 
+        {categoryOptions.length > 1 && (
+          <div className="study-category-filters" aria-label="按临床项目类型筛选">
+            <span>项目范围</span>
+            <button
+              className={categoryFilter === "all" ? "active" : ""}
+              onClick={() => setCategoryFilter("all")}
+            >
+              全部登记 <b>{sortedTrials.length}</b>
+            </button>
+            {categoryOptions.map(([category, count]) => (
+              <button
+                key={category}
+                className={categoryFilter === category ? "active" : ""}
+                onClick={() => setCategoryFilter(category)}
+              >
+                {category} <b>{count}</b>
+              </button>
+            ))}
+            {pipeline.id === "sonrotoclax" && (
+              <small>默认展示注册性研究及已有重要临床读出的项目；其余真实登记仍保留在底库。</small>
+            )}
+          </div>
+        )}
+
         <div className="indication-filters" aria-label="按适应症筛选临床">
           <button
             className={indicationFilter === "all" ? "active" : ""}
             aria-pressed={indicationFilter === "all"}
             onClick={() => setIndicationFilter("all")}
           >
-            全部 <span>({sortedTrials.length})</span>
+            全部 <span>({categoryTrials.length})</span>
           </button>
           {indicationOptions.map(([indication, count]) => (
             <button
@@ -789,7 +856,7 @@ function PipelinePage({
                 <div className="trial-row">
                   <a className="trial-name" href={`/clinical?trial=${encodeURIComponent(trial.id)}`} target="_blank" rel="noopener noreferrer">
                     <strong>{trial.name}</strong>
-                    <small>{trial.nct}</small>
+                    <small>{trial.nct}{trial.studyCategory ? ` · ${trial.studyCategory}` : ""}</small>
                   </a>
                   <span className="phase-pill">{trial.phase}</span>
                   <time className="trial-start" dateTime={trial.startDate}>{trial.startDate}</time>
@@ -821,7 +888,9 @@ function PipelinePage({
 }
 
 const comparisonRows: [string, (trial: FlatTrial) => string][] = [
+  ["项目类型", (trial) => trial.studyCategory ?? "常规临床"],
   ["阶段 / 状态", (trial) => `${trial.phase} · ${trial.status}`],
+  ["证据等级 / 数据截止", (trial) => `${trial.evidenceLevel ?? "未标注"} · ${trial.dataCut ?? "未标注"}`],
   ["适应症", (trial) => trial.indication],
   ["研究设计", (trial) => trial.design],
   ["目标入组人群", (trial) => trial.population],
@@ -833,9 +902,11 @@ const comparisonRows: [string, (trial: FlatTrial) => string][] = [
   ["计划 / 实际入组", (trial) => typeof trial.enrollment === "number" ? `${trial.enrollment} 例` : trial.enrollment],
   ["主要终点", (trial) => trial.primaryEndpoint],
   ["主要完成", (trial) => trial.primaryCompletion],
+  ["关键时间轴", (trial) => trial.milestones?.map((item) => `${item.date}：${item.event}`).join("；") || "尚未补充"],
   ["疗效摘要", (trial) => (trial.efficacyHighlights ?? []).map((item) => `${item.label} ${item.value}`).join("；") || "尚未披露"],
   ["安全性摘要", (trial) => (trial.safetyHighlights ?? []).map((item) => `${item.label} ${item.value}`).join("；") || "尚未披露"],
   ["亚组分析", (trial) => trial.subgroupAnalyses.map((item) => `${item.dimension}：${item.subgroup}，${item.effect}`).join("；")],
+  ["结果解释", (trial) => trial.resultNotes?.join("；") || trial.result],
   ["FDA / 申报", (trial) => `${trial.fda.regulatoryId} · ${trial.fda.submissionStatus}`],
 ];
 

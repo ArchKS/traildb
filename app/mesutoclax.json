@@ -115,7 +115,8 @@
               "label": "ClinicalTrials.gov",
               "url": "https://clinicaltrials.gov/study/NCT07082686"
             }
-          ]
+          ],
+          "studyCategory": "关键注册/读出"
         },
         {
           "id": "mesutoclax-nct06656494",
@@ -150,13 +151,33 @@
           "subgroupAnalyses": [
             {
               "dimension": "疾病类型",
-              "subgroup": "初治AML vs 初治MDS",
-              "n": "AML/MDS分队列",
-              "endpoint": "cCR/ORR",
-              "effect": "AML cCR 81.8%；MDS ORR 100%",
-              "ci": "详见原始披露",
+              "subgroup": "初治AML",
+              "n": "可评估人群",
+              "endpoint": "cCR/MRD阴性",
+              "effect": "81.8% / 86.5%",
+              "ci": "未报告",
               "interactionP": "未报告",
-              "conclusion": "早期或探索性亚组；未报告交互检验时不能推断亚组间治疗效应差异"
+              "conclusion": "I期非随机数据"
+            },
+            {
+              "dimension": "分子高危",
+              "subgroup": "TP53突变初治AML",
+              "n": "未单列",
+              "endpoint": "cCR/6个月DoR",
+              "effect": "71.4% / >50%",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "小样本探索性亚组"
+            },
+            {
+              "dimension": "疾病类型",
+              "subgroup": "初治MDS",
+              "n": "可评估人群",
+              "endpoint": "ORR/复合CR",
+              "effect": "100% / 90%",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "分别按IWG 2006与2023标准"
             }
           ],
           "enrollment": 266,
@@ -194,8 +215,20 @@
           "evidenceLevel": "I期 · 官方披露/监管结果",
           "baselineCharacteristics": [
             {
-              "label": "实际入组基线",
-              "value": "尚未在注册库发布结构化结果；不以计划入组标准代替实际基线"
+              "label": "研究人群",
+              "value": "初治AML、初治MDS及部分R/R AML"
+            },
+            {
+              "label": "治疗方案",
+              "value": "ICP-248联合阿扎胞苷"
+            },
+            {
+              "label": "AML数据截止",
+              "value": "2026-04-13"
+            },
+            {
+              "label": "MDS数据截止",
+              "value": "2026-04-20"
             }
           ],
           "efficacyHighlights": [
@@ -208,18 +241,54 @@
               "value": "40%（IWG 2006）"
             },
             {
+              "label": "初治MDS骨髓CR",
+              "value": "60%（IWG 2006）"
+            },
+            {
+              "label": "初治MDS复合CR",
+              "value": "90%（IWG 2023）"
+            },
+            {
               "label": "初治AML cCR",
               "value": "81.8%"
             },
             {
               "label": "AML cCR患者MRD阴性",
               "value": "86.5%"
+            },
+            {
+              "label": "AML第1周期达cCR",
+              "value": "83%（在cCR应答者中）"
+            },
+            {
+              "label": "125 mg组6个月DoR率",
+              "value": "93.3%"
+            },
+            {
+              "label": "125 mg组6个月OS率",
+              "value": "90.5%"
             }
           ],
           "safetyHighlights": [
             {
-              "label": "总体安全性",
-              "value": "早期披露未见DLT或TLS；长期骨髓抑制数据仍需成熟"
+              "label": "DLT",
+              "value": "未观察到"
+            },
+            {
+              "label": "MTD",
+              "value": "未达到"
+            },
+            {
+              "label": "TLS",
+              "value": "未观察到"
+            },
+            {
+              "label": "30/60天死亡率",
+              "value": "0% / 0%"
+            },
+            {
+              "label": "非血液学AE",
+              "value": "多数为1–2级"
             }
           ],
           "sources": [
@@ -231,7 +300,22 @@
               "label": "对应公开结果",
               "url": "https://www.innocarepharma.com/en/news/activity/en020260603"
             }
-          ]
+          ],
+          "milestones": [
+            {
+              "date": "2025-12",
+              "event": "ASH 2025披露早期数据"
+            },
+            {
+              "date": "2026-06-02",
+              "event": "ASCO 2026口头报告更新AML/MDS结果"
+            }
+          ],
+          "resultNotes": [
+            "AML与MDS结果来自同一早期研究的不同疾病队列，评价标准不同。",
+            "结果成熟度仍有限，长期DoR、PFS、OS与骨髓抑制风险仍需随访。"
+          ],
+          "studyCategory": "关键注册/读出"
         },
         {
           "id": "mesutoclax-nct06378138",
@@ -265,14 +349,44 @@
           },
           "subgroupAnalyses": [
             {
-              "dimension": "剂量/时间",
-              "subgroup": "100 mg或125 mg；36周MRD检查点",
-              "n": "n=42",
-              "endpoint": "ORR/CR/uMRD",
-              "effect": "100% / 57.1% / 65%",
-              "ci": "详见原始披露",
+              "dimension": "剂量",
+              "subgroup": "100 mg",
+              "n": "n=21",
+              "endpoint": "ORR",
+              "effect": "95.2%",
+              "ci": "未报告",
               "interactionP": "未报告",
-              "conclusion": "早期或探索性亚组；未报告交互检验时不能推断亚组间治疗效应差异"
+              "conclusion": "早期剂量队列"
+            },
+            {
+              "dimension": "剂量",
+              "subgroup": "125 mg",
+              "n": "n=21",
+              "endpoint": "ORR/靶病灶CRR/uMRD",
+              "effect": "100% / 57.1% / 65%",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "uMRD为36周外周血结果"
+            },
+            {
+              "dimension": "风险特征",
+              "subgroup": "中高危TLS风险",
+              "n": "n=32",
+              "endpoint": "TLS",
+              "effect": "0例",
+              "ci": "不适用",
+              "interactionP": "未报告",
+              "conclusion": "需结合导入和预防策略解释"
+            },
+            {
+              "dimension": "分子高危",
+              "subgroup": "TP53突变和/或del(17p)",
+              "n": "n=6",
+              "endpoint": "疗效",
+              "effect": "公司称与总体一致",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "未披露独立效应值"
             }
           ],
           "enrollment": 226,
@@ -298,28 +412,73 @@
           "evidenceLevel": "II/III期 · 官方披露/监管结果",
           "baselineCharacteristics": [
             {
-              "label": "实际入组基线",
-              "value": "尚未在注册库发布结构化结果；不以计划入组标准代替实际基线"
+              "label": "总入组",
+              "value": "42例",
+              "context": "初治CLL/SLL；100 mg n=21，125 mg n=21"
+            },
+            {
+              "label": "中高危TLS风险",
+              "value": "76.2%（32/42）"
+            },
+            {
+              "label": "TP53突变/del(17p)",
+              "value": "14.3%（6/42）"
             }
           ],
           "efficacyHighlights": [
             {
-              "label": "ORR",
-              "value": "100%"
+              "label": "100 mg组ORR",
+              "value": "95.2%（n=21）"
             },
             {
-              "label": "靶病灶CR",
+              "label": "125 mg组ORR",
+              "value": "100%（n=21）"
+            },
+            {
+              "label": "总体ORR",
+              "value": "97.6%（N=42）"
+            },
+            {
+              "label": "125 mg组24周CRR",
+              "value": "23.8%"
+            },
+            {
+              "label": "125 mg组靶病灶CRR",
               "value": "57.1%"
             },
             {
-              "label": "36周外周血uMRD",
+              "label": "125 mg组36周外周血uMRD",
               "value": "65%"
+            },
+            {
+              "label": "12个月PFS率",
+              "value": "100%"
             }
           ],
           "safetyHighlights": [
             {
               "label": "TLS",
-              "value": "0例（n=42早期队列）"
+              "value": "0例（N=42）"
+            },
+            {
+              "label": "≥3级中性粒细胞减少",
+              "value": "35.0%",
+              "context": "60例B细胞恶性肿瘤联合汇总分析"
+            },
+            {
+              "label": "≥3级血小板减少",
+              "value": "11.7%",
+              "context": "60例联合汇总分析"
+            },
+            {
+              "label": "≥3级贫血",
+              "value": "0%",
+              "context": "60例联合汇总分析"
+            },
+            {
+              "label": "TEAE导致停药/死亡",
+              "value": "0%",
+              "context": "60例联合汇总分析"
             }
           ],
           "sources": [
@@ -331,7 +490,29 @@
               "label": "对应公开结果",
               "url": "https://www.innocarepharma.com/uploads/2026-04-23/InnoCare-2026-Q1-Results-NDR_EN.pdf"
             }
-          ]
+          ],
+          "milestones": [
+            {
+              "date": "2025-03",
+              "event": "注册性III期首例患者入组"
+            },
+            {
+              "date": "2025-06",
+              "event": "EHA首次披露II期结果"
+            },
+            {
+              "date": "2026-02",
+              "event": "III期注册研究完成患者入组"
+            },
+            {
+              "date": "2026-06",
+              "event": "ASCO 2026更新联合队列数据"
+            }
+          ],
+          "resultNotes": [
+            "奥布替尼导入后联合ICP-248固定疗程；达到方案规定的MRD目标后可按方案停药。"
+          ],
+          "studyCategory": "关键注册/读出"
         },
         {
           "id": "mesutoclax-nct06351527",
@@ -422,7 +603,8 @@
               "label": "ClinicalTrials.gov",
               "url": "https://clinicaltrials.gov/study/NCT06351527"
             }
-          ]
+          ],
+          "studyCategory": "公司探索"
         },
         {
           "id": "mesutoclax-nct05728658",
@@ -456,14 +638,34 @@
           },
           "subgroupAnalyses": [
             {
+              "dimension": "疾病/既往BTKi",
+              "subgroup": "R/R MCL总体",
+              "n": "未单列",
+              "endpoint": "ORR/CRR",
+              "effect": "87.5% / 46.9%",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "早期单臂研究"
+            },
+            {
               "dimension": "既往BTKi反应",
               "subgroup": "BTKi难治R/R MCL",
               "n": "n=25",
-              "endpoint": "ORR/CR",
-              "effect": "84% / 36%",
-              "ci": "详见原始披露",
+              "endpoint": "ORR/CRR",
+              "effect": "84.0% / 36.0%",
+              "ci": "未报告",
               "interactionP": "未报告",
-              "conclusion": "早期或探索性亚组；未报告交互检验时不能推断亚组间治疗效应差异"
+              "conclusion": "注册性开发所聚焦人群"
+            },
+            {
+              "dimension": "疾病/既往BTKi",
+              "subgroup": "R/R CLL/SLL",
+              "n": "早期小样本",
+              "endpoint": "ORR",
+              "effect": "100%",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "样本量小，结果需后续验证"
             }
           ],
           "enrollment": 191,
@@ -496,8 +698,17 @@
           "evidenceLevel": "I期 · 官方披露/监管结果",
           "baselineCharacteristics": [
             {
-              "label": "实际入组基线",
-              "value": "尚未在注册库发布结构化结果；不以计划入组标准代替实际基线"
+              "label": "阶段性入组",
+              "value": "81例",
+              "context": "CLL/SLL、MCL及其他NHL亚型"
+            },
+            {
+              "label": "推荐剂量",
+              "value": "125 mg每日一次"
+            },
+            {
+              "label": "BTKi难治R/R MCL",
+              "value": "25例"
             }
           ],
           "efficacyHighlights": [
@@ -510,14 +721,30 @@
               "value": "36%"
             },
             {
+              "label": "R/R MCL总体ORR",
+              "value": "87.5%"
+            },
+            {
+              "label": "R/R MCL总体CRR",
+              "value": "46.9%"
+            },
+            {
               "label": "R/R CLL/SLL ORR",
               "value": "100%（早期小样本）"
             }
           ],
           "safetyHighlights": [
             {
+              "label": "DLT",
+              "value": "未观察到"
+            },
+            {
+              "label": "MTD",
+              "value": "爬坡至150 mg仍未达到"
+            },
+            {
               "label": "总体安全性",
-              "value": "公司披露为耐受性和PK特征良好；TLS采用剂量爬坡管理"
+              "value": "公司披露耐受性与PK特征良好；TLS采用剂量爬坡管理"
             }
           ],
           "sources": [
@@ -529,7 +756,25 @@
               "label": "对应公开结果",
               "url": "https://www.innocarepharma.com/en/news/activity/en020260325-InnoCare-2025-Annual-Results"
             }
-          ]
+          ],
+          "milestones": [
+            {
+              "date": "2025-05",
+              "event": "CDE授予BTKi难治R/R MCL突破性治疗品种认定"
+            },
+            {
+              "date": "2025-12",
+              "event": "ASH 2025更新R/R MCL数据"
+            },
+            {
+              "date": "2026",
+              "event": "BTKi经治R/R MCL单臂注册研究推进中"
+            }
+          ],
+          "resultNotes": [
+            "不同疾病及既往BTKi暴露亚组来自同一早期篮式研究，不能简单合并比较。"
+          ],
+          "studyCategory": "关键注册/读出"
         },
         {
           "id": "mesutoclax-rrmcl-phase3-cn",
@@ -585,6 +830,7 @@
           "source": "诺诚健华2025年年报及2026年一季度披露；未编造尚未公布的登记号或方案字段。",
           "dataCut": "2026-07-26",
           "evidenceLevel": "III期 · 公司正式披露（登记待公开）",
+          "studyCategory": "关键注册/读出",
           "baselineCharacteristics": [
             {
               "label": "实际入组基线",

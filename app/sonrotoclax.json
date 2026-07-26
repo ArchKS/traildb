@@ -119,7 +119,8 @@
               "label": "ClinicalTrials.gov",
               "url": "https://clinicaltrials.gov/study/NCT07674810"
             }
-          ]
+          ],
+          "studyCategory": "研究者发起"
         },
         {
           "id": "sonrotoclax-nct07550855",
@@ -210,7 +211,8 @@
               "label": "ClinicalTrials.gov",
               "url": "https://clinicaltrials.gov/study/NCT07550855"
             }
-          ]
+          ],
+          "studyCategory": "研究者发起"
         },
         {
           "id": "sonrotoclax-nct07508995",
@@ -301,7 +303,8 @@
               "label": "ClinicalTrials.gov",
               "url": "https://clinicaltrials.gov/study/NCT07508995"
             }
-          ]
+          ],
+          "studyCategory": "研究者发起"
         },
         {
           "id": "sonrotoclax-nct07687004",
@@ -395,7 +398,8 @@
               "label": "ClinicalTrials.gov",
               "url": "https://clinicaltrials.gov/study/NCT07687004"
             }
-          ]
+          ],
+          "studyCategory": "研究者发起"
         },
         {
           "id": "sonrotoclax-nct07341191",
@@ -486,7 +490,8 @@
               "label": "ClinicalTrials.gov",
               "url": "https://clinicaltrials.gov/study/NCT07341191"
             }
-          ]
+          ],
+          "studyCategory": "研究者发起"
         },
         {
           "id": "sonrotoclax-nct07628881",
@@ -582,7 +587,8 @@
               "label": "ClinicalTrials.gov",
               "url": "https://clinicaltrials.gov/study/NCT07628881"
             }
-          ]
+          ],
+          "studyCategory": "药理/药代"
         },
         {
           "id": "sonrotoclax-nct07638787",
@@ -674,7 +680,8 @@
               "label": "ClinicalTrials.gov",
               "url": "https://clinicaltrials.gov/study/NCT07638787"
             }
-          ]
+          ],
+          "studyCategory": "研究者发起"
         },
         {
           "id": "sonrotoclax-nct07682415",
@@ -766,7 +773,8 @@
               "label": "ClinicalTrials.gov",
               "url": "https://clinicaltrials.gov/study/NCT07682415"
             }
-          ]
+          ],
+          "studyCategory": "研究者发起"
         },
         {
           "id": "sonrotoclax-nct07671378",
@@ -858,7 +866,8 @@
               "label": "ClinicalTrials.gov",
               "url": "https://clinicaltrials.gov/study/NCT07671378"
             }
-          ]
+          ],
+          "studyCategory": "研究者发起"
         },
         {
           "id": "sonrotoclax-nct07548710",
@@ -950,7 +959,8 @@
               "label": "ClinicalTrials.gov",
               "url": "https://clinicaltrials.gov/study/NCT07548710"
             }
-          ]
+          ],
+          "studyCategory": "研究者发起"
         },
         {
           "id": "sonrotoclax-nct07573670",
@@ -1041,7 +1051,8 @@
               "label": "ClinicalTrials.gov",
               "url": "https://clinicaltrials.gov/study/NCT07573670"
             }
-          ]
+          ],
+          "studyCategory": "研究者发起"
         },
         {
           "id": "sonrotoclax-nct07321652",
@@ -1135,7 +1146,8 @@
               "label": "ClinicalTrials.gov",
               "url": "https://clinicaltrials.gov/study/NCT07321652"
             }
-          ]
+          ],
+          "studyCategory": "关键注册/读出"
         },
         {
           "id": "sonrotoclax-nct07548255",
@@ -1226,7 +1238,8 @@
               "label": "ClinicalTrials.gov",
               "url": "https://clinicaltrials.gov/study/NCT07548255"
             }
-          ]
+          ],
+          "studyCategory": "研究者发起"
         },
         {
           "id": "sonrotoclax-nct07277231",
@@ -1342,7 +1355,8 @@
               "label": "ClinicalTrials.gov",
               "url": "https://clinicaltrials.gov/study/NCT07277231"
             }
-          ]
+          ],
+          "studyCategory": "关键注册/读出"
         },
         {
           "id": "sonrotoclax-nct07335887",
@@ -1436,7 +1450,8 @@
               "label": "ClinicalTrials.gov",
               "url": "https://clinicaltrials.gov/study/NCT07335887"
             }
-          ]
+          ],
+          "studyCategory": "研究者发起"
         },
         {
           "id": "sonrotoclax-nct06547866",
@@ -1526,7 +1541,8 @@
               "label": "ClinicalTrials.gov",
               "url": "https://clinicaltrials.gov/study/NCT06547866"
             }
-          ]
+          ],
+          "studyCategory": "研究者发起"
         },
         {
           "id": "sonrotoclax-nct07141511",
@@ -1611,7 +1627,8 @@
               "label": "ClinicalTrials.gov",
               "url": "https://clinicaltrials.gov/study/NCT07141511"
             }
-          ]
+          ],
+          "studyCategory": "药理/药代"
         },
         {
           "id": "sonrotoclax-nct06859008",
@@ -1709,7 +1726,8 @@
               "label": "ClinicalTrials.gov",
               "url": "https://clinicaltrials.gov/study/NCT06859008"
             }
-          ]
+          ],
+          "studyCategory": "研究者发起"
         },
         {
           "id": "sonrotoclax-nct06943872",
@@ -1832,7 +1850,8 @@
               "label": "ClinicalTrials.gov",
               "url": "https://clinicaltrials.gov/study/NCT06943872"
             }
-          ]
+          ],
+          "studyCategory": "关键注册/读出"
         },
         {
           "id": "sonrotoclax-nct06839053",
@@ -1929,7 +1948,8 @@
               "label": "ClinicalTrials.gov",
               "url": "https://clinicaltrials.gov/study/NCT06839053"
             }
-          ]
+          ],
+          "studyCategory": "研究者发起"
         },
         {
           "id": "sonrotoclax-nct06849713",
@@ -2021,7 +2041,8 @@
               "label": "ClinicalTrials.gov",
               "url": "https://clinicaltrials.gov/study/NCT06849713"
             }
-          ]
+          ],
+          "studyCategory": "研究者发起"
         },
         {
           "id": "sonrotoclax-nct06854003",
@@ -2114,7 +2135,8 @@
               "label": "ClinicalTrials.gov",
               "url": "https://clinicaltrials.gov/study/NCT06854003"
             }
-          ]
+          ],
+          "studyCategory": "研究者发起"
         },
         {
           "id": "sonrotoclax-nct06742996",
@@ -2231,7 +2253,8 @@
               "label": "ClinicalTrials.gov",
               "url": "https://clinicaltrials.gov/study/NCT06742996"
             }
-          ]
+          ],
+          "studyCategory": "关键注册/读出"
         },
         {
           "id": "sonrotoclax-nct06697184",
@@ -2328,7 +2351,8 @@
               "label": "ClinicalTrials.gov",
               "url": "https://clinicaltrials.gov/study/NCT06697184"
             }
-          ]
+          ],
+          "studyCategory": "公司探索"
         },
         {
           "id": "sonrotoclax-nct06634589",
@@ -2438,7 +2462,8 @@
               "label": "ClinicalTrials.gov",
               "url": "https://clinicaltrials.gov/study/NCT06634589"
             }
-          ]
+          ],
+          "studyCategory": "公司探索"
         },
         {
           "id": "sonrotoclax-nct06637501",
@@ -2543,7 +2568,8 @@
               "label": "ClinicalTrials.gov",
               "url": "https://clinicaltrials.gov/study/NCT06637501"
             }
-          ]
+          ],
+          "studyCategory": "公司探索"
         },
         {
           "id": "sonrotoclax-nct06497062",
@@ -2634,7 +2660,8 @@
               "label": "ClinicalTrials.gov",
               "url": "https://clinicaltrials.gov/study/NCT06497062"
             }
-          ]
+          ],
+          "studyCategory": "研究者发起"
         },
         {
           "id": "sonrotoclax-nct06543043",
@@ -2725,7 +2752,8 @@
               "label": "ClinicalTrials.gov",
               "url": "https://clinicaltrials.gov/study/NCT06543043"
             }
-          ]
+          ],
+          "studyCategory": "药理/药代"
         },
         {
           "id": "sonrotoclax-nct06463691",
@@ -2814,7 +2842,8 @@
               "label": "ClinicalTrials.gov",
               "url": "https://clinicaltrials.gov/study/NCT06463691"
             }
-          ]
+          ],
+          "studyCategory": "研究者发起"
         },
         {
           "id": "sonrotoclax-nct06367374",
@@ -2907,7 +2936,8 @@
               "label": "ClinicalTrials.gov",
               "url": "https://clinicaltrials.gov/study/NCT06367374"
             }
-          ]
+          ],
+          "studyCategory": "研究者发起"
         },
         {
           "id": "sonrotoclax-nct06073821",
@@ -3028,7 +3058,8 @@
               "label": "ClinicalTrials.gov",
               "url": "https://clinicaltrials.gov/study/NCT06073821"
             }
-          ]
+          ],
+          "studyCategory": "关键注册/读出"
         },
         {
           "id": "sonrotoclax-nct05952037",
@@ -3138,7 +3169,8 @@
               "label": "ClinicalTrials.gov",
               "url": "https://clinicaltrials.gov/study/NCT05952037"
             }
-          ]
+          ],
+          "studyCategory": "公司探索"
         },
         {
           "id": "sonrotoclax-nct05844111",
@@ -3223,7 +3255,8 @@
               "label": "ClinicalTrials.gov",
               "url": "https://clinicaltrials.gov/study/NCT05844111"
             }
-          ]
+          ],
+          "studyCategory": "药理/药代"
         },
         {
           "id": "sonrotoclax-nct05479994",
@@ -3257,14 +3290,34 @@
           },
           "subgroupAnalyses": [
             {
-              "dimension": "总体",
-              "subgroup": "既往至少一线、含BTKi治疗的R/R CLL/SLL",
-              "n": "n=100",
-              "endpoint": "IRC ORR",
-              "effect": "77%",
-              "ci": "详见原始披露",
+              "dimension": "IGHV状态",
+              "subgroup": "IGHV未突变",
+              "n": "n=27",
+              "endpoint": "研究者评估ORR",
+              "effect": "74.1%（20/27）",
+              "ci": "未报告",
               "interactionP": "未报告",
-              "conclusion": "早期或探索性亚组；未报告交互检验时不能推断亚组间治疗效应差异"
+              "conclusion": "与总体结果方向一致"
+            },
+            {
+              "dimension": "分子高危",
+              "subgroup": "del(17p)和/或TP53突变",
+              "n": "n=37",
+              "endpoint": "研究者评估ORR",
+              "effect": "70.3%（26/37）",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "探索性亚组"
+            },
+            {
+              "dimension": "耐药机制",
+              "subgroup": "BTK基因突变",
+              "n": "n=25",
+              "endpoint": "研究者评估ORR",
+              "effect": "72.0%（18/25）",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "探索性亚组"
             }
           ],
           "enrollment": 100,
@@ -3290,26 +3343,107 @@
             "submissionStatus": "该研究是否支持标签扩展尚待结果与监管审评",
             "lastVerified": "2026-07-26"
           },
-          "result": "中国注册性II期R/R CLL/SLL研究：IRC ORR 77%；总体安全性可管理，支持中国获批。",
+          "result": "中国注册性II期R/R CLL/SLL研究：IRC ORR 76.0%，CR/CRi 19.0%，最佳外周血uMRD4率49.0%；支持中国获批。",
           "source": "ClinicalTrials.gov官方注册记录；公司官方披露/监管文件仅在可对应到具体研究时补充。数据按NCT号去重。",
           "dataCut": "最新公开披露截至2026-07-26",
           "evidenceLevel": "II期 · 官方披露/监管结果",
           "baselineCharacteristics": [
             {
-              "label": "实际入组基线",
-              "value": "尚未在注册库发布结构化结果；不以计划入组标准代替实际基线"
+              "label": "总入组",
+              "value": "100例",
+              "context": "中国R/R CLL/SLL"
+            },
+            {
+              "label": "既往BTKi+抗CD20",
+              "value": "46.0%"
+            },
+            {
+              "label": "既往≥3线",
+              "value": "27.0%"
+            },
+            {
+              "label": "del(17p)和/或TP53突变",
+              "value": "38.1%"
+            },
+            {
+              "label": "IGHV未突变",
+              "value": "62.8%"
+            },
+            {
+              "label": "BTK基因突变",
+              "value": "25.5%"
             }
           ],
           "efficacyHighlights": [
             {
               "label": "IRC ORR",
-              "value": "77%"
+              "value": "76.0%"
+            },
+            {
+              "label": "CR/CRi",
+              "value": "19.0%"
+            },
+            {
+              "label": "中位至缓解时间",
+              "value": "3.7个月"
+            },
+            {
+              "label": "最佳外周血uMRD4",
+              "value": "49.0%（49/100）"
+            },
+            {
+              "label": "中位至uMRD4时间",
+              "value": "5.8个月（3–12）"
+            },
+            {
+              "label": "中位DoR",
+              "value": "未达到"
+            },
+            {
+              "label": "中位PFS",
+              "value": "未达到"
+            },
+            {
+              "label": "中位OS",
+              "value": "未达到"
             }
           ],
           "safetyHighlights": [
             {
-              "label": "总体安全性",
-              "value": "公司披露为总体耐受、AE可管理；完整发生率以正式论文为准"
+              "label": "中性粒细胞减少",
+              "value": "54.0%；≥3级33.0%"
+            },
+            {
+              "label": "血小板减少",
+              "value": "41.0%；≥3级11.0%"
+            },
+            {
+              "label": "贫血",
+              "value": "33.0%"
+            },
+            {
+              "label": "高尿酸血症",
+              "value": "33.0%"
+            },
+            {
+              "label": "白细胞减少",
+              "value": "30.0%；≥3级10.0%"
+            },
+            {
+              "label": "≥3级肺炎",
+              "value": "17.0%"
+            },
+            {
+              "label": "≥3级TEAE",
+              "value": "61.0%"
+            },
+            {
+              "label": "TLS",
+              "value": "无临床TLS；实验室TLS 4.0%"
+            },
+            {
+              "label": "停药/死亡",
+              "value": "停药6.0%；死亡5.0%（均判定与治疗无关）"
             }
           ],
           "pkHighlights": [
@@ -3327,7 +3461,21 @@
               "label": "对应公开结果",
               "url": "https://ir.beonemedicines.com/news/beone-medicines-novel-bcl2-inhibitor-sonrotoclax-achieves-first-in-world-approval-in-rr-mcl-and-rr-cllsll/562da165-f6a9-48d0-a357-aca27ac112ca"
             }
-          ]
+          ],
+          "milestones": [
+            {
+              "date": "2025-12",
+              "event": "ASH 2025公布主要分析结果"
+            },
+            {
+              "date": "2026-01-06",
+              "event": "中国批准R/R CLL/SLL适应症"
+            }
+          ],
+          "resultNotes": [
+            "患者既往BTK抑制剂和免疫化疗不耐受或治疗失败，且既往未使用BCL-2抑制剂。"
+          ],
+          "studyCategory": "关键注册/读出"
         },
         {
           "id": "sonrotoclax-nct05471843",
@@ -3361,14 +3509,94 @@
           },
           "subgroupAnalyses": [
             {
-              "dimension": "既往治疗",
-              "subgroup": "抗CD20+BTKi后R/R MCL",
-              "n": "n=103",
-              "endpoint": "ORR/DoR",
-              "effect": "ORR 52%；DoR 15.8个月",
-              "ci": "详见原始披露",
+              "dimension": "分子高危",
+              "subgroup": "TP53突变",
+              "n": "n=22",
+              "endpoint": "IRC ORR",
+              "effect": "59.1%",
+              "ci": "95%CI 36.4–79.3",
               "interactionP": "未报告",
-              "conclusion": "早期或探索性亚组；未报告交互检验时不能推断亚组间治疗效应差异"
+              "conclusion": "含3例CR"
+            },
+            {
+              "dimension": "肿瘤负荷",
+              "subgroup": "大肿块（LDi ≥5 cm）",
+              "n": "未单列",
+              "endpoint": "IRC ORR",
+              "effect": "54.8%",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "探索性分析"
+            },
+            {
+              "dimension": "年龄",
+              "subgroup": "≥65岁",
+              "n": "未单列",
+              "endpoint": "IRC ORR",
+              "effect": "52.3%",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "与总体结果接近"
+            },
+            {
+              "dimension": "既往疗效",
+              "subgroup": "末线难治",
+              "n": "未单列",
+              "endpoint": "IRC ORR",
+              "effect": "49.4%",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "探索性分析"
+            },
+            {
+              "dimension": "增殖指数",
+              "subgroup": "Ki-67 ≥30%",
+              "n": "未单列",
+              "endpoint": "IRC ORR",
+              "effect": "47.2%",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "探索性分析"
+            },
+            {
+              "dimension": "既往线数",
+              "subgroup": "≥3线",
+              "n": "未单列",
+              "endpoint": "IRC ORR",
+              "effect": "46.8%",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "探索性分析"
+            },
+            {
+              "dimension": "预后评分",
+              "subgroup": "高s-MIPI",
+              "n": "未单列",
+              "endpoint": "IRC ORR",
+              "effect": "40.0%",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "探索性分析"
+            },
+            {
+              "dimension": "既往治疗",
+              "subgroup": "既往匹妥布替尼",
+              "n": "n=14",
+              "endpoint": "IRC ORR",
+              "effect": "50.0%",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "小样本，谨慎解释"
+            },
+            {
+              "dimension": "既往线数",
+              "subgroup": "<3线",
+              "n": "未单列",
+              "endpoint": "IRC ORR",
+              "effect": "61.0%",
+              "ci": "95%CI 44.5–75.8",
+              "interactionP": "未报告",
+              "conclusion": "探索性分析"
             }
           ],
           "enrollment": 125,
@@ -3412,38 +3640,131 @@
             "submissionStatus": "2026-05-13 FDA加速批准R/R MCL",
             "lastVerified": "2026-07-26"
           },
-          "result": "R/R MCL、既往抗CD20及BTK抑制剂治疗后：IRC ORR 52%，CR 16%，中位DoR 15.8个月；支持美国加速批准。",
+          "result": "R/R MCL、既往抗CD20及BTK抑制剂治疗后：IRC ORR 52.4%，CR 15.5%，中位DoR 15.8个月；支持美国FDA加速批准。",
           "source": "ClinicalTrials.gov官方注册记录；公司官方披露/监管文件仅在可对应到具体研究时补充。数据按NCT号去重。",
           "dataCut": "最新公开披露截至2026-07-26",
           "evidenceLevel": "I/II期 · 官方披露/监管结果",
           "baselineCharacteristics": [
             {
-              "label": "实际入组基线",
-              "value": "尚未在注册库发布结构化结果；不以计划入组标准代替实际基线"
+              "label": "总入组",
+              "value": "125例",
+              "context": "160 mg n=10；320 mg n=115"
+            },
+            {
+              "label": "疗效可评估",
+              "value": "103例",
+              "context": "Part 2，320 mg RP2D"
+            },
+            {
+              "label": "中位年龄",
+              "value": "68岁（39–85）"
+            },
+            {
+              "label": "≥65岁",
+              "value": "64.3%"
+            },
+            {
+              "label": "既往治疗",
+              "value": "中位3线"
+            },
+            {
+              "label": "Stage IV",
+              "value": "78.3%"
+            },
+            {
+              "label": "中高危MIPI",
+              "value": "69.6%"
+            },
+            {
+              "label": "Ki-67 ≥30%",
+              "value": "53.0%"
+            },
+            {
+              "label": "大肿块（≥5 cm）",
+              "value": "40.0%"
+            },
+            {
+              "label": "末线难治",
+              "value": "87.0%"
             }
           ],
           "efficacyHighlights": [
             {
               "label": "IRC ORR",
-              "value": "52%（95%CI 42–62）"
+              "value": "52.4%（95%CI 42.4–62.4）",
+              "context": "Part 2，320 mg，n=103"
             },
             {
-              "label": "CR率",
-              "value": "16%（95%CI 9.1–24.0）"
+              "label": "IRC CR率",
+              "value": "15.5%（95%CI 9.1–24.0）"
+            },
+            {
+              "label": "研究者评估ORR",
+              "value": "47.6%（95%CI 37.6–57.6）"
+            },
+            {
+              "label": "中位至缓解时间",
+              "value": "1.9个月（1.6–6.2）"
             },
             {
               "label": "中位DoR",
               "value": "15.8个月（95%CI 7.4–NE）"
+            },
+            {
+              "label": "9个月持续缓解率",
+              "value": "63%"
+            },
+            {
+              "label": "中位PFS",
+              "value": "6.5个月（95%CI 4.0–10.4）"
+            },
+            {
+              "label": "中位OS",
+              "value": "未达到（95%CI 14.8–NE）"
+            },
+            {
+              "label": "12个月OS率",
+              "value": "67.4%"
             }
           ],
           "safetyHighlights": [
             {
-              "label": "实验室/临床TLS",
-              "value": "7%（按推荐爬坡方案）"
+              "label": "任何TEAE",
+              "value": "96.5%；≥3级52.2%",
+              "context": "安全性集n=115"
             },
             {
-              "label": "常见不良反应",
-              "value": "肺炎16%、乏力16%"
+              "label": "中性粒细胞减少",
+              "value": "35.7%"
+            },
+            {
+              "label": "血小板减少",
+              "value": "24.3%"
+            },
+            {
+              "label": "贫血",
+              "value": "24.3%"
+            },
+            {
+              "label": "感染",
+              "value": "39.1%"
+            },
+            {
+              "label": "TLS",
+              "value": "7.0%（临床2例、实验室6例）",
+              "context": "均缓解，无TLS导致停药或死亡"
+            },
+            {
+              "label": "发热性中性粒细胞减少",
+              "value": "1.7%"
+            },
+            {
+              "label": "TEAE导致停药",
+              "value": "13.9%"
+            },
+            {
+              "label": "TEAE导致死亡",
+              "value": "13.0%"
             }
           ],
           "pkHighlights": [
@@ -3461,7 +3782,31 @@
               "label": "对应公开结果",
               "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-sonrotoclax-relapsed-or-refractory-mantle-cell-lymphoma"
             }
-          ]
+          ],
+          "milestones": [
+            {
+              "date": "2025-02-04",
+              "event": "关键数据截止，Part 2完成入组"
+            },
+            {
+              "date": "2025-12",
+              "event": "ASH 2025口头报告"
+            },
+            {
+              "date": "2025-11",
+              "event": "FDA授予优先审评"
+            },
+            {
+              "date": "2026-05-13",
+              "event": "FDA加速批准BEQALZI用于既往至少2线且含BTKi的R/R MCL"
+            }
+          ],
+          "resultNotes": [
+            "推荐方案为4周剂量递增至320 mg，每日一次口服直至疾病进展或不可耐受。",
+            "Part 1未观察到DLT，未达到MTD，320 mg确定为RP2D。",
+            "确证性III期CELESTIAL-RRMCL（NCT06742996）正在进行。"
+          ],
+          "studyCategory": "关键注册/读出"
         },
         {
           "id": "sonrotoclax-nct04973605",
@@ -3541,26 +3886,64 @@
             "submissionStatus": "该研究是否支持标签扩展尚待结果与监管审评",
             "lastVerified": "2026-07-26"
           },
-          "result": "尚无可核验的公开临床结果；保留注册设计、入组人群和时间轴，待正式读出后更新。",
+          "result": "t(11;14)阳性R/R多发性骨髓瘤早期队列中，Sonrotoclax联合卡非佐米和地塞米松的ORR为84%；样本量仅19例。",
           "source": "ClinicalTrials.gov官方注册记录；公司官方披露/监管文件仅在可对应到具体研究时补充。数据按NCT号去重。",
-          "dataCut": "注册状态核对：2026-07-26",
-          "evidenceLevel": "I/II期 · 注册设计（暂无公开结果）",
+          "dataCut": "最新公开披露截至2026-07-26",
+          "evidenceLevel": "I/II期 · 官方披露/监管结果",
           "baselineCharacteristics": [
             {
-              "label": "实际入组基线",
-              "value": "尚未在注册库发布结构化结果；不以计划入组标准代替实际基线"
+              "label": "疗效可评估",
+              "value": "19例"
+            },
+            {
+              "label": "生物标志物",
+              "value": "t(11;14)阳性"
+            },
+            {
+              "label": "疾病状态",
+              "value": "复发/难治性多发性骨髓瘤"
             }
           ],
           "efficacyHighlights": [
             {
-              "label": "疗效结果",
-              "value": "尚未公开"
+              "label": "ORR",
+              "value": "84%（95%CI 60–97）",
+              "context": "疗效可评估n=19"
+            },
+            {
+              "label": "CR/sCR",
+              "value": "32%（95%CI 13–57）"
+            },
+            {
+              "label": "中位至缓解时间",
+              "value": "1.0个月（0.9–6.1）"
+            },
+            {
+              "label": "中位DoR",
+              "value": "未达到"
+            },
+            {
+              "label": "中位PFS",
+              "value": "未达到"
             }
           ],
           "safetyHighlights": [
             {
-              "label": "安全性结果",
-              "value": "尚未公开；仅列方案监测终点不等同于实际发生率"
+              "label": "DLT",
+              "value": "2例",
+              "context": "3级血小板减少、急性肾损伤"
+            },
+            {
+              "label": "严重TEAE",
+              "value": "40%"
+            },
+            {
+              "label": "肺炎",
+              "value": "15%"
+            },
+            {
+              "label": "治疗相关停药/减量",
+              "value": "未观察到"
             }
           ],
           "pkHighlights": [
@@ -3573,8 +3956,26 @@
             {
               "label": "ClinicalTrials.gov",
               "url": "https://clinicaltrials.gov/study/NCT04973605"
+            },
+            {
+              "label": "对应公开结果",
+              "url": "https://ir.beonemedicines.com/news/sonrotoclax-data-at-ash-2025-confirm-foundational-potential-across-b-cell-malignancies/4c69168c-15f1-4af8-98f3-38d14b8d32cd"
             }
-          ]
+          ],
+          "milestones": [
+            {
+              "date": "2025-12",
+              "event": "ASH 2025公布早期联合队列数据"
+            },
+            {
+              "date": "2026H2",
+              "event": "公司计划启动t(11;14) R/R MM III期研究"
+            }
+          ],
+          "resultNotes": [
+            "早期单臂小样本结果，尚不能与其他方案进行确定性比较。"
+          ],
+          "studyCategory": "关键注册/读出"
         },
         {
           "id": "sonrotoclax-nct04883957",
@@ -3675,7 +4076,8 @@
               "label": "ClinicalTrials.gov",
               "url": "https://clinicaltrials.gov/study/NCT04883957"
             }
-          ]
+          ],
+          "studyCategory": "公司探索"
         },
         {
           "id": "sonrotoclax-nct04771130",
@@ -3789,7 +4191,8 @@
               "label": "ClinicalTrials.gov",
               "url": "https://clinicaltrials.gov/study/NCT04771130"
             }
-          ]
+          ],
+          "studyCategory": "公司探索"
         },
         {
           "id": "sonrotoclax-nct04277637",
@@ -3823,14 +4226,44 @@
           },
           "subgroupAnalyses": [
             {
-              "dimension": "高危遗传学",
+              "dimension": "IGHV状态",
+              "subgroup": "IGHV突变型",
+              "n": "未单列",
+              "endpoint": "最佳uMRD4",
+              "effect": "91.7%",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "探索性分析"
+            },
+            {
+              "dimension": "IGHV状态",
+              "subgroup": "IGHV未突变型",
+              "n": "未单列",
+              "endpoint": "最佳uMRD4",
+              "effect": "96.8%",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "探索性分析"
+            },
+            {
+              "dimension": "分子高危",
               "subgroup": "TP53突变和/或del(17p)",
               "n": "未单列",
-              "endpoint": "最佳uMRD",
+              "endpoint": "最佳uMRD4",
               "effect": "92.9%",
-              "ci": "详见原始披露",
+              "ci": "未报告",
               "interactionP": "未报告",
-              "conclusion": "早期或探索性亚组；未报告交互检验时不能推断亚组间治疗效应差异"
+              "conclusion": "高危患者仍显示深度缓解"
+            },
+            {
+              "dimension": "分子低危",
+              "subgroup": "无TP53突变/del(17p)",
+              "n": "未单列",
+              "endpoint": "最佳uMRD4",
+              "effect": "97.7%",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "探索性分析"
             }
           ],
           "enrollment": 437,
@@ -3870,8 +4303,42 @@
           "evidenceLevel": "I期 · 官方披露/监管结果",
           "baselineCharacteristics": [
             {
-              "label": "实际入组基线",
-              "value": "尚未在注册库发布结构化结果；不以计划入组标准代替实际基线"
+              "label": "总入组",
+              "value": "137例",
+              "context": "160 mg n=51；320 mg n=86"
+            },
+            {
+              "label": "中位年龄",
+              "value": "62岁（32–84）"
+            },
+            {
+              "label": "男性",
+              "value": "71.5%"
+            },
+            {
+              "label": "del(17p)",
+              "value": "9.0%"
+            },
+            {
+              "label": "TP53突变",
+              "value": "22.0%"
+            },
+            {
+              "label": "del(11q)",
+              "value": "17.2%"
+            },
+            {
+              "label": "IGHV未突变",
+              "value": "59.8%"
+            },
+            {
+              "label": "高肿瘤负荷",
+              "value": "29.3%"
+            },
+            {
+              "label": "中位随访",
+              "value": "约34个月",
+              "context": "ASCO 2026更新"
             }
           ],
           "efficacyHighlights": [
@@ -3890,6 +4357,11 @@
             {
               "label": "达到uMRD4中位时间",
               "value": "联合治疗后4.5个月"
+            },
+            {
+              "label": "320 mg组疾病进展",
+              "value": "0例",
+              "context": "包括选择性停药患者"
             }
           ],
           "safetyHighlights": [
@@ -3913,7 +4385,22 @@
               "label": "对应公开结果",
               "url": "https://ir.beonemedicines.com/news/beone-medicines-establishes-standard-for-long-term-disease-control-in-cll-with-brukinsa-78-month-data-at/b4bd2456-0171-42db-b7ff-3dc5dea831a2"
             }
-          ]
+          ],
+          "milestones": [
+            {
+              "date": "2024-08-23",
+              "event": "既往披露数据截止"
+            },
+            {
+              "date": "2026-06",
+              "event": "ASCO 2026更新约34个月随访数据"
+            }
+          ],
+          "resultNotes": [
+            "泽布替尼导入8–12周后联合Sonrotoclax；320 mg为推荐II期剂量。",
+            "跨剂量队列最佳uMRD4为98.8%，并非所有指标均来自同一时间点。"
+          ],
+          "studyCategory": "关键注册/读出"
         },
         {
           "id": "sonrotoclax-nct04271956",
@@ -4013,7 +4500,8 @@
               "label": "ClinicalTrials.gov",
               "url": "https://clinicaltrials.gov/study/NCT04271956"
             }
-          ]
+          ],
+          "studyCategory": "研究者发起"
         }
       ]
     }

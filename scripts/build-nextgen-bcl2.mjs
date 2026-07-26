@@ -326,24 +326,106 @@ const baselineFromResults = (results) => {
 
 const publicResults = {
   NCT05471843: {
-    result: "R/R MCL、既往抗CD20及BTK抑制剂治疗后：IRC ORR 52%，CR 16%，中位DoR 15.8个月；支持美国加速批准。",
+    result: "R/R MCL、既往抗CD20及BTK抑制剂治疗后：IRC ORR 52.4%，CR 15.5%，中位DoR 15.8个月；支持美国FDA加速批准。",
     efficacy: [
-      ["IRC ORR", "52%（95%CI 42–62）"],
-      ["CR率", "16%（95%CI 9.1–24.0）"],
+      ["IRC ORR", "52.4%（95%CI 42.4–62.4）", "Part 2，320 mg，n=103"],
+      ["IRC CR率", "15.5%（95%CI 9.1–24.0）"],
+      ["研究者评估ORR", "47.6%（95%CI 37.6–57.6）"],
+      ["中位至缓解时间", "1.9个月（1.6–6.2）"],
       ["中位DoR", "15.8个月（95%CI 7.4–NE）"],
+      ["9个月持续缓解率", "63%"],
+      ["中位PFS", "6.5个月（95%CI 4.0–10.4）"],
+      ["中位OS", "未达到（95%CI 14.8–NE）"],
+      ["12个月OS率", "67.4%"],
     ],
     safety: [
-      ["实验室/临床TLS", "7%（按推荐爬坡方案）"],
-      ["常见不良反应", "肺炎16%、乏力16%"],
+      ["任何TEAE", "96.5%；≥3级52.2%", "安全性集n=115"],
+      ["中性粒细胞减少", "35.7%"],
+      ["血小板减少", "24.3%"],
+      ["贫血", "24.3%"],
+      ["感染", "39.1%"],
+      ["TLS", "7.0%（临床2例、实验室6例）", "均缓解，无TLS导致停药或死亡"],
+      ["发热性中性粒细胞减少", "1.7%"],
+      ["TEAE导致停药", "13.9%"],
+      ["TEAE导致死亡", "13.0%"],
     ],
-    subgroup: ["既往治疗", "抗CD20+BTKi后R/R MCL", "n=103", "ORR/DoR", "ORR 52%；DoR 15.8个月"],
+    baseline: [
+      ["总入组", "125例", "160 mg n=10；320 mg n=115"],
+      ["疗效可评估", "103例", "Part 2，320 mg RP2D"],
+      ["中位年龄", "68岁（39–85）"],
+      ["≥65岁", "64.3%"],
+      ["既往治疗", "中位3线"],
+      ["Stage IV", "78.3%"],
+      ["中高危MIPI", "69.6%"],
+      ["Ki-67 ≥30%", "53.0%"],
+      ["大肿块（≥5 cm）", "40.0%"],
+      ["末线难治", "87.0%"],
+    ],
+    subgroups: [
+      ["分子高危", "TP53突变", "n=22", "IRC ORR", "59.1%", "95%CI 36.4–79.3", "含3例CR"],
+      ["肿瘤负荷", "大肿块（LDi ≥5 cm）", "未单列", "IRC ORR", "54.8%", "未报告", "探索性分析"],
+      ["年龄", "≥65岁", "未单列", "IRC ORR", "52.3%", "未报告", "与总体结果接近"],
+      ["既往疗效", "末线难治", "未单列", "IRC ORR", "49.4%", "未报告", "探索性分析"],
+      ["增殖指数", "Ki-67 ≥30%", "未单列", "IRC ORR", "47.2%", "未报告", "探索性分析"],
+      ["既往线数", "≥3线", "未单列", "IRC ORR", "46.8%", "未报告", "探索性分析"],
+      ["预后评分", "高s-MIPI", "未单列", "IRC ORR", "40.0%", "未报告", "探索性分析"],
+      ["既往治疗", "既往匹妥布替尼", "n=14", "IRC ORR", "50.0%", "未报告", "小样本，谨慎解释"],
+      ["既往线数", "<3线", "未单列", "IRC ORR", "61.0%", "95%CI 44.5–75.8", "探索性分析"],
+    ],
+    milestones: [
+      ["2025-02-04", "关键数据截止，Part 2完成入组"],
+      ["2025-12", "ASH 2025口头报告"],
+      ["2025-11", "FDA授予优先审评"],
+      ["2026-05-13", "FDA加速批准BEQALZI用于既往至少2线且含BTKi的R/R MCL"],
+    ],
+    notes: [
+      "推荐方案为4周剂量递增至320 mg，每日一次口服直至疾病进展或不可耐受。",
+      "Part 1未观察到DLT，未达到MTD，320 mg确定为RP2D。",
+      "确证性III期CELESTIAL-RRMCL（NCT06742996）正在进行。",
+    ],
     source: "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-sonrotoclax-relapsed-or-refractory-mantle-cell-lymphoma",
   },
   NCT05479994: {
-    result: "中国注册性II期R/R CLL/SLL研究：IRC ORR 77%；总体安全性可管理，支持中国获批。",
-    efficacy: [["IRC ORR", "77%"]],
-    safety: [["总体安全性", "公司披露为总体耐受、AE可管理；完整发生率以正式论文为准"]],
-    subgroup: ["总体", "既往至少一线、含BTKi治疗的R/R CLL/SLL", "n=100", "IRC ORR", "77%"],
+    result: "中国注册性II期R/R CLL/SLL研究：IRC ORR 76.0%，CR/CRi 19.0%，最佳外周血uMRD4率49.0%；支持中国获批。",
+    efficacy: [
+      ["IRC ORR", "76.0%"],
+      ["CR/CRi", "19.0%"],
+      ["中位至缓解时间", "3.7个月"],
+      ["最佳外周血uMRD4", "49.0%（49/100）"],
+      ["中位至uMRD4时间", "5.8个月（3–12）"],
+      ["中位DoR", "未达到"],
+      ["中位PFS", "未达到"],
+      ["中位OS", "未达到"],
+    ],
+    safety: [
+      ["中性粒细胞减少", "54.0%；≥3级33.0%"],
+      ["血小板减少", "41.0%；≥3级11.0%"],
+      ["贫血", "33.0%"],
+      ["高尿酸血症", "33.0%"],
+      ["白细胞减少", "30.0%；≥3级10.0%"],
+      ["≥3级肺炎", "17.0%"],
+      ["≥3级TEAE", "61.0%"],
+      ["TLS", "无临床TLS；实验室TLS 4.0%"],
+      ["停药/死亡", "停药6.0%；死亡5.0%（均判定与治疗无关）"],
+    ],
+    baseline: [
+      ["总入组", "100例", "中国R/R CLL/SLL"],
+      ["既往BTKi+抗CD20", "46.0%"],
+      ["既往≥3线", "27.0%"],
+      ["del(17p)和/或TP53突变", "38.1%"],
+      ["IGHV未突变", "62.8%"],
+      ["BTK基因突变", "25.5%"],
+    ],
+    subgroups: [
+      ["IGHV状态", "IGHV未突变", "n=27", "研究者评估ORR", "74.1%（20/27）", "未报告", "与总体结果方向一致"],
+      ["分子高危", "del(17p)和/或TP53突变", "n=37", "研究者评估ORR", "70.3%（26/37）", "未报告", "探索性亚组"],
+      ["耐药机制", "BTK基因突变", "n=25", "研究者评估ORR", "72.0%（18/25）", "未报告", "探索性亚组"],
+    ],
+    milestones: [
+      ["2025-12", "ASH 2025公布主要分析结果"],
+      ["2026-01-06", "中国批准R/R CLL/SLL适应症"],
+    ],
+    notes: ["患者既往BTK抑制剂和免疫化疗不耐受或治疗失败，且既往未使用BCL-2抑制剂。"],
     source: "https://ir.beonemedicines.com/news/beone-medicines-novel-bcl2-inhibitor-sonrotoclax-achieves-first-in-world-approval-in-rr-mcl-and-rr-cllsll/562da165-f6a9-48d0-a357-aca27ac112ca",
   },
   NCT04277637: {
@@ -353,31 +435,132 @@ const publicResults = {
       ["CR率", "59.5%"],
       ["最佳uMRD4", "98.8%"],
       ["达到uMRD4中位时间", "联合治疗后4.5个月"],
+      ["320 mg组疾病进展", "0例", "包括选择性停药患者"],
     ],
     safety: [["安全性", "与既往联合研究一致；需注意中性粒细胞减少和TLS监测"]],
-    subgroup: ["高危遗传学", "TP53突变和/或del(17p)", "未单列", "最佳uMRD", "92.9%"],
+    baseline: [
+      ["总入组", "137例", "160 mg n=51；320 mg n=86"],
+      ["中位年龄", "62岁（32–84）"],
+      ["男性", "71.5%"],
+      ["del(17p)", "9.0%"],
+      ["TP53突变", "22.0%"],
+      ["del(11q)", "17.2%"],
+      ["IGHV未突变", "59.8%"],
+      ["高肿瘤负荷", "29.3%"],
+      ["中位随访", "约34个月", "ASCO 2026更新"],
+    ],
+    subgroups: [
+      ["IGHV状态", "IGHV突变型", "未单列", "最佳uMRD4", "91.7%", "未报告", "探索性分析"],
+      ["IGHV状态", "IGHV未突变型", "未单列", "最佳uMRD4", "96.8%", "未报告", "探索性分析"],
+      ["分子高危", "TP53突变和/或del(17p)", "未单列", "最佳uMRD4", "92.9%", "未报告", "高危患者仍显示深度缓解"],
+      ["分子低危", "无TP53突变/del(17p)", "未单列", "最佳uMRD4", "97.7%", "未报告", "探索性分析"],
+    ],
+    milestones: [
+      ["2024-08-23", "既往披露数据截止"],
+      ["2026-06", "ASCO 2026更新约34个月随访数据"],
+    ],
+    notes: [
+      "泽布替尼导入8–12周后联合Sonrotoclax；320 mg为推荐II期剂量。",
+      "跨剂量队列最佳uMRD4为98.8%，并非所有指标均来自同一时间点。",
+    ],
     source: "https://ir.beonemedicines.com/news/beone-medicines-establishes-standard-for-long-term-disease-control-in-cll-with-brukinsa-78-month-data-at/b4bd2456-0171-42db-b7ff-3dc5dea831a2",
+  },
+  NCT04973605: {
+    result: "t(11;14)阳性R/R多发性骨髓瘤早期队列中，Sonrotoclax联合卡非佐米和地塞米松的ORR为84%；样本量仅19例。",
+    efficacy: [
+      ["ORR", "84%（95%CI 60–97）", "疗效可评估n=19"],
+      ["CR/sCR", "32%（95%CI 13–57）"],
+      ["中位至缓解时间", "1.0个月（0.9–6.1）"],
+      ["中位DoR", "未达到"],
+      ["中位PFS", "未达到"],
+    ],
+    safety: [
+      ["DLT", "2例", "3级血小板减少、急性肾损伤"],
+      ["严重TEAE", "40%"],
+      ["肺炎", "15%"],
+      ["治疗相关停药/减量", "未观察到"],
+    ],
+    baseline: [
+      ["疗效可评估", "19例"],
+      ["生物标志物", "t(11;14)阳性"],
+      ["疾病状态", "复发/难治性多发性骨髓瘤"],
+    ],
+    subgroups: [],
+    milestones: [
+      ["2025-12", "ASH 2025公布早期联合队列数据"],
+      ["2026H2", "公司计划启动t(11;14) R/R MM III期研究"],
+    ],
+    notes: ["早期单臂小样本结果，尚不能与其他方案进行确定性比较。"],
+    source: "https://ir.beonemedicines.com/news/sonrotoclax-data-at-ash-2025-confirm-foundational-potential-across-b-cell-malignancies/4c69168c-15f1-4af8-98f3-38d14b8d32cd",
   },
   NCT05728658: {
     result: "Mesutoclax单药/联合早期研究：BTKi难治R/R MCL亚组ORR 84%、CR 36%；R/R CLL/SLL与MCL多个队列显示活性。",
     efficacy: [
       ["BTKi难治R/R MCL ORR", "84%"],
       ["BTKi难治R/R MCL CR", "36%"],
+      ["R/R MCL总体ORR", "87.5%"],
+      ["R/R MCL总体CRR", "46.9%"],
       ["R/R CLL/SLL ORR", "100%（早期小样本）"],
     ],
-    safety: [["总体安全性", "公司披露为耐受性和PK特征良好；TLS采用剂量爬坡管理"]],
-    subgroup: ["既往BTKi反应", "BTKi难治R/R MCL", "n=25", "ORR/CR", "84% / 36%"],
+    safety: [
+      ["DLT", "未观察到"],
+      ["MTD", "爬坡至150 mg仍未达到"],
+      ["总体安全性", "公司披露耐受性与PK特征良好；TLS采用剂量爬坡管理"],
+    ],
+    baseline: [
+      ["阶段性入组", "81例", "CLL/SLL、MCL及其他NHL亚型"],
+      ["推荐剂量", "125 mg每日一次"],
+      ["BTKi难治R/R MCL", "25例"],
+    ],
+    subgroups: [
+      ["疾病/既往BTKi", "R/R MCL总体", "未单列", "ORR/CRR", "87.5% / 46.9%", "未报告", "早期单臂研究"],
+      ["既往BTKi反应", "BTKi难治R/R MCL", "n=25", "ORR/CRR", "84.0% / 36.0%", "未报告", "注册性开发所聚焦人群"],
+      ["疾病/既往BTKi", "R/R CLL/SLL", "早期小样本", "ORR", "100%", "未报告", "样本量小，结果需后续验证"],
+    ],
+    milestones: [
+      ["2025-05", "CDE授予BTKi难治R/R MCL突破性治疗品种认定"],
+      ["2025-12", "ASH 2025更新R/R MCL数据"],
+      ["2026", "BTKi经治R/R MCL单臂注册研究推进中"],
+    ],
+    notes: ["不同疾病及既往BTKi暴露亚组来自同一早期篮式研究，不能简单合并比较。"],
     source: "https://www.innocarepharma.com/en/news/activity/en020260325-InnoCare-2025-Annual-Results",
   },
   NCT06378138: {
     result: "初治CLL/SLL的Mesutoclax+奥布替尼固定疗程：ORR 100%、靶病灶CR 57.1%、36周外周血uMRD 65%，未观察到TLS。",
     efficacy: [
-      ["ORR", "100%"],
-      ["靶病灶CR", "57.1%"],
-      ["36周外周血uMRD", "65%"],
+      ["100 mg组ORR", "95.2%（n=21）"],
+      ["125 mg组ORR", "100%（n=21）"],
+      ["总体ORR", "97.6%（N=42）"],
+      ["125 mg组24周CRR", "23.8%"],
+      ["125 mg组靶病灶CRR", "57.1%"],
+      ["125 mg组36周外周血uMRD", "65%"],
+      ["12个月PFS率", "100%"],
     ],
-    safety: [["TLS", "0例（n=42早期队列）"]],
-    subgroup: ["剂量/时间", "100 mg或125 mg；36周MRD检查点", "n=42", "ORR/CR/uMRD", "100% / 57.1% / 65%"],
+    safety: [
+      ["TLS", "0例（N=42）"],
+      ["≥3级中性粒细胞减少", "35.0%", "60例B细胞恶性肿瘤联合汇总分析"],
+      ["≥3级血小板减少", "11.7%", "60例联合汇总分析"],
+      ["≥3级贫血", "0%", "60例联合汇总分析"],
+      ["TEAE导致停药/死亡", "0%", "60例联合汇总分析"],
+    ],
+    baseline: [
+      ["总入组", "42例", "初治CLL/SLL；100 mg n=21，125 mg n=21"],
+      ["中高危TLS风险", "76.2%（32/42）"],
+      ["TP53突变/del(17p)", "14.3%（6/42）"],
+    ],
+    subgroups: [
+      ["剂量", "100 mg", "n=21", "ORR", "95.2%", "未报告", "早期剂量队列"],
+      ["剂量", "125 mg", "n=21", "ORR/靶病灶CRR/uMRD", "100% / 57.1% / 65%", "未报告", "uMRD为36周外周血结果"],
+      ["风险特征", "中高危TLS风险", "n=32", "TLS", "0例", "不适用", "需结合导入和预防策略解释"],
+      ["分子高危", "TP53突变和/或del(17p)", "n=6", "疗效", "公司称与总体一致", "未报告", "未披露独立效应值"],
+    ],
+    milestones: [
+      ["2025-03", "注册性III期首例患者入组"],
+      ["2025-06", "EHA首次披露II期结果"],
+      ["2026-02", "III期注册研究完成患者入组"],
+      ["2026-06", "ASCO 2026更新联合队列数据"],
+    ],
+    notes: ["奥布替尼导入后联合ICP-248固定疗程；达到方案规定的MRD目标后可按方案停药。"],
     source: "https://www.innocarepharma.com/uploads/2026-04-23/InnoCare-2026-Q1-Results-NDR_EN.pdf",
   },
   NCT06656494: {
@@ -385,13 +568,75 @@ const publicResults = {
     efficacy: [
       ["初治MDS ORR", "100%"],
       ["初治MDS CR", "40%（IWG 2006）"],
+      ["初治MDS骨髓CR", "60%（IWG 2006）"],
+      ["初治MDS复合CR", "90%（IWG 2023）"],
       ["初治AML cCR", "81.8%"],
       ["AML cCR患者MRD阴性", "86.5%"],
+      ["AML第1周期达cCR", "83%（在cCR应答者中）"],
+      ["125 mg组6个月DoR率", "93.3%"],
+      ["125 mg组6个月OS率", "90.5%"],
     ],
-    safety: [["总体安全性", "早期披露未见DLT或TLS；长期骨髓抑制数据仍需成熟"]],
-    subgroup: ["疾病类型", "初治AML vs 初治MDS", "AML/MDS分队列", "cCR/ORR", "AML cCR 81.8%；MDS ORR 100%"],
+    safety: [
+      ["DLT", "未观察到"],
+      ["MTD", "未达到"],
+      ["TLS", "未观察到"],
+      ["30/60天死亡率", "0% / 0%"],
+      ["非血液学AE", "多数为1–2级"],
+    ],
+    baseline: [
+      ["研究人群", "初治AML、初治MDS及部分R/R AML"],
+      ["治疗方案", "ICP-248联合阿扎胞苷"],
+      ["AML数据截止", "2026-04-13"],
+      ["MDS数据截止", "2026-04-20"],
+    ],
+    subgroups: [
+      ["疾病类型", "初治AML", "可评估人群", "cCR/MRD阴性", "81.8% / 86.5%", "未报告", "I期非随机数据"],
+      ["分子高危", "TP53突变初治AML", "未单列", "cCR/6个月DoR", "71.4% / >50%", "未报告", "小样本探索性亚组"],
+      ["疾病类型", "初治MDS", "可评估人群", "ORR/复合CR", "100% / 90%", "未报告", "分别按IWG 2006与2023标准"],
+    ],
+    milestones: [
+      ["2025-12", "ASH 2025披露早期数据"],
+      ["2026-06-02", "ASCO 2026口头报告更新AML/MDS结果"],
+    ],
+    notes: [
+      "AML与MDS结果来自同一早期研究的不同疾病队列，评价标准不同。",
+      "结果成熟度仍有限，长期DoR、PFS、OS与骨髓抑制风险仍需随访。",
+    ],
     source: "https://www.innocarepharma.com/en/news/activity/en020260603",
   },
+};
+
+const sonrotoclaxKeyTrials = new Set([
+  "NCT04277637",
+  "NCT04973605",
+  "NCT05471843",
+  "NCT05479994",
+  "NCT06073821",
+  "NCT06742996",
+  "NCT06943872",
+  "NCT07277231",
+  "NCT07321652",
+]);
+
+const sonrotoclaxPharmacologyTrials = new Set([
+  "NCT05844111",
+  "NCT06543043",
+  "NCT07141511",
+  "NCT07628881",
+]);
+
+const classifyStudy = ({ nct, program, healthy, rawSponsor, phases }) => {
+  if (program === "sonrotoclax") {
+    if (sonrotoclaxKeyTrials.has(nct)) return "关键注册/读出";
+    if (healthy || sonrotoclaxPharmacologyTrials.has(nct)) return "药理/药代";
+    if (/BeOne|BeiGene/i.test(rawSponsor ?? "")) return "公司探索";
+    return "研究者发起";
+  }
+  if (["NCT05728658", "NCT06378138", "NCT06656494", "NCT07082686"].includes(nct)) {
+    return "关键注册/读出";
+  }
+  if (phases.includes("PHASE3")) return "关键注册/读出";
+  return "公司探索";
 };
 
 const makeTrial = (study, program) => {
@@ -424,6 +669,15 @@ const makeTrial = (study, program) => {
     ?? protocol.identificationModule?.organization?.fullName;
   const sponsor = sponsorNames[rawSponsor]
     ?? (isSonrotoclax ? "百济神州（BeOne Medicines）" : "诺诚健华");
+  const studyCategory = classifyStudy({
+    nct,
+    program,
+    healthy,
+    rawSponsor,
+    phases: protocol.designModule?.phases ?? [],
+  });
+  const subgroups = readout?.subgroups
+    ?? (readout?.subgroup ? [readout.subgroup] : []);
   return {
     id: `${program}-${nct.toLowerCase()}`,
     name: `${shortName} / ${indication}`,
@@ -443,17 +697,17 @@ const makeTrial = (study, program) => {
       keyExclusion: eligibility.keyExclusion,
       stratificationFactors: ["若为随机研究，具体分层因素以完整研究方案/SAP为准；注册摘要未披露时不作推断"],
     },
-    subgroupAnalyses: readout
-      ? [{
-          dimension: readout.subgroup[0],
-          subgroup: readout.subgroup[1],
-          n: readout.subgroup[2],
-          endpoint: readout.subgroup[3],
-          effect: readout.subgroup[4],
-          ci: "详见原始披露",
+    subgroupAnalyses: subgroups.length
+      ? subgroups.map(([dimension, subgroup, n, endpoint, effect, ci, conclusion]) => ({
+          dimension,
+          subgroup,
+          n,
+          endpoint,
+          effect,
+          ci: ci ?? "未报告",
           interactionP: "未报告",
-          conclusion: "早期或探索性亚组；未报告交互检验时不能推断亚组间治疗效应差异",
-        }]
+          conclusion: conclusion ?? "早期或探索性亚组；未报告交互检验时不能推断亚组间治疗效应差异",
+        }))
       : [{
           dimension: "公开结果状态",
           subgroup: "预设队列/亚组",
@@ -488,12 +742,14 @@ const makeTrial = (study, program) => {
     source: "ClinicalTrials.gov官方注册记录；公司官方披露/监管文件仅在可对应到具体研究时补充。数据按NCT号去重。",
     dataCut: readout ? "最新公开披露截至2026-07-26" : "注册状态核对：2026-07-26",
     evidenceLevel: readout ? `${phase} · 官方披露/监管结果` : `${phase} · 注册设计（暂无公开结果）`,
-    baselineCharacteristics: baselineFromResults(study.resultsSection),
+    baselineCharacteristics: readout?.baseline
+      ? readout.baseline.map(([label, value, context]) => ({ label, value, context }))
+      : baselineFromResults(study.resultsSection),
     efficacyHighlights: readout
-      ? readout.efficacy.map(([label, value]) => ({ label, value }))
+      ? readout.efficacy.map(([label, value, context]) => ({ label, value, context }))
       : [{ label: "疗效结果", value: "尚未公开" }],
     safetyHighlights: readout
-      ? readout.safety.map(([label, value]) => ({ label, value }))
+      ? readout.safety.map(([label, value, context]) => ({ label, value, context }))
       : [{ label: "安全性结果", value: "尚未公开；仅列方案监测终点不等同于实际发生率" }],
     pkHighlights: aliases.length
       ? [{ label: "其他登记/方案号", value: aliases.slice(0, 5).join("；") }]
@@ -502,6 +758,9 @@ const makeTrial = (study, program) => {
       { label: "ClinicalTrials.gov", url: `https://clinicaltrials.gov/study/${nct}` },
       ...(readout ? [{ label: "对应公开结果", url: readout.source }] : []),
     ],
+    milestones: readout?.milestones?.map(([date, event]) => ({ date, event })),
+    resultNotes: readout?.notes,
+    studyCategory,
   };
 };
 
@@ -555,6 +814,7 @@ mesutoclaxTrials.push({
   source: "诺诚健华2025年年报及2026年一季度披露；未编造尚未公布的登记号或方案字段。",
   dataCut: "2026-07-26",
   evidenceLevel: "III期 · 公司正式披露（登记待公开）",
+  studyCategory: "关键注册/读出",
   baselineCharacteristics: [{ label: "实际入组基线", value: "尚未公开" }],
   efficacyHighlights: [{ label: "疗效结果", value: "尚未公开" }],
   safetyHighlights: [{ label: "安全性结果", value: "尚未公开" }],
