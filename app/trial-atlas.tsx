@@ -242,7 +242,7 @@ function Header({
       </button>
       <nav>
         <button onClick={onHome}>管线图谱</button>
-        <a href="/compare">临床对比</a>
+        <a href="/compare" target="_blank" rel="noopener noreferrer">临床对比</a>
         <span className="source-badge">LOCAL DATA</span>
       </nav>
     </header>
@@ -385,7 +385,7 @@ function TrialDocument({
             <h2>{trial.name}</h2>
             <p>{company.name} · {pipeline.code} · {trial.nct}</p>
           </div>
-          <a className="clinical-back" href={`/#pipeline/${pipeline.id}`}>← 返回管线</a>
+          <a className="clinical-back" href={`/#pipeline/${pipeline.id}`} target="_blank" rel="noopener noreferrer">← 返回管线</a>
         </div>
 
         <div className="detail-status-row">
@@ -541,7 +541,7 @@ function TrialDocument({
               <span>原始来源</span>
               <div>
                 {trial.sources.map((source) => (
-                  <a key={source.url} href={source.url} target="_blank" rel="noreferrer">
+                  <a key={source.url} href={source.url} target="_blank" rel="noopener noreferrer">
                     {source.label} ↗
                   </a>
                 ))}
@@ -571,7 +571,7 @@ export function ClinicalTrialPage() {
       <div className="clinical-loading">
         <span className="brand-mark">TS</span>
         <p>{trialId === null ? "正在读取临床数据…" : "未找到该临床记录"}</p>
-        {trialId !== null && <a href="/">返回管线图谱</a>}
+        {trialId !== null && <a href="/" target="_blank" rel="noopener noreferrer">返回管线图谱</a>}
       </div>
     );
   }
@@ -579,7 +579,7 @@ export function ClinicalTrialPage() {
   return (
     <div className="app-shell clinical-app">
       <header className="topbar">
-        <a className="brand" href="/">
+        <a className="brand" href="/" target="_blank" rel="noopener noreferrer">
           <span className="brand-mark">TS</span>
           <span>
             <b>TrialScope</b>
@@ -587,7 +587,7 @@ export function ClinicalTrialPage() {
           </span>
         </a>
         <nav>
-          <a href={`/#pipeline/${pipelineRecord.id}`}>返回 {pipelineRecord.code}</a>
+          <a href={`/#pipeline/${pipelineRecord.id}`} target="_blank" rel="noopener noreferrer">返回 {pipelineRecord.code}</a>
           <span className="source-badge">LOCAL DATA</span>
         </nav>
       </header>
@@ -787,7 +787,7 @@ function PipelinePage({
                   </div>
                 )}
                 <div className="trial-row">
-                  <a className="trial-name" href={`/clinical?trial=${encodeURIComponent(trial.id)}`}>
+                  <a className="trial-name" href={`/clinical?trial=${encodeURIComponent(trial.id)}`} target="_blank" rel="noopener noreferrer">
                     <strong>{trial.name}</strong>
                     <small>{trial.nct}</small>
                   </a>
@@ -941,13 +941,13 @@ export function ClinicalComparePage() {
   return (
     <div className="app-shell compare-app">
       <header className="topbar">
-        <a className="brand" href="/">
+        <a className="brand" href="/" target="_blank" rel="noopener noreferrer">
           <span className="brand-mark">TS</span>
           <span><b>TrialScope</b><small>Clinical Intelligence</small></span>
         </a>
         <nav>
-          <a href="/">管线图谱</a>
-          <a className="nav-active" href="/compare">临床对比</a>
+          <a href="/" target="_blank" rel="noopener noreferrer">管线图谱</a>
+          <a className="nav-active" href="/compare" target="_blank" rel="noopener noreferrer">临床对比</a>
           <span className="source-badge">LOCAL DATA</span>
         </nav>
       </header>

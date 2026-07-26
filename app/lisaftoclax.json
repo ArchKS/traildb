@@ -707,6 +707,138 @@
           "sources": [{"label": "ClinicalTrials.gov", "url": "https://clinicaltrials.gov/study/NCT06641414"}]
         },
         {
+          "id": "apg2575-ac101",
+          "name": "APG2575AC101 / Lisaftoclax多队列AML/MDS研究",
+          "nct": "NCT04501120",
+          "phase": "I/II期",
+          "status": "招募中",
+          "indication": "R/R AML、初治AML、HR-MDS及相关髓系恶性肿瘤",
+          "design": "开放标签、多中心、非随机、平行分配I/II期研究；8个递进治疗组",
+          "arms": "①Lisaftoclax单药；②Lisaftoclax+减量HHT；③Lisaftoclax+标准HHT；④Lisaftoclax+AZA（R/R AML/MPAL/BPDCN/CMML）；⑤Lisaftoclax+AZA（HR-MDS）；⑥Lisaftoclax+AZA（初治AML）；⑦Lisaftoclax+AZA+Olverembatinib（R/R AML）；⑧Lisaftoclax+HHT+Olverembatinib（R/R AML）",
+          "population": "成人R/R AML、MPAL、CMML、HR-MDS、BPDCN，以及因年龄或合并症不适合标准化疗的初治AML患者",
+          "eligibility": {
+            "keyInclusion": [
+              "符合WHO 2016标准的R/R AML、MPAL、CMML、HR-MDS、BPDCN，或不适合标准化疗的初治AML",
+              "年龄≥18岁",
+              "ECOG PS 0–2；部分60–74岁且不适合标准化疗者允许ECOG PS 3",
+              "能够口服Lisaftoclax",
+              "预期生存期≥3个月",
+              "肝肾功能满足方案要求"
+            ],
+            "keyExclusion": [
+              "急性早幼粒细胞白血病，或t(9;22)/BCR-ABL1阳性AML",
+              "既往治疗毒性尚未恢复至CTCAE 5.0低于2级（脱发除外）",
+              "已知中枢神经系统白血病浸润",
+              "有症状的活动性真菌、细菌或病毒感染",
+              "既往异基因移植/细胞免疫治疗，或12个月内自体移植",
+              "首剂前规定时间内接受其他抗肿瘤治疗或强/中度CYP3A调节剂"
+            ],
+            "stratificationFactors": [
+              "非随机研究，不设随机分层",
+              "按疾病类型、既往治疗和联合方案分队列",
+              "剂量递增阶段用于确定MTD/RP2D"
+            ]
+          },
+          "subgroupAnalyses": [
+            {
+              "dimension": "三联队列",
+              "subgroup": "Lisaftoclax + AZA + Olverembatinib",
+              "n": "尚未公开",
+              "endpoint": "DLT、MTD/RP2D、ORR、PFS、DoR、OS",
+              "effect": "尚无可核验公开结果",
+              "ci": "未报告",
+              "interactionP": "不适用",
+              "conclusion": "面向R/R AML的探索性三联队列；注册信息确认方案存在，但尚不能判断疗效"
+            },
+            {
+              "dimension": "三联队列",
+              "subgroup": "Lisaftoclax + HHT + Olverembatinib",
+              "n": "尚未公开",
+              "endpoint": "DLT、MTD/RP2D、ORR、PFS、DoR、OS",
+              "effect": "尚无可核验公开结果",
+              "ci": "未报告",
+              "interactionP": "不适用",
+              "conclusion": "面向R/R AML的探索性三联队列；未公布实际入组基线和亚组疗效"
+            },
+            {
+              "dimension": "疾病队列",
+              "subgroup": "R/R AML/MPAL/BPDCN/CMML、HR-MDS、初治AML",
+              "n": "计划总入组682例",
+              "endpoint": "安全性、剂量、ORR及生存终点",
+              "effect": "尚未公开",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "各队列为非随机探索，未来不可直接进行未经调整的跨队列优效比较"
+            }
+          ],
+          "enrollment": 682,
+          "primaryEndpoint": "首周期DLT；MTD/RP2D",
+          "secondaryEndpoints": [
+            "Cmax",
+            "AUC",
+            "ORR（CR+CRi+PR）",
+            "PFS",
+            "DoR",
+            "OS"
+          ],
+          "startDate": "2020-09-28",
+          "primaryCompletion": "预计2028-09；研究完成预计2029-09",
+          "countries": [
+            "中国（12家中心）"
+          ],
+          "sponsor": "Ascentage Pharma Group Inc. / Suzhou Yasheng Pharmaceutical Co., Ltd.",
+          "fda": {
+            "regulatoryId": "NCT04501120 / APG2575AC101",
+            "designation": "Lisaftoclax的AML开发已获FDA孤儿药资格；本研究为中国多中心早期研究",
+            "submissionStatus": "招募中，尚无该三联方案的注册申报结论",
+            "lastVerified": "2026-07-26"
+          },
+          "dataCut": "ClinicalTrials.gov更新于2026-04-29",
+          "evidenceLevel": "I/II期 · 官方注册设计（暂无三联结果）",
+          "baselineCharacteristics": [
+            {
+              "label": "实际入组基线",
+              "value": "尚未公开；682例为预计总入组，不代表当前已入组人数"
+            },
+            {
+              "label": "研究中心",
+              "value": "12家，均位于中国"
+            },
+            {
+              "label": "年龄范围",
+              "value": "≥18岁"
+            },
+            {
+              "label": "体能状态",
+              "value": "ECOG 0–2；特定不适合化疗患者可为3"
+            }
+          ],
+          "efficacyHighlights": [
+            {
+              "label": "三联疗效",
+              "value": "尚未公开"
+            }
+          ],
+          "safetyHighlights": [
+            {
+              "label": "三联安全性",
+              "value": "尚未公开；主要观察首周期DLT并确定MTD/RP2D"
+            },
+            {
+              "label": "重点风险",
+              "value": "TLS、骨髓抑制、感染及药物相互作用需按方案监测"
+            }
+          ],
+          "result": "ClinicalTrials.gov最新记录确认研究包含8个治疗组，其中第7组为Lisaftoclax+AZA+Olverembatinib、第8组为Lisaftoclax+HHT+Olverembatinib。当前预计总入组682例，但尚未发布三联队列实际基线、疗效或安全性结果。",
+          "source": "ClinicalTrials.gov官方注册记录；杭州中心联系人列有金洁教授，但注册摘要未将其标注为全研究唯一PI。",
+          "sources": [
+            {
+              "label": "ClinicalTrials.gov",
+              "url": "https://clinicaltrials.gov/study/NCT04501120"
+            }
+          ]
+        },
+        {
           "id": "apg2575-mm-pd",
           "name": "R/R MM 联合Pd早期队列",
           "nct": "源文件未明确NCT",
