@@ -166,6 +166,8 @@ const indicationOrder = [
   "健康受试者",
 ];
 
+const clinicalPhaseOrder = ["III期", "IIIb期", "II/III期", "II期", "Ib/II期", "I/II期", "I期"];
+
 const canonicalIndication = (indication: string) => {
   const normalized = indication.toUpperCase();
   const hasCLL = /\bCLL\b|\bSLL\b|慢性淋巴细胞/.test(normalized);
@@ -739,16 +741,15 @@ function PipelinePage({
     return counts;
   }, new Map<string, number>());
   const indicationOptions = [...indicationCounts.entries()];
-  const phaseOrder = ["III期", "IIIb期", "II/III期", "II期", "Ib/II期", "I/II期", "I期"];
   const phaseCounts = categoryTrials.reduce((counts, trial) => {
     counts.set(trial.phase, (counts.get(trial.phase) ?? 0) + 1);
     return counts;
   }, new Map<string, number>());
   const phaseOptions = [...phaseCounts.entries()].sort(([a], [b]) => {
-    const aIndex = phaseOrder.indexOf(a);
-    const bIndex = phaseOrder.indexOf(b);
-    return (aIndex === -1 ? phaseOrder.length : aIndex)
-      - (bIndex === -1 ? phaseOrder.length : bIndex);
+    const aIndex = clinicalPhaseOrder.indexOf(a);
+    const bIndex = clinicalPhaseOrder.indexOf(b);
+    return (aIndex === -1 ? clinicalPhaseOrder.length : aIndex)
+      - (bIndex === -1 ? clinicalPhaseOrder.length : bIndex);
   });
   const indicationSelected = indicationFilter !== "all";
   const phaseSelected = phaseFilter !== "all";
@@ -1002,6 +1003,8 @@ export function ClinicalComparePage() {
   const [query, setQuery] = useState("");
   const [companyFilter, setCompanyFilter] = useState("all");
   const [pipelineFilter, setPipelineFilter] = useState("all");
+  const [indicationFilter, setIndicationFilter] = useState("all");
+  const [phaseFilter, setPhaseFilter] = useState("all");
   const [visibleLimit, setVisibleLimit] = useState(8);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const compareResultsRef = useRef<HTMLElement>(null);
@@ -1029,12 +1032,49 @@ export function ClinicalComparePage() {
     [companyFilter]
   );
 
-  const filteredTrials = useMemo(() => {
-    const keyword = query.trim().toLowerCase();
-    return allTrials.filter((trial) => {
+  const scopedTrials = useMemo(
+    () => allTrials.filter((trial) => {
       const pipeline = allPipelines.find((item) => item.id === trial.pipelineId);
       const companyMatches = companyFilter === "all" || pipeline?.company.id === companyFilter;
       const pipelineMatches = pipelineFilter === "all" || trial.pipelineId === pipelineFilter;
+      return companyMatches && pipelineMatches;
+    }),
+    [companyFilter, pipelineFilter],
+  );
+
+  const compareIndicationOptions = useMemo(() => {
+    const counts = scopedTrials.reduce((result, trial) => {
+      const indication = canonicalIndication(trial.indication);
+      result.set(indication, (result.get(indication) ?? 0) + 1);
+      return result;
+    }, new Map<string, number>());
+    return [...counts.entries()].sort(([a], [b]) => {
+      const aIndex = indicationOrder.indexOf(a);
+      const bIndex = indicationOrder.indexOf(b);
+      return (aIndex === -1 ? indicationOrder.length : aIndex)
+        - (bIndex === -1 ? indicationOrder.length : bIndex);
+    });
+  }, [scopedTrials]);
+
+  const comparePhaseOptions = useMemo(() => {
+    const counts = scopedTrials.reduce((result, trial) => {
+      result.set(trial.phase, (result.get(trial.phase) ?? 0) + 1);
+      return result;
+    }, new Map<string, number>());
+    return [...counts.entries()].sort(([a], [b]) => {
+      const aIndex = clinicalPhaseOrder.indexOf(a);
+      const bIndex = clinicalPhaseOrder.indexOf(b);
+      return (aIndex === -1 ? clinicalPhaseOrder.length : aIndex)
+        - (bIndex === -1 ? clinicalPhaseOrder.length : bIndex);
+    });
+  }, [scopedTrials]);
+
+  const filteredTrials = useMemo(() => {
+    const keyword = query.trim().toLowerCase();
+    return scopedTrials.filter((trial) => {
+      const indicationMatches = indicationFilter === "all"
+        || canonicalIndication(trial.indication) === indicationFilter;
+      const phaseMatches = phaseFilter === "all" || trial.phase === phaseFilter;
       const keywordMatches = !keyword || [
         trial.name,
         trial.nct,
@@ -1044,9 +1084,9 @@ export function ClinicalComparePage() {
         trial.phase,
         trial.status,
       ].join(" ").toLowerCase().includes(keyword);
-      return companyMatches && pipelineMatches && keywordMatches;
+      return indicationMatches && phaseMatches && keywordMatches;
     }).sort(compareTrialOrder);
-  }, [companyFilter, pipelineFilter, query]);
+  }, [scopedTrials, indicationFilter, phaseFilter, query]);
 
   const selected = allTrials.filter((trial) => selectedIds.includes(trial.id));
 
@@ -1068,6 +1108,15 @@ export function ClinicalComparePage() {
   const changeCompany = (value: string) => {
     setCompanyFilter(value);
     setPipelineFilter("all");
+    setIndicationFilter("all");
+    setPhaseFilter("all");
+    setVisibleLimit(8);
+  };
+
+  const changePipeline = (value: string) => {
+    setPipelineFilter(value);
+    setIndicationFilter("all");
+    setPhaseFilter("all");
     setVisibleLimit(8);
   };
 
@@ -1122,10 +1171,34 @@ export function ClinicalComparePage() {
                 <span>管线</span>
                 <select
                   value={pipelineFilter}
-                  onChange={(event) => { setPipelineFilter(event.target.value); setVisibleLimit(8); }}
+                  onChange={(event) => changePipeline(event.target.value)}
                 >
                   <option value="all">全部管线</option>
                   {pipelineOptions.map((pipeline) => <option key={pipeline.id} value={pipeline.id}>{pipeline.code}</option>)}
+                </select>
+              </label>
+              <label>
+                <span>适应症</span>
+                <select
+                  value={indicationFilter}
+                  onChange={(event) => { setIndicationFilter(event.target.value); setVisibleLimit(8); }}
+                >
+                  <option value="all">全部适应症（{scopedTrials.length}）</option>
+                  {compareIndicationOptions.map(([indication, count]) => (
+                    <option key={indication} value={indication}>{indication}（{count}）</option>
+                  ))}
+                </select>
+              </label>
+              <label>
+                <span>临床阶段</span>
+                <select
+                  value={phaseFilter}
+                  onChange={(event) => { setPhaseFilter(event.target.value); setVisibleLimit(8); }}
+                >
+                  <option value="all">全部阶段（{scopedTrials.length}）</option>
+                  {comparePhaseOptions.map(([phase, count]) => (
+                    <option key={phase} value={phase}>{phase}（{count}）</option>
+                  ))}
                 </select>
               </label>
             </div>
