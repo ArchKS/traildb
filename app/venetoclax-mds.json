@@ -1,4670 +1,560 @@
 [
   {
-    "id": "ven-mds-nct01211457",
-    "name": "NCT01211457 / Sapacitabine（核苷类似物） + 维奈克拉",
-    "nct": "NCT01211457",
-    "phase": "I/II期",
-    "status": "状态未知",
-    "indication": "AML/MDS",
-    "design": "非随机、开放标签、单组、I/II期",
-    "arms": "含维奈克拉治疗臂：Sapacitabine（核苷类似物） + 维奈克拉。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上AML/MDS患者；MDS患者须进入含维奈克拉的治疗队列，并符合相应风险分层、既往治疗和器官功能要求",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 65,
-    "primaryEndpoint": "完全缓解率（CR）",
-    "secondaryEndpoints": [
-      "response duration",
-      "transfusion requirements",
-      "hospitalized days",
-      "总生存期（OS）"
-    ],
-    "startDate": "2010-06-17",
-    "primaryCompletion": "2020-06-20",
-    "countries": [
-      "美国"
-    ],
-    "sponsor": "Cyclacel Pharmaceuticals, Inc.",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "研究进行中或尚未开始；暂无成熟的MDS队列疗效、基线及亚组结果。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "I/II期 · 状态未知",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT01211457"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2010-06-17",
-        "event": "研究启动"
-      },
-      {
-        "date": "2020-06-20",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "AML/MDS篮式研究"
-  },
-  {
-    "id": "ven-mds-nct02115295",
-    "name": "NCT02115295 / 克拉屈滨 + 阿糖胞苷 + 吉瑞替尼 + 伊达比星 + 米哚妥林 + 维奈克拉",
-    "nct": "NCT02115295",
-    "phase": "II期",
-    "status": "招募中",
-    "indication": "MDS",
-    "design": "非随机/未说明分配、开放标签、单组、II期",
-    "arms": "含维奈克拉治疗臂：克拉屈滨 + 阿糖胞苷 + 吉瑞替尼 + 伊达比星 + 米哚妥林 + 维奈克拉。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years至65 YearsMDS患者；骨髓原始细胞、IPSS/IPSS-R风险、既往HMA治疗及移植适合性须符合登记方案",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years至65 Years",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 508,
-    "primaryEndpoint": "完全缓解率（CR）",
-    "secondaryEndpoints": [
-      "总体缓解率（ORR/mOR）",
-      "总生存期（OS）",
-      "无事件生存期（EFS）",
-      "Duration of response",
-      "Incidence of toxicities"
-    ],
-    "startDate": "2014-05-19",
-    "primaryCompletion": "2030-05-31",
-    "countries": [
-      "美国"
-    ],
-    "sponsor": "M.D. Anderson Cancer Center",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "研究进行中或尚未开始；暂无成熟的MDS队列疗效、基线及亚组结果。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "II期 · 招募中",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT02115295"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2014-05-19",
-        "event": "研究启动"
-      },
-      {
-        "date": "2030-05-31",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "AML/MDS篮式研究"
-  },
-  {
-    "id": "ven-mds-nct02250937",
-    "name": "NCT02250937 / 白消安 + 克拉屈滨 + 磷酸氟达拉滨 + 维奈克拉",
-    "nct": "NCT02250937",
-    "phase": "II期",
-    "status": "活跃，未招募",
-    "indication": "MDS移植桥接/预处理/维持",
-    "design": "随机、开放标签、平行分组、II期",
-    "arms": "含维奈克拉治疗臂：白消安 + 克拉屈滨 + 磷酸氟达拉滨 + 维奈克拉。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "2 Years至70 YearsMDS或相关髓系肿瘤患者，拟接受异基因造血干细胞移植、桥接治疗或移植后维持；具体疾病状态和移植条件以方案为准",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄2 Years至70 Years",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "疾病风险/分型",
-        "既往治疗或移植状态",
-        "地区/研究中心；以登记方案为准"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 116,
-    "primaryEndpoint": "无进展生存期（PFS）；Disease free survival (DFS)",
-    "secondaryEndpoints": [
-      "Incidence of toxicity of these regimens",
-      "Cumulative incidence of acute graft versus host dise…",
-      "Cumulative incidence of chronic GVHD",
-      "总生存期（OS）",
-      "造血重建/植入",
-      "Cumulative incidence of relapse"
-    ],
-    "startDate": "2014-10-27",
-    "primaryCompletion": "2027-10-31",
-    "countries": [
-      "美国"
-    ],
-    "sponsor": "M.D. Anderson Cancer Center",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "研究进行中或尚未开始；暂无成熟的MDS队列疗效、基线及亚组结果。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "II期 · 活跃，未招募",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT02250937"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2014-10-27",
-        "event": "研究启动"
-      },
-      {
-        "date": "2027-10-31",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "移植/维持"
-  },
-  {
-    "id": "ven-mds-nct02392572",
-    "name": "NCT02392572 / ONC201（Akt/ERK通路药物） + 维奈克拉",
-    "nct": "NCT02392572",
-    "phase": "I/II期",
-    "status": "招募中",
-    "indication": "复发/难治性MDS",
-    "design": "非随机、开放标签、平行分组、I/II期",
-    "arms": "含维奈克拉治疗臂：ONC201（Akt/ERK通路药物） + 维奈克拉。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上复发/难治性MDS患者；骨髓原始细胞、IPSS/IPSS-R风险、既往HMA治疗及移植适合性须符合登记方案",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 120,
-    "primaryEndpoint": "推荐II期剂量/最大耐受剂量；Objective Response (OR) (Phase II)",
-    "secondaryEndpoints": [
-      "缓解率",
-      "缓解持续时间",
-      "总生存期",
-      "安全性"
-    ],
-    "startDate": "2015-11-03",
-    "primaryCompletion": "2026-11-30",
-    "countries": [
-      "美国"
-    ],
-    "sponsor": "M.D. Anderson Cancer Center",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "研究进行中或尚未开始；暂无成熟的MDS队列疗效、基线及亚组结果。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "I/II期 · 招募中",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT02392572"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2015-11-03",
-        "event": "研究启动"
-      },
-      {
-        "date": "2026-11-30",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "MDS专门研究"
-  },
-  {
-    "id": "ven-mds-nct02942290",
-    "name": "M15-531 / 初治高危MDS",
-    "nct": "NCT02942290",
-    "phase": "Ib期",
-    "status": "活跃，未招募",
-    "indication": "初治高危MDS",
-    "design": "非随机、开放标签、单组、Ib期",
-    "arms": "含维奈克拉治疗臂：阿扎胞苷 + 维奈克拉。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上初治高危MDS患者；骨髓原始细胞、IPSS/IPSS-R风险、既往HMA治疗及移植适合性须符合登记方案",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [
-      {
-        "dimension": "基因突变",
-        "subgroup": "TP53突变",
-        "n": "20",
-        "endpoint": "CR / OS",
-        "effect": "CR 25%；中位OS 11.2个月",
-        "ci": "CR 95% CI 8.7–49.1；OS 95% CI 5.7–18.1",
-        "interactionP": "未报告",
-        "conclusion": "较总体人群OS数值更短；探索性小样本"
-      },
-      {
-        "dimension": "输血状态",
-        "subgroup": "基线RBC和/或血小板输血依赖",
-        "n": "59",
-        "endpoint": "输血独立",
-        "effect": "40.7%转为输血独立",
-        "ci": "未报告",
-        "interactionP": "未报告",
-        "conclusion": "24例获得输血独立，其中11例同时达到CR"
-      },
-      {
-        "dimension": "预后因素",
-        "subgroup": "ECOG与基线骨髓原始细胞",
-        "n": "107",
-        "endpoint": "OS",
-        "effect": "单/多因素分析提示可能影响OS",
-        "ci": "未报告",
-        "interactionP": "未报告",
-        "conclusion": "探索性分析，受样本量限制，不可视为确证性预测标志物"
-      }
-    ],
-    "enrollment": 129,
-    "primaryEndpoint": "AUCt for Azacitidine；Cmax of venetoclax；AUCt for venetoclax；Tmax of venetoclax；AUC[0 to infinity] for azacitidine；推荐II期剂量/最大耐受剂量；Half-life (t[1/2]) for azacitidine；Cmax for azacitidine；AUC[0-24] for venetoclax；Clearance (CL) for azacitidine；Tmax for azacitidine；完全缓解率（CR）",
-    "secondaryEndpoints": [
-      "输血独立率",
-      "无进展生存期（PFS）",
-      "总生存期（OS）",
-      "Hematologic Improvement (HI) rate",
-      "无事件生存期（EFS）",
-      "Time to transformation to acute myeloid leukemia (AML)"
-    ],
-    "startDate": "2017-01-12",
-    "primaryCompletion": "2027-01",
-    "countries": [
-      "美国",
-      "澳大利亚",
-      "加拿大",
-      "法国",
-      "德国",
-      "意大利",
-      "英国"
-    ],
-    "sponsor": "AbbVie",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "截至2023-05，RP2D人群107例：mOR 80.4%，CR 29.9%，mCR 50.5%；中位OS 26.0个月。该早期单臂高缓解率未在后续VERONA III期转化为显著OS获益。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2023-05-31",
-    "evidenceLevel": "Ib期 · 同行评议完整结果",
-    "baselineCharacteristics": [
-      {
-        "label": "年龄",
-        "value": "中位68岁（26–87）"
-      },
-      {
-        "label": "男性",
-        "value": "69.2%（74/107）"
-      },
-      {
-        "label": "IPSS-R高/极高危",
-        "value": "86.0%（92/107）"
-      },
-      {
-        "label": "骨髓原始细胞",
-        "value": "中位11.0%（1–19.5）"
-      },
-      {
-        "label": "ECOG 0/1/2",
-        "value": "52.8% / 40.6% / 6.6%"
-      },
-      {
-        "label": "TP53突变",
-        "value": "23.8%（20/84可评估）"
-      },
-      {
-        "label": "基线输血依赖",
-        "value": "55.1%（59/107）"
-      }
-    ],
-    "efficacyHighlights": [
-      {
-        "label": "mOR",
-        "value": "80.4%",
-        "context": "CR+mCR+PR"
-      },
-      {
-        "label": "CR / mCR",
-        "value": "29.9% / 50.5%"
-      },
-      {
-        "label": "中位OS",
-        "value": "26.0个月",
-        "context": "95% CI 18.1–51.5"
-      },
-      {
-        "label": "输血依赖转独立",
-        "value": "40.7%",
-        "context": "24/59"
-      },
-      {
-        "label": "血液学改善",
-        "value": "49.0%",
-        "context": "51/104"
-      }
-    ],
-    "safetyHighlights": [
-      {
-        "label": "中性粒细胞减少",
-        "value": "48.6%"
-      },
-      {
-        "label": "血小板减少",
-        "value": "44.9%"
-      },
-      {
-        "label": "发热性中性粒细胞减少",
-        "value": "42.1%"
-      },
-      {
-        "label": "研究设计调整",
-        "value": "早期28天给药出现2例致死性脓毒症后，改为每周期14天"
-      }
-    ],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT02942290"
-      },
-      {
-        "label": "Blood 2025完整论文",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/39652823/"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2017-01-12",
-        "event": "研究启动"
-      },
-      {
-        "date": "2027-01",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "MDS专门研究"
-  },
-  {
-    "id": "ven-mds-nct02966782",
-    "name": "M15-522 / R/R MDS",
-    "nct": "NCT02966782",
-    "phase": "Ib期",
-    "status": "已完成",
-    "indication": "复发/难治性MDS",
-    "design": "非随机、开放标签、平行分组、Ib期",
-    "arms": "含维奈克拉治疗臂：维奈克拉 + 阿扎胞苷。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上复发/难治性MDS患者；骨髓原始细胞、IPSS/IPSS-R风险、既往HMA治疗及移植适合性须符合登记方案",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [
-      {
-        "dimension": "基因突变",
-        "subgroup": "IDH2突变",
-        "n": "6",
-        "endpoint": "ORR",
-        "effect": "83%",
-        "ci": "未报告",
-        "interactionP": "未报告",
-        "conclusion": "探索性小样本，不能证明预测性"
-      },
-      {
-        "dimension": "基因突变",
-        "subgroup": "TP53突变",
-        "n": "5",
-        "endpoint": "ORR",
-        "effect": "20%",
-        "ci": "未报告",
-        "interactionP": "未报告",
-        "conclusion": "缓解率较低，且论文提示OS较短"
-      },
-      {
-        "dimension": "基因突变",
-        "subgroup": "RUNX1突变",
-        "n": "11",
-        "endpoint": "ORR",
-        "effect": "54%",
-        "ci": "未报告",
-        "interactionP": "未报告",
-        "conclusion": "探索性分析"
-      },
-      {
-        "dimension": "基因突变",
-        "subgroup": "TET2 / DNMT3A突变",
-        "n": "6 / 7",
-        "endpoint": "ORR",
-        "effect": "33% / 57%",
-        "ci": "未报告",
-        "interactionP": "未报告",
-        "conclusion": "样本量有限，跨亚组比较需谨慎"
-      }
-    ],
-    "enrollment": 70,
-    "primaryEndpoint": "AUCt for azacitidine；Clearance (CL) for azacitidine；Cmax for azacitidine；Tmax for venetoclax；推荐II期剂量/最大耐受剂量；AUC[0 to infinity] for azacitidine；Tmax for azacitidine；AUC [0-24] for venetoclax；AUCt for venetoclax；Cmax of venetoclax；Half-life (t[1/2]) for azacitidine；安全性与耐受性",
-    "secondaryEndpoints": [
-      "无事件生存期（EFS）",
-      "总生存期（OS）",
-      "总体缓解率（ORR/mOR）",
-      "Time to next treatment (TTNT)",
-      "Duration of mORR",
-      "输血独立率"
-    ],
-    "startDate": "2017-03-07",
-    "primaryCompletion": "2023-04-05",
-    "countries": [
-      "美国",
-      "澳大利亚",
-      "德国"
-    ],
-    "sponsor": "AbbVie",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "Venetoclax+阿扎胞苷队列44例：37例可评估者mORR 38.6%，CR 6.8%，mCR 31.8%；中位OS 12.6个月、中位PFS 8.6个月。Venetoclax单药活性有限。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2021-05",
-    "evidenceLevel": "Ib期 · 同行评议完整结果",
-    "baselineCharacteristics": [
-      {
-        "label": "年龄",
-        "value": "中位74岁（44–91）"
-      },
-      {
-        "label": "男性",
-        "value": "86.3%（38/44）"
-      },
-      {
-        "label": "ECOG 0/1/2",
-        "value": "22.7% / 61.3% / 15.9%"
-      },
-      {
-        "label": "骨髓原始细胞≥5%",
-        "value": "75.0%（33/44）"
-      },
-      {
-        "label": "IPSS-R高/极高危",
-        "value": "72%"
-      },
-      {
-        "label": "既往HMA>6周期",
-        "value": "65.1%"
-      }
-    ],
-    "efficacyHighlights": [
-      {
-        "label": "mORR",
-        "value": "38.6%",
-        "context": "17/44"
-      },
-      {
-        "label": "CR / mCR",
-        "value": "6.8% / 31.8%"
-      },
-      {
-        "label": "中位DoR",
-        "value": "8.6个月",
-        "context": "95% CI 6.0–13.3"
-      },
-      {
-        "label": "中位OS",
-        "value": "12.6个月",
-        "context": "95% CI 9.1–17.2"
-      },
-      {
-        "label": "中位PFS",
-        "value": "8.6个月",
-        "context": "95% CI 5.4–14.3"
-      }
-    ],
-    "safetyHighlights": [
-      {
-        "label": "主要风险",
-        "value": "中性粒细胞减少、血小板减少及感染"
-      },
-      {
-        "label": "TLS",
-        "value": "未发生"
-      },
-      {
-        "label": "给药场景",
-        "value": "可门诊治疗，未采用剂量爬坡"
-      }
-    ],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT02966782"
-      },
-      {
-        "label": "American Journal of Hematology 2023",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/36309981/"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2017-03-07",
-        "event": "研究启动"
-      },
-      {
-        "date": "2023-04-05",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "MDS专门研究"
-  },
-  {
-    "id": "ven-mds-nct03113643",
-    "name": "NCT03113643 / 阿扎胞苷 + SL-401 + 维奈克拉",
-    "nct": "NCT03113643",
-    "phase": "I期",
-    "status": "招募中",
-    "indication": "AML/MDS",
-    "design": "非随机、开放标签、单组、I期",
-    "arms": "含维奈克拉治疗臂：阿扎胞苷 + SL-401 + 维奈克拉。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上AML/MDS患者；MDS患者须进入含维奈克拉的治疗队列，并符合相应风险分层、既往治疗和器官功能要求",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 72,
-    "primaryEndpoint": "推荐II期剂量/最大耐受剂量",
-    "secondaryEndpoints": [
-      "Complete Response Rate",
-      "Time to response",
-      "Duration of remission",
-      "无进展生存期（PFS）",
-      "总生存期（OS）"
-    ],
-    "startDate": "2017-06-26",
-    "primaryCompletion": "2021-09-15",
-    "countries": [
-      "美国"
-    ],
-    "sponsor": "Dana-Farber Cancer Institute",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "研究进行中或尚未开始；暂无成熟的MDS队列疗效、基线及亚组结果。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "I期 · 招募中",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT03113643"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2017-06-26",
-        "event": "研究启动"
-      },
-      {
-        "date": "2021-09-15",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "AML/MDS篮式研究"
-  },
-  {
-    "id": "ven-mds-nct03176277",
-    "name": "NCT03176277 / ONO-7475 6mg + 维奈克拉 (70-400mg)",
-    "nct": "NCT03176277",
-    "phase": "I/II期",
-    "status": "已终止",
-    "indication": "MDS",
-    "design": "非随机、开放标签、单组、I/II期",
-    "arms": "含维奈克拉治疗臂：ONO-7475 6mg + 维奈克拉 (70-400mg)。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上MDS患者；骨髓原始细胞、IPSS/IPSS-R风险、既往HMA治疗及移植适合性须符合登记方案",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 42,
-    "primaryEndpoint": "安全性与耐受性；安全性与耐受性；Clinically Significant Changes in Ophthalmology Exam…；Clinically Significant Changes in 12-Lead Electrocar…；安全性与耐受性；安全性与耐受性；完全缓解率（CR）",
-    "secondaryEndpoints": [
-      "剂量限制性毒性（DLT）",
-      "Pharmacokinetics (Cmax and Ctrough) of ONO-7475 (Par…",
-      "Pharmacokinetics (Tmax) of ONO-7475 (Part A)",
-      "Pharmacokinetics (AUC) of ONO-7475 (Part A)",
-      "Pharmacokinetics (T1/2) of ONO-7475 (Part A)",
-      "Pharmacokinetics of the Food Effect on ONO-7475 (Par…"
-    ],
-    "startDate": "2017-06-26",
-    "primaryCompletion": "2022-12-01",
-    "countries": [
-      "美国"
-    ],
-    "sponsor": "Ono Pharmaceutical Co., Ltd.",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "登记状态已结束或终止；除非本页另列同行评议/会议结果，否则尚无可核验的MDS队列完整疗效、基线或亚组数据。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "I/II期 · 已终止",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT03176277"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2017-06-26",
-        "event": "研究启动"
-      },
-      {
-        "date": "2022-12-01",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "MDS专门研究"
-  },
-  {
-    "id": "ven-mds-nct03404193",
-    "name": "NCT03404193 / 地西他滨 + 维奈克拉",
-    "nct": "NCT03404193",
-    "phase": "II期",
-    "status": "已终止",
-    "indication": "复发/难治性MDS",
-    "design": "非随机/未说明分配、开放标签、单组、II期",
-    "arms": "含维奈克拉治疗臂：地西他滨 + 维奈克拉。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上复发/难治性MDS患者；骨髓原始细胞、IPSS/IPSS-R风险、既往HMA治疗及移植适合性须符合登记方案",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 235,
-    "primaryEndpoint": "总体缓解率（ORR/mOR）",
-    "secondaryEndpoints": [
-      "安全性与耐受性",
-      "Duration of response",
-      "Disease free survival",
-      "总生存期（OS）"
-    ],
-    "startDate": "2018-01-18",
-    "primaryCompletion": "2026-03-05",
-    "countries": [
-      "美国"
-    ],
-    "sponsor": "M.D. Anderson Cancer Center",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "登记状态已结束或终止；除非本页另列同行评议/会议结果，否则尚无可核验的MDS队列完整疗效、基线或亚组数据。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "II期 · 已终止",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT03404193"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2018-01-18",
-        "event": "研究启动"
-      },
-      {
-        "date": "2026-03-05",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "AML/MDS篮式研究"
-  },
-  {
-    "id": "ven-mds-nct03613532",
-    "name": "NCT03613532 / 维奈克拉 + 氟达拉滨 + 白消安 + 阿扎胞苷 + 地西他滨/西达尿苷",
-    "nct": "NCT03613532",
-    "phase": "I期",
-    "status": "活跃，未招募",
-    "indication": "MDS移植桥接/预处理/维持",
-    "design": "非随机/未说明分配、开放标签、单组、I期",
-    "arms": "含维奈克拉治疗臂：维奈克拉 + 氟达拉滨 + 白消安 + 阿扎胞苷 + 地西他滨/西达尿苷。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上MDS或相关髓系肿瘤患者，拟接受异基因造血干细胞移植、桥接治疗或移植后维持；具体疾病状态和移植条件以方案为准",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 102,
-    "primaryEndpoint": "MTD of Venetoclax with Busulfan and Fludarabine；MTD of Venetoclax with Azacitidine as Maintenance Th…；MTD of Venetoclax with Decitabine/cedazuridine as Ma…",
-    "secondaryEndpoints": [
-      "总生存期（OS）",
-      "无进展生存期（PFS）",
-      "总体缓解率（ORR/mOR）",
-      "Remission Duration Rate",
-      "Rate of Disease Relapse",
-      "Rate of Non-Relapse Mortality"
-    ],
-    "startDate": "2018-10-24",
-    "primaryCompletion": "2026-05-05",
-    "countries": [
-      "美国"
-    ],
-    "sponsor": "Jacqueline Garcia, MD",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "研究进行中或尚未开始；暂无成熟的MDS队列疗效、基线及亚组结果。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "I期 · 活跃，未招募",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT03613532"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2018-10-24",
-        "event": "研究启动"
-      },
-      {
-        "date": "2026-05-05",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "移植/维持"
-  },
-  {
-    "id": "ven-mds-nct03661307",
-    "name": "NCT03661307 / 地西他滨 + 奎扎替尼 + 维奈克拉",
-    "nct": "NCT03661307",
-    "phase": "I/II期",
-    "status": "暂停",
-    "indication": "复发/难治性MDS",
-    "design": "非随机/未说明分配、开放标签、单组、I/II期",
-    "arms": "含维奈克拉治疗臂：地西他滨 + 奎扎替尼 + 维奈克拉。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上复发/难治性MDS患者；骨髓原始细胞、IPSS/IPSS-R风险、既往HMA治疗及移植适合性须符合登记方案",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 73,
-    "primaryEndpoint": "推荐II期剂量/最大耐受剂量；安全性与耐受性；完全缓解率（CR）",
-    "secondaryEndpoints": [
-      "缓解率",
-      "缓解持续时间",
-      "总生存期",
-      "安全性"
-    ],
-    "startDate": "2018-10-31",
-    "primaryCompletion": "2028-01-01",
-    "countries": [
-      "美国"
-    ],
-    "sponsor": "M.D. Anderson Cancer Center",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "研究进行中或尚未开始；暂无成熟的MDS队列疗效、基线及亚组结果。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "I/II期 · 暂停",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT03661307"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2018-10-31",
-        "event": "研究启动"
-      },
-      {
-        "date": "2028-01-01",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "AML/MDS篮式研究"
-  },
-  {
-    "id": "ven-mds-nct03940352",
-    "name": "NCT03940352 / HDM201 + 维奈克拉",
-    "nct": "NCT03940352",
-    "phase": "Ib期",
-    "status": "已终止",
-    "indication": "AML/MDS",
-    "design": "非随机、开放标签、平行分组、Ib期",
-    "arms": "含维奈克拉治疗臂：HDM201 + 维奈克拉。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上AML/MDS患者；MDS患者须进入含维奈克拉的治疗队列，并符合相应风险分层、既往治疗和器官功能要求",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 52,
-    "primaryEndpoint": "安全性与耐受性；安全性与耐受性；剂量限制性毒性（DLT）；Frequency of dose interuptions；Frequency of dose reductions；Dose intensities",
-    "secondaryEndpoints": [
-      "总体缓解率（ORR/mOR）",
-      "无事件生存期（EFS）",
-      "无复发生存期（RFS）",
-      "Duration Of Response (DOR) for AML (Cheson 2003) and…",
-      "Presence of anti-MBG453 antibodies (treatment arm 1 …",
-      "Concentration of HDM201 (Treatment arm 1 HDM201+MBG4…"
-    ],
-    "startDate": "2019-06-24",
-    "primaryCompletion": "2024-08-20",
-    "countries": [
-      "美国",
-      "澳大利亚",
-      "芬兰",
-      "德国",
-      "意大利",
-      "Singapore",
-      "西班牙"
-    ],
-    "sponsor": "Novartis Pharmaceuticals",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "登记状态已结束或终止；除非本页另列同行评议/会议结果，否则尚无可核验的MDS队列完整疗效、基线或亚组数据。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "Ib期 · 已终止",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT03940352"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2019-06-24",
-        "event": "研究启动"
-      },
-      {
-        "date": "2024-08-20",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "AML/MDS篮式研究"
-  },
-  {
-    "id": "ven-mds-nct04017546",
-    "name": "NCT04017546 / CYC065 + 维奈克拉",
-    "nct": "NCT04017546",
-    "phase": "I期",
-    "status": "已完成",
-    "indication": "复发/难治性MDS",
-    "design": "非随机/未说明分配、开放标签、单组、I期",
-    "arms": "含维奈克拉治疗臂：CYC065 + 维奈克拉。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上复发/难治性MDS患者；骨髓原始细胞、IPSS/IPSS-R风险、既往HMA治疗及移植适合性须符合登记方案",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 14,
-    "primaryEndpoint": "推荐II期剂量/最大耐受剂量",
-    "secondaryEndpoints": [
-      "Pharmacokinetic effect",
-      "Pharmacodynamic effect"
-    ],
-    "startDate": "2019-08-02",
-    "primaryCompletion": "2022-11-15",
-    "countries": [
-      "美国"
-    ],
-    "sponsor": "Cyclacel Pharmaceuticals, Inc.",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "登记状态已结束或终止；除非本页另列同行评议/会议结果，否则尚无可核验的MDS队列完整疗效、基线或亚组数据。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "I期 · 已完成",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT04017546"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2019-08-02",
-        "event": "研究启动"
-      },
-      {
-        "date": "2022-11-15",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "AML/MDS篮式研究"
-  },
-  {
-    "id": "ven-mds-nct04140487",
-    "name": "NCT04140487 / 阿扎胞苷 + 吉瑞替尼 + 维奈克拉",
-    "nct": "NCT04140487",
-    "phase": "I/II期",
-    "status": "招募中",
-    "indication": "复发/难治性MDS",
-    "design": "非随机/未说明分配、开放标签、单组、I/II期",
-    "arms": "含维奈克拉治疗臂：阿扎胞苷 + 吉瑞替尼 + 维奈克拉。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上复发/难治性MDS患者；骨髓原始细胞、IPSS/IPSS-R风险、既往HMA治疗及移植适合性须符合登记方案",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 97,
-    "primaryEndpoint": "Maximum-tolerated dose (MTD) of gilteritinib (Phase I)；总体缓解率（ORR/mOR）",
-    "secondaryEndpoints": [
-      "Complete response rate",
-      "Minimal residual disease negativity",
-      "无复发生存期（RFS）",
-      "总生存期（OS）",
-      "Proportion of patients proceeding to hematopoietic s…",
-      "安全性与耐受性"
-    ],
-    "startDate": "2019-12-17",
-    "primaryCompletion": "2028-09-01",
-    "countries": [
-      "美国"
-    ],
-    "sponsor": "M.D. Anderson Cancer Center",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "研究进行中或尚未开始；暂无成熟的MDS队列疗效、基线及亚组结果。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "I/II期 · 招募中",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT04140487"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2019-12-17",
-        "event": "研究启动"
-      },
-      {
-        "date": "2028-09-01",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "AML/MDS篮式研究"
-  },
-  {
-    "id": "ven-mds-nct04160052",
-    "name": "NCT04160052 / 阿扎胞苷 + 维奈克拉",
-    "nct": "NCT04160052",
-    "phase": "I/II期",
-    "status": "已终止",
-    "indication": "复发/难治性MDS",
-    "design": "非随机/未说明分配、开放标签、单组、I/II期",
-    "arms": "含维奈克拉治疗臂：阿扎胞苷 + 维奈克拉。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上复发/难治性MDS患者；骨髓原始细胞、IPSS/IPSS-R风险、既往HMA治疗及移植适合性须符合登记方案",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 51,
-    "primaryEndpoint": "推荐II期剂量/最大耐受剂量；安全性与耐受性",
-    "secondaryEndpoints": [
-      "总体缓解率（ORR/mOR）",
-      "完全缓解率（CR）",
-      "Rate of hematologic improvement",
-      "输血独立率",
-      "Rate of cytogenetic response",
-      "Rate of bone marrow blast response"
-    ],
-    "startDate": "2019-10-01",
-    "primaryCompletion": "2026-02-03",
-    "countries": [
-      "美国"
-    ],
-    "sponsor": "M.D. Anderson Cancer Center",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "登记状态已结束或终止；除非本页另列同行评议/会议结果，否则尚无可核验的MDS队列完整疗效、基线或亚组数据。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "I/II期 · 已终止",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT04160052"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2019-10-01",
-        "event": "研究启动"
-      },
-      {
-        "date": "2026-02-03",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "MDS专门研究"
-  },
-  {
-    "id": "ven-mds-nct04278768",
-    "name": "NCT04278768 / 维奈克拉 + Emavusertib",
-    "nct": "NCT04278768",
-    "phase": "I/II期",
-    "status": "暂停",
-    "indication": "AML/MDS",
-    "design": "非随机、开放标签、多队列/剂量探索、I/II期",
-    "arms": "含维奈克拉治疗臂：维奈克拉 + Emavusertib。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上AML/MDS患者；MDS患者须进入含维奈克拉的治疗队列，并符合相应风险分层、既往治疗和器官功能要求",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 366,
-    "primaryEndpoint": "推荐II期剂量/最大耐受剂量；推荐II期剂量/最大耐受剂量；推荐II期剂量/最大耐受剂量；推荐II期剂量/最大耐受剂量；To assess anti-cancer activity (Phase 2a - AML patie…；To assess anti-cancer activity (Phase 2a - hrMDS pat…；安全性与耐受性",
-    "secondaryEndpoints": [
-      "To characterize the pharmacokinetic (PK) parameters …",
-      "To assess clinical response (Phase 1 and 1b)",
-      "安全性与耐受性",
-      "To assess clinical response (Phase 2a)"
-    ],
-    "startDate": "2020-07-06",
-    "primaryCompletion": "2026-04-01",
-    "countries": [
-      "美国",
-      "Czechia",
-      "法国",
-      "德国",
-      "以色列",
-      "意大利",
-      "波兰",
-      "西班牙"
-    ],
-    "sponsor": "Curis, Inc.",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "研究进行中或尚未开始；暂无成熟的MDS队列疗效、基线及亚组结果。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "I/II期 · 暂停",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT04278768"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2020-07-06",
-        "event": "研究启动"
-      },
-      {
-        "date": "2026-04-01",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "AML/MDS篮式研究"
-  },
-  {
-    "id": "ven-mds-nct04401748",
-    "name": "VERONA",
+    "id": "ven-mds-verona-nct04401748",
+    "name": "VERONA：维奈克拉联合阿扎胞苷一线治疗高危MDS",
     "nct": "NCT04401748",
     "phase": "III期",
     "status": "活跃，未招募",
     "indication": "初治高危MDS",
-    "design": "随机、设盲、平行分组、III期",
-    "arms": "含维奈克拉治疗臂：维奈克拉 + 阿扎胞苷。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上初治高危MDS患者；骨髓原始细胞、IPSS/IPSS-R风险、既往HMA治疗及移植适合性须符合登记方案",
+    "design": "全球、多中心、随机、四盲、安慰剂对照III期研究；按1:1分组。",
+    "arms": "试验组：维奈克拉400 mg口服，第1–14天 + 阿扎胞苷75 mg/m²静脉或皮下注射7天，每28天一周期；对照组：安慰剂 + 同方案阿扎胞苷。",
+    "population": "未经治疗、IPSS-R评分>3的高危MDS成人患者；疗效分析集509例（维奈克拉组256例、对照组253例），安全性集501例。",
     "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "疾病风险/分型",
-        "既往治疗或移植状态",
-        "地区/研究中心；以登记方案为准"
-      ]
+      "keyInclusion": ["年龄≥18岁", "符合WHO 2016 MDS诊断，骨髓原始细胞<20%", "IPSS-R评分>3", "ECOG体能状态0–2", "既往未接受MDS系统治疗"],
+      "keyExclusion": ["治疗相关MDS", "骨髓增殖性肿瘤演变而来的MDS", "慢性粒单核细胞白血病（CMML）"],
+      "stratificationFactors": ["IPSS-R风险组", "骨髓原始细胞比例", "研究地区"]
     },
     "subgroupAnalyses": [
-      {
-        "dimension": "总体亚组",
-        "subgroup": "预设人口学与疾病亚组",
-        "n": "509",
-        "endpoint": "OS",
-        "effect": "完整亚组数据已会议披露，未改变总体OS阴性结论",
-        "ci": "详见会议摘要",
-        "interactionP": "未形成获益人群结论",
-        "conclusion": "不能依据早期单臂缓解率推断生存获益"
-      }
+      {"dimension":"年龄","subgroup":"<75岁","n":"未报告","endpoint":"OS","effect":"HR 0.835","ci":"95% CI 0.630–1.107","interactionP":"未报告","conclusion":"数值上倾向维奈克拉组，但置信区间跨1。"},
+      {"dimension":"年龄","subgroup":"≥75岁","n":"未报告","endpoint":"OS","effect":"HR 1.160","ci":"95% CI 0.834–1.613","interactionP":"未报告","conclusion":"未观察到生存获益。"},
+      {"dimension":"骨髓原始细胞","subgroup":"≥5%且<20%","n":"未报告","endpoint":"OS","effect":"HR 0.858","ci":"95% CI 0.676–1.090","interactionP":"未报告","conclusion":"数值上倾向维奈克拉组。"},
+      {"dimension":"骨髓原始细胞","subgroup":"<5%","n":"未报告","endpoint":"OS","effect":"HR 1.313","ci":"95% CI 0.795–2.169","interactionP":"未报告","conclusion":"未观察到生存获益。"},
+      {"dimension":"基因突变","subgroup":"TP53突变","n":"约22%","endpoint":"OS","effect":"HR 1.064","ci":"95% CI 0.670–1.688","interactionP":"未报告","conclusion":"TP53突变亚组未见OS改善。"}
     ],
     "enrollment": 531,
     "primaryEndpoint": "总生存期（OS）",
-    "secondaryEndpoints": [
-      "总体缓解率（ORR/mOR）",
-      "Percentage of Participants Achieving Overall Hematol…",
-      "完全缓解率（CR）",
-      "输血独立率",
-      "Time to Deterioration in Physical Functioning as Mea…",
-      "Change in Patient-Reported Outcomes Measurement Info…"
-    ],
+    "secondaryEndpoints": ["改良总体缓解率（mOR）", "完全缓解率（CR）", "血液学改善（HI）", "输血依赖转为输血独立（TI）", "患者报告结局"],
     "startDate": "2020-09-10",
-    "primaryCompletion": "2027-07",
-    "countries": [
-      "美国",
-      "澳大利亚",
-      "奥地利",
-      "比利时",
-      "Brazil",
-      "加拿大",
-      "中国",
-      "其他国家/地区"
-    ],
-    "sponsor": "AbbVie",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "全球随机III期未达到OS主要终点：Venetoclax+阿扎胞苷 vs 安慰剂+阿扎胞苷，OS HR 0.908，分层log-rank P=0.3772；未观察到新的安全性信号。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2025-06-16",
-    "evidenceLevel": "III期 · OS主要终点阴性",
+    "primaryCompletion": "2025-04-10（本次数据截止）；预计长期随访至2027-07",
+    "countries": ["全球约30多个国家、约220个中心", "中国"],
+    "sponsor": "AbbVie / Genentech",
+    "fda": {"regulatoryId":"NDA 208573","designation":"维奈克拉尚未获FDA批准用于MDS","submissionStatus":"VERONA未达到OS主要终点，MDS仍属研究性用途","lastVerified":"2026-07-26"},
+    "result": "中位随访41.2个月，OS为22.18个月对21.68个月（HR 0.908，P=0.38），未达到主要终点；但mOR、mCR和输血独立等缓解相关终点显著改善。",
+    "source": "用户提供的《Venetoclax MDS Clinical Trials Report》；VERONA登记与公开结果。",
+    "dataCut": "2025-04-10",
+    "evidenceLevel": "全球随机对照III期",
     "baselineCharacteristics": [
-      {
-        "label": "随机人数",
-        "value": "509例（256 vs 253）"
-      },
-      {
-        "label": "年龄",
-        "value": "两组中位均72岁"
-      },
-      {
-        "label": "ECOG 0–1",
-        "value": "93% vs 92%"
-      },
-      {
-        "label": "ECOG 2",
-        "value": "7% vs 8%"
-      },
-      {
-        "label": "地区",
-        "value": "北美22% vs 22%；其他地区78% vs 78%"
-      }
+      {"label":"中位年龄","value":"两组均72岁"},
+      {"label":"IPSS-R风险","value":"极高危36% vs 32%；高危37% vs 39%；中危27% vs 28%"},
+      {"label":"骨髓原始细胞","value":"<5%约27%；10%–<20%约46%"},
+      {"label":"TP53突变","value":"25% vs 19%"},
+      {"label":"ASXL1突变","value":"30% vs 33%"},
+      {"label":"RUNX1突变","value":"15% vs 24%"},
+      {"label":"具备移植条件","value":"约20%"}
     ],
     "efficacyHighlights": [
-      {
-        "label": "OS HR",
-        "value": "0.908",
-        "context": "P=0.3772，未达主要终点"
-      },
-      {
-        "label": "结论",
-        "value": "未证明总生存获益"
-      }
+      {"label":"中位OS","value":"22.18 vs 21.68个月","context":"HR 0.908；P=0.38"},
+      {"label":"mOR","value":"76.2% vs 57.7%","context":"P<0.0001"},
+      {"label":"mCR","value":"57.8% vs 37.5%"},
+      {"label":"CR","value":"18.0% vs 20.2%"},
+      {"label":"输血独立","value":"55.7% vs 33.6%","context":"P=0.0003"},
+      {"label":"血液学改善","value":"49.4% vs 41.2%","context":"P=0.0723"},
+      {"label":"mCR+HI","value":"27.3% vs 18.2%"},
+      {"label":"AML转化","value":"15% vs 20%"},
+      {"label":"接受HSCT","value":"17% vs 13%"}
     ],
-    "safetyHighlights": [
-      {
-        "label": "总体安全性",
-        "value": "未发现新的安全性信号"
-      }
-    ],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT04401748"
-      },
-      {
-        "label": "AbbVie VERONA顶线结果",
-        "url": "https://news.abbvie.com/2025-06-16-AbbVie-Provides-Update-on-VERONA-Trial-for-Newly-Diagnosed-Higher-Risk-Myelodysplastic-Syndromes"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2020-09-10",
-        "event": "研究启动"
-      },
-      {
-        "date": "2027-07",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "MDS专门研究"
+    "safetyHighlights": [{"label":"发热性中性粒细胞减少","value":"23% vs 16%"},{"label":"总体结论","value":"未发现新的安全性信号"}],
+    "sources": [{"label":"ClinicalTrials.gov","url":"https://clinicaltrials.gov/study/NCT04401748"}],
+    "milestones": [{"date":"2020-09-10","event":"研究启动"},{"date":"2025-04-10","event":"主要分析数据截止"},{"date":"2027-07","event":"预计长期随访完成"}],
+    "resultNotes": ["中国中心参与VERONA，但不构成独立临床试验。", "缓解和输血相关终点改善未转化为统计学显著的OS获益。"],
+    "studyCategory": "注册性研究"
   },
   {
-    "id": "ven-mds-nct04487106",
-    "name": "NCT04487106 / 阿扎胞苷 + 曲美替尼 + 维奈克拉",
-    "nct": "NCT04487106",
-    "phase": "II期",
+    "id": "ven-mds-nct02942290",
+    "name": "维奈克拉联合阿扎胞苷一线治疗高危MDS",
+    "nct": "NCT02942290",
+    "phase": "Ib期",
     "status": "已完成",
-    "indication": "复发/难治性MDS",
-    "design": "非随机、开放标签、单组、II期",
-    "arms": "含维奈克拉治疗臂：阿扎胞苷 + 曲美替尼 + 维奈克拉。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上复发/难治性MDS患者；骨髓原始细胞、IPSS/IPSS-R风险、既往HMA治疗及移植适合性须符合登记方案",
+    "indication": "初治高危MDS",
+    "design": "开放标签、多中心、非随机Ib期剂量探索及扩展研究。",
+    "arms": "早期探索维奈克拉400/800 mg连续28天，随后调整为100/200/400 mg第1–14天联合阿扎胞苷；RP2D为维奈克拉400 mg第1–14天 + 阿扎胞苷第1–7天，每28天一周期。",
+    "population": "未经治疗、IPSS≥1.5或IPSS-R>3、骨髓原始细胞<20%的高危MDS；共129例，RP2D队列107例。",
     "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
+      "keyInclusion": ["成人初治MDS", "IPSS≥1.5或IPSS-R>3", "骨髓原始细胞<20%", "ECOG≤2"],
+      "keyExclusion": ["CMML", "治疗相关MDS", "不适合研究治疗的活动性感染或器官功能异常"],
+      "stratificationFactors": ["维奈克拉剂量与给药天数", "IPSS-R风险"]
     },
     "subgroupAnalyses": [],
-    "enrollment": 21,
-    "primaryEndpoint": "Participants With a Response",
-    "secondaryEndpoints": [
-      "Minimal Residual Disease Negativity",
-      "无复发生存期（RFS）",
-      "无事件生存期（EFS）",
-      "总生存期（OS）",
-      "Number of Participants Proceeding to Hematopoietic S…"
+    "enrollment": 129,
+    "primaryEndpoint": "安全性、剂量限制性毒性及推荐II期剂量",
+    "secondaryEndpoints": ["改良总体缓解率", "完全缓解与骨髓完全缓解", "缓解持续时间", "总生存期", "输血独立", "移植率"],
+    "startDate": "2017-01-12",
+    "primaryCompletion": "2023-05（数据截止）",
+    "countries": ["多国多中心"],
+    "sponsor": "AbbVie / Genentech",
+    "fda": {"regulatoryId":"NDA 208573","designation":"维奈克拉尚未获FDA批准用于MDS","submissionStatus":"MDS为研究性用途","lastVerified":"2026-07-26"},
+    "result": "RP2D队列mOR 80.4%，CR 29.9%，mCR 50.5%，中位OS 26.0个月；疗效活跃，但骨髓抑制和治疗中断较常见。",
+    "source": "用户提供HTML报告；正式发表的Ib期长期随访。",
+    "dataCut": "2023-05；中位随访31.9个月",
+    "evidenceLevel": "多中心Ib期",
+    "baselineCharacteristics": [{"label":"高危/极高危","value":"86%"},{"label":"骨髓原始细胞升高","value":"90%"}],
+    "efficacyHighlights": [
+      {"label":"mOR","value":"80.4%"},{"label":"CR","value":"29.9%"},{"label":"mCR","value":"50.5%"},
+      {"label":"中位OS","value":"26.0个月","context":"1年OS 71.2%；2年OS 51.3%"},
+      {"label":"CR持续时间","value":"16.6个月"},{"label":"HI","value":"49%"},{"label":"基线输血依赖转TI","value":"40.7%"},{"label":"接受HSCT","value":"39.3%"}
     ],
-    "startDate": "2020-07-21",
-    "primaryCompletion": "2023-02-09",
-    "countries": [
-      "美国"
+    "safetyHighlights": [
+      {"label":"常见不良事件","value":"便秘53.3%；恶心49.5%；中性粒细胞减少48.6%；血小板减少44.9%；发热性中性粒细胞减少42.1%；腹泻41.1%"},
+      {"label":"3/4级TEAE","value":"94%"},{"label":"剂量减少","value":"约50%"},{"label":"治疗中断","value":"约90%"}
     ],
-    "sponsor": "M.D. Anderson Cancer Center",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
+    "sources": [{"label":"ClinicalTrials.gov","url":"https://clinicaltrials.gov/study/NCT02942290"},{"label":"PubMed","url":"https://pubmed.ncbi.nlm.nih.gov/39652823/"}],
+    "milestones": [{"date":"2017-01-12","event":"研究启动"},{"date":"2023-05","event":"长期随访数据截止"}],
+    "resultNotes": ["该研究确定了后续MDS研究常用的维奈克拉400 mg、每周期14天方案。"],
+    "studyCategory": "注册性研究"
+  },
+  {
+    "id": "ven-mds-nct02966782",
+    "name": "维奈克拉单药及联合阿扎胞苷治疗HMA失败的R/R MDS",
+    "nct": "NCT02966782",
+    "phase": "Ib期",
+    "status": "已完成",
+    "indication": "HMA失败的复发/难治MDS",
+    "design": "开放标签、多中心、非随机Ib期研究，包含维奈克拉单药和联合阿扎胞苷队列。",
+    "arms": "单药队列16例；联合队列44例，维奈克拉100/200/400 mg第1–14天 + 阿扎胞苷第1–7天，每28天一周期。",
+    "population": "接受至少4个周期HMA后失败的R/R MDS，骨髓原始细胞<20%、ECOG≤2且不计划立即HSCT。",
+    "eligibility": {
+      "keyInclusion": ["HMA治疗失败的复发/难治MDS", "既往HMA≥4周期", "骨髓原始细胞<20%", "ECOG≤2"],
+      "keyExclusion": ["MDS/MPN或CMML", "既往接受BH3模拟物", "既往造血干细胞移植"],
+      "stratificationFactors": ["维奈克拉单药或联合阿扎胞苷", "维奈克拉剂量"]
     },
-    "result": "登记状态已结束或终止；除非本页另列同行评议/会议结果，否则尚无可核验的MDS队列完整疗效、基线或亚组数据。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "II期 · 已完成",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT04487106"
-      }
+    "subgroupAnalyses": [],
+    "enrollment": 70,
+    "primaryEndpoint": "安全性、耐受性及推荐剂量",
+    "secondaryEndpoints": ["总体缓解率", "缓解持续时间", "无进展生存期", "总生存期", "输血独立"],
+    "startDate": "2017-03-07",
+    "primaryCompletion": "2023-04-05",
+    "countries": ["多国多中心"],
+    "sponsor": "AbbVie",
+    "fda": {"regulatoryId":"NDA 208573","designation":"维奈克拉尚未获FDA批准用于MDS","submissionStatus":"MDS为研究性用途","lastVerified":"2026-07-26"},
+    "result": "维奈克拉单药活性有限；联合阿扎胞苷队列mORR 38.6%、中位OS 12.6个月，为HMA失败人群提供了有限但可观察的挽救治疗活性。",
+    "source": "用户提供HTML报告；R/R MDS Ib期发表结果。",
+    "dataCut": "研究完成",
+    "evidenceLevel": "多中心Ib期",
+    "baselineCharacteristics": [{"label":"联合队列中位年龄","value":"74岁（44–91）"},{"label":"男性","value":"86%"},{"label":"既往HMA>6周期","value":"65%"}],
+    "efficacyHighlights": [
+      {"label":"单药ORR","value":"7%","context":"疾病稳定75%"},
+      {"label":"联合mORR","value":"38.6%"},{"label":"CR","value":"7%"},{"label":"mCR","value":"32%"},
+      {"label":"中位OS","value":"12.6个月"},{"label":"中位PFS/缓解持续时间","value":"8.6个月"},{"label":"输血独立","value":"36%"}
     ],
-    "milestones": [
-      {
-        "date": "2020-07-21",
-        "event": "研究启动"
-      },
-      {
-        "date": "2023-02-09",
-        "event": "主要完成时间（登记值）"
-      }
+    "safetyHighlights": [
+      {"label":"≥3级发热性中性粒细胞减少","value":"34%"},{"label":"≥3级血小板减少","value":"32%"},
+      {"label":"≥3级中性粒细胞减少","value":"27%"},{"label":"≥3级贫血","value":"18%"},{"label":"肺炎","value":"23%"},
+      {"label":"严重不良事件","value":"61%"},{"label":"30天死亡率","value":"2%"},{"label":"治疗中断/停药","value":"48% / 21%"}
     ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
+    "sources": [{"label":"ClinicalTrials.gov","url":"https://clinicaltrials.gov/study/NCT02966782"},{"label":"PubMed","url":"https://pubmed.ncbi.nlm.nih.gov/36309981/"}],
+    "milestones": [{"date":"2017-03-07","event":"研究启动"},{"date":"2023-04-05","event":"研究完成"}],
+    "resultNotes": ["单药队列和联合队列疗效差异明显，解读时不应合并计算。"],
+    "studyCategory": "注册性研究"
+  },
+  {
+    "id": "ven-mds-nct04160052",
+    "name": "MD Anderson 5+14：维奈克拉联合5天阿扎胞苷治疗高危MDS/CMML",
+    "nct": "NCT04160052",
+    "phase": "I/II期",
+    "status": "已终止",
+    "indication": "初治或复发/难治高危MDS/CMML",
+    "design": "MD Anderson单中心、开放标签、非随机I/II期研究。",
+    "arms": "阿扎胞苷75 mg/m²第1–5天 + 维奈克拉100–400 mg第1–7或1–14天，每4–8周一周期；RP2D为维奈克拉400 mg第1–14天。",
+    "population": "骨髓原始细胞>5%的初治或R/R高危MDS/CMML；总入组51例，I期23例（HMA初治17例、HMA失败6例）。",
+    "eligibility": {
+      "keyInclusion": ["高危MDS或CMML", "骨髓原始细胞>5%", "可为HMA初治或既往HMA失败"],
+      "keyExclusion": ["不适合方案治疗的感染或器官功能异常"],
+      "stratificationFactors": ["HMA初治与HMA失败", "维奈克拉剂量和给药天数"]
+    },
+    "subgroupAnalyses": [
+      {"dimension":"既往HMA治疗","subgroup":"HMA初治（汇总分析）","n":"52","endpoint":"ORR / OS / EFS","effect":"ORR 90%；OS 28.2个月；EFS 17.9个月","ci":"未报告","interactionP":"未报告","conclusion":"初治人群疗效和生存明显优于HMA失败人群。"},
+      {"dimension":"既往HMA治疗","subgroup":"HMA失败（汇总分析）","n":"28","endpoint":"ORR / OS / EFS","effect":"ORR 57%；OS 8.3个月；EFS 5.5个月","ci":"未报告","interactionP":"未报告","conclusion":"仍有缓解，但生存较短。"},
+      {"dimension":"分子/细胞遗传学","subgroup":"8号染色体三体","n":"未报告","endpoint":"生存","effect":"较差","ci":"未报告","interactionP":"未报告","conclusion":"与较差结局相关。"},
+      {"dimension":"基因通路","subgroup":"RAS通路突变且HMA失败","n":"未报告","endpoint":"生存","effect":"较差","ci":"未报告","interactionP":"未报告","conclusion":"HMA失败人群中RAS通路突变提示较差结局。"},
+      {"dimension":"基因通路","subgroup":"DNA甲基化/染色质相关突变","n":"未报告","endpoint":"缓解/生存","effect":"较好","ci":"未报告","interactionP":"未报告","conclusion":"与更佳结局相关。"}
     ],
-    "studyCategory": "AML/MDS篮式研究"
+    "enrollment": 51,
+    "primaryEndpoint": "安全性、剂量限制性毒性及总体缓解率",
+    "secondaryEndpoints": ["总生存期", "无事件生存期", "缓解持续时间", "移植率"],
+    "startDate": "2019-10",
+    "primaryCompletion": "2026-02（因入组不足终止）",
+    "countries": ["美国"],
+    "sponsor": "MD Anderson Cancer Center",
+    "fda": {"regulatoryId":"NDA 208573","designation":"维奈克拉尚未获FDA批准用于MDS","submissionStatus":"学术研究，MDS为研究性用途","lastVerified":"2026-07-26"},
+    "result": "I期23例ORR 87%；与NCT04550442和NCT04655755的MD Anderson汇总分析显示，HMA初治52例ORR 90%、OS 28.2个月，HMA失败28例ORR 57%、OS 8.3个月。",
+    "source": "用户提供HTML报告；MD Anderson研究及EHA 2023汇总分析。",
+    "dataCut": "2026-02状态更新",
+    "evidenceLevel": "单中心I/II期",
+    "baselineCharacteristics": [{"label":"I期人群","value":"23例：HMA初治17例，HMA失败6例"}],
+    "efficacyHighlights": [{"label":"I期ORR","value":"87%（20/23）"},{"label":"汇总初治ORR","value":"90%"},{"label":"汇总初治OS","value":"28.2个月"},{"label":"汇总HMA失败ORR","value":"57%"},{"label":"汇总HMA失败OS","value":"8.3个月"}],
+    "safetyHighlights": [{"label":"3/4级中性粒细胞减少","value":"39%"},{"label":"3/4级血小板减少","value":"39%"},{"label":"肺部感染","value":"30%"},{"label":"发热性中性粒细胞减少","value":"17%"},{"label":"脓毒症死亡","value":"3例","context":"研究者判断与治疗无关"}],
+    "sources": [{"label":"ClinicalTrials.gov","url":"https://clinicaltrials.gov/study/NCT04160052"}],
+    "milestones": [{"date":"2019-10","event":"研究启动"},{"date":"2023","event":"EHA公布三项MD Anderson研究汇总分析"},{"date":"2026-02","event":"因入组不足终止"}],
+    "resultNotes": ["80例汇总结果来自NCT04160052、NCT04550442和NCT04655755，不作为额外临床重复收录。"],
+    "studyCategory": "学术机构研究"
   },
   {
     "id": "ven-mds-nct04550442",
-    "name": "NCT04550442 / 阿扎胞苷 + 维奈克拉",
+    "name": "维奈克拉联合5天阿扎胞苷治疗HMA失败的高危MDS/CMML",
     "nct": "NCT04550442",
     "phase": "I/II期",
     "status": "已终止",
-    "indication": "复发/难治性MDS",
-    "design": "非随机/未说明分配、开放标签、单组、I/II期",
-    "arms": "含维奈克拉治疗臂：阿扎胞苷 + 维奈克拉。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上复发/难治性MDS患者；骨髓原始细胞、IPSS/IPSS-R风险、既往HMA治疗及移植适合性须符合登记方案",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
+    "indication": "HMA失败的复发/难治高危MDS/CMML",
+    "design": "MD Anderson单中心、开放标签、非随机I/II期研究。",
+    "arms": "维奈克拉第1–14天 + 阿扎胞苷第1–5天，每4–8周一周期。",
+    "population": "HMA失败后的R/R高危MDS或CMML患者；共34例。",
+    "eligibility": {"keyInclusion":["HMA治疗失败的高危MDS或CMML","适合接受维奈克拉联合阿扎胞苷"],"keyExclusion":["不适合研究治疗的活动性感染或器官功能异常"],"stratificationFactors":["MDS与CMML","既往HMA暴露"]},
     "subgroupAnalyses": [],
     "enrollment": 34,
-    "primaryEndpoint": "推荐II期剂量/最大耐受剂量；总体缓解率（ORR/mOR）",
-    "secondaryEndpoints": [
-      "完全缓解率（CR）",
-      "Rate of mCR",
-      "Rate of hematologic improvement",
-      "输血独立率",
-      "Rate of cytogenetic response",
-      "Rate of bone marrow blast response"
-    ],
-    "startDate": "2020-09-04",
-    "primaryCompletion": "2026-05-29",
-    "countries": [
-      "美国"
-    ],
-    "sponsor": "M.D. Anderson Cancer Center",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "登记状态已结束或终止；除非本页另列同行评议/会议结果，否则尚无可核验的MDS队列完整疗效、基线或亚组数据。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "I/II期 · 已终止",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
+    "primaryEndpoint": "安全性和总体缓解率",
+    "secondaryEndpoints": ["缓解持续时间", "无事件生存期", "总生存期"],
+    "startDate": "2020-09",
+    "primaryCompletion": "因入组不足（完成度<75%）终止",
+    "countries": ["美国"],
+    "sponsor": "MD Anderson Cancer Center",
+    "fda": {"regulatoryId":"NDA 208573","designation":"维奈克拉尚未获FDA批准用于MDS","submissionStatus":"学术研究，MDS为研究性用途","lastVerified":"2026-07-26"},
+    "result": "未见独立完整发表；该研究患者纳入MD Anderson 80例汇总分析，其中HMA失败组ORR 57%、中位OS 8.3个月、中位EFS 5.5个月。",
+    "source": "用户提供HTML报告；ClinicalTrials.gov及MD Anderson汇总分析。",
+    "dataCut": "终止状态更新",
+    "evidenceLevel": "单中心I/II期",
+    "baselineCharacteristics": [{"label":"既往治疗","value":"全部为HMA失败"}],
+    "efficacyHighlights": [{"label":"汇总HMA失败ORR","value":"57%"},{"label":"汇总HMA失败OS","value":"8.3个月"},{"label":"汇总HMA失败EFS","value":"5.5个月"}],
     "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT04550442"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2020-09-04",
-        "event": "研究启动"
-      },
-      {
-        "date": "2026-05-29",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "MDS专门研究"
-  },
-  {
-    "id": "ven-mds-nct04628026",
-    "name": "NCT04628026 / 维奈克拉 + 标准化疗",
-    "nct": "NCT04628026",
-    "phase": "III期",
-    "status": "招募中",
-    "indication": "初治高危MDS",
-    "design": "随机、设盲、平行分组、III期",
-    "arms": "含维奈克拉治疗臂：维奈克拉 + 标准化疗。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years至75 Years初治高危MDS患者；骨髓原始细胞、IPSS/IPSS-R风险、既往HMA治疗及移植适合性须符合登记方案",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years至75 Years",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "疾病风险/分型",
-        "既往治疗或移植状态",
-        "地区/研究中心；以登记方案为准"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 650,
-    "primaryEndpoint": "无事件生存期（EFS）；剂量限制性毒性（DLT）",
-    "secondaryEndpoints": [
-      "总生存期（OS）",
-      "完全缓解率（CR）",
-      "无事件生存期（EFS）",
-      "无复发生存期（RFS）",
-      "Cumulative incidence of relapse (CIR) in newly diagn…",
-      "Cumulative incidence of death (CID)"
-    ],
-    "startDate": "2022-09-13",
-    "primaryCompletion": "2029-03",
-    "countries": [
-      "奥地利",
-      "比利时",
-      "Estonia",
-      "芬兰",
-      "德国",
-      "Lithuania",
-      "荷兰",
-      "挪威"
-    ],
-    "sponsor": "University of Ulm",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "研究进行中或尚未开始；暂无成熟的MDS队列疗效、基线及亚组结果。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "III期 · 招募中",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT04628026"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2022-09-13",
-        "event": "研究启动"
-      },
-      {
-        "date": "2029-03",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "AML/MDS篮式研究"
+    "sources": [{"label":"ClinicalTrials.gov","url":"https://clinicaltrials.gov/study/NCT04550442"}],
+    "milestones": [{"date":"2020-09","event":"研究启动"},{"date":"未报告","event":"因入组不足终止"}],
+    "resultNotes": ["没有把MD Anderson汇总分析另建为一项临床，以免重复。"],
+    "studyCategory": "学术机构研究"
   },
   {
     "id": "ven-mds-nct04655755",
-    "name": "NCT04655755 / 地西他滨 + 西达尿苷 + 维奈克拉",
+    "name": "全口服ASTX727联合维奈克拉一线治疗高危MDS/CMML",
     "nct": "NCT04655755",
     "phase": "I/II期",
-    "status": "活跃，未招募",
-    "indication": "初治高危MDS",
-    "design": "非随机/未说明分配、开放标签、单组、I/II期",
-    "arms": "含维奈克拉治疗臂：地西他滨 + 西达尿苷 + 维奈克拉。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上初治高危MDS患者；骨髓原始细胞、IPSS/IPSS-R风险、既往HMA治疗及移植适合性须符合登记方案",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 52,
-    "primaryEndpoint": "安全性与耐受性；总体缓解率（ORR/mOR）",
-    "secondaryEndpoints": [
-      "完全缓解率（CR）",
-      "Rate of hematologic improvement (HI; erythroid/plate…",
-      "输血独立率",
-      "Rate of cytogenetic response",
-      "Rate of bone marrow blast response",
-      "Duration of response"
+    "status": "已完成",
+    "indication": "初治高危MDS/CMML",
+    "design": "单中心、开放标签、非随机I/II期研究，并开展倾向评分匹配比较。",
+    "arms": "ASTX727（口服地西他滨/西达尿苷）100/35 mg第1–5天 + 维奈克拉200→400 mg第1–14天；RP2D为维奈克拉400 mg。",
+    "population": "未经治疗的高危MDS/CMML，共37例：MDS-EB1 6例、MDS-EB2 24例、CMML-2 6例、aCML 1例。",
+    "eligibility": {"keyInclusion":["初治高危MDS或CMML","适合接受全口服低甲基化药物联合维奈克拉"],"keyExclusion":["不适合研究治疗的活动性感染或器官功能异常"],"stratificationFactors":["疾病分型","维奈克拉剂量"]},
+    "subgroupAnalyses": [
+      {"dimension":"倾向评分匹配","subgroup":"ASTX727+维奈克拉 vs ASTX727历史对照","n":"51 vs 73","endpoint":"ORR / HSCT / EFS / OS","effect":"ORR 90% vs 64%；HSCT 47% vs 16%；EFS 18 vs 10个月；OS 24 vs 19个月","ci":"未报告","interactionP":"ORR P=0.002；EFS P=0.026；OS P=0.89","conclusion":"缓解率、移植率和EFS改善，但OS未显著改善。"}
     ],
-    "startDate": "2021-01-19",
-    "primaryCompletion": "2028-07-20",
-    "countries": [
-      "美国"
+    "enrollment": 37,
+    "primaryEndpoint": "安全性、推荐II期剂量及总体缓解率",
+    "secondaryEndpoints": ["CR/mCR", "缓解持续时间", "无进展生存期", "总生存期", "细胞遗传学缓解", "移植率"],
+    "startDate": "2021-01",
+    "primaryCompletion": "2023-01",
+    "countries": ["美国"],
+    "sponsor": "MD Anderson Cancer Center",
+    "fda": {"regulatoryId":"NDA 208573","designation":"维奈克拉尚未获FDA批准用于MDS","submissionStatus":"全口服组合为研究性用途","lastVerified":"2026-07-26"},
+    "result": "ORR 94.5%，CR 35.1%，mCR 59.4%，中位缓解持续时间和PFS均23个月；近半数患者接受HSCT。倾向评分比较显示ORR和EFS改善，但OS差异不显著。",
+    "source": "用户提供HTML报告；全口服ASTX727+VEN I/II期结果。",
+    "dataCut": "2023-01",
+    "evidenceLevel": "单中心I/II期",
+    "baselineCharacteristics": [
+      {"label":"中位年龄","value":"71岁"},{"label":"疾病分型","value":"MDS-EB1 6；MDS-EB2 24；CMML-2 6；aCML 1"},
+      {"label":"ASXL1","value":"49%"},{"label":"RUNX1","value":"38%"},{"label":"SRSF2","value":"30%"},{"label":"TET2","value":"22%"},{"label":"TP53","value":"19%"}
     ],
-    "sponsor": "M.D. Anderson Cancer Center",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "研究进行中或尚未开始；暂无成熟的MDS队列疗效、基线及亚组结果。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "I/II期 · 活跃，未招募",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT04655755"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2021-01-19",
-        "event": "研究启动"
-      },
-      {
-        "date": "2028-07-20",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "MDS专门研究"
+    "efficacyHighlights": [{"label":"ORR","value":"94.5%"},{"label":"CR","value":"35.1%"},{"label":"mCR","value":"59.4%"},{"label":"mCR+HI","value":"29.7%"},{"label":"中位DOR/PFS","value":"均23个月"},{"label":"HSCT","value":"49%"},{"label":"细胞遗传学缓解","value":"53%"},{"label":"中位OS","value":"未达到"}],
+    "safetyHighlights": [{"label":"3/4级血小板减少","value":"81%"},{"label":"3/4级中性粒细胞减少","value":"70%"},{"label":"发热性中性粒细胞减少","value":"19%"},{"label":"3/4级贫血","value":"16%"}],
+    "sources": [{"label":"ClinicalTrials.gov","url":"https://clinicaltrials.gov/study/NCT04655755"}],
+    "milestones": [{"date":"2021-01","event":"研究启动"},{"date":"2023-01","event":"主要研究阶段完成"}],
+    "resultNotes": ["倾向评分匹配结果属于非随机比较，不能替代随机对照证据。"],
+    "studyCategory": "学术机构研究"
   },
   {
-    "id": "ven-mds-nct04708054",
-    "name": "NCT04708054 / 白消安 + 克拉屈滨 + 磷酸氟达拉滨 + 噻替派 + 维奈克拉",
-    "nct": "NCT04708054",
-    "phase": "II/III期",
-    "status": "招募中",
-    "indication": "AML/MDS",
-    "design": "非随机/未说明分配、开放标签、单组、II/III期",
-    "arms": "含维奈克拉治疗臂：白消安 + 克拉屈滨 + 磷酸氟达拉滨 + 噻替派 + 维奈克拉。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years至70 YearsAML/MDS患者；MDS患者须进入含维奈克拉的治疗队列，并符合相应风险分层、既往治疗和器官功能要求",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years至70 Years",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 324,
-    "primaryEndpoint": "无进展生存期（PFS）",
-    "secondaryEndpoints": [
-      "总生存期（OS）",
-      "无复发生存期（RFS）",
-      "造血重建/植入",
-      "Incidence of acute and chronic graft-vs.-host diseas…",
-      "Incidence of relapse and non-relapse mortality",
-      "安全性与耐受性"
-    ],
-    "startDate": "2021-10-21",
-    "primaryCompletion": "2027-12-31",
-    "countries": [
-      "美国"
-    ],
-    "sponsor": "M.D. Anderson Cancer Center",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "研究进行中或尚未开始；暂无成熟的MDS队列疗效、基线及亚组结果。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "II/III期 · 招募中",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT04708054"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2021-10-21",
-        "event": "研究启动"
-      },
-      {
-        "date": "2027-12-31",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "AML/MDS篮式研究"
-  },
-  {
-    "id": "ven-mds-nct04809181",
-    "name": "NCT04809181 / 阿扎胞苷 + 维奈克拉",
-    "nct": "NCT04809181",
-    "phase": "II期",
-    "status": "状态未知",
-    "indication": "MDS移植桥接/预处理/维持",
-    "design": "非随机/未说明分配、开放标签、单组、II期",
-    "arms": "含维奈克拉治疗臂：阿扎胞苷 + 维奈克拉。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years至65 YearsMDS或相关髓系肿瘤患者，拟接受异基因造血干细胞移植、桥接治疗或移植后维持；具体疾病状态和移植条件以方案为准",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years至65 Years",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 95,
-    "primaryEndpoint": "无复发生存期（RFS）",
-    "secondaryEndpoints": [
-      "总生存期（OS）",
-      "无复发生存期（RFS）",
-      "cumulative incidence of aGVHD",
-      "cumulative incidence of cGVHD"
-    ],
-    "startDate": "2021-03-19",
-    "primaryCompletion": "2024-03-19",
-    "countries": [
-      "中国"
-    ],
-    "sponsor": "First Affiliated Hospital of Zhejiang University",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "研究进行中或尚未开始；暂无成熟的MDS队列疗效、基线及亚组结果。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "II期 · 状态未知",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT04809181"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2021-03-19",
-        "event": "研究启动"
-      },
-      {
-        "date": "2024-03-19",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "移植/维持"
-  },
-  {
-    "id": "ven-mds-nct04812548",
-    "name": "STIMULUS-MDS3 / Sabatolimab（TIM-3抗体） + 阿扎胞苷 + 维奈克拉",
+    "id": "ven-mds-stimulus-mds3-nct04812548",
+    "name": "STIMULUS-MDS3：Sabatolimab、维奈克拉和阿扎胞苷三联治疗高危MDS",
     "nct": "NCT04812548",
     "phase": "II期",
     "status": "已终止",
-    "indication": "MDS",
-    "design": "非随机/未说明分配、开放标签、多队列/剂量探索、II期",
-    "arms": "含维奈克拉治疗臂：Sabatolimab（TIM-3抗体） + 阿扎胞苷 + 维奈克拉。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上MDS患者；骨髓原始细胞、IPSS/IPSS-R风险、既往HMA治疗及移植适合性须符合登记方案",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
+    "indication": "初治高危/极高危MDS",
+    "design": "欧洲多中心、开放标签、单臂II期研究。",
+    "arms": "Sabatolimab 400或800 mg静脉第8天 + 阿扎胞苷第1–7天 + 维奈克拉400 mg第1–14天。",
+    "population": "未经治疗、IPSS-R高危或极高危、无需立即HSCT或强化治疗的MDS；计划76例，实际入组20例。",
+    "eligibility": {"keyInclusion":["初治IPSS-R高危或极高危MDS","不需立即接受HSCT或强化化疗"],"keyExclusion":["需要立即移植或强化治疗","不适合三联治疗"],"stratificationFactors":["Sabatolimab 400 mg与800 mg剂量"]},
     "subgroupAnalyses": [],
     "enrollment": 20,
-    "primaryEndpoint": "剂量限制性毒性（DLT）；完全缓解率（CR）",
-    "secondaryEndpoints": [
-      "完全缓解率（CR）",
-      "总体缓解率（ORR/mOR）",
-      "Percentage of Participants Who Are RBC/Platelets Tra…",
-      "输血独立率",
-      "Peak Serum Concentration (Cmax) of Sabatolimab",
-      "Trough Serum Concentration (Cmin) Sabatolimab"
-    ],
+    "primaryEndpoint": "剂量限制性毒性、完全缓解率",
+    "secondaryEndpoints": ["CR+mCR", "缓解时间与持续时间", "PFS", "白血病无进展生存期", "OS", "移植率"],
     "startDate": "2021-05-31",
-    "primaryCompletion": "2023-05-08",
-    "countries": [
-      "比利时",
-      "法国",
-      "德国",
-      "Greece",
-      "Hungary",
-      "意大利",
-      "西班牙"
-    ],
-    "sponsor": "Novartis Pharmaceuticals",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "登记状态已结束或终止；除非本页另列同行评议/会议结果，否则尚无可核验的MDS队列完整疗效、基线或亚组数据。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "II期 · 已终止",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT04812548"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2021-05-31",
-        "event": "研究启动"
-      },
-      {
-        "date": "2023-05-08",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "MDS专门研究"
+    "primaryCompletion": "2023-05（战略原因终止，非安全性原因）",
+    "countries": ["欧洲7国、10个中心"],
+    "sponsor": "Novartis",
+    "fda": {"regulatoryId":"NDA 208573","designation":"维奈克拉和Sabatolimab均未获FDA批准用于该MDS三联方案","submissionStatus":"研究因战略原因提前终止","lastVerified":"2026-07-26"},
+    "result": "800 mg剂量组13例中2例发生DLT；可评估15例中CR 6.7%，CR+mCR 86.7%，但样本小且研究提前终止。",
+    "source": "用户提供HTML报告；STIMULUS-MDS3登记结果。",
+    "dataCut": "2023-05",
+    "evidenceLevel": "提前终止的单臂II期",
+    "baselineCharacteristics": [{"label":"实际入组","value":"20例（计划76例）"}],
+    "efficacyHighlights": [{"label":"CR","value":"6.7%（1/15）"},{"label":"CR+mCR","value":"86.7%"},{"label":"中位起效时间","value":"2.33个月"},{"label":"中位缓解持续时间","value":"5.6个月"},{"label":"PFS","value":"6.77个月"},{"label":"白血病无进展生存期","value":"7.59个月"},{"label":"接受HSCT","value":"5例"},{"label":"OS","value":"未达到"}],
+    "safetyHighlights": [{"label":"800 mg组DLT","value":"2/13","context":"血小板减少、颅内出血"}],
+    "sources": [{"label":"ClinicalTrials.gov","url":"https://clinicaltrials.gov/study/NCT04812548"}],
+    "milestones": [{"date":"2021-05-31","event":"研究启动"},{"date":"2023-05","event":"因战略原因提前终止"}],
+    "resultNotes": ["提前终止并非由新的安全性信号触发。"],
+    "studyCategory": "靶向/免疫联合"
   },
   {
-    "id": "ven-mds-nct04874194",
-    "name": "NCT04874194 / 高三尖杉酯碱 + 维奈克拉",
-    "nct": "NCT04874194",
+    "id": "ven-mds-ivosidenib-nct03471260",
+    "name": "Ivosidenib联合维奈克拉±阿扎胞苷治疗IDH1突变髓系肿瘤",
+    "nct": "NCT03471260",
     "phase": "Ib/II期",
-    "status": "已终止",
-    "indication": "复发/难治性MDS",
-    "design": "非随机、开放标签、单组、Ib/II期",
-    "arms": "含维奈克拉治疗臂：高三尖杉酯碱 + 维奈克拉。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上复发/难治性MDS患者；骨髓原始细胞、IPSS/IPSS-R风险、既往HMA治疗及移植适合性须符合登记方案",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 24,
-    "primaryEndpoint": "推荐II期剂量/最大耐受剂量；完全缓解率（CR）",
-    "secondaryEndpoints": [
-      "无事件生存期（EFS）",
-      "总生存期（OS）",
-      "Duration of Response"
-    ],
-    "startDate": "2021-12-17",
-    "primaryCompletion": "2024-09-16",
-    "countries": [
-      "美国"
-    ],
-    "sponsor": "M.D. Anderson Cancer Center",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "登记状态已结束或终止；除非本页另列同行评议/会议结果，否则尚无可核验的MDS队列完整疗效、基线或亚组数据。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "Ib/II期 · 已终止",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT04874194"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2021-12-17",
-        "event": "研究启动"
-      },
-      {
-        "date": "2024-09-16",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "AML/MDS篮式研究"
-  },
-  {
-    "id": "ven-mds-nct04912063",
-    "name": "NCT04912063 / Lemzoparlimab + 阿扎胞苷 + 维奈克拉",
-    "nct": "NCT04912063",
-    "phase": "Ib期",
-    "status": "已终止",
-    "indication": "MDS",
-    "design": "非随机、开放标签、多队列/剂量探索、Ib期",
-    "arms": "含维奈克拉治疗臂：Lemzoparlimab + 阿扎胞苷 + 维奈克拉。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上MDS患者；骨髓原始细胞、IPSS/IPSS-R风险、既往HMA治疗及移植适合性须符合登记方案",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 40,
-    "primaryEndpoint": "剂量限制性毒性（DLT）；剂量限制性毒性（DLT）；剂量限制性毒性（DLT）；剂量限制性毒性（DLT）",
-    "secondaryEndpoints": [
-      "完全缓解率（CR）",
-      "Duration of Response (DOR) for AML",
-      "无事件生存期（EFS）",
-      "总生存期（OS）",
-      "Hematologic Improvement (HI), for MDS",
-      "输血独立率"
-    ],
-    "startDate": "2021-06-25",
-    "primaryCompletion": "2023-05-09",
-    "countries": [
-      "美国",
-      "澳大利亚",
-      "德国",
-      "以色列",
-      "意大利",
-      "日本",
-      "西班牙"
-    ],
-    "sponsor": "AbbVie",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "登记状态已结束或终止；除非本页另列同行评议/会议结果，否则尚无可核验的MDS队列完整疗效、基线或亚组数据。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "Ib期 · 已终止",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT04912063"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2021-06-25",
-        "event": "研究启动"
-      },
-      {
-        "date": "2023-05-09",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "AML/MDS篮式研究"
-  },
-  {
-    "id": "ven-mds-nct04937166",
-    "name": "NCT04937166 / DSP107 + 阿扎胞苷 + 维奈克拉",
-    "nct": "NCT04937166",
-    "phase": "Ib期",
-    "status": "已终止",
-    "indication": "MDS",
-    "design": "非随机/未说明分配、开放标签、多队列/剂量探索、Ib期",
-    "arms": "含维奈克拉治疗臂：DSP107 + 阿扎胞苷 + 维奈克拉。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上MDS患者；骨髓原始细胞、IPSS/IPSS-R风险、既往HMA治疗及移植适合性须符合登记方案",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 25,
-    "primaryEndpoint": "安全性与耐受性；剂量限制性毒性（DLT）；完全缓解率（CR）",
-    "secondaryEndpoints": [
-      "总体缓解率（ORR/mOR）",
-      "Morphologic Leukemia-Free (MLF) Rate",
-      "Minimal Residual Disease (MRD) Status",
-      "4-week Mortality Rate",
-      "DSP107 Serum Concentration",
-      "DSP107 anti-drug antibody (ADA) formation"
-    ],
-    "startDate": "2022-01-13",
-    "primaryCompletion": "2025-04-23",
-    "countries": [
-      "美国"
-    ],
-    "sponsor": "Kahr Medical",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "登记状态已结束或终止；除非本页另列同行评议/会议结果，否则尚无可核验的MDS队列完整疗效、基线或亚组数据。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "Ib期 · 已终止",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT04937166"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2022-01-13",
-        "event": "研究启动"
-      },
-      {
-        "date": "2025-04-23",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "MDS专门研究"
-  },
-  {
-    "id": "ven-mds-nct05010122",
-    "name": "NCT05010122 / 地西他滨 + 西达尿苷 + 吉瑞替尼 + 维奈克拉",
-    "nct": "NCT05010122",
-    "phase": "I/II期",
-    "status": "招募中",
-    "indication": "复发/难治性MDS",
-    "design": "非随机/未说明分配、开放标签、单组、I/II期",
-    "arms": "含维奈克拉治疗臂：地西他滨 + 西达尿苷 + 吉瑞替尼 + 维奈克拉。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上复发/难治性MDS患者；骨髓原始细胞、IPSS/IPSS-R风险、既往HMA治疗及移植适合性须符合登记方案",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 42,
-    "primaryEndpoint": "推荐II期剂量/最大耐受剂量；总体缓解率（ORR/mOR）",
-    "secondaryEndpoints": [
-      "Complete response rate",
-      "To assess minimal residual disease negativity by flo…",
-      "无复发生存期（RFS）",
-      "总生存期（OS）",
-      "Proportion of patients proceeding to hematopoietic s…",
-      "安全性与耐受性"
-    ],
-    "startDate": "2021-07-08",
-    "primaryCompletion": "2028-01-30",
-    "countries": [
-      "美国"
-    ],
-    "sponsor": "M.D. Anderson Cancer Center",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "研究进行中或尚未开始；暂无成熟的MDS队列疗效、基线及亚组结果。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "I/II期 · 招募中",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT05010122"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2021-07-08",
-        "event": "研究启动"
-      },
-      {
-        "date": "2028-01-30",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "AML/MDS篮式研究"
-  },
-  {
-    "id": "ven-mds-nct05168202",
-    "name": "NCT05168202 / 维奈克拉",
-    "nct": "NCT05168202",
-    "phase": "I期",
-    "status": "已终止",
-    "indication": "MDS",
-    "design": "非随机、开放标签、平行分组、I期",
-    "arms": "含维奈克拉治疗臂：维奈克拉。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上MDS患者；骨髓原始细胞、IPSS/IPSS-R风险、既往HMA治疗及移植适合性须符合登记方案",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 56,
-    "primaryEndpoint": "剂量限制性毒性（DLT）；安全性与耐受性；Number of Participants With With Grade 3 or Higher L…；安全性与耐受性；Number of ECOG Evaluations With Shift of ECOG Score …；Number of Participants With Clinically Significant C…",
-    "secondaryEndpoints": [
-      "Cmax",
-      "Tmax",
-      "AUC(0-T)",
-      "AUC(TAU)",
-      "Cmin"
-    ],
-    "startDate": "2022-01-19",
-    "primaryCompletion": "2024-07-30",
-    "countries": [
-      "美国",
-      "澳大利亚",
-      "加拿大",
-      "法国",
-      "意大利",
-      "挪威",
-      "西班牙",
-      "其他国家/地区"
-    ],
-    "sponsor": "Bristol-Myers Squibb",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "登记状态已结束或终止；除非本页另列同行评议/会议结果，否则尚无可核验的MDS队列完整疗效、基线或亚组数据。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "I期 · 已终止",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT05168202"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2022-01-19",
-        "event": "研究启动"
-      },
-      {
-        "date": "2024-07-30",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "AML/MDS篮式研究"
-  },
-  {
-    "id": "ven-mds-nct05184842",
-    "name": "NCT05184842 / 维奈克拉 + 地西他滨",
-    "nct": "NCT05184842",
-    "phase": "II期",
-    "status": "招募中",
-    "indication": "AML/MDS",
-    "design": "非随机/未说明分配、开放标签、单组、II期",
-    "arms": "含维奈克拉治疗臂：维奈克拉 + 地西他滨。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上AML/MDS患者；MDS患者须进入含维奈克拉的治疗队列，并符合相应风险分层、既往治疗和器官功能要求",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 91,
-    "primaryEndpoint": "Percentage of Participants Who Are Able to Continue …",
-    "secondaryEndpoints": [
-      "完全缓解率（CR）",
-      "无事件生存期（EFS）",
-      "输血独立率",
-      "Rate of Hospitalization",
-      "Infection Rate Requiring Hospitalization"
-    ],
-    "startDate": "2022-03-23",
-    "primaryCompletion": "2023-12-20",
-    "countries": [
-      "美国"
-    ],
-    "sponsor": "Montefiore Medical Center",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "研究进行中或尚未开始；暂无成熟的MDS队列疗效、基线及亚组结果。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "II期 · 招募中",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT05184842"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2022-03-23",
-        "event": "研究启动"
-      },
-      {
-        "date": "2023-12-20",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "AML/MDS篮式研究"
-  },
-  {
-    "id": "ven-mds-nct05342584",
-    "name": "Venetoclax AML / 维奈克拉 + 柔红霉素 + 阿糖胞苷",
-    "nct": "NCT05342584",
-    "phase": "Ib期",
-    "status": "招募中",
-    "indication": "AML/MDS",
-    "design": "非随机/未说明分配、开放标签、单组、Ib期",
-    "arms": "含维奈克拉治疗臂：维奈克拉 + 柔红霉素 + 阿糖胞苷。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years至75 YearsAML/MDS患者；MDS患者须进入含维奈克拉的治疗队列，并符合相应风险分层、既往治疗和器官功能要求",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years至75 Years",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 99,
-    "primaryEndpoint": "安全性与耐受性；Frequency and Severity of AEs and SAEs by Age Group；Frequency and Severity of AEs and SAEs by Dose Level；剂量限制性毒性（DLT）；剂量限制性毒性（DLT）；The Number/Percentage of Patients with Dose Modifica…；推荐II期剂量/最大耐受剂量；推荐II期剂量/最大耐受剂量",
-    "secondaryEndpoints": [
-      "总体缓解率（ORR/mOR）",
-      "Hematologic response rate",
-      "Duration of response (DoR)",
-      "总生存期（OS）",
-      "无事件生存期（EFS）",
-      "Morphologic leukemia-free state (MLFS)"
-    ],
-    "startDate": "2022-05-25",
-    "primaryCompletion": "2028-12",
-    "countries": [
-      "美国"
-    ],
-    "sponsor": "Montefiore Medical Center",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "研究进行中或尚未开始；暂无成熟的MDS队列疗效、基线及亚组结果。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "Ib期 · 招募中",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT05342584"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2022-05-25",
-        "event": "研究启动"
-      },
-      {
-        "date": "2028-12",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "AML/MDS篮式研究"
-  },
-  {
-    "id": "ven-mds-nct05365035",
-    "name": "NCT05365035 / 克拉屈滨 + 阿糖胞苷 + 维奈克拉 + 阿扎胞苷",
-    "nct": "NCT05365035",
-    "phase": "II期",
-    "status": "招募中",
-    "indication": "MDS",
-    "design": "非随机/未说明分配、开放标签、单组、II期",
-    "arms": "含维奈克拉治疗臂：克拉屈滨 + 阿糖胞苷 + 维奈克拉 + 阿扎胞苷。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上MDS患者；骨髓原始细胞、IPSS/IPSS-R风险、既往HMA治疗及移植适合性须符合登记方案",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 60,
-    "primaryEndpoint": "总生存期（OS）",
-    "secondaryEndpoints": [
-      "缓解率",
-      "缓解持续时间",
-      "总生存期",
-      "安全性"
-    ],
-    "startDate": "2022-09-23",
-    "primaryCompletion": "2027-12-31",
-    "countries": [
-      "美国"
-    ],
-    "sponsor": "M.D. Anderson Cancer Center",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "研究进行中或尚未开始；暂无成熟的MDS队列疗效、基线及亚组结果。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "II期 · 招募中",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT05365035"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2022-09-23",
-        "event": "研究启动"
-      },
-      {
-        "date": "2027-12-31",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "MDS专门研究"
-  },
-  {
-    "id": "ven-mds-nct05379166",
-    "name": "NCT05379166 / 阿扎胞苷 + 维奈克拉",
-    "nct": "NCT05379166",
-    "phase": "II期",
     "status": "活跃，未招募",
-    "indication": "治疗相关或继发性MDS",
-    "design": "非随机/未说明分配、开放标签、单组、II期",
-    "arms": "含维奈克拉治疗臂：阿扎胞苷 + 维奈克拉。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上治疗相关或继发性MDS患者；骨髓原始细胞、IPSS/IPSS-R风险、既往HMA治疗及移植适合性须符合登记方案",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 33,
-    "primaryEndpoint": "完全缓解率（CR）",
-    "secondaryEndpoints": [
-      "安全性与耐受性",
-      "总体缓解率（ORR/mOR）",
-      "Cytogenetic response rate (CCyR)",
-      "总生存期（OS）",
-      "Duration of response (DOR)",
-      "无事件生存期（EFS）"
+    "indication": "IDH1突变AML/MDS",
+    "design": "MD Anderson、Oxford和Dana-Farber开展的开放标签、多中心Ib/II期研究。",
+    "arms": "Ivosidenib 500 mg连续给药 + 维奈克拉第1–14天，可联合阿扎胞苷第1–7天；RP2D为Ivosidenib + 维奈克拉400 mg + 阿扎胞苷。",
+    "population": "IDH1突变髓系肿瘤31例，其中AML 71%、MDS 29%（约9例）。",
+    "eligibility": {"keyInclusion":["IDH1突变AML或MDS","适合接受口服靶向联合方案"],"keyExclusion":["不适合研究治疗的活动性感染或器官功能异常"],"stratificationFactors":["双联与三联方案","AML与MDS","既往治疗状态"]},
+    "subgroupAnalyses": [
+      {"dimension":"治疗方案","subgroup":"三联 vs 双联","n":"未报告","endpoint":"复合完全缓解","effect":"90% vs 83%","ci":"未报告","interactionP":"未报告","conclusion":"两种方案均显示较高缓解率。"},
+      {"dimension":"疾病类型","subgroup":"MDS","n":"约9例","endpoint":"24个月OS","effect":"100%","ci":"未报告","interactionP":"未报告","conclusion":"样本极小，结果需谨慎解释。"},
+      {"dimension":"分子特征","subgroup":"信号通路突变","n":"未报告","endpoint":"疗效","effect":"获益更明显","ci":"未报告","interactionP":"未报告","conclusion":"探索性结果。"}
     ],
-    "startDate": "2022-06-23",
-    "primaryCompletion": "2026-01-27",
-    "countries": [
-      "美国"
-    ],
-    "sponsor": "Uma Borate",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "研究进行中或尚未开始；暂无成熟的MDS队列疗效、基线及亚组结果。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "II期 · 活跃，未招募",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
+    "enrollment": 31,
+    "primaryEndpoint": "安全性、DLT、推荐II期剂量及总体缓解率",
+    "secondaryEndpoints": ["复合完全缓解", "MRD阴性", "IDH1突变清除", "EFS", "OS"],
+    "startDate": "2018",
+    "primaryCompletion": "报告时研究随访中",
+    "countries": ["美国", "英国"],
+    "sponsor": "MD Anderson Cancer Center / 合作研究机构",
+    "fda": {"regulatoryId":"NDA 208573","designation":"维奈克拉未获FDA批准用于MDS；该联合方案为研究性用途","submissionStatus":"早期临床研究","lastVerified":"2026-07-26"},
+    "result": "全组ORR 94%、复合CR 87%；MDS仅约9例，报告的24个月OS为100%，属于小样本探索性信号。",
+    "source": "用户提供HTML报告；IDH1突变髓系肿瘤Ib/II期结果。",
+    "dataCut": "报告发表数据",
+    "evidenceLevel": "多中心Ib/II期篮式研究",
+    "baselineCharacteristics": [{"label":"疾病构成","value":"AML 71%；MDS 29%（约9/31）"}],
+    "efficacyHighlights": [{"label":"ORR","value":"94%"},{"label":"复合CR","value":"87%"},{"label":"三联/双联复合CR","value":"90% / 83%"},{"label":"MRD阴性","value":"63%"},{"label":"≥5周期IDH1清除","value":"64%"},{"label":"中位EFS","value":"36个月"},{"label":"中位OS","value":"42个月"},{"label":"MDS 24个月OS","value":"100%"}],
     "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT05379166"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2022-06-23",
-        "event": "研究启动"
-      },
-      {
-        "date": "2026-01-27",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "MDS专门研究"
+    "sources": [{"label":"ClinicalTrials.gov","url":"https://clinicaltrials.gov/study/NCT03471260"}],
+    "milestones": [{"date":"2018","event":"研究启动"}],
+    "resultNotes": ["总体疗效主要由AML患者贡献，不能直接外推为独立MDS结论。"],
+    "studyCategory": "靶向/免疫联合"
   },
   {
-    "id": "ven-mds-nct05428969",
-    "name": "BEXMAB / Bexmarilimab + 阿扎胞苷 + 维奈克拉",
-    "nct": "NCT05428969",
-    "phase": "I/II期",
-    "status": "活跃，未招募",
-    "indication": "MDS",
-    "design": "非随机、开放标签、多队列/剂量探索、I/II期",
-    "arms": "含维奈克拉治疗臂：Bexmarilimab + 阿扎胞苷 + 维奈克拉。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上MDS患者；骨髓原始细胞、IPSS/IPSS-R风险、既往HMA治疗及移植适合性须符合登记方案",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 181,
-    "primaryEndpoint": "剂量限制性毒性（DLT）；安全性与耐受性；完全缓解率（CR）；总体缓解率（ORR/mOR）；完全缓解率（CR）；Minimal residual disease (MRD) status for newly diag…",
-    "secondaryEndpoints": [
-      "Frequency and severity based on NCI-CTCAE grading of…",
-      "无进展生存期（PFS）",
-      "总生存期（OS）",
-      "Anti-bexmarilimab antibody positivity occurrence rat…",
-      "Serum concentrations of bexmarilimab at defined time…"
-    ],
-    "startDate": "2022-06-02",
-    "primaryCompletion": "2027-03",
-    "countries": [
-      "美国",
-      "芬兰",
-      "英国"
-    ],
-    "sponsor": "Faron Pharmaceuticals Ltd",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "研究进行中或尚未开始；暂无成熟的MDS队列疗效、基线及亚组结果。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "I/II期 · 活跃，未招募",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT05428969"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2022-06-02",
-        "event": "研究启动"
-      },
-      {
-        "date": "2027-03",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "MDS专门研究"
-  },
-  {
-    "id": "ven-mds-nct05564650",
-    "name": "NCT05564650 / Navitoclax（BCL-XL/BCL-2抑制剂） + 维奈克拉 + 地西他滨",
-    "nct": "NCT05564650",
+    "id": "ven-mds-enaven-aml-nct04092179",
+    "name": "ENAVEN-AML：Enasidenib联合维奈克拉治疗IDH2突变R/R AML/MDS",
+    "nct": "NCT04092179",
     "phase": "Ib/II期",
     "status": "已完成",
-    "indication": "复发/难治性MDS",
-    "design": "非随机/未说明分配、开放标签、单组、Ib/II期",
-    "arms": "含维奈克拉治疗臂：Navitoclax（BCL-XL/BCL-2抑制剂） + 维奈克拉 + 地西他滨。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上复发/难治性MDS患者；骨髓原始细胞、IPSS/IPSS-R风险、既往HMA治疗及移植适合性须符合登记方案",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 6,
-    "primaryEndpoint": "Maximally Tolerated Dose (MTD) of Navitoclax in Comb…；完全缓解率（CR）",
-    "secondaryEndpoints": [
-      "剂量限制性毒性（DLT）",
-      "Marrow Complete Response Rate (mCR) (Phase II)",
-      "Hematologic Improvement (HI) rate (Phase II)",
-      "Leukemia Free Survival (LFS) (Phase II)",
-      "总生存期（OS）",
-      "Change in quality of life (QOL) (Phase II)"
+    "indication": "IDH2突变复发/难治AML/MDS",
+    "design": "加拿大两中心、开放标签、非随机Ib/II期研究。",
+    "arms": "维奈克拉400 mg联合Enasidenib 100 mg；该剂量组合确定为RP2D。",
+    "population": "IDH2突变R/R AML/MDS共27例，其中MDS仅1例。",
+    "eligibility": {"keyInclusion":["IDH2突变的复发/难治AML或MDS"],"keyExclusion":["不适合研究治疗的活动性感染或器官功能异常"],"stratificationFactors":["IDH2 R172与R140突变","AML与MDS"]},
+    "subgroupAnalyses": [
+      {"dimension":"IDH2突变位点","subgroup":"R172 vs R140（主要为AML）","n":"未报告","endpoint":"ORR","effect":"83% vs 55%","ci":"未报告","interactionP":"未报告","conclusion":"R172亚组缓解率数值较高。"},
+      {"dimension":"疾病类型","subgroup":"MDS","n":"1","endpoint":"缓解","effect":"未缓解","ci":"不适用","interactionP":"不适用","conclusion":"单例MDS患者未获缓解，无法判断MDS疗效。"}
     ],
-    "startDate": "2023-01-12",
-    "primaryCompletion": "2024-05-03",
-    "countries": [
-      "美国"
-    ],
-    "sponsor": "Thomas Jefferson University",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "登记状态已结束或终止；除非本页另列同行评议/会议结果，否则尚无可核验的MDS队列完整疗效、基线或亚组数据。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "Ib/II期 · 已完成",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
+    "enrollment": 27,
+    "primaryEndpoint": "安全性、推荐II期剂量和总体缓解率",
+    "secondaryEndpoints": ["完全缓解", "缓解持续时间", "总生存期"],
+    "startDate": "2019",
+    "primaryCompletion": "报告发表时已完成主要分析",
+    "countries": ["加拿大"],
+    "sponsor": "加拿大研究者发起研究",
+    "fda": {"regulatoryId":"NDA 208573","designation":"维奈克拉未获FDA批准用于MDS；该双靶向方案为研究性用途","submissionStatus":"早期临床研究","lastVerified":"2026-07-26"},
+    "result": "AML人群ORR 62%、CR 50%、中位OS 9.4个月；唯一1例MDS患者未缓解，因此没有可支持MDS疗效的独立证据。",
+    "source": "用户提供HTML报告；ENAVEN-AML研究结果。",
+    "dataCut": "报告发表数据",
+    "evidenceLevel": "Ib/II期篮式研究；MDS仅1例",
+    "baselineCharacteristics": [{"label":"MDS人数","value":"1/27"}],
+    "efficacyHighlights": [{"label":"AML ORR","value":"62%"},{"label":"AML CR","value":"50%"},{"label":"中位OS","value":"9.4个月"},{"label":"2年OS","value":"42%"},{"label":"MDS疗效","value":"1例，未缓解"}],
     "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT05564650"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2023-01-12",
-        "event": "研究启动"
-      },
-      {
-        "date": "2024-05-03",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "MDS专门研究"
+    "sources": [{"label":"ClinicalTrials.gov","url":"https://clinicaltrials.gov/study/NCT04092179"}],
+    "milestones": [{"date":"2019","event":"研究启动"}],
+    "resultNotes": ["因MDS仅1例且无缓解，本记录用于完整呈现报告内容，不应视为MDS有效性证据。"],
+    "studyCategory": "靶向/免疫联合"
   },
   {
-    "id": "ven-mds-nct05600894",
-    "name": "NCT05600894 / 地西他滨 + 西达尿苷 + 维奈克拉",
-    "nct": "NCT05600894",
-    "phase": "II期",
+    "id": "ven-mds-transplant-nct03613532",
+    "name": "维奈克拉强化预处理及口服地西他滨/西达尿苷移植后维持",
+    "nct": "NCT03613532",
+    "phase": "I期",
     "status": "活跃，未招募",
-    "indication": "MDS",
-    "design": "随机、开放标签、多队列/剂量探索、II期",
-    "arms": "含维奈克拉治疗臂：地西他滨 + 西达尿苷 + 维奈克拉。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上MDS患者；骨髓原始细胞、IPSS/IPSS-R风险、既往HMA治疗及移植适合性须符合登记方案",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "疾病风险/分型",
-        "既往治疗或移植状态",
-        "地区/研究中心；以登记方案为准"
-      ]
-    },
+    "indication": "高危MDS/AML异基因移植预处理与维持",
+    "design": "Johns Hopkins单中心、开放标签I期研究，分为移植预处理和移植后维持阶段。",
+    "arms": "预处理：维奈克拉联合FluBu2；维持：移植后维奈克拉400 mg第1–14天 + 口服地西他滨/西达尿苷第1、3、5天或第1–3天，每42天一周期，共8周期。",
+    "population": "拟接受异基因造血干细胞移植的高危MDS/AML；预处理22例，完成移植30例，进入维持26例。",
+    "eligibility": {"keyInclusion":["高危MDS或AML","计划接受异基因造血干细胞移植","符合FluBu2预处理条件"],"keyExclusion":["无法耐受移植或研究药物","未控制感染或严重器官功能异常"],"stratificationFactors":["预处理阶段与维持阶段","维持期口服地西他滨/西达尿苷给药方案"]},
     "subgroupAnalyses": [],
-    "enrollment": 132,
-    "primaryEndpoint": "Complete response rate",
-    "secondaryEndpoints": [
-      "总生存期（OS）",
-      "无进展生存期（PFS）",
-      "安全性与耐受性"
-    ],
-    "startDate": "2023-06-27",
-    "primaryCompletion": "2026-08-31",
-    "countries": [
-      "美国",
-      "加拿大"
-    ],
-    "sponsor": "National Cancer Institute (NCI)",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "研究进行中或尚未开始；暂无成熟的MDS队列疗效、基线及亚组结果。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "II期 · 活跃，未招募",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT05600894"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2023-06-27",
-        "event": "研究启动"
-      },
-      {
-        "date": "2026-08-31",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "MDS专门研究"
+    "enrollment": "预处理22例；移植30例；维持26例",
+    "primaryEndpoint": "剂量限制性毒性、最大耐受剂量及移植后安全性",
+    "secondaryEndpoints": ["PFS", "OS", "复发率", "非复发死亡", "急/慢性GVHD"],
+    "startDate": "2018",
+    "primaryCompletion": "2026年长期随访发表",
+    "countries": ["美国"],
+    "sponsor": "Johns Hopkins University",
+    "fda": {"regulatoryId":"NDA 208573","designation":"维奈克拉未获FDA批准用于MDS移植预处理或维持","submissionStatus":"研究者发起I期研究","lastVerified":"2026-07-26"},
+    "result": "预处理阶段未观察到DLT或达到MTD；移植后维持队列2年PFS 53%、OS 67%、复发率47%、非复发死亡0%。",
+    "source": "用户提供HTML报告；Blood Advances 2022及2026长期随访。",
+    "dataCut": "2026年发表",
+    "evidenceLevel": "单中心I期",
+    "baselineCharacteristics": [{"label":"预处理/移植/维持","value":"22 / 30 / 26例"}],
+    "efficacyHighlights": [{"label":"2年PFS","value":"53%"},{"label":"2年OS","value":"67%"},{"label":"2年复发率","value":"47%"},{"label":"非复发死亡","value":"0%"},{"label":"mITT PFS/OS/复发率","value":"62% / 77% / 38%"}],
+    "safetyHighlights": [{"label":"3/4级中性粒细胞减少","value":"92%"},{"label":"急性GVHD","value":"13%"},{"label":"慢性GVHD","value":"31%"},{"label":"预处理DLT/MTD","value":"未观察到DLT，未达到MTD"}],
+    "sources": [{"label":"ClinicalTrials.gov","url":"https://clinicaltrials.gov/study/NCT03613532"},{"label":"PubMed长期随访","url":"https://pubmed.ncbi.nlm.nih.gov/41348911/"}],
+    "milestones": [{"date":"2018","event":"研究启动"},{"date":"2022","event":"预处理阶段结果发表于Blood Advances"},{"date":"2026","event":"移植后维持长期随访发表"}],
+    "resultNotes": ["MDS与AML混合入组，报告未提供完整的MDS独立疗效拆分。"],
+    "studyCategory": "移植/维持"
   },
   {
-    "id": "ven-mds-nct05766514",
-    "name": "NCT05766514 / 阿扎胞苷 或 地西他滨 + 维奈克拉",
-    "nct": "NCT05766514",
-    "phase": "II期",
-    "status": "已撤回",
-    "indication": "AML/MDS",
-    "design": "随机、开放标签、平行分组、II期",
-    "arms": "含维奈克拉治疗臂：阿扎胞苷 或 地西他滨 + 维奈克拉。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上AML/MDS患者；MDS患者须进入含维奈克拉的治疗队列，并符合相应风险分层、既往治疗和器官功能要求",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "疾病风险/分型",
-        "既往治疗或移植状态",
-        "地区/研究中心；以登记方案为准"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 0,
-    "primaryEndpoint": "完全缓解率（CR）",
-    "secondaryEndpoints": [
-      "完全缓解率（CR）",
-      "Time to minimal residual disease (MRD) negativity",
-      "总生存期（OS）",
-      "总体缓解率（ORR/mOR）",
-      "Rate of MRD negativity",
-      "无事件生存期（EFS）"
-    ],
-    "startDate": "2025-04",
-    "primaryCompletion": "2029-12",
-    "countries": [
-      "美国"
-    ],
-    "sponsor": "University of Florida",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "登记状态已结束或终止；除非本页另列同行评议/会议结果，否则尚无可核验的MDS队列完整疗效、基线或亚组数据。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "II期 · 已撤回",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT05766514"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2025-04",
-        "event": "研究启动"
-      },
-      {
-        "date": "2029-12",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "AML/MDS篮式研究"
-  },
-  {
-    "id": "ven-mds-nct05782127",
-    "name": "NCT05782127 / 口服阿扎胞苷 + 维奈克拉",
-    "nct": "NCT05782127",
-    "phase": "I/II期",
-    "status": "活跃，未招募",
+    "id": "ven-mds-zhejiang-prospective-15day",
+    "name": "中国多中心15天方案：维奈克拉联合阿扎胞苷一线治疗高危MDS",
+    "nct": "未提供NCT（Cancers 2026;18(1):159）",
+    "phase": "前瞻性研究",
+    "status": "已完成",
     "indication": "初治高危MDS",
-    "design": "非随机/未说明分配、开放标签、单组、I/II期",
-    "arms": "含维奈克拉治疗臂：口服阿扎胞苷 + 维奈克拉。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上初治高危MDS患者；骨髓原始细胞、IPSS/IPSS-R风险、既往HMA治疗及移植适合性须符合登记方案",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 36,
-    "primaryEndpoint": "剂量限制性毒性（DLT）；总体缓解率（ORR/mOR）",
-    "secondaryEndpoints": [
-      "Best response",
-      "Hematological improvement",
-      "Time to response",
-      "Duration of response",
-      "Progression to acute myeloid leukemia (AML)",
-      "Time to next treatment"
+    "design": "中国多中心、前瞻性、单臂研究。",
+    "arms": "阿扎胞苷第1–7天 + 维奈克拉100→400 mg第1–15天。",
+    "population": "未经治疗、IPSS-R>3.5的高危MDS患者28例。",
+    "eligibility": {"keyInclusion":["初治高危MDS","IPSS-R>3.5"],"keyExclusion":["不适合维奈克拉联合阿扎胞苷治疗"],"stratificationFactors":["TP53突变","是否接受HSCT"]},
+    "subgroupAnalyses": [
+      {"dimension":"基因突变","subgroup":"TP53突变","n":"未报告","endpoint":"生存","effect":"显著较差","ci":"未报告","interactionP":"P<0.001","conclusion":"TP53突变为显著不良预后因素。"},
+      {"dimension":"后续治疗","subgroup":"接受HSCT","n":"未报告","endpoint":"OS","effect":"显著更好","ci":"未报告","interactionP":"P=0.037","conclusion":"移植与更佳OS相关，但非随机比较存在选择偏倚。"}
     ],
-    "startDate": "2023-12-06",
-    "primaryCompletion": "2025-12-01",
-    "countries": [
-      "法国"
-    ],
-    "sponsor": "Groupe Francophone des Myelodysplasies",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "研究进行中或尚未开始；暂无成熟的MDS队列疗效、基线及亚组结果。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "I/II期 · 活跃，未招募",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT05782127"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2023-12-06",
-        "event": "研究启动"
-      },
-      {
-        "date": "2025-12-01",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "MDS专门研究"
+    "enrollment": 28,
+    "primaryEndpoint": "总体缓解率",
+    "secondaryEndpoints": ["CR", "mCR", "IWG 2023缓解率", "OS", "安全性", "移植相关结局"],
+    "startDate": "未报告",
+    "primaryCompletion": "2026年发表",
+    "countries": ["中国"],
+    "sponsor": "浙江牵头的中国多中心研究",
+    "fda": {"regulatoryId":"不适用","designation":"维奈克拉尚未获FDA批准用于MDS","submissionStatus":"中国研究者发起前瞻性研究","lastVerified":"2026-07-26"},
+    "result": "ORR 85.7%、CR 35.7%、mCR 50.0%；按IWG 2023标准ORR为78.6%，中位OS尚未达到。",
+    "source": "用户提供HTML报告；Cancers 2026;18(1):159。",
+    "dataCut": "2026年发表",
+    "evidenceLevel": "中国多中心前瞻性单臂研究",
+    "baselineCharacteristics": [{"label":"中位年龄","value":"63岁"},{"label":"IPSS-R","value":">3.5"}],
+    "efficacyHighlights": [{"label":"ORR","value":"85.7%"},{"label":"CR","value":"35.7%"},{"label":"mCR","value":"50.0%"},{"label":"IWG 2023 ORR","value":"78.6%"},{"label":"中位OS","value":"未达到"}],
+    "safetyHighlights": [{"label":"3/4级中性粒细胞减少","value":"96.4%"},{"label":"3/4级贫血","value":"71.4%"},{"label":"3/4级血小板减少","value":"64.3%"},{"label":"严重不良事件","value":"35.7%"}],
+    "sources": [{"label":"PubMed检索","url":"https://pubmed.ncbi.nlm.nih.gov/?term=Cancers+2026+18%281%29+159+venetoclax+MDS"}],
+    "milestones": [{"date":"2026","event":"研究结果发表于Cancers"}],
+    "resultNotes": ["该研究在报告中无NCT编号，按论文研究作为独立记录收录。"],
+    "studyCategory": "中国研究"
   },
   {
-    "id": "ven-mds-nct05807932",
-    "name": "NCT05807932 / 维奈克拉 + 安吖啶 + 阿糖胞苷 + 他克莫司 + 吗替麦考酚酯",
-    "nct": "NCT05807932",
-    "phase": "I/II期",
-    "status": "招募中",
-    "indication": "MDS移植桥接/预处理/维持",
-    "design": "非随机/未说明分配、开放标签、单组、I/II期",
-    "arms": "含维奈克拉治疗臂：维奈克拉 + 安吖啶 + 阿糖胞苷 + 他克莫司 + 吗替麦考酚酯。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上MDS或相关髓系肿瘤患者，拟接受异基因造血干细胞移植、桥接治疗或移植后维持；具体疾病状态和移植条件以方案为准",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 38,
-    "primaryEndpoint": "安全性与耐受性",
-    "secondaryEndpoints": [
-      "安全性与耐受性",
-      "Graft failure at day +30 (± 3) after transplantation",
-      "Incidence of aGvHD during the first 2 years after tr…",
-      "Course of aGvHD during the first 2 years after trans…",
-      "Severity of aGvHD during the first 2 years after tra…",
-      "Incidence of cGvHD during the first 2 years after tr…"
-    ],
-    "startDate": "2023-06-26",
-    "primaryCompletion": "2026-01-31",
-    "countries": [
-      "德国"
-    ],
-    "sponsor": "Heinrich-Heine University, Duesseldorf",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "研究进行中或尚未开始；暂无成熟的MDS队列疗效、基线及亚组结果。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "I/II期 · 招募中",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT05807932"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2023-06-26",
-        "event": "研究启动"
-      },
-      {
-        "date": "2026-01-31",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "移植/维持"
-  },
-  {
-    "id": "ven-mds-nct05829226",
-    "name": "NCT05829226 / LYT-200 + 维奈克拉 + 阿扎胞苷 + 地西他滨",
-    "nct": "NCT05829226",
-    "phase": "I期",
+    "id": "ven-mds-gesmd-transplant-retrospective",
+    "name": "GESMD：维奈克拉联合HMA桥接异基因移植",
+    "nct": "无NCT（Exp Hematol Oncol 2025）",
+    "phase": "回顾性研究",
     "status": "已完成",
-    "indication": "复发/难治性MDS",
-    "design": "非随机、开放标签、多队列/剂量探索、I期",
-    "arms": "含维奈克拉治疗臂：LYT-200 + 维奈克拉 + 阿扎胞苷 + 地西他滨。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上复发/难治性MDS患者；骨髓原始细胞、IPSS/IPSS-R风险、既往HMA治疗及移植适合性须符合登记方案",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 101,
-    "primaryEndpoint": "推荐II期剂量/最大耐受剂量；剂量限制性毒性（DLT）",
-    "secondaryEndpoints": [
-      "Rate of disease responses, time-to-event endpoints, …",
-      "Pharmacokinetic (PK) profile of LYT-200_Area Under t…",
-      "Pharmacokinetic (PK) profile of LYT-200_Concentratio…",
-      "Pharmacokinetic (PK) profile of LYT-200_Time to Reac…"
-    ],
-    "startDate": "2022-12-12",
-    "primaryCompletion": "2025-12-31",
-    "countries": [
-      "美国"
-    ],
-    "sponsor": "PureTech",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "登记状态已结束或终止；除非本页另列同行评议/会议结果，否则尚无可核验的MDS队列完整疗效、基线或亚组数据。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "I期 · 已完成",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
+    "indication": "高危MDS/CMML移植桥接",
+    "design": "GESMD多中心回顾性队列研究。",
+    "arms": "维奈克拉联合低甲基化药物作为异基因移植前桥接治疗。",
+    "population": "计划接受HSCT的高危MDS/CMML 30例，其中初治18例、复发/难治12例。",
+    "eligibility": {"keyInclusion":["高危MDS或CMML","治疗目标为桥接异基因HSCT","接受HMA+维奈克拉"],"keyExclusion":["论文未详述"],"stratificationFactors":["初治与R/R","是否完成HSCT"]},
+    "subgroupAnalyses": [{"dimension":"既往治疗","subgroup":"复发/难治","n":"12","endpoint":"ORR","effect":"83%","ci":"未报告","interactionP":"未报告","conclusion":"R/R患者仍显示较高缓解率。"}],
+    "enrollment": 30,
+    "primaryEndpoint": "总体缓解率及成功桥接HSCT比例",
+    "secondaryEndpoints": ["复合完全缓解", "移植后生存", "移植后复发"],
+    "startDate": "回顾性研究，未报告",
+    "primaryCompletion": "2025年发表",
+    "countries": ["西班牙"],
+    "sponsor": "GESMD研究组",
+    "fda": {"regulatoryId":"不适用","designation":"维奈克拉尚未获FDA批准用于MDS移植桥接","submissionStatus":"回顾性真实世界证据","lastVerified":"2026-07-26"},
+    "result": "ORR 90%、复合CR 77%，83%最终接受HSCT；移植后1年/2年生存率均为75%，复发率30.5%。",
+    "source": "用户提供HTML报告；Experimental Hematology & Oncology 2025。",
+    "dataCut": "2025年发表",
+    "evidenceLevel": "多中心回顾性队列",
+    "baselineCharacteristics": [{"label":"初治/R/R","value":"18 / 12例"}],
+    "efficacyHighlights": [{"label":"ORR","value":"90%"},{"label":"复合CR","value":"77%"},{"label":"R/R ORR","value":"83%"},{"label":"接受HSCT","value":"83%"},{"label":"移植后1年/2年生存","value":"75% / 75%"},{"label":"移植后复发","value":"30.5%"}],
     "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT05829226"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2022-12-12",
-        "event": "研究启动"
-      },
-      {
-        "date": "2025-12-31",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "AML/MDS篮式研究"
-  },
-  {
-    "id": "ven-mds-nct05986240",
-    "name": "NCT05986240 / Danvatirsen + 维奈克拉",
-    "nct": "NCT05986240",
-    "phase": "I期",
-    "status": "招募中",
-    "indication": "复发/难治性MDS",
-    "design": "非随机、开放标签、平行分组、I期",
-    "arms": "含维奈克拉治疗臂：Danvatirsen + 维奈克拉。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上复发/难治性MDS患者；骨髓原始细胞、IPSS/IPSS-R风险、既往HMA治疗及移植适合性须符合登记方案",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 38,
-    "primaryEndpoint": "总体缓解率（ORR/mOR）",
-    "secondaryEndpoints": [
-      "Duration of Response",
-      "无事件生存期（EFS）",
-      "总生存期（OS）",
-      "30 Day All-cause mortality",
-      "60 Day All-cause Mortality"
-    ],
-    "startDate": "2024-05-08",
-    "primaryCompletion": "2027-06",
-    "countries": [
-      "美国"
-    ],
-    "sponsor": "Montefiore Medical Center",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "研究进行中或尚未开始；暂无成熟的MDS队列疗效、基线及亚组结果。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "I期 · 招募中",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT05986240"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2024-05-08",
-        "event": "研究启动"
-      },
-      {
-        "date": "2027-06",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "AML/MDS篮式研究"
-  },
-  {
-    "id": "ven-mds-nct06109064",
-    "name": "NCT06109064 / 非亲缘脐带血 + 维奈克拉 + 地西他滨 + 阿扎胞苷",
-    "nct": "NCT06109064",
-    "phase": "II期",
-    "status": "状态未知",
-    "indication": "MDS移植桥接/预处理/维持",
-    "design": "非随机/未说明分配、开放标签、单组、II期",
-    "arms": "含维奈克拉治疗臂：非亲缘脐带血 + 维奈克拉 + 地西他滨 + 阿扎胞苷。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "14 Years至80 YearsMDS或相关髓系肿瘤患者，拟接受异基因造血干细胞移植、桥接治疗或移植后维持；具体疾病状态和移植条件以方案为准",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄14 Years至80 Years",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 14,
-    "primaryEndpoint": "完全缓解率（CR）；Hematopoietic recovery time",
-    "secondaryEndpoints": [
-      "Time to Progression（TTP）",
-      "Disease Free Survival（DFS）",
-      "总生存期（OS）",
-      "Early mortality rate"
-    ],
-    "startDate": "2023-10-27",
-    "primaryCompletion": "2024-02-01",
-    "countries": [
-      "中国"
-    ],
-    "sponsor": "Anhui Provincial Hospital",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "研究进行中或尚未开始；暂无成熟的MDS队列疗效、基线及亚组结果。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "II期 · 状态未知",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT06109064"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2023-10-27",
-        "event": "研究启动"
-      },
-      {
-        "date": "2024-02-01",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
+    "sources": [{"label":"PubMed检索","url":"https://pubmed.ncbi.nlm.nih.gov/?term=GESMD+venetoclax+MDS+transplant+2025"}],
+    "milestones": [{"date":"2025","event":"研究发表"}],
+    "resultNotes": ["回顾性研究缺少随机对照，移植率和生存可能受患者选择影响。"],
     "studyCategory": "移植/维持"
   },
   {
-    "id": "ven-mds-nct06337331",
-    "name": "NCT06337331 / 维奈克拉 + 地西他滨 + 氟达拉滨 + 白消安",
-    "nct": "NCT06337331",
-    "phase": "II期",
-    "status": "已撤回",
-    "indication": "MDS移植桥接/预处理/维持",
-    "design": "非随机/未说明分配、开放标签、单组、II期",
-    "arms": "含维奈克拉治疗臂：维奈克拉 + 地西他滨 + 氟达拉滨 + 白消安。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上MDS或相关髓系肿瘤患者，拟接受异基因造血干细胞移植、桥接治疗或移植后维持；具体疾病状态和移植条件以方案为准",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
+    "id": "ven-mds-zhejiang-rr-retrospective",
+    "name": "浙江R/R MDS 15天方案真实世界研究",
+    "nct": "无NCT（Hematol Oncol 2023）",
+    "phase": "回顾性研究",
+    "status": "已完成",
+    "indication": "复发/难治MDS",
+    "design": "单地区回顾性真实世界队列。",
+    "arms": "阿扎胞苷联合维奈克拉15天方案。",
+    "population": "复发/难治MDS患者35例。",
+    "eligibility": {"keyInclusion":["复发/难治MDS","接受阿扎胞苷联合维奈克拉15天方案"],"keyExclusion":["论文未详述"],"stratificationFactors":["未报告"]},
     "subgroupAnalyses": [],
-    "enrollment": 0,
-    "primaryEndpoint": "Incidence of relapse/progression by conducting blood…",
-    "secondaryEndpoints": [
-      "Number of patients alive at one-year post transplant",
-      "Number of patients alive without recurrence of disea…",
-      "Number of patients who died one year post-transplant…",
-      "Number of patients who fully engrafted (blood counts…",
-      "Number of patients who developed acute graft-versus-…",
-      "Number of patients who developed chronic graft-versu…"
-    ],
-    "startDate": "2024-08-31",
-    "primaryCompletion": "2026-08-31",
-    "countries": [
-      "美国"
-    ],
-    "sponsor": "Northside Hospital, Inc.",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "登记状态已结束或终止；除非本页另列同行评议/会议结果，否则尚无可核验的MDS队列完整疗效、基线或亚组数据。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "II期 · 已撤回",
+    "enrollment": 35,
+    "primaryEndpoint": "总体缓解率",
+    "secondaryEndpoints": ["总生存期", "安全性"],
+    "startDate": "回顾性研究，未报告",
+    "primaryCompletion": "2023年发表",
+    "countries": ["中国"],
+    "sponsor": "浙江研究团队",
+    "fda": {"regulatoryId":"不适用","designation":"维奈克拉尚未获FDA批准用于MDS","submissionStatus":"中国回顾性真实世界证据","lastVerified":"2026-07-26"},
+    "result": "35例R/R MDS患者ORR 57.2%，中位OS 14个月。",
+    "source": "用户提供HTML报告；Hematological Oncology 2023。",
+    "dataCut": "2023年发表",
+    "evidenceLevel": "回顾性真实世界研究",
     "baselineCharacteristics": [],
-    "efficacyHighlights": [],
+    "efficacyHighlights": [{"label":"ORR","value":"57.2%"},{"label":"中位OS","value":"14个月"}],
     "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT06337331"
-      }
+    "sources": [{"label":"PubMed检索","url":"https://pubmed.ncbi.nlm.nih.gov/?term=venetoclax+azacitidine+15-day+relapsed+refractory+MDS+2023"}],
+    "milestones": [{"date":"2023","event":"研究发表于Hematological Oncology"}],
+    "resultNotes": ["该记录是回顾性真实世界研究，不是注册性临床试验。"],
+    "studyCategory": "中国研究"
+  },
+  {
+    "id": "ven-mds-suzhou-realworld",
+    "name": "苏州高危MDS维奈克拉联合HMA真实世界研究",
+    "nct": "无NCT（中国实验血液学杂志 2025）",
+    "phase": "回顾性研究",
+    "status": "已完成",
+    "indication": "高危MDS",
+    "design": "中国单中心回顾性真实世界队列。",
+    "arms": "维奈克拉联合低甲基化药物。",
+    "population": "高危MDS患者30例，其中12例后续接受HSCT。",
+    "eligibility": {"keyInclusion":["高危MDS","接受维奈克拉联合HMA"],"keyExclusion":["论文未详述"],"stratificationFactors":["是否接受HSCT"]},
+    "subgroupAnalyses": [],
+    "enrollment": 30,
+    "primaryEndpoint": "总体缓解率",
+    "secondaryEndpoints": ["总生存期", "无进展生存期", "移植率", "安全性"],
+    "startDate": "回顾性研究，未报告",
+    "primaryCompletion": "2025年发表",
+    "countries": ["中国"],
+    "sponsor": "苏州研究团队",
+    "fda": {"regulatoryId":"不适用","designation":"维奈克拉尚未获FDA批准用于MDS","submissionStatus":"中国回顾性真实世界证据","lastVerified":"2026-07-26"},
+    "result": "ORR 80%，中位OS和PFS均报告为28.1个月；12例患者接受HSCT。",
+    "source": "用户提供HTML报告；中国实验血液学杂志2025。",
+    "dataCut": "2025年发表",
+    "evidenceLevel": "回顾性真实世界研究",
+    "baselineCharacteristics": [{"label":"接受HSCT","value":"12/30例"}],
+    "efficacyHighlights": [{"label":"ORR","value":"80%"},{"label":"中位OS","value":"28.1个月"},{"label":"中位PFS","value":"28.1个月"},{"label":"接受HSCT","value":"12例"}],
+    "safetyHighlights": [{"label":"≥3级血小板减少","value":"14例"},{"label":"≥3级中性粒细胞减少","value":"14例"},{"label":"发热性中性粒细胞减少","value":"10例"}],
+    "sources": [{"label":"期刊检索","url":"https://pubmed.ncbi.nlm.nih.gov/?term=Chinese+Journal+of+Experimental+Hematology+venetoclax+MDS+2025"}],
+    "milestones": [{"date":"2025","event":"研究发表于中国实验血液学杂志"}],
+    "resultNotes": ["报告中的OS/PFS数值均为28.1个月，按原文件录入。"],
+    "studyCategory": "中国研究"
+  },
+  {
+    "id": "ven-mds-china-post-hsct-maintenance",
+    "name": "中国移植后维奈克拉联合节拍低剂量地西他滨±干扰素维持",
+    "nct": "无NCT（ASH 2025）",
+    "phase": "回顾性研究",
+    "status": "已完成",
+    "indication": "高危MDS/AML异基因移植后维持",
+    "design": "中国回顾性移植后维持队列，并报告匹配队列比较。",
+    "arms": "维奈克拉联合节拍式低剂量地西他滨，可加用干扰素α；与未采用该维持策略的匹配对照比较。",
+    "population": "高危MDS/AML移植后维持患者33例；报告另含匹配队列分析。",
+    "eligibility": {"keyInclusion":["高危MDS或AML","完成异基因HSCT","接受维奈克拉联合低剂量地西他滨±干扰素α维持"],"keyExclusion":["报告未详述"],"stratificationFactors":["维持治疗与匹配对照","MDS与AML"]},
+    "subgroupAnalyses": [
+      {"dimension":"匹配队列","subgroup":"维持治疗 vs 对照","n":"未报告","endpoint":"OS / RFS","effect":"OS HR 0.61；RFS未达到 vs 21.9个月；OS未达到 vs 31.3个月","ci":"未报告","interactionP":"未报告","conclusion":"维持组生存数值更佳，且未增加GVHD；属于非随机匹配比较。"}
     ],
-    "milestones": [
-      {
-        "date": "2024-08-31",
-        "event": "研究启动"
-      },
-      {
-        "date": "2026-08-31",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
+    "enrollment": 33,
+    "primaryEndpoint": "移植后总生存期和无事件生存期",
+    "secondaryEndpoints": ["累积复发率", "非复发死亡", "GVHD", "血液学毒性"],
+    "startDate": "回顾性研究，未报告",
+    "primaryCompletion": "2025年ASH报告",
+    "countries": ["中国"],
+    "sponsor": "中国研究者团队",
+    "fda": {"regulatoryId":"不适用","designation":"维奈克拉未获FDA批准用于MDS移植后维持","submissionStatus":"会议回顾性证据","lastVerified":"2026-07-26"},
+    "result": "33例队列12个月OS 92.4%、EFS 88.2%，24个月累积复发率13.9%、非复发死亡3.6%；匹配分析提示维持组OS和RFS改善且未增加GVHD。",
+    "source": "用户提供HTML报告；ASH 2025会议资料。",
+    "dataCut": "ASH 2025",
+    "evidenceLevel": "回顾性队列及匹配分析",
+    "baselineCharacteristics": [{"label":"维持队列","value":"33例高危MDS/AML"}],
+    "efficacyHighlights": [{"label":"12个月OS","value":"92.4%"},{"label":"12个月EFS","value":"88.2%"},{"label":"24个月累积复发率","value":"13.9%"},{"label":"24个月非复发死亡","value":"3.6%"},{"label":"匹配队列OS HR","value":"0.61"},{"label":"匹配队列RFS","value":"未达到 vs 21.9个月"},{"label":"匹配队列OS","value":"未达到 vs 31.3个月"}],
+    "safetyHighlights": [{"label":"≥3级中性粒细胞减少","value":"45%"},{"label":"GVHD","value":"匹配比较未见增加"}],
+    "sources": [{"label":"ASH检索","url":"https://ash.confex.com/ash/2025/webprogram/start.html"}],
+    "milestones": [{"date":"2025","event":"ASH会议报告"}],
+    "resultNotes": ["33例队列与匹配队列属于同一移植后维持证据主题，合并为一条记录以避免重复。", "MDS和AML混合入组，未报告完整的MDS独立分层结果。"],
     "studyCategory": "移植/维持"
-  },
-  {
-    "id": "ven-mds-nct06372717",
-    "name": "NCT06372717 / 阿扎胞苷 + 维奈克拉 + APL-4098",
-    "nct": "NCT06372717",
-    "phase": "I期",
-    "status": "招募中",
-    "indication": "AML/MDS",
-    "design": "随机、开放标签、多队列/剂量探索、I期",
-    "arms": "含维奈克拉治疗臂：阿扎胞苷 + 维奈克拉 + APL-4098。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上AML/MDS患者；MDS患者须进入含维奈克拉的治疗队列，并符合相应风险分层、既往治疗和器官功能要求",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "疾病风险/分型",
-        "既往治疗或移植状态",
-        "地区/研究中心；以登记方案为准"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 100,
-    "primaryEndpoint": "安全性与耐受性；剂量限制性毒性（DLT）；推荐II期剂量/最大耐受剂量；Assess the Pharmacokinetics of APL-4098；Assess the Pharmacokinetics of APL-4098；Assess the Pharmacokinetics of APL-4098",
-    "secondaryEndpoints": [
-      "Assess response to disease with APL-4098 alone, in c…"
-    ],
-    "startDate": "2024-06-04",
-    "primaryCompletion": "2027-03-01",
-    "countries": [
-      "澳大利亚",
-      "英国"
-    ],
-    "sponsor": "Apollo Therapeutics Ltd",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "研究进行中或尚未开始；暂无成熟的MDS队列疗效、基线及亚组结果。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "I期 · 招募中",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT06372717"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2024-06-04",
-        "event": "研究启动"
-      },
-      {
-        "date": "2027-03-01",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "AML/MDS篮式研究"
-  },
-  {
-    "id": "ven-mds-nct06399640",
-    "name": "NCT06399640 / Eltanexor（XPO1抑制剂） + 维奈克拉",
-    "nct": "NCT06399640",
-    "phase": "Ib期",
-    "status": "招募中",
-    "indication": "复发/难治性MDS",
-    "design": "非随机/未说明分配、开放标签、单组、Ib期",
-    "arms": "含维奈克拉治疗臂：Eltanexor（XPO1抑制剂） + 维奈克拉。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上复发/难治性MDS患者；骨髓原始细胞、IPSS/IPSS-R风险、既往HMA治疗及移植适合性须符合登记方案",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 60,
-    "primaryEndpoint": "安全性与耐受性；Biologically effective dose (BED) of eltanexor in co…",
-    "secondaryEndpoints": [
-      "完全缓解率（CR）",
-      "总体缓解率（ORR/mOR）",
-      "无进展生存期（PFS）",
-      "总生存期（OS）",
-      "Duration of response"
-    ],
-    "startDate": "2024-08-14",
-    "primaryCompletion": "2027-02-01",
-    "countries": [
-      "美国"
-    ],
-    "sponsor": "Vanderbilt-Ingram Cancer Center",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "研究进行中或尚未开始；暂无成熟的MDS队列疗效、基线及亚组结果。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "Ib期 · 招募中",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT06399640"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2024-08-14",
-        "event": "研究启动"
-      },
-      {
-        "date": "2027-02-01",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "AML/MDS篮式研究"
-  },
-  {
-    "id": "ven-mds-nct06419634",
-    "name": "NCT06419634 / BMS-986497 + 阿扎胞苷 + 维奈克拉",
-    "nct": "NCT06419634",
-    "phase": "I期",
-    "status": "招募中",
-    "indication": "复发/难治性MDS",
-    "design": "非随机、开放标签、多队列/剂量探索、I期",
-    "arms": "含维奈克拉治疗臂：BMS-986497 + 阿扎胞苷 + 维奈克拉。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上复发/难治性MDS患者；骨髓原始细胞、IPSS/IPSS-R风险、既往HMA治疗及移植适合性须符合登记方案",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 105,
-    "primaryEndpoint": "剂量限制性毒性（DLT）；安全性与耐受性；推荐II期剂量/最大耐受剂量；推荐II期剂量/最大耐受剂量；推荐II期剂量/最大耐受剂量",
-    "secondaryEndpoints": [
-      "Maximum concentration (Cmax)",
-      "Time to reach Cmax (Tmax)",
-      "Area under the curve from time 0 to last quantifiabl…",
-      "总体缓解率（ORR/mOR）",
-      "Duration of response (DoR)",
-      "完全缓解率（CR）"
-    ],
-    "startDate": "2024-05-29",
-    "primaryCompletion": "2027-02-01",
-    "countries": [
-      "美国",
-      "加拿大",
-      "法国",
-      "西班牙"
-    ],
-    "sponsor": "Bristol-Myers Squibb",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "研究进行中或尚未开始；暂无成熟的MDS队列疗效、基线及亚组结果。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "I期 · 招募中",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT06419634"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2024-05-29",
-        "event": "研究启动"
-      },
-      {
-        "date": "2027-02-01",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "AML/MDS篮式研究"
-  },
-  {
-    "id": "ven-mds-nct06471946",
-    "name": "NCT06471946 / 维奈克拉 + 阿扎胞苷 Conditioning Regimen 异基因造血干细胞移植",
-    "nct": "NCT06471946",
-    "phase": "I/II期",
-    "status": "招募中",
-    "indication": "MDS移植桥接/预处理/维持",
-    "design": "非随机/未说明分配、开放标签、单组、I/II期",
-    "arms": "含维奈克拉治疗臂：维奈克拉 + 阿扎胞苷 Conditioning Regimen 异基因造血干细胞移植。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "70 Years以上MDS或相关髓系肿瘤患者，拟接受异基因造血干细胞移植、桥接治疗或移植后维持；具体疾病状态和移植条件以方案为准",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄70 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 54,
-    "primaryEndpoint": "总生存期（OS）",
-    "secondaryEndpoints": [
-      "无进展生存期（PFS）",
-      "Incidence of acute GVHD and chronic GVHD",
-      "Non-relapse mortality (NRM)",
-      "无复发生存期（RFS）"
-    ],
-    "startDate": "2024-10-01",
-    "primaryCompletion": "2029-09-01",
-    "countries": [
-      "中国"
-    ],
-    "sponsor": "Navy General Hospital, Beijing",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "研究进行中或尚未开始；暂无成熟的MDS队列疗效、基线及亚组结果。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "I/II期 · 招募中",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT06471946"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2024-10-01",
-        "event": "研究启动"
-      },
-      {
-        "date": "2029-09-01",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "移植/维持"
-  },
-  {
-    "id": "ven-mds-nct06501196",
-    "name": "NCT06501196 / BH-30236 + 维奈克拉",
-    "nct": "NCT06501196",
-    "phase": "I期",
-    "status": "招募中",
-    "indication": "复发/难治性MDS",
-    "design": "非随机、开放标签、平行分组、I期",
-    "arms": "含维奈克拉治疗臂：BH-30236 + 维奈克拉。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上复发/难治性MDS患者；骨髓原始细胞、IPSS/IPSS-R风险、既往HMA治疗及移植适合性须符合登记方案",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 170,
-    "primaryEndpoint": "剂量限制性毒性（DLT）；安全性与耐受性；完全缓解率（CR）",
-    "secondaryEndpoints": [
-      "Dose Escalation and Expansion: Maximum observed bloo…",
-      "Dose Escalation: Area under the blood concentration …",
-      "Dose Escalation and Expansion: Concentration before …",
-      "总体缓解率（ORR/mOR）",
-      "Dose Escalation and Expansion: Duration of Response …",
-      "Dose Escalation and Expansion: Time to remission (TTR)"
-    ],
-    "startDate": "2024-06-19",
-    "primaryCompletion": "2026-06",
-    "countries": [
-      "美国"
-    ],
-    "sponsor": "BlossomHill Therapeutics",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "研究进行中或尚未开始；暂无成熟的MDS队列疗效、基线及亚组结果。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "I期 · 招募中",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT06501196"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2024-06-19",
-        "event": "研究启动"
-      },
-      {
-        "date": "2026-06",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "MDS专门研究"
-  },
-  {
-    "id": "ven-mds-nct06536959",
-    "name": "NCT06536959 / PD-1抑制剂, 维奈克拉, 地西他滨, 阿扎胞苷",
-    "nct": "NCT06536959",
-    "phase": "II期",
-    "status": "招募中",
-    "indication": "复发/难治性MDS",
-    "design": "非随机/未说明分配、开放标签、单组、II期",
-    "arms": "含维奈克拉治疗臂：PD-1抑制剂, 维奈克拉, 地西他滨, 阿扎胞苷。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years至70 Years复发/难治性MDS患者；骨髓原始细胞、IPSS/IPSS-R风险、既往HMA治疗及移植适合性须符合登记方案",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years至70 Years",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 67,
-    "primaryEndpoint": "完全缓解率（CR）；Complete minimal residual disease (MRD) Response Rate；MRD Response Rate",
-    "secondaryEndpoints": [
-      "无复发生存期（RFS）",
-      "总生存期（OS）",
-      "Duration of response",
-      "安全性与耐受性"
-    ],
-    "startDate": "2024-07-18",
-    "primaryCompletion": "2026-07-31",
-    "countries": [
-      "中国"
-    ],
-    "sponsor": "Beijing 302 Hospital",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "研究进行中或尚未开始；暂无成熟的MDS队列疗效、基线及亚组结果。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "II期 · 招募中",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT06536959"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2024-07-18",
-        "event": "研究启动"
-      },
-      {
-        "date": "2026-07-31",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "AML/MDS篮式研究"
-  },
-  {
-    "id": "ven-mds-nct06548230",
-    "name": "NCT06548230 / Nadunolimab + 阿扎胞苷 + 维奈克拉",
-    "nct": "NCT06548230",
-    "phase": "Ib/IIa期",
-    "status": "招募中",
-    "indication": "AML/MDS",
-    "design": "非随机、开放标签、单组、Ib/IIa期",
-    "arms": "含维奈克拉治疗臂：Nadunolimab + 阿扎胞苷 + 维奈克拉。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上AML/MDS患者；MDS患者须进入含维奈克拉的治疗队列，并符合相应风险分层、既往治疗和器官功能要求",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 40,
-    "primaryEndpoint": "安全性与耐受性",
-    "secondaryEndpoints": [
-      "缓解率",
-      "缓解持续时间",
-      "总生存期",
-      "安全性"
-    ],
-    "startDate": "2025-03-05",
-    "primaryCompletion": "2027-12-01",
-    "countries": [
-      "美国"
-    ],
-    "sponsor": "M.D. Anderson Cancer Center",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "研究进行中或尚未开始；暂无成熟的MDS队列疗效、基线及亚组结果。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "Ib/IIa期 · 招募中",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT06548230"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2025-03-05",
-        "event": "研究启动"
-      },
-      {
-        "date": "2027-12-01",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "AML/MDS篮式研究"
-  },
-  {
-    "id": "ven-mds-nct06563804",
-    "name": "NCT06563804 / S227928 + 维奈克拉",
-    "nct": "NCT06563804",
-    "phase": "I/II期",
-    "status": "已终止",
-    "indication": "复发/难治性MDS",
-    "design": "非随机、开放标签、多队列/剂量探索、I/II期",
-    "arms": "含维奈克拉治疗臂：S227928 + 维奈克拉。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上复发/难治性MDS患者；骨髓原始细胞、IPSS/IPSS-R风险、既往HMA治疗及移植适合性须符合登记方案",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 13,
-    "primaryEndpoint": "剂量限制性毒性（DLT）；安全性与耐受性；Dose Escalation: Number of dose reductions, interrup…；完全缓解率（CR）",
-    "secondaryEndpoints": [
-      "Dose Escalation: Cmax of S227928, total Monoclonal A…",
-      "Dose Expansion: Cmax of S227928, total mAb, and unco…",
-      "Dose Escalation: Tmax of S227928, total mAb, and unc…",
-      "Dose Expansion: Tmax of S227928, total mAb, and unco…",
-      "Dose Escalation: Area Under the Curve (AUC) of S2279…",
-      "Dose Expansion: AUC of S227928, total mAb, and uncon…"
-    ],
-    "startDate": "2025-02-25",
-    "primaryCompletion": "2025-10-09",
-    "countries": [
-      "美国",
-      "澳大利亚",
-      "芬兰",
-      "法国",
-      "德国",
-      "日本"
-    ],
-    "sponsor": "Servier Bio-Innovation LLC",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "登记状态已结束或终止；除非本页另列同行评议/会议结果，否则尚无可核验的MDS队列完整疗效、基线或亚组数据。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "I/II期 · 已终止",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT06563804"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2025-02-25",
-        "event": "研究启动"
-      },
-      {
-        "date": "2025-10-09",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "AML/MDS篮式研究"
-  },
-  {
-    "id": "ven-mds-nct06598384",
-    "name": "NCT06598384 / 维奈克拉 + 阿扎胞苷",
-    "nct": "NCT06598384",
-    "phase": "II期",
-    "status": "尚未招募",
-    "indication": "MDS移植桥接/预处理/维持",
-    "design": "非随机/未说明分配、开放标签、单组、II期",
-    "arms": "含维奈克拉治疗臂：维奈克拉 + 阿扎胞苷。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "16 Years以上MDS或相关髓系肿瘤患者，拟接受异基因造血干细胞移植、桥接治疗或移植后维持；具体疾病状态和移植条件以方案为准",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄16 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 40,
-    "primaryEndpoint": "Relapse Rate",
-    "secondaryEndpoints": [
-      "总生存期（OS）",
-      "无进展生存期（PFS）"
-    ],
-    "startDate": "2024-09",
-    "primaryCompletion": "2030-09",
-    "countries": [],
-    "sponsor": "Navy General Hospital, Beijing",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "研究进行中或尚未开始；暂无成熟的MDS队列疗效、基线及亚组结果。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "II期 · 尚未招募",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT06598384"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2024-09",
-        "event": "研究启动"
-      },
-      {
-        "date": "2030-09",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "移植/维持"
-  },
-  {
-    "id": "ven-mds-nct06765928",
-    "name": "NCT06765928 / 塞利尼索 + 维奈克拉",
-    "nct": "NCT06765928",
-    "phase": "II期",
-    "status": "尚未招募",
-    "indication": "MDS移植桥接/预处理/维持",
-    "design": "非随机/未说明分配、开放标签、单组、II期",
-    "arms": "含维奈克拉治疗臂：塞利尼索 + 维奈克拉。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years至75 YearsMDS或相关髓系肿瘤患者，拟接受异基因造血干细胞移植、桥接治疗或移植后维持；具体疾病状态和移植条件以方案为准",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years至75 Years",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 73,
-    "primaryEndpoint": "Progress-free survival",
-    "secondaryEndpoints": [
-      "总生存期（OS）",
-      "Non-relapse survial"
-    ],
-    "startDate": "2025-01-01",
-    "primaryCompletion": "2026-01-01",
-    "countries": [
-      "中国"
-    ],
-    "sponsor": "Ruijin Hospital",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "研究进行中或尚未开始；暂无成熟的MDS队列疗效、基线及亚组结果。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "II期 · 尚未招募",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT06765928"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2025-01-01",
-        "event": "研究启动"
-      },
-      {
-        "date": "2026-01-01",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "移植/维持"
-  },
-  {
-    "id": "ven-mds-nct06972641",
-    "name": "NCT06972641 / 维奈克拉;Selenisol",
-    "nct": "NCT06972641",
-    "phase": "II/III期",
-    "status": "招募中",
-    "indication": "MDS移植桥接/预处理/维持",
-    "design": "非随机、开放标签、平行分组、II/III期",
-    "arms": "含维奈克拉治疗臂：维奈克拉;Selenisol。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "14 Years至75 YearsMDS或相关髓系肿瘤患者，拟接受异基因造血干细胞移植、桥接治疗或移植后维持；具体疾病状态和移植条件以方案为准",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄14 Years至75 Years",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 126,
-    "primaryEndpoint": "无事件生存期（EFS）",
-    "secondaryEndpoints": [
-      "总生存期（OS）"
-    ],
-    "startDate": "2025-06-10",
-    "primaryCompletion": "2030-03-31",
-    "countries": [
-      "中国"
-    ],
-    "sponsor": "Ruijin Hospital",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "研究进行中或尚未开始；暂无成熟的MDS队列疗效、基线及亚组结果。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "II/III期 · 招募中",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT06972641"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2025-06-10",
-        "event": "研究启动"
-      },
-      {
-        "date": "2030-03-31",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "移植/维持"
-  },
-  {
-    "id": "ven-mds-nct07047183",
-    "name": "NCT07047183 / 维奈克拉",
-    "nct": "NCT07047183",
-    "phase": "II期",
-    "status": "招募中",
-    "indication": "MDS移植桥接/预处理/维持",
-    "design": "非随机/未说明分配、开放标签、单组、II期",
-    "arms": "含维奈克拉治疗臂：维奈克拉。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上MDS或相关髓系肿瘤患者，拟接受异基因造血干细胞移植、桥接治疗或移植后维持；具体疾病状态和移植条件以方案为准",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 46,
-    "primaryEndpoint": "无复发生存期（RFS）",
-    "secondaryEndpoints": [
-      "总生存期（OS）",
-      "Cumulative Relapse Rate (CIR)",
-      "Composite Complete Response Rate（mCRc）"
-    ],
-    "startDate": "2025-07-01",
-    "primaryCompletion": "2029-06-30",
-    "countries": [
-      "中国"
-    ],
-    "sponsor": "Yehui Tan",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "研究进行中或尚未开始；暂无成熟的MDS队列疗效、基线及亚组结果。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "II期 · 招募中",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT07047183"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2025-07-01",
-        "event": "研究启动"
-      },
-      {
-        "date": "2029-06-30",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "移植/维持"
-  },
-  {
-    "id": "ven-mds-nct07238686",
-    "name": "NCT07238686 / 维奈克拉 + 阿扎胞苷 (AZA) 或 地西他滨 (DAC) + G-CSF动员外周血单个核细胞输注",
-    "nct": "NCT07238686",
-    "phase": "II期",
-    "status": "招募中",
-    "indication": "MDS移植桥接/预处理/维持",
-    "design": "非随机/未说明分配、开放标签、单组、II期",
-    "arms": "含维奈克拉治疗臂：维奈克拉 + 阿扎胞苷 (AZA) 或 地西他滨 (DAC) + G-CSF动员外周血单个核细胞输注。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上MDS或相关髓系肿瘤患者，拟接受异基因造血干细胞移植、桥接治疗或移植后维持；具体疾病状态和移植条件以方案为准",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "非随机剂量探索或单臂研究，无正式随机分层"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 40,
-    "primaryEndpoint": "总生存期（OS）；总体缓解率（ORR/mOR）",
-    "secondaryEndpoints": [
-      "总体缓解率（ORR/mOR）",
-      "完全缓解率（CR）",
-      "Partial remission (PR)",
-      "无进展生存期（PFS）",
-      "Treatment-related mortality (TRM)"
-    ],
-    "startDate": "2025-06-20",
-    "primaryCompletion": "2030-06",
-    "countries": [
-      "中国"
-    ],
-    "sponsor": "Beijing 302 Hospital",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "研究进行中或尚未开始；暂无成熟的MDS队列疗效、基线及亚组结果。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "II期 · 招募中",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT07238686"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2025-06-20",
-        "event": "研究启动"
-      },
-      {
-        "date": "2030-06",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "移植/维持"
-  },
-  {
-    "id": "ven-mds-nct07710534",
-    "name": "NCT07710534 / 地西他滨-西达尿苷 + 维奈克拉 (DEC-C + VEN) + 阿扎胞苷 + 维奈克拉 (AZA + VEN)",
-    "nct": "NCT07710534",
-    "phase": "II期",
-    "status": "尚未招募",
-    "indication": "复发/难治性MDS",
-    "design": "随机、开放标签、平行分组、II期",
-    "arms": "含维奈克拉治疗臂：地西他滨-西达尿苷 + 维奈克拉 (DEC-C + VEN) + 阿扎胞苷 + 维奈克拉 (AZA + VEN)。多臂研究的非维奈克拉对照或单药队列详见原始登记。",
-    "population": "18 Years以上复发/难治性MDS患者；骨髓原始细胞、IPSS/IPSS-R风险、既往HMA治疗及移植适合性须符合登记方案",
-    "eligibility": {
-      "keyInclusion": [
-        "MDS、MDS-EB2/MDS-AML或相关髓系肿瘤诊断符合研究方案",
-        "年龄18 Years以上",
-        "风险分层、既往治疗、体能状态与器官功能符合对应队列要求"
-      ],
-      "keyExclusion": [
-        "活动性不可控感染或严重器官功能异常",
-        "不符合方案规定的既往治疗、移植或合并用药要求",
-        "妊娠、哺乳或研究者判断不适合参加"
-      ],
-      "stratificationFactors": [
-        "疾病风险/分型",
-        "既往治疗或移植状态",
-        "地区/研究中心；以登记方案为准"
-      ]
-    },
-    "subgroupAnalyses": [],
-    "enrollment": 40,
-    "primaryEndpoint": "安全性与耐受性",
-    "secondaryEndpoints": [
-      "安全性与耐受性",
-      "无事件生存期（EFS）",
-      "Estimate minimal residual disease (MRD) negativity r…",
-      "Estimate best response rates in acute myeloid leukem…",
-      "Estimate duration of response (DoR) for both arms",
-      "总生存期（OS）"
-    ],
-    "startDate": "2026-09-30",
-    "primaryCompletion": "2031-09-30",
-    "countries": [
-      "美国"
-    ],
-    "sponsor": "Virginia Commonwealth University",
-    "fda": {
-      "regulatoryId": "NDA 208573",
-      "designation": "Venetoclax尚未获FDA批准用于MDS",
-      "submissionStatus": "MDS为研究性用途；VERONA III期OS主要终点阴性",
-      "lastVerified": "2026-07-26"
-    },
-    "result": "研究进行中或尚未开始；暂无成熟的MDS队列疗效、基线及亚组结果。",
-    "source": "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
-    "dataCut": "2026-07-26",
-    "evidenceLevel": "II期 · 尚未招募",
-    "baselineCharacteristics": [],
-    "efficacyHighlights": [],
-    "safetyHighlights": [],
-    "sources": [
-      {
-        "label": "ClinicalTrials.gov",
-        "url": "https://clinicaltrials.gov/study/NCT07710534"
-      }
-    ],
-    "milestones": [
-      {
-        "date": "2026-09-30",
-        "event": "研究启动"
-      },
-      {
-        "date": "2031-09-30",
-        "event": "主要完成时间（登记值）"
-      }
-    ],
-    "resultNotes": [
-      "仅收录I–III期人体干预研究；不含临床前、实验室或观察性研究。",
-      "多疾病篮式研究仅代表MDS患者存在含维奈克拉治疗臂，不等于已获得独立MDS疗效结论。"
-    ],
-    "studyCategory": "AML/MDS篮式研究"
   }
 ]

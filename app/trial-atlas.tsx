@@ -197,6 +197,8 @@ const clinicalPhaseOrder = [
   "I/II期",
   "Ib期",
   "I期",
+  "前瞻性研究",
+  "回顾性研究",
 ];
 
 const canonicalIndication = (indication: string) => {
