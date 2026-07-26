@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { Fragment, useEffect, useMemo, useState } from "react";
 import data from "./trials.json";
 import akesoCompany from "./akeso.json";
 import lisaftoclaxCompany from "./lisaftoclax.json";
@@ -120,6 +120,61 @@ const allTrials: FlatTrial[] = allPipelines.flatMap(({ company, ...pipeline }) =
     pipelineId: pipeline.id,
   }))
 );
+
+const indicationOrder = [
+  "CLL/SLL",
+  "AML",
+  "AML/MDS",
+  "MDS",
+  "多发性骨髓瘤",
+  "套细胞淋巴瘤",
+  "非霍奇金淋巴瘤",
+  "多种血液肿瘤",
+  "非小细胞肺癌",
+];
+
+const canonicalIndication = (indication: string) => {
+  const normalized = indication.toUpperCase();
+  const hasCLL = /\bCLL\b|\bSLL\b|慢性淋巴细胞/.test(normalized);
+  const hasAML = /\bAML\b|急性髓系/.test(normalized);
+  const hasMDS = /\bMDS\b|骨髓增生异常/.test(normalized);
+
+  if ((normalized.includes("血液恶性肿瘤") || normalized.includes("NHL，包括")) && hasCLL) {
+    return "多种血液肿瘤";
+  }
+  if (hasCLL) return "CLL/SLL";
+  if (hasAML && hasMDS) return "AML/MDS";
+  if (hasAML) return "AML";
+  if (hasMDS) return "MDS";
+  if (normalized.includes("多发性骨髓瘤") || /\bMM\b/.test(normalized)) return "多发性骨髓瘤";
+  if (normalized.includes("套细胞淋巴瘤") || /\bMCL\b/.test(normalized)) return "套细胞淋巴瘤";
+  if (normalized.includes("非霍奇金") || /\bNHL\b/.test(normalized)) return "非霍奇金淋巴瘤";
+  if (normalized.includes("非小细胞肺癌") || normalized.includes("NSCLC")) return "非小细胞肺癌";
+  return indication;
+};
+
+const startDateValue = (value: string) => {
+  const parts = value.match(/\d{4}|\d{1,2}/g);
+  if (!parts?.length) return 0;
+  const [year, month = "1", day = "1"] = parts;
+  return Number(year) * 10000 + Number(month) * 100 + Number(day);
+};
+
+const compareTrialOrder = (a: Trial, b: Trial) => {
+  const aIndication = canonicalIndication(a.indication);
+  const bIndication = canonicalIndication(b.indication);
+  const aIndex = indicationOrder.indexOf(aIndication);
+  const bIndex = indicationOrder.indexOf(bIndication);
+  const categoryDifference =
+    (aIndex === -1 ? indicationOrder.length : aIndex) -
+    (bIndex === -1 ? indicationOrder.length : bIndex);
+
+  if (categoryDifference !== 0) return categoryDifference;
+  if (aIndication !== bIndication) return aIndication.localeCompare(bIndication, "zh-CN");
+  const dateDifference = startDateValue(b.startDate) - startDateValue(a.startDate);
+  if (dateDifference !== 0) return dateDifference;
+  return a.name.localeCompare(b.name, "zh-CN");
+};
 
 const toneClass = (status: string) => {
   if (status.includes("完成") || status.includes("获批")) return "status status-done";
@@ -593,6 +648,12 @@ function PipelinePage({
 }) {
   const found = allPipelines.find((item) => item.id === pipelineId) ?? allPipelines[0];
   const pipeline = found as Pipeline & { company: Company };
+  const sortedTrials = [...pipeline.trials].sort(compareTrialOrder);
+  const indicationCounts = sortedTrials.reduce((counts, trial) => {
+    const indication = canonicalIndication(trial.indication);
+    counts.set(indication, (counts.get(indication) ?? 0) + 1);
+    return counts;
+  }, new Map<string, number>());
 
   return (
     <main className="pipeline-page">
@@ -622,7 +683,7 @@ function PipelinePage({
           <div>
             <span className="section-kicker">CLINICAL PROGRAMS</span>
             <h2>临床试验项目</h2>
-            <p>点击试验名称查看 FDA 临床信息模板</p>
+            <p>按适应症归类，组内按开始时间从新到旧排列；点击试验名称查看详细信息</p>
           </div>
           <button className="primary-button" onClick={onCompare}>
             对比临床 <span>{selectedIds.length}</span>
@@ -639,27 +700,41 @@ function PipelinePage({
             <span>入组</span>
             <span />
           </div>
-          {pipeline.trials.map((trial) => (
-            <div className="trial-row" key={trial.id}>
-              <a className="trial-name" href={`/clinical?trial=${encodeURIComponent(trial.id)}`}>
-                <strong>{trial.name}</strong>
-                <small>{trial.nct}</small>
-              </a>
-              <span className="phase-pill">{trial.phase}</span>
-              <time className="trial-start" dateTime={trial.startDate}>{trial.startDate}</time>
-              <p>{trial.indication}</p>
-              <span className={toneClass(trial.status)}>{trial.status}</span>
-              <b>{trial.enrollment}</b>
-              <label className="compare-check">
-                <input
-                  type="checkbox"
-                  checked={selectedIds.includes(trial.id)}
-                  onChange={() => onToggle(trial.id)}
-                />
-                <span>对比</span>
-              </label>
-            </div>
-          ))}
+          {sortedTrials.map((trial, index) => {
+            const indication = canonicalIndication(trial.indication);
+            const previousIndication = index > 0
+              ? canonicalIndication(sortedTrials[index - 1].indication)
+              : null;
+            return (
+              <Fragment key={trial.id}>
+                {indication !== previousIndication && (
+                  <div className="trial-group-row">
+                    <strong>{indication}</strong>
+                    <span>{indicationCounts.get(indication)} 项临床</span>
+                  </div>
+                )}
+                <div className="trial-row">
+                  <a className="trial-name" href={`/clinical?trial=${encodeURIComponent(trial.id)}`}>
+                    <strong>{trial.name}</strong>
+                    <small>{trial.nct}</small>
+                  </a>
+                  <span className="phase-pill">{trial.phase}</span>
+                  <time className="trial-start" dateTime={trial.startDate}>{trial.startDate}</time>
+                  <p>{trial.indication}</p>
+                  <span className={toneClass(trial.status)}>{trial.status}</span>
+                  <b>{trial.enrollment}</b>
+                  <label className="compare-check">
+                    <input
+                      type="checkbox"
+                      checked={selectedIds.includes(trial.id)}
+                      onChange={() => onToggle(trial.id)}
+                    />
+                    <span>对比</span>
+                  </label>
+                </div>
+              </Fragment>
+            );
+          })}
         </div>
 
         <div className="indication-strip">
@@ -771,7 +846,7 @@ export function ClinicalComparePage() {
         trial.status,
       ].join(" ").toLowerCase().includes(keyword);
       return companyMatches && pipelineMatches && keywordMatches;
-    });
+    }).sort(compareTrialOrder);
   }, [companyFilter, pipelineFilter, query]);
 
   const selected = allTrials.filter((trial) => selectedIds.includes(trial.id));
@@ -863,7 +938,7 @@ export function ClinicalComparePage() {
                     <span>
                       <b>{trial.name}</b>
                       <small>{trial.companyName} · {trial.pipelineCode}</small>
-                      <em>{trial.nct} · {trial.phase}</em>
+                      <em>{canonicalIndication(trial.indication)} · {trial.nct} · {trial.phase}</em>
                     </span>
                     <i>{isSelected ? "已选" : selectionFull ? "已满" : "加入"}</i>
                   </button>
