@@ -5,6 +5,7 @@ import data from "./trials.json";
 import akesoCompany from "./akeso.json";
 import lisaftoclaxCompany from "./lisaftoclax.json";
 import venetoclaxCompany from "./venetoclax.json";
+import venetoclaxMdsTrials from "./venetoclax-mds.json";
 import pembrolizumabCompany from "./pembrolizumab.json";
 import sonrotoclaxCompany from "./sonrotoclax.json";
 import mesutoclaxCompany from "./mesutoclax.json";
@@ -119,7 +120,20 @@ const companies = [
   ...(data.companies as Company[]).filter((company) => company.id !== "akeso"),
   akesoCompany as Company,
   lisaftoclaxCompany as Company,
-  venetoclaxCompany as Company,
+  {
+    ...(venetoclaxCompany as Company),
+    pipelines: (venetoclaxCompany as Company).pipelines.map((pipeline) =>
+      pipeline.id === "venetoclax"
+        ? {
+            ...pipeline,
+            trials: [
+              ...pipeline.trials.filter((trial) => !/MDS|骨髓增生异常/i.test(trial.indication)),
+              ...(venetoclaxMdsTrials as Trial[]),
+            ],
+          }
+        : pipeline
+    ),
+  },
   pembrolizumabCompany as Company,
   sonrotoclaxCompany as Company,
   mesutoclaxCompany as Company,
