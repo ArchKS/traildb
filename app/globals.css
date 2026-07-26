@@ -457,7 +457,7 @@ button { color: inherit; }
 .trial-chip b, .trial-chip small { display: block; }
 .trial-chip b { font-size: 10px; }
 .trial-chip small { font-size: 8px; color: var(--muted); margin-top: 3px; }
-.comparison-table-wrap { overflow-x: auto; padding: 25px 40px 50px; }
+.comparison-table-wrap { max-width: 100%; overflow-x: auto; overscroll-behavior-inline: contain; padding: 25px 40px 50px; scrollbar-gutter: stable; }
 .comparison-table { border-collapse: collapse; width: 100%; min-width: 850px; background: white; }
 .comparison-table th, .comparison-table td { border: 1px solid var(--line); padding: 14px; text-align: left; vertical-align: top; font-size: 10px; line-height: 1.55; }
 .comparison-table thead th { background: #eaf1ed; min-width: 190px; }
@@ -536,8 +536,10 @@ button { color: inherit; }
 .selected-trials { padding: 14px; border-bottom: 1px solid var(--line); background: #f8faf9; }
 .selected-heading { display: flex; justify-content: space-between; align-items: center; margin-bottom: 9px; }
 .selected-heading span { color: var(--muted); font-weight: 650; }
+.selected-heading > div { display: flex; align-items: center; gap: 8px; }
 .selected-heading button { border: 0; background: transparent; color: #a34d2c; cursor: pointer; }
-.selected-trials > div:last-child { display: flex; flex-wrap: wrap; gap: 7px; }
+.selected-heading .fullscreen-button { padding: 6px 9px; border: 1px solid #b7ccc1; border-radius: 4px; background: white; color: #235f4a; }
+.selected-trials > div:last-child { display: flex; flex-wrap: nowrap; gap: 7px; overflow-x: auto; padding-bottom: 4px; scrollbar-width: thin; }
 .selected-trials > div:last-child > button {
   display: flex;
   align-items: center;
@@ -549,6 +551,7 @@ button { color: inherit; }
   background: white;
   text-align: left;
   cursor: pointer;
+  flex: 0 0 auto;
 }
 .selected-trials button b, .selected-trials button small { display: block; }
 .selected-trials button b { color: #1f5c48; }
@@ -556,8 +559,22 @@ button { color: inherit; }
 .selected-trials button i { margin-left: auto; color: #986047; font-style: normal; font-size: 18px; }
 .selected-trials p { margin: 5px 0; color: var(--muted); }
 .compare-results .comparison-table-wrap { padding: 0; }
-.compare-results .comparison-table { border: 0; min-width: 760px; }
+.compare-results .comparison-table { width: max-content; min-width: 100%; border: 0; }
+.compare-results .comparison-table thead th:not(:first-child),
+.compare-results .comparison-table tbody td { width: 230px; min-width: 230px; }
 .compare-results .comparison-table th:first-child { position: sticky; left: 0; z-index: 1; }
+.compare-results .comparison-table thead th:first-child { z-index: 3; }
+.compare-results:fullscreen {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #eef2ef;
+  border: 0;
+}
+.compare-results:fullscreen .selected-trials { flex: 0 0 auto; }
+.compare-results:fullscreen .comparison-table-wrap { flex: 1 1 auto; overflow: auto; }
 
 footer { max-width: 1240px; margin: 0 auto; padding: 24px 42px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; color: #83918b; font-size: 9px; }
 

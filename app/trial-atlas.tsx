@@ -1,6 +1,6 @@
 "use client";
 
-import { Fragment, useEffect, useMemo, useState } from "react";
+import { Fragment, useEffect, useMemo, useRef, useState } from "react";
 import data from "./trials.json";
 import akesoCompany from "./akeso.json";
 import lisaftoclaxCompany from "./lisaftoclax.json";
@@ -964,7 +964,7 @@ function ComparisonTable({ trials }: { trials: FlatTrial[] }) {
       <div className="compare-empty">
         <span>⇄</span>
         <h3>先选择需要对比的临床</h3>
-        <p>可按公司、管线或关键词缩小范围，最多同时选择4项。</p>
+        <p>可按公司、管线或关键词缩小范围，对比数量不设上限。</p>
       </div>
     );
   }
@@ -1003,13 +1003,20 @@ export function ClinicalComparePage() {
   const [companyFilter, setCompanyFilter] = useState("all");
   const [pipelineFilter, setPipelineFilter] = useState("all");
   const [visibleLimit, setVisibleLimit] = useState(8);
+  const [isFullscreen, setIsFullscreen] = useState(false);
+  const compareResultsRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     const ids = (new URLSearchParams(window.location.search).get("trials") ?? "")
       .split(",")
-      .filter((id) => allTrials.some((trial) => trial.id === id))
-      .slice(0, 4);
+      .filter((id) => allTrials.some((trial) => trial.id === id));
     setSelectedIds(ids);
+  }, []);
+
+  useEffect(() => {
+    const handleFullscreen = () => setIsFullscreen(document.fullscreenElement === compareResultsRef.current);
+    document.addEventListener("fullscreenchange", handleFullscreen);
+    return () => document.removeEventListener("fullscreenchange", handleFullscreen);
   }, []);
 
   useEffect(() => {
@@ -1046,9 +1053,16 @@ export function ClinicalComparePage() {
   const toggleTrial = (id: string) => {
     setSelectedIds((current) => {
       if (current.includes(id)) return current.filter((item) => item !== id);
-      if (current.length >= 4) return current;
       return [...current, id];
     });
+  };
+
+  const toggleFullscreen = async () => {
+    if (document.fullscreenElement) {
+      await document.exitFullscreen();
+      return;
+    }
+    await compareResultsRef.current?.requestFullscreen();
   };
 
   const changeCompany = (value: string) => {
@@ -1078,7 +1092,7 @@ export function ClinicalComparePage() {
             <h1>临床试验对比</h1>
             <p>跨公司、跨管线筛选临床；候选列表按需加载，避免数据增长后页面拥挤。</p>
           </div>
-          <div className="compare-counter"><strong>{selected.length}</strong><span>/ 4 已选</span></div>
+          <div className="compare-counter"><strong>{selected.length}</strong><span>项已选 · 不限数量</span></div>
         </section>
 
         <section className="compare-workspace">
@@ -1119,20 +1133,18 @@ export function ClinicalComparePage() {
             <div className="candidate-list">
               {filteredTrials.slice(0, visibleLimit).map((trial) => {
                 const isSelected = selectedIds.includes(trial.id);
-                const selectionFull = selectedIds.length >= 4 && !isSelected;
                 return (
                   <button
                     key={trial.id}
                     className={isSelected ? "candidate-row selected" : "candidate-row"}
                     onClick={() => toggleTrial(trial.id)}
-                    disabled={selectionFull}
                   >
                     <span>
                       <b>{trial.name}</b>
                       <small>{trial.companyName} · {trial.pipelineCode}</small>
                       <em>{canonicalIndication(trial.indication)} · {trial.nct} · {trial.phase}</em>
                     </span>
-                    <i>{isSelected ? "已选" : selectionFull ? "已满" : "加入"}</i>
+                    <i>{isSelected ? "已选" : "加入"}</i>
                   </button>
                 );
               })}
@@ -1146,11 +1158,16 @@ export function ClinicalComparePage() {
             )}
           </aside>
 
-          <section className="compare-results">
+          <section className="compare-results" ref={compareResultsRef}>
             <div className="selected-trials">
               <div className="selected-heading">
                 <span>当前对比</span>
-                {selected.length > 0 && <button onClick={() => setSelectedIds([])}>清空</button>}
+                <div>
+                  <button className="fullscreen-button" onClick={toggleFullscreen}>
+                    {isFullscreen ? "退出全屏" : "全屏查看"}
+                  </button>
+                  {selected.length > 0 && <button onClick={() => setSelectedIds([])}>清空</button>}
+                </div>
               </div>
               <div>
                 {selected.map((trial) => (
@@ -1159,7 +1176,7 @@ export function ClinicalComparePage() {
                     <i aria-hidden="true">×</i>
                   </button>
                 ))}
-                {!selected.length && <p>从左侧搜索并加入临床，最多4项。</p>}
+                {!selected.length && <p>从左侧搜索并加入临床，对比数量不设上限。</p>}
               </div>
             </div>
             <ComparisonTable trials={selected} />
