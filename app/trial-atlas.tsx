@@ -182,7 +182,22 @@ const indicationOrder = [
   "健康受试者",
 ];
 
-const clinicalPhaseOrder = ["III期", "IIIb期", "II/III期", "II期", "Ib/II期", "I/II期", "I期"];
+const clinicalPhaseOrder = [
+  "III期",
+  "IIIb期",
+  "IIb/III期",
+  "II/III期",
+  "IIb期",
+  "II期",
+  "IIa期",
+  "Ib/IIb期",
+  "Ib/IIa期",
+  "Ib/II期",
+  "I/IIb期",
+  "I/II期",
+  "Ib期",
+  "I期",
+];
 
 const canonicalIndication = (indication: string) => {
   const normalized = indication.toUpperCase();

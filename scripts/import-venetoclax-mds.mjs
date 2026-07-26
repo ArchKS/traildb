@@ -140,6 +140,19 @@ function phaseLabel(phases = []) {
   return phases.map((phase) => phaseMap[phase] ?? phase).join("/");
 }
 
+function detailedPhaseLabel(title = "", phases = []) {
+  const normalized = title.toLowerCase().replace(/\s+/g, "");
+  if (/phase1b\/2a|phaseib\/iia/.test(normalized)) return "Ib/IIa期";
+  if (/phase1b\/2b|phaseib\/iib/.test(normalized)) return "Ib/IIb期";
+  if (/phase1\/2b|phasei\/iib/.test(normalized)) return "I/IIb期";
+  if (/phase1b\/2|phaseib\/ii/.test(normalized)) return "Ib/II期";
+  if (/phase2b\/3|phaseiib\/iii/.test(normalized)) return "IIb/III期";
+  if (/phase1b|phaseib/.test(normalized)) return "Ib期";
+  if (/phase2a|phaseiia/.test(normalized)) return "IIa期";
+  if (/phase2b|phaseiib/.test(normalized)) return "IIb期";
+  return phaseLabel(phases);
+}
+
 function indicationLabel(title = "") {
   if (/therapy.related|secondary myelodysplastic/i.test(title)) return "治疗相关或继发性MDS";
   if (/relapsed|refractory|R\/R/i.test(title)) return "复发/难治性MDS";
@@ -170,7 +183,7 @@ function populationText(title, ageModule = {}) {
   return `${age}${indication}患者；骨髓原始细胞、IPSS/IPSS-R风险、既往HMA治疗及移植适合性须符合登记方案`;
 }
 
-function designText(design = {}) {
+function designText(design = {}, detailedPhase = phaseLabel(design.phases)) {
   const allocation = design.designInfo?.allocation;
   const masking = design.designInfo?.maskingInfo?.masking;
   const model = design.designInfo?.interventionModel;
@@ -178,7 +191,7 @@ function designText(design = {}) {
     allocation === "RANDOMIZED" ? "随机" : allocation === "NON_RANDOMIZED" ? "非随机" : "非随机/未说明分配",
     masking === "NONE" ? "开放标签" : masking ? "设盲" : "开放标签或未说明",
     model === "PARALLEL" ? "平行分组" : model === "SINGLE_GROUP" ? "单组" : "多队列/剂量探索",
-    phaseLabel(design.phases),
+    detailedPhase,
   ].join("、");
 }
 
@@ -324,6 +337,8 @@ const trials = payload.studies
     const outcomes = protocol.outcomesModule ?? {};
     const sponsor = protocol.sponsorCollaboratorsModule?.leadSponsor?.name ?? "研究者/合作机构";
     const title = identification.briefTitle ?? identification.officialTitle ?? identification.nctId;
+    const fullTitle = `${identification.briefTitle ?? ""} ${identification.officialTitle ?? ""}`;
+    const detailedPhase = detailedPhaseLabel(fullTitle, design.phases ?? []);
     const nct = identification.nctId;
     const regimen = regimenFor(study);
     const countries = unique(
@@ -342,10 +357,10 @@ const trials = payload.studies
         ? `${identification.acronym} / ${regimen}`
         : `${nct} / ${regimen}`,
       nct,
-      phase: phaseLabel(design.phases ?? []),
+      phase: detailedPhase,
       status: statusMap[status.overallStatus] ?? status.overallStatus ?? "状态未报告",
       indication: indicationLabel(title),
-      design: designText(design),
+      design: designText(design, detailedPhase),
       arms: `含维奈克拉治疗臂：${regimen}。多臂研究的非维奈克拉对照或单药队列详见原始登记。`,
       population: populationText(title, protocol.eligibilityModule ?? {}),
       eligibility: {
@@ -386,7 +401,7 @@ const trials = payload.studies
         : "研究进行中或尚未开始；暂无成熟的MDS队列疗效、基线及亚组结果。",
       source: "ClinicalTrials.gov官方登记；已逐项确认MDS患者可进入含维奈克拉治疗臂，并排除仅在AML队列使用维奈克拉的研究。",
       dataCut,
-      evidenceLevel: `${phaseLabel(design.phases ?? [])} · ${statusMap[status.overallStatus] ?? "登记研究"}`,
+      evidenceLevel: `${detailedPhase} · ${statusMap[status.overallStatus] ?? "登记研究"}`,
       baselineCharacteristics: [],
       efficacyHighlights: [],
       safetyHighlights: [],
