@@ -5,6 +5,7 @@ import data from "./trials.json";
 import akesoCompany from "./akeso.json";
 import lisaftoclaxCompany from "./lisaftoclax.json";
 import venetoclaxCompany from "./venetoclax.json";
+import pembrolizumabCompany from "./pembrolizumab.json";
 
 type FDA = {
   regulatoryId: string;
@@ -108,6 +109,7 @@ const companies = [
   akesoCompany as Company,
   lisaftoclaxCompany as Company,
   venetoclaxCompany as Company,
+  pembrolizumabCompany as Company,
 ];
 const allPipelines = companies.flatMap((company) =>
   company.pipelines.map((pipeline) => ({ ...pipeline, company }))
@@ -131,6 +133,17 @@ const indicationOrder = [
   "非霍奇金淋巴瘤",
   "多种血液肿瘤",
   "非小细胞肺癌",
+  "黑色素瘤",
+  "三阴性乳腺癌",
+  "头颈鳞癌",
+  "胃癌/胃食管结合部癌",
+  "食管癌",
+  "结直肠癌",
+  "宫颈癌",
+  "子宫内膜癌",
+  "尿路上皮癌",
+  "肾细胞癌",
+  "肝细胞癌",
 ];
 
 const canonicalIndication = (indication: string) => {
@@ -150,6 +163,17 @@ const canonicalIndication = (indication: string) => {
   if (normalized.includes("套细胞淋巴瘤") || /\bMCL\b/.test(normalized)) return "套细胞淋巴瘤";
   if (normalized.includes("非霍奇金") || /\bNHL\b/.test(normalized)) return "非霍奇金淋巴瘤";
   if (normalized.includes("非小细胞肺癌") || normalized.includes("NSCLC")) return "非小细胞肺癌";
+  if (normalized.includes("黑色素瘤") || normalized.includes("MELANOMA")) return "黑色素瘤";
+  if (normalized.includes("三阴性乳腺癌") || normalized.includes("TNBC")) return "三阴性乳腺癌";
+  if (normalized.includes("头颈鳞癌") || normalized.includes("HNSCC")) return "头颈鳞癌";
+  if (normalized.includes("食管癌") || normalized.includes("ESOPHAGEAL")) return "食管癌";
+  if (normalized.includes("胃癌") || normalized.includes("胃食管结合部") || normalized.includes("胃食管交界") || normalized.includes("GEJ")) return "胃癌/胃食管结合部癌";
+  if (normalized.includes("结直肠癌") || normalized.includes("COLORECTAL")) return "结直肠癌";
+  if (normalized.includes("宫颈癌") || normalized.includes("CERVICAL")) return "宫颈癌";
+  if (normalized.includes("子宫内膜癌") || normalized.includes("ENDOMETRIAL")) return "子宫内膜癌";
+  if (normalized.includes("尿路上皮癌") || normalized.includes("UROTHELIAL")) return "尿路上皮癌";
+  if (normalized.includes("肾细胞癌") || normalized.includes("RCC")) return "肾细胞癌";
+  if (normalized.includes("肝细胞癌") || normalized.includes("HCC")) return "肝细胞癌";
   return indication;
 };
 
