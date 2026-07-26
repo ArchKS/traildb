@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import data from "./trials.json";
 import akesoCompany from "./akeso.json";
 import lisaftoclaxCompany from "./lisaftoclax.json";
+import venetoclaxCompany from "./venetoclax.json";
 
 type FDA = {
   regulatoryId: string;
@@ -106,6 +107,7 @@ const companies = [
   ...(data.companies as Company[]).filter((company) => company.id !== "akeso"),
   akesoCompany as Company,
   lisaftoclaxCompany as Company,
+  venetoclaxCompany as Company,
 ];
 const allPipelines = companies.flatMap((company) =>
   company.pipelines.map((pipeline) => ({ ...pipeline, company }))

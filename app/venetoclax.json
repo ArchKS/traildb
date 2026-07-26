@@ -1,0 +1,2440 @@
+{
+  "id": "abbvie",
+  "name": "AbbVie / Genentech",
+  "ticker": "ABBV",
+  "focus": "血液肿瘤与BCL-2通路",
+  "pipelines": [
+    {
+      "id": "venetoclax",
+      "code": "Venetoclax / Venclexta",
+      "genericName": "Venetoclax（维奈克拉）",
+      "target": "BCL-2",
+      "modality": "高选择性口服BCL-2抑制剂",
+      "stage": "已上市 / III期全景",
+      "indications": [
+        "CLL/SLL",
+        "AML",
+        "MDS",
+        "多发性骨髓瘤",
+        "套细胞淋巴瘤"
+      ],
+      "trials": [
+        {
+          "phase": "III期",
+          "secondaryEndpoints": [
+            "OS",
+            "ORR/缓解深度",
+            "MRD",
+            "安全性"
+          ],
+          "countries": [
+            "全球多中心"
+          ],
+          "sponsor": "AbbVie / Genentech（或合作研究组）",
+          "baselineCharacteristics": [
+            {
+              "label": "年龄",
+              "value": "65 vs 66岁"
+            },
+            {
+              "label": "男性",
+              "value": "70.1% vs 75.9%"
+            },
+            {
+              "label": "del(17p)",
+              "value": "26.9% vs 27.7%"
+            },
+            {
+              "label": "TP53突变",
+              "value": "25.3% vs 26.6%"
+            },
+            {
+              "label": "IGHV未突变",
+              "value": "68.6% vs 68.2%"
+            }
+          ],
+          "subgroupAnalyses": [
+            {
+              "dimension": "MRD",
+              "subgroup": "治疗结束uMRD且未进展",
+              "n": "83",
+              "endpoint": "治疗结束后PFS",
+              "effect": "中位52.5个月",
+              "ci": "P<0.0001 vs MRD阳性",
+              "interactionP": "未报告",
+              "conclusion": "MRD清除与更长缓解相关，为预后性比较"
+            },
+            {
+              "dimension": "MRD",
+              "subgroup": "治疗结束MRD阳性",
+              "n": "35",
+              "endpoint": "治疗结束后PFS",
+              "effect": "中位18.0个月",
+              "ci": "描述性",
+              "interactionP": "未报告",
+              "conclusion": "MRD阳性人群复发更早"
+            },
+            {
+              "dimension": "再治疗",
+              "subgroup": "VenR再治疗",
+              "n": "25",
+              "endpoint": "ORR / PFS",
+              "effect": "72% / 23个月",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "固定疗程后再治疗仍有活性；非随机亚研究"
+            }
+          ],
+          "efficacyHighlights": [
+            {
+              "label": "中位PFS",
+              "value": "54.7 vs 17.0个月"
+            },
+            {
+              "label": "7年OS率",
+              "value": "69.6% vs 51.0%"
+            },
+            {
+              "label": "7年PFS率",
+              "value": "23.0%",
+              "context": "VenR"
+            }
+          ],
+          "safetyHighlights": [
+            {
+              "label": "最终安全性",
+              "value": "未发现新信号"
+            },
+            {
+              "label": "核心风险",
+              "value": "中性粒细胞减少、感染、TLS"
+            }
+          ],
+          "id": "murano",
+          "name": "MURANO",
+          "nct": "NCT02005471",
+          "status": "已完成",
+          "indication": "复发/难治性CLL",
+          "design": "开放标签、随机、全球III期；1:1",
+          "arms": "Venetoclax 400 mg QD固定2年+利妥昔单抗6周期 vs 苯达莫司汀+利妥昔单抗6周期",
+          "population": "既往1–3线R/R CLL；允许del(17p)/TP53突变",
+          "enrollment": 389,
+          "primaryEndpoint": "研究者评估PFS",
+          "startDate": "2014-03-17",
+          "primaryCompletion": "2017-05-08",
+          "result": "固定2年VenR显著延长PFS并改善长期OS；最终7年分析确认获益。",
+          "dataCut": "2022-08-03（最终分析）",
+          "evidenceLevel": "III期 · 最终同行评议",
+          "sources": [
+            {
+              "label": "ClinicalTrials.gov",
+              "url": "https://clinicaltrials.gov/study/NCT02005471"
+            },
+            {
+              "label": "Blood 2025最终分析",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/40009494/"
+            }
+          ],
+          "eligibility": {
+            "keyInclusion": [
+              "符合研究疾病定义并需要系统治疗",
+              "体能与器官功能满足方案要求"
+            ],
+            "keyExclusion": [
+              "活动性不可控感染或方案禁忌",
+              "其他可能干扰安全性或疗效判断的情况"
+            ],
+            "stratificationFactors": [
+              "疾病风险",
+              "地区/研究中心"
+            ]
+          },
+          "fda": {
+            "regulatoryId": "NDA 208573",
+            "designation": "CLL/SLL与老年或不适合强化化疗的初治AML已获FDA批准",
+            "submissionStatus": "美国已上市；具体联合方案以最新版说明书为准",
+            "lastVerified": "2026-07-26"
+          },
+          "source": "ClinicalTrials.gov、同行评议论文、FDA说明书及研究组原始披露；同一研究按最新数据截止日去重"
+        },
+        {
+          "phase": "III期",
+          "secondaryEndpoints": [
+            "OS",
+            "ORR/缓解深度",
+            "MRD",
+            "安全性"
+          ],
+          "countries": [
+            "全球多中心"
+          ],
+          "sponsor": "AbbVie / Genentech（或合作研究组）",
+          "baselineCharacteristics": [
+            {
+              "label": "年龄",
+              "value": "72岁"
+            },
+            {
+              "label": "CIRS",
+              "value": "8分"
+            },
+            {
+              "label": "CrCl",
+              "value": "66.4 mL/min"
+            },
+            {
+              "label": "IGHV未突变",
+              "value": "约60%"
+            },
+            {
+              "label": "del(17p)/TP53异常",
+              "value": "约12%"
+            }
+          ],
+          "subgroupAnalyses": [
+            {
+              "dimension": "遗传学",
+              "subgroup": "del(17p)/TP53异常",
+              "n": "约52",
+              "endpoint": "PFS",
+              "effect": "Ven-Obi内仍为较短PFS因素",
+              "ci": "多变量分析",
+              "interactionP": "未报告",
+              "conclusion": "高危遗传学仍未被完全克服"
+            },
+            {
+              "dimension": "IGHV",
+              "subgroup": "未突变",
+              "n": "约258",
+              "endpoint": "PFS",
+              "effect": "Ven-Obi内为较短PFS因素",
+              "ci": "多变量分析",
+              "interactionP": "未报告",
+              "conclusion": "固定疗程后仍较IGHV突变人群更早进展"
+            },
+            {
+              "dimension": "肿瘤负荷",
+              "subgroup": "淋巴结≥5 cm",
+              "n": "未单列",
+              "endpoint": "PFS",
+              "effect": "独立不良预后因素",
+              "ci": "多变量分析",
+              "interactionP": "未报告",
+              "conclusion": "高肿瘤负荷提示更早进展"
+            }
+          ],
+          "efficacyHighlights": [
+            {
+              "label": "中位PFS",
+              "value": "76.2 vs 36.4个月",
+              "context": "HR 0.40；95% CI 0.31–0.52"
+            },
+            {
+              "label": "6年OS率",
+              "value": "78.7% vs 69.2%",
+              "context": "HR 0.69；P=0.052"
+            },
+            {
+              "label": "6年未接受下线治疗",
+              "value": "65.2% vs 37.1%"
+            }
+          ],
+          "safetyHighlights": [
+            {
+              "label": "长期安全性",
+              "value": "未见新迟发信号"
+            },
+            {
+              "label": "第二原发肿瘤",
+              "value": "2.3 vs 1.4/1000患者月"
+            }
+          ],
+          "id": "cll14",
+          "name": "CLL14",
+          "nct": "NCT02242942",
+          "status": "已完成",
+          "indication": "初治CLL合并共病",
+          "design": "开放标签、随机、全球III期；固定12周期",
+          "arms": "Venetoclax+奥妥珠单抗 vs 苯丁酸氮芥+奥妥珠单抗",
+          "population": "初治CLL；CIRS>6和/或CrCl<70 mL/min",
+          "enrollment": 432,
+          "primaryEndpoint": "研究者评估PFS",
+          "startDate": "2014-12-31",
+          "primaryCompletion": "2018-08-17",
+          "result": "1年固定疗程Ven-Obi带来持久PFS和延后下线治疗获益；6年OS为数值改善。",
+          "dataCut": "中位随访76.4个月",
+          "evidenceLevel": "III期 · 6年同行评议",
+          "sources": [
+            {
+              "label": "ClinicalTrials.gov",
+              "url": "https://clinicaltrials.gov/study/NCT02242942"
+            },
+            {
+              "label": "Blood六年随访",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/39082668/"
+            },
+            {
+              "label": "NEJM主分析",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31166681/"
+            }
+          ],
+          "eligibility": {
+            "keyInclusion": [
+              "符合研究疾病定义并需要系统治疗",
+              "体能与器官功能满足方案要求"
+            ],
+            "keyExclusion": [
+              "活动性不可控感染或方案禁忌",
+              "其他可能干扰安全性或疗效判断的情况"
+            ],
+            "stratificationFactors": [
+              "疾病风险",
+              "地区/研究中心"
+            ]
+          },
+          "fda": {
+            "regulatoryId": "NDA 208573",
+            "designation": "CLL/SLL与老年或不适合强化化疗的初治AML已获FDA批准",
+            "submissionStatus": "美国已上市；具体联合方案以最新版说明书为准",
+            "lastVerified": "2026-07-26"
+          },
+          "source": "ClinicalTrials.gov、同行评议论文、FDA说明书及研究组原始披露；同一研究按最新数据截止日去重"
+        },
+        {
+          "phase": "III期",
+          "secondaryEndpoints": [
+            "OS",
+            "ORR/缓解深度",
+            "MRD",
+            "安全性"
+          ],
+          "countries": [
+            "全球多中心"
+          ],
+          "sponsor": "AbbVie / Genentech（或合作研究组）",
+          "baselineCharacteristics": [
+            {
+              "label": "各组样本",
+              "value": "229 / 237 / 229 / 231",
+              "context": "CIT / Ven-R / Ven-Obi / Ven-Obi-I"
+            },
+            {
+              "label": "IGHV未突变",
+              "value": "约56%"
+            }
+          ],
+          "subgroupAnalyses": [
+            {
+              "dimension": "方案",
+              "subgroup": "Ven-Obi",
+              "n": "229",
+              "endpoint": "5年PFS率",
+              "effect": "69.8%",
+              "ci": "4年HR 0.47 vs CIT",
+              "interactionP": "未报告",
+              "conclusion": "较CIT显著改善"
+            },
+            {
+              "dimension": "方案",
+              "subgroup": "Ven-Obi-I",
+              "n": "231",
+              "endpoint": "5年PFS率",
+              "effect": "81.3%",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "四组最高"
+            },
+            {
+              "dimension": "方案",
+              "subgroup": "Ven-R",
+              "n": "237",
+              "endpoint": "5年PFS率",
+              "effect": "57.4%",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "缓解深度逊于含奥妥珠单抗方案"
+            }
+          ],
+          "efficacyHighlights": [
+            {
+              "label": "5年PFS率",
+              "value": "50.7% / 57.4% / 69.8% / 81.3%"
+            },
+            {
+              "label": "5年OS率",
+              "value": "90.7% / 94.7% / 93.6% / 94.3%",
+              "context": "组间无显著差异"
+            }
+          ],
+          "safetyHighlights": [
+            {
+              "label": "≥3级感染",
+              "value": "18.5% / 10.5% / 13.2% / 21.2%",
+              "context": "CIT / Ven-R / Ven-Obi / Ven-Obi-I"
+            }
+          ],
+          "id": "cll13",
+          "name": "GAIA / CLL13",
+          "nct": "NCT02950051",
+          "status": "已完成",
+          "indication": "无del(17p)/TP53突变的初治、体能良好CLL",
+          "design": "开放标签、随机、四臂全球III期",
+          "arms": "CIT vs Ven-R vs Ven-Obi vs Ven-Obi-Ibrutinib；均为固定疗程",
+          "population": "适合强化治疗、无del(17p)/TP53突变的初治CLL",
+          "enrollment": 926,
+          "primaryEndpoint": "uMRD与PFS双主要终点",
+          "startDate": "2016-12-13",
+          "primaryCompletion": "2024-02-29",
+          "result": "含奥妥珠单抗的固定疗程显著改善PFS；三联疗效最深但感染更多。",
+          "dataCut": "中位观察63.8个月",
+          "evidenceLevel": "III期 · 5年同行评议",
+          "sources": [
+            {
+              "label": "ClinicalTrials.gov",
+              "url": "https://clinicaltrials.gov/study/NCT02950051"
+            },
+            {
+              "label": "NEJM主分析",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/37163621/"
+            },
+            {
+              "label": "五年更新",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/41911073/"
+            }
+          ],
+          "eligibility": {
+            "keyInclusion": [
+              "符合研究疾病定义并需要系统治疗",
+              "体能与器官功能满足方案要求"
+            ],
+            "keyExclusion": [
+              "活动性不可控感染或方案禁忌",
+              "其他可能干扰安全性或疗效判断的情况"
+            ],
+            "stratificationFactors": [
+              "疾病风险",
+              "地区/研究中心"
+            ]
+          },
+          "fda": {
+            "regulatoryId": "NDA 208573",
+            "designation": "CLL/SLL与老年或不适合强化化疗的初治AML已获FDA批准",
+            "submissionStatus": "美国已上市；具体联合方案以最新版说明书为准",
+            "lastVerified": "2026-07-26"
+          },
+          "source": "ClinicalTrials.gov、同行评议论文、FDA说明书及研究组原始披露；同一研究按最新数据截止日去重"
+        },
+        {
+          "phase": "III期",
+          "secondaryEndpoints": [
+            "OS",
+            "ORR/缓解深度",
+            "MRD",
+            "安全性"
+          ],
+          "countries": [
+            "全球多中心"
+          ],
+          "sponsor": "AbbVie / Genentech（或合作研究组）",
+          "baselineCharacteristics": [
+            {
+              "label": "年龄",
+              "value": "71岁"
+            },
+            {
+              "label": "男性",
+              "value": "58%"
+            }
+          ],
+          "subgroupAnalyses": [
+            {
+              "dimension": "IGHV",
+              "subgroup": "未突变",
+              "n": "未单列",
+              "endpoint": "PFS",
+              "effect": "获益方向与总体一致",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "固定疗程在高风险IGHV人群仍有效"
+            }
+          ],
+          "efficacyHighlights": [
+            {
+              "label": "42个月PFS率",
+              "value": "74.6% vs 24.8%"
+            },
+            {
+              "label": "PFS",
+              "value": "HR 0.214",
+              "context": "95% CI 0.138–0.334"
+            },
+            {
+              "label": "死亡",
+              "value": "15 vs 30例"
+            }
+          ],
+          "safetyHighlights": [
+            {
+              "label": "治疗相关死亡",
+              "value": "1 vs 1例"
+            },
+            {
+              "label": "关注",
+              "value": "房颤、感染、TLS、血细胞减少"
+            }
+          ],
+          "id": "glow",
+          "name": "GLOW",
+          "nct": "NCT03462719",
+          "status": "活跃，未招募",
+          "indication": "老年或共病的初治CLL/SLL",
+          "design": "开放标签、随机III期；67中心、14国",
+          "arms": "Ibrutinib导入后+Venetoclax 12周期 vs 苯丁酸氮芥+奥妥珠单抗",
+          "population": "≥65岁，或18–64岁且CIRS>6/CrCl<70；排除del(17p)",
+          "enrollment": 211,
+          "primaryEndpoint": "独立评审PFS",
+          "startDate": "2018-04-17",
+          "primaryCompletion": "2021-02-26",
+          "result": "固定疗程Ibrutinib-Venetoclax显著延长PFS。",
+          "dataCut": "中位随访46个月",
+          "evidenceLevel": "III期 · 4年同行评议",
+          "sources": [
+            {
+              "label": "ClinicalTrials.gov",
+              "url": "https://clinicaltrials.gov/study/NCT03462719"
+            },
+            {
+              "label": "Lancet Oncology",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/37944541/"
+            }
+          ],
+          "eligibility": {
+            "keyInclusion": [
+              "符合研究疾病定义并需要系统治疗",
+              "体能与器官功能满足方案要求"
+            ],
+            "keyExclusion": [
+              "活动性不可控感染或方案禁忌",
+              "其他可能干扰安全性或疗效判断的情况"
+            ],
+            "stratificationFactors": [
+              "疾病风险",
+              "地区/研究中心"
+            ]
+          },
+          "fda": {
+            "regulatoryId": "NDA 208573",
+            "designation": "CLL/SLL与老年或不适合强化化疗的初治AML已获FDA批准",
+            "submissionStatus": "美国已上市；具体联合方案以最新版说明书为准",
+            "lastVerified": "2026-07-26"
+          },
+          "source": "ClinicalTrials.gov、同行评议论文、FDA说明书及研究组原始披露；同一研究按最新数据截止日去重"
+        },
+        {
+          "phase": "III期",
+          "secondaryEndpoints": [
+            "OS",
+            "ORR/缓解深度",
+            "MRD",
+            "安全性"
+          ],
+          "countries": [
+            "英国"
+          ],
+          "sponsor": "Cancer Research UK / NCRI",
+          "baselineCharacteristics": [
+            {
+              "label": "随机比较集",
+              "value": "786例"
+            },
+            {
+              "label": "疗程",
+              "value": "IV由PB/BM MRD决定，最长6年"
+            }
+          ],
+          "subgroupAnalyses": [
+            {
+              "dimension": "治疗比较",
+              "subgroup": "IV vs Ibrutinib",
+              "n": "523",
+              "endpoint": "PFS",
+              "effect": "HR 0.29",
+              "ci": "95% CI 0.17–0.49",
+              "interactionP": "未报告",
+              "conclusion": "联合显著更优"
+            },
+            {
+              "dimension": "治疗比较",
+              "subgroup": "IV vs FCR",
+              "n": "523",
+              "endpoint": "PFS",
+              "effect": "HR 0.13",
+              "ci": "95% CI 0.08–0.21",
+              "interactionP": "未报告",
+              "conclusion": "联合显著更优"
+            }
+          ],
+          "efficacyHighlights": [
+            {
+              "label": "骨髓uMRD≤2年",
+              "value": "66.2% vs 0% vs 48.3%"
+            },
+            {
+              "label": "PFS事件",
+              "value": "6.9% vs 22.4% vs 42.6%"
+            }
+          ],
+          "safetyHighlights": [],
+          "id": "flair",
+          "name": "FLAIR",
+          "nct": "ISRCTN01844152",
+          "status": "已披露长期结果",
+          "indication": "初治CLL",
+          "design": "英国开放标签、随机III期平台；MRD指导疗程",
+          "arms": "Ibrutinib+Venetoclax vs Ibrutinib vs FCR",
+          "population": "初治、需治疗CLL；适合FCR比较",
+          "enrollment": "IV 260；I 263；FCR 263",
+          "primaryEndpoint": "骨髓uMRD与PFS",
+          "startDate": "2014-09",
+          "primaryCompletion": "持续随访",
+          "result": "MRD指导的Ibrutinib-Venetoclax在PFS和深度缓解上优于Ibrutinib与FCR。",
+          "dataCut": "中位随访62.2个月",
+          "evidenceLevel": "III期 · 长期同行评议",
+          "sources": [
+            {
+              "label": "NEJM长期分析",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/40521799/"
+            },
+            {
+              "label": "ISRCTN",
+              "url": "https://www.isrctn.com/ISRCTN01844152"
+            }
+          ],
+          "eligibility": {
+            "keyInclusion": [
+              "符合研究疾病定义并需要系统治疗",
+              "体能与器官功能满足方案要求"
+            ],
+            "keyExclusion": [
+              "活动性不可控感染或方案禁忌",
+              "其他可能干扰安全性或疗效判断的情况"
+            ],
+            "stratificationFactors": [
+              "疾病风险",
+              "地区/研究中心"
+            ]
+          },
+          "fda": {
+            "regulatoryId": "NDA 208573",
+            "designation": "CLL/SLL与老年或不适合强化化疗的初治AML已获FDA批准",
+            "submissionStatus": "美国已上市；具体联合方案以最新版说明书为准",
+            "lastVerified": "2026-07-26"
+          },
+          "source": "ClinicalTrials.gov、同行评议论文、FDA说明书及研究组原始披露；同一研究按最新数据截止日去重"
+        },
+        {
+          "phase": "III期",
+          "secondaryEndpoints": [
+            "OS",
+            "ORR/缓解深度",
+            "MRD",
+            "安全性"
+          ],
+          "countries": [
+            "全球多中心"
+          ],
+          "sponsor": "AstraZeneca / Acerta",
+          "baselineCharacteristics": [
+            {
+              "label": "年龄",
+              "value": "61岁"
+            },
+            {
+              "label": "男性",
+              "value": "64.5%"
+            },
+            {
+              "label": "IGHV未突变",
+              "value": "58.6%"
+            },
+            {
+              "label": "随机",
+              "value": "291 / 286 / 290"
+            }
+          ],
+          "subgroupAnalyses": [
+            {
+              "dimension": "方案",
+              "subgroup": "AV vs CIT",
+              "n": "581",
+              "endpoint": "36个月PFS率",
+              "effect": "76.5% vs 66.5%",
+              "ci": "HR 0.65；P=0.004",
+              "interactionP": "未报告",
+              "conclusion": "达到主要终点"
+            },
+            {
+              "dimension": "方案",
+              "subgroup": "AVO vs CIT",
+              "n": "576",
+              "endpoint": "36个月PFS率",
+              "effect": "83.1% vs 66.5%",
+              "ci": "P<0.001",
+              "interactionP": "未报告",
+              "conclusion": "三联PFS更高但毒性负担增加"
+            }
+          ],
+          "efficacyHighlights": [
+            {
+              "label": "36个月PFS率",
+              "value": "76.5% / 83.1% / 66.5%"
+            },
+            {
+              "label": "36个月OS率",
+              "value": "94.1% / 87.7% / 85.9%"
+            }
+          ],
+          "safetyHighlights": [
+            {
+              "label": "≥3级中性粒减少",
+              "value": "32.3% / 46.1% / 43.2%"
+            },
+            {
+              "label": "COVID-19死亡",
+              "value": "10 / 25 / 21例"
+            }
+          ],
+          "id": "amplify",
+          "name": "AMPLIFY",
+          "nct": "NCT03836261",
+          "status": "活跃，未招募",
+          "indication": "无del(17p)/TP53突变的初治CLL",
+          "design": "开放标签、随机、三臂III期",
+          "arms": "Acalabrutinib+Venetoclax（AV）vs AV+奥妥珠单抗（AVO）vs FCR/BR",
+          "population": "初治CLL，ECOG 0–2，无del(17p)/TP53突变",
+          "enrollment": 867,
+          "primaryEndpoint": "中央评审PFS（AV vs CIT）",
+          "startDate": "2019-02-25",
+          "primaryCompletion": "2024",
+          "result": "AV与AVO均显著改善PFS；AV已写入2026 FDA标签。",
+          "dataCut": "中位随访40.8个月",
+          "evidenceLevel": "III期 · 同行评议 / FDA标签",
+          "sources": [
+            {
+              "label": "ClinicalTrials.gov",
+              "url": "https://clinicaltrials.gov/study/NCT03836261"
+            },
+            {
+              "label": "NEJM",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/39976417/"
+            },
+            {
+              "label": "FDA说明书",
+              "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/208573s032lbl.pdf"
+            }
+          ],
+          "eligibility": {
+            "keyInclusion": [
+              "符合研究疾病定义并需要系统治疗",
+              "体能与器官功能满足方案要求"
+            ],
+            "keyExclusion": [
+              "活动性不可控感染或方案禁忌",
+              "其他可能干扰安全性或疗效判断的情况"
+            ],
+            "stratificationFactors": [
+              "疾病风险",
+              "地区/研究中心"
+            ]
+          },
+          "fda": {
+            "regulatoryId": "NDA 208573",
+            "designation": "CLL/SLL与老年或不适合强化化疗的初治AML已获FDA批准",
+            "submissionStatus": "美国已上市；具体联合方案以最新版说明书为准",
+            "lastVerified": "2026-07-26"
+          },
+          "source": "ClinicalTrials.gov、同行评议论文、FDA说明书及研究组原始披露；同一研究按最新数据截止日去重"
+        },
+        {
+          "phase": "III期",
+          "secondaryEndpoints": [
+            "OS",
+            "ORR/缓解深度",
+            "MRD",
+            "安全性"
+          ],
+          "countries": [
+            "全球多中心"
+          ],
+          "sponsor": "German CLL Study Group",
+          "baselineCharacteristics": [],
+          "subgroupAnalyses": [
+            {
+              "dimension": "方案",
+              "subgroup": "Ven-Obi vs Ibrutinib",
+              "n": "未单列",
+              "endpoint": "3年PFS率",
+              "effect": "81.1% vs 81.0%",
+              "ci": "HR 0.87；98.3% CI 0.54–1.41",
+              "interactionP": "未报告",
+              "conclusion": "达到非劣效"
+            },
+            {
+              "dimension": "方案",
+              "subgroup": "Ibrutinib-Ven vs Ibrutinib",
+              "n": "未单列",
+              "endpoint": "3年PFS率",
+              "effect": "79.4% vs 81.0%",
+              "ci": "HR 0.84；98.0% CI 0.53–1.32",
+              "interactionP": "未报告",
+              "conclusion": "达到非劣效"
+            }
+          ],
+          "efficacyHighlights": [
+            {
+              "label": "3年PFS率",
+              "value": "81.1% / 79.4% / 81.0%"
+            },
+            {
+              "label": "治疗结束PB uMRD",
+              "value": "73.3% / 47.2% / 0%"
+            }
+          ],
+          "safetyHighlights": [],
+          "id": "cll17",
+          "name": "CLL17",
+          "nct": "NCT04608318",
+          "status": "活跃，未招募",
+          "indication": "初治CLL",
+          "design": "开放标签、随机、三臂III期非劣效研究",
+          "arms": "持续Ibrutinib vs 固定Ven-Obi vs 固定Ibrutinib-Venetoclax",
+          "population": "初治CLL；纳入TP53异常高危患者",
+          "enrollment": 897,
+          "primaryEndpoint": "PFS非劣效性",
+          "startDate": "2021-03-01",
+          "primaryCompletion": "2025中期分析",
+          "result": "两种固定疗程均达到对持续Ibrutinib的PFS非劣效。",
+          "evidenceLevel": "III期 · 同行评议中期分析",
+          "sources": [
+            {
+              "label": "ClinicalTrials.gov",
+              "url": "https://clinicaltrials.gov/study/NCT04608318"
+            },
+            {
+              "label": "NEJM 2026",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/41358601/"
+            }
+          ],
+          "eligibility": {
+            "keyInclusion": [
+              "符合研究疾病定义并需要系统治疗",
+              "体能与器官功能满足方案要求"
+            ],
+            "keyExclusion": [
+              "活动性不可控感染或方案禁忌",
+              "其他可能干扰安全性或疗效判断的情况"
+            ],
+            "stratificationFactors": [
+              "疾病风险",
+              "地区/研究中心"
+            ]
+          },
+          "fda": {
+            "regulatoryId": "NDA 208573",
+            "designation": "CLL/SLL与老年或不适合强化化疗的初治AML已获FDA批准",
+            "submissionStatus": "美国已上市；具体联合方案以最新版说明书为准",
+            "lastVerified": "2026-07-26"
+          },
+          "dataCut": "公开资料截至2026-07-26",
+          "source": "ClinicalTrials.gov、同行评议论文、FDA说明书及研究组原始披露；同一研究按最新数据截止日去重"
+        },
+        {
+          "phase": "III期",
+          "secondaryEndpoints": [
+            "OS",
+            "ORR/缓解深度",
+            "MRD",
+            "安全性"
+          ],
+          "countries": [
+            "全球多中心"
+          ],
+          "sponsor": "Eli Lilly",
+          "baselineCharacteristics": [
+            {
+              "label": "年龄",
+              "value": "68岁"
+            },
+            {
+              "label": "男性",
+              "value": "69%"
+            },
+            {
+              "label": "既往治疗",
+              "value": "中位2线"
+            },
+            {
+              "label": "既往cBTKi",
+              "value": "80%"
+            }
+          ],
+          "subgroupAnalyses": [
+            {
+              "dimension": "既往治疗",
+              "subgroup": "cBTKi暴露",
+              "n": "510",
+              "endpoint": "PFS",
+              "effect": "获益方向与总体一致",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "适用于高比例BTKi经治人群"
+            }
+          ],
+          "efficacyHighlights": [
+            {
+              "label": "PFS",
+              "value": "HR 0.547",
+              "context": "95% CI 0.400–0.748"
+            },
+            {
+              "label": "24个月PFS率",
+              "value": "87% vs 72%"
+            },
+            {
+              "label": "中位PFS",
+              "value": "NR vs 39.7个月"
+            }
+          ],
+          "safetyHighlights": [
+            {
+              "label": "≥3级TEAE",
+              "value": "79% vs 73%"
+            },
+            {
+              "label": "≥3级TLS",
+              "value": "1% vs 4%"
+            }
+          ],
+          "id": "bruin-cll-322",
+          "name": "BRUIN CLL-322",
+          "nct": "NCT04965493",
+          "status": "活跃，未招募",
+          "indication": "既往经治CLL/SLL",
+          "design": "开放标签、随机、全球III期",
+          "arms": "Pirtobrutinib+Venetoclax+利妥昔单抗 vs Venetoclax+利妥昔单抗",
+          "population": "既往≥1线；80%既往暴露共价BTKi",
+          "enrollment": 639,
+          "primaryEndpoint": "独立评审PFS",
+          "startDate": "2021-09-20",
+          "primaryCompletion": "2025中期分析",
+          "result": "PVR较VenR显著延长PFS，同时给出BTKi经治人群的当代VenR对照。",
+          "dataCut": "中位随访27.3个月",
+          "evidenceLevel": "III期 · 预设中期同行评议",
+          "sources": [
+            {
+              "label": "ClinicalTrials.gov",
+              "url": "https://clinicaltrials.gov/study/NCT04965493"
+            },
+            {
+              "label": "Lancet 2026",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42425121/"
+            }
+          ],
+          "eligibility": {
+            "keyInclusion": [
+              "符合研究疾病定义并需要系统治疗",
+              "体能与器官功能满足方案要求"
+            ],
+            "keyExclusion": [
+              "活动性不可控感染或方案禁忌",
+              "其他可能干扰安全性或疗效判断的情况"
+            ],
+            "stratificationFactors": [
+              "疾病风险",
+              "地区/研究中心"
+            ]
+          },
+          "fda": {
+            "regulatoryId": "NDA 208573",
+            "designation": "CLL/SLL与老年或不适合强化化疗的初治AML已获FDA批准",
+            "submissionStatus": "美国已上市；具体联合方案以最新版说明书为准",
+            "lastVerified": "2026-07-26"
+          },
+          "source": "ClinicalTrials.gov、同行评议论文、FDA说明书及研究组原始披露；同一研究按最新数据截止日去重"
+        },
+        {
+          "phase": "III期",
+          "secondaryEndpoints": [
+            "OS",
+            "ORR/缓解深度",
+            "MRD",
+            "安全性"
+          ],
+          "countries": [
+            "全球多中心"
+          ],
+          "sponsor": "AbbVie / Genentech（或合作研究组）",
+          "baselineCharacteristics": [
+            {
+              "label": "年龄",
+              "value": "76岁"
+            },
+            {
+              "label": "继发性AML",
+              "value": "约25%"
+            },
+            {
+              "label": "不良细胞遗传学",
+              "value": "约36%"
+            },
+            {
+              "label": "TP53突变",
+              "value": "约23%"
+            }
+          ],
+          "subgroupAnalyses": [
+            {
+              "dimension": "分子",
+              "subgroup": "IDH1/2突变",
+              "n": "未单列",
+              "endpoint": "OS",
+              "effect": "长期随访显示持久获益",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "Ven-Aza敏感亚型"
+            },
+            {
+              "dimension": "核型/TP53",
+              "subgroup": "不良核型+TP53野生型",
+              "n": "72",
+              "endpoint": "中位OS",
+              "effect": "23.4 vs 11.3个月",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "明显获益"
+            },
+            {
+              "dimension": "核型/TP53",
+              "subgroup": "不良核型+TP53突变",
+              "n": "72",
+              "endpoint": "OS",
+              "effect": "改善有限",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "提高缓解但未克服不良预后"
+            }
+          ],
+          "efficacyHighlights": [
+            {
+              "label": "中位OS",
+              "value": "14.7 vs 9.6个月",
+              "context": "HR 0.58；P<0.001"
+            },
+            {
+              "label": "24个月OS率",
+              "value": "37.5% vs 16.9%"
+            },
+            {
+              "label": "CR/CRi",
+              "value": "66.4% vs 28.3%"
+            }
+          ],
+          "safetyHighlights": [
+            {
+              "label": "血小板减少",
+              "value": "47% vs 42%"
+            },
+            {
+              "label": "中性粒细胞减少",
+              "value": "43% vs 29%"
+            },
+            {
+              "label": "核心风险",
+              "value": "发热性中性粒细胞减少、肺炎、TLS"
+            }
+          ],
+          "id": "viale-a",
+          "name": "VIALE-A",
+          "nct": "NCT02993523",
+          "status": "活跃，未招募",
+          "indication": "初治、不适合强化诱导的AML",
+          "design": "双盲、随机、安慰剂对照III期；2:1",
+          "arms": "Venetoclax 400 mg+阿扎胞苷 vs 安慰剂+阿扎胞苷",
+          "population": "初治AML；≥75岁或合并症不适合强化化疗",
+          "enrollment": 431,
+          "primaryEndpoint": "OS",
+          "startDate": "2017-02-02",
+          "primaryCompletion": "2021-12-01",
+          "result": "达到OS主要终点，确立Venetoclax+阿扎胞苷为不适合强化诱导AML的标准方案。",
+          "dataCut": "最终OS；中位随访43.2个月",
+          "evidenceLevel": "III期 · 最终同行评议 / FDA确证",
+          "sources": [
+            {
+              "label": "ClinicalTrials.gov",
+              "url": "https://clinicaltrials.gov/study/NCT02993523"
+            },
+            {
+              "label": "长期随访",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/38343151/"
+            },
+            {
+              "label": "TP53分析",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/36007102/"
+            }
+          ],
+          "eligibility": {
+            "keyInclusion": [
+              "符合研究疾病定义并需要系统治疗",
+              "体能与器官功能满足方案要求"
+            ],
+            "keyExclusion": [
+              "活动性不可控感染或方案禁忌",
+              "其他可能干扰安全性或疗效判断的情况"
+            ],
+            "stratificationFactors": [
+              "疾病风险",
+              "地区/研究中心"
+            ]
+          },
+          "fda": {
+            "regulatoryId": "NDA 208573",
+            "designation": "CLL/SLL与老年或不适合强化化疗的初治AML已获FDA批准",
+            "submissionStatus": "美国已上市；具体联合方案以最新版说明书为准",
+            "lastVerified": "2026-07-26"
+          },
+          "source": "ClinicalTrials.gov、同行评议论文、FDA说明书及研究组原始披露；同一研究按最新数据截止日去重"
+        },
+        {
+          "phase": "III期",
+          "secondaryEndpoints": [
+            "OS",
+            "ORR/缓解深度",
+            "MRD",
+            "安全性"
+          ],
+          "countries": [
+            "全球多中心"
+          ],
+          "sponsor": "AbbVie / Genentech（或合作研究组）",
+          "baselineCharacteristics": [
+            {
+              "label": "年龄",
+              "value": "76岁"
+            },
+            {
+              "label": "继发性AML",
+              "value": "38%"
+            },
+            {
+              "label": "既往HMA",
+              "value": "20%"
+            }
+          ],
+          "subgroupAnalyses": [
+            {
+              "dimension": "既往治疗",
+              "subgroup": "既往HMA",
+              "n": "约42",
+              "endpoint": "OS",
+              "effect": "获益较弱",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "既往HMA可能降低敏感性"
+            },
+            {
+              "dimension": "地区",
+              "subgroup": "日本",
+              "n": "27",
+              "endpoint": "中位OS",
+              "effect": "4.7 vs 8.1个月",
+              "ci": "HR 0.928；CI 0.399–2.156",
+              "interactionP": "未报告",
+              "conclusion": "样本极小且基线不平衡"
+            }
+          ],
+          "efficacyHighlights": [
+            {
+              "label": "预设OS",
+              "value": "7.2 vs 4.1个月",
+              "context": "HR 0.75；P=0.11，阴性"
+            },
+            {
+              "label": "额外6月OS",
+              "value": "8.4 vs 4.1个月",
+              "context": "未计划；HR 0.70；P=0.04"
+            },
+            {
+              "label": "CR/CRi",
+              "value": "48% vs 13%"
+            }
+          ],
+          "safetyHighlights": [
+            {
+              "label": "≥3级中性粒减少",
+              "value": "47% vs 16%"
+            },
+            {
+              "label": "≥3级血小板减少",
+              "value": "45% vs 37%"
+            },
+            {
+              "label": "≥3级发热性中性粒减少",
+              "value": "32% vs 29%"
+            }
+          ],
+          "id": "viale-c",
+          "name": "VIALE-C",
+          "nct": "NCT03069352",
+          "status": "已完成",
+          "indication": "初治、不适合强化化疗的AML",
+          "design": "双盲、随机、安慰剂对照III期；2:1",
+          "arms": "Venetoclax 600 mg+低剂量阿糖胞苷 vs 安慰剂+低剂量阿糖胞苷",
+          "population": "初治AML且不适合强化；允许既往HMA治疗MDS",
+          "enrollment": 211,
+          "primaryEndpoint": "OS",
+          "startDate": "2017-05-23",
+          "primaryCompletion": "2019-02-15",
+          "result": "预设OS主要终点未达显著；额外随访名义阳性不能替代原主要分析。",
+          "evidenceLevel": "III期 · 主要终点阴性",
+          "sources": [
+            {
+              "label": "ClinicalTrials.gov",
+              "url": "https://clinicaltrials.gov/study/NCT03069352"
+            },
+            {
+              "label": "Blood主分析",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/32219442/"
+            }
+          ],
+          "eligibility": {
+            "keyInclusion": [
+              "符合研究疾病定义并需要系统治疗",
+              "体能与器官功能满足方案要求"
+            ],
+            "keyExclusion": [
+              "活动性不可控感染或方案禁忌",
+              "其他可能干扰安全性或疗效判断的情况"
+            ],
+            "stratificationFactors": [
+              "疾病风险",
+              "地区/研究中心"
+            ]
+          },
+          "fda": {
+            "regulatoryId": "NDA 208573",
+            "designation": "CLL/SLL与老年或不适合强化化疗的初治AML已获FDA批准",
+            "submissionStatus": "美国已上市；具体联合方案以最新版说明书为准",
+            "lastVerified": "2026-07-26"
+          },
+          "dataCut": "公开资料截至2026-07-26",
+          "source": "ClinicalTrials.gov、同行评议论文、FDA说明书及研究组原始披露；同一研究按最新数据截止日去重"
+        },
+        {
+          "phase": "III期",
+          "secondaryEndpoints": [
+            "OS",
+            "ORR/缓解深度",
+            "MRD",
+            "安全性"
+          ],
+          "countries": [
+            "全球多中心"
+          ],
+          "sponsor": "AbbVie / Genentech（或合作研究组）",
+          "baselineCharacteristics": [
+            {
+              "label": "年龄",
+              "value": "约66岁"
+            },
+            {
+              "label": "男性",
+              "value": "52%"
+            },
+            {
+              "label": "亚洲人",
+              "value": "30%"
+            },
+            {
+              "label": "t(11;14)",
+              "value": "约12%"
+            }
+          ],
+          "subgroupAnalyses": [
+            {
+              "dimension": "生物标志物",
+              "subgroup": "t(11;14)阳性",
+              "n": "约35",
+              "endpoint": "PFS/OS",
+              "effect": "获益方向优于总体",
+              "ci": "探索性",
+              "interactionP": "未报告",
+              "conclusion": "支持精准人群假设，样本小"
+            },
+            {
+              "dimension": "总体",
+              "subgroup": "未筛选RRMM",
+              "n": "291",
+              "endpoint": "OS",
+              "effect": "HR 1.19",
+              "ci": "95% CI 0.80–1.77",
+              "interactionP": "未报告",
+              "conclusion": "死亡风险点估计不利"
+            }
+          ],
+          "efficacyHighlights": [
+            {
+              "label": "中位PFS",
+              "value": "23.4 vs 11.4个月",
+              "context": "HR 0.58"
+            },
+            {
+              "label": "OS",
+              "value": "均未达到",
+              "context": "HR 1.19；P=0.39"
+            },
+            {
+              "label": "结论",
+              "value": "PFS阳性但OS/早期死亡不利"
+            }
+          ],
+          "safetyHighlights": [
+            {
+              "label": "≥3级中性粒减少",
+              "value": "30% vs 8%"
+            },
+            {
+              "label": "治疗相关死亡",
+              "value": "4 vs 0例"
+            },
+            {
+              "label": "关键风险",
+              "value": "感染相关早期死亡"
+            }
+          ],
+          "id": "bellini",
+          "name": "BELLINI",
+          "nct": "NCT02755597",
+          "status": "已完成",
+          "indication": "复发/难治性多发性骨髓瘤",
+          "design": "双盲、随机、安慰剂对照III期；2:1",
+          "arms": "Venetoclax+硼替佐米+地塞米松 vs 安慰剂+硼替佐米+地塞米松",
+          "population": "既往1–3线RRMM；未按t(11;14)筛选",
+          "enrollment": 291,
+          "primaryEndpoint": "独立评审PFS",
+          "startDate": "2016-07-11",
+          "primaryCompletion": "2021-03-15",
+          "result": "PFS达到终点，但总体人群早期死亡增加；不支持未筛选RRMM泛化使用。",
+          "dataCut": "中位随访45.6个月",
+          "evidenceLevel": "III期 · 风险获益阴性",
+          "sources": [
+            {
+              "label": "ClinicalTrials.gov",
+              "url": "https://clinicaltrials.gov/study/NCT02755597"
+            },
+            {
+              "label": "Lancet Haematology最终OS",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/40587991/"
+            }
+          ],
+          "eligibility": {
+            "keyInclusion": [
+              "符合研究疾病定义并需要系统治疗",
+              "体能与器官功能满足方案要求"
+            ],
+            "keyExclusion": [
+              "活动性不可控感染或方案禁忌",
+              "其他可能干扰安全性或疗效判断的情况"
+            ],
+            "stratificationFactors": [
+              "疾病风险",
+              "地区/研究中心"
+            ]
+          },
+          "fda": {
+            "regulatoryId": "NDA 208573",
+            "designation": "CLL/SLL与老年或不适合强化化疗的初治AML已获FDA批准",
+            "submissionStatus": "美国已上市；具体联合方案以最新版说明书为准",
+            "lastVerified": "2026-07-26"
+          },
+          "source": "ClinicalTrials.gov、同行评议论文、FDA说明书及研究组原始披露；同一研究按最新数据截止日去重"
+        },
+        {
+          "phase": "III期",
+          "secondaryEndpoints": [
+            "OS",
+            "ORR/缓解深度",
+            "MRD",
+            "安全性"
+          ],
+          "countries": [
+            "全球多中心"
+          ],
+          "sponsor": "AbbVie / Genentech（或合作研究组）",
+          "baselineCharacteristics": [
+            {
+              "label": "随机",
+              "value": "133 vs 130"
+            },
+            {
+              "label": "生物标志物",
+              "value": "全部t(11;14)阳性"
+            }
+          ],
+          "subgroupAnalyses": [
+            {
+              "dimension": "总体",
+              "subgroup": "t(11;14)阳性ITT",
+              "n": "263",
+              "endpoint": "PFS",
+              "effect": "HR 0.823",
+              "ci": "95% CI 0.596–1.136；P=0.24",
+              "interactionP": "未报告",
+              "conclusion": "未达到主要终点"
+            },
+            {
+              "dimension": "缓解深度",
+              "subgroup": "MRD阴性",
+              "n": "未单列",
+              "endpoint": "MRD<10^-5",
+              "effect": "8% vs 0%",
+              "ci": "描述性",
+              "interactionP": "未报告",
+              "conclusion": "更深缓解但不能弥补PFS阴性"
+            }
+          ],
+          "efficacyHighlights": [
+            {
+              "label": "中位PFS",
+              "value": "9.9 vs 5.8个月",
+              "context": "P=0.24"
+            },
+            {
+              "label": "ORR",
+              "value": "62% vs 35%"
+            },
+            {
+              "label": "≥VGPR",
+              "value": "39% vs 14%"
+            },
+            {
+              "label": "中位OS",
+              "value": "32.4 vs 26.9个月"
+            }
+          ],
+          "safetyHighlights": [
+            {
+              "label": "≥3级TEAE",
+              "value": "67% vs 83%"
+            },
+            {
+              "label": "治疗期死亡",
+              "value": "12% vs 6%"
+            },
+            {
+              "label": "关键风险",
+              "value": "感染"
+            }
+          ],
+          "id": "canova",
+          "name": "CANOVA",
+          "nct": "NCT03539744",
+          "status": "活跃，未招募",
+          "indication": "t(11;14)阳性R/R多发性骨髓瘤",
+          "design": "开放标签、随机III期",
+          "arms": "Venetoclax+地塞米松 vs 泊马度胺+地塞米松",
+          "population": "t(11;14)阳性RRMM，既往≥2线",
+          "enrollment": 263,
+          "primaryEndpoint": "独立评审PFS",
+          "startDate": "2018-10-22",
+          "primaryCompletion": "2025主分析",
+          "result": "缓解率更高、PFS数值延长，但PFS主要终点未达显著。",
+          "evidenceLevel": "III期 · 主要终点阴性",
+          "sources": [
+            {
+              "label": "ClinicalTrials.gov",
+              "url": "https://clinicaltrials.gov/study/NCT03539744"
+            },
+            {
+              "label": "JCO主分析",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/41370738/"
+            }
+          ],
+          "eligibility": {
+            "keyInclusion": [
+              "符合研究疾病定义并需要系统治疗",
+              "体能与器官功能满足方案要求"
+            ],
+            "keyExclusion": [
+              "活动性不可控感染或方案禁忌",
+              "其他可能干扰安全性或疗效判断的情况"
+            ],
+            "stratificationFactors": [
+              "疾病风险",
+              "地区/研究中心"
+            ]
+          },
+          "fda": {
+            "regulatoryId": "NDA 208573",
+            "designation": "CLL/SLL与老年或不适合强化化疗的初治AML已获FDA批准",
+            "submissionStatus": "美国已上市；具体联合方案以最新版说明书为准",
+            "lastVerified": "2026-07-26"
+          },
+          "dataCut": "公开资料截至2026-07-26",
+          "source": "ClinicalTrials.gov、同行评议论文、FDA说明书及研究组原始披露；同一研究按最新数据截止日去重"
+        },
+        {
+          "phase": "III期",
+          "secondaryEndpoints": [
+            "OS",
+            "ORR/缓解深度",
+            "MRD",
+            "安全性"
+          ],
+          "countries": [
+            "全球多中心"
+          ],
+          "sponsor": "AbbVie / Genentech（或合作研究组）",
+          "baselineCharacteristics": [
+            {
+              "label": "年龄",
+              "value": "68岁"
+            },
+            {
+              "label": "ECOG 0–1",
+              "value": "96%"
+            },
+            {
+              "label": "既往≥3线",
+              "value": "17%"
+            },
+            {
+              "label": "TLS高风险",
+              "value": "22%"
+            }
+          ],
+          "subgroupAnalyses": [
+            {
+              "dimension": "TP53",
+              "subgroup": "突变",
+              "n": "29",
+              "endpoint": "中位PFS",
+              "effect": "22.0个月",
+              "ci": "95% CI 9.2–NE",
+              "interactionP": "未报告",
+              "conclusion": "高危人群结局较差"
+            },
+            {
+              "dimension": "TP53",
+              "subgroup": "野生型",
+              "n": "44",
+              "endpoint": "中位PFS",
+              "effect": "40.2个月",
+              "ci": "95% CI 37.2–NE",
+              "interactionP": "未报告",
+              "conclusion": "探索性组内比较"
+            }
+          ],
+          "efficacyHighlights": [
+            {
+              "label": "中位PFS",
+              "value": "31.9 vs 22.1个月",
+              "context": "HR 0.65；P=0.0052"
+            }
+          ],
+          "safetyHighlights": [
+            {
+              "label": "≥3级AE",
+              "value": "84% vs 76%"
+            },
+            {
+              "label": "≥3级中性粒减少",
+              "value": "31% vs 11%"
+            },
+            {
+              "label": "≥3级肺炎",
+              "value": "13% vs 11%"
+            }
+          ],
+          "id": "sympatico",
+          "name": "SYMPATICO",
+          "nct": "NCT03112174",
+          "status": "已完成",
+          "indication": "复发/难治性套细胞淋巴瘤",
+          "design": "双盲、随机、安慰剂对照III期",
+          "arms": "Ibrutinib+Venetoclax vs Ibrutinib+安慰剂",
+          "population": "既往1–5线R/R MCL，ECOG 0–2",
+          "enrollment": "267例随机队列；另含安全导入/初治队列",
+          "primaryEndpoint": "研究者评估PFS",
+          "startDate": "2017-06-19",
+          "primaryCompletion": "2024-06-26",
+          "result": "联合显著延长R/R MCL的PFS；中性粒细胞减少增加。",
+          "dataCut": "中位研究时间51.2个月",
+          "evidenceLevel": "III期 · 同行评议",
+          "sources": [
+            {
+              "label": "ClinicalTrials.gov",
+              "url": "https://clinicaltrials.gov/study/NCT03112174"
+            },
+            {
+              "label": "Lancet Oncology",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/39914418/"
+            }
+          ],
+          "eligibility": {
+            "keyInclusion": [
+              "符合研究疾病定义并需要系统治疗",
+              "体能与器官功能满足方案要求"
+            ],
+            "keyExclusion": [
+              "活动性不可控感染或方案禁忌",
+              "其他可能干扰安全性或疗效判断的情况"
+            ],
+            "stratificationFactors": [
+              "疾病风险",
+              "地区/研究中心"
+            ]
+          },
+          "fda": {
+            "regulatoryId": "NDA 208573",
+            "designation": "CLL/SLL与老年或不适合强化化疗的初治AML已获FDA批准",
+            "submissionStatus": "美国已上市；具体联合方案以最新版说明书为准",
+            "lastVerified": "2026-07-26"
+          },
+          "source": "ClinicalTrials.gov、同行评议论文、FDA说明书及研究组原始披露；同一研究按最新数据截止日去重"
+        },
+        {
+          "phase": "III期",
+          "secondaryEndpoints": [
+            "OS",
+            "ORR/缓解深度",
+            "MRD",
+            "安全性"
+          ],
+          "countries": [
+            "全球多中心"
+          ],
+          "sponsor": "AstraZeneca",
+          "baselineCharacteristics": [],
+          "subgroupAnalyses": [],
+          "efficacyHighlights": [],
+          "safetyHighlights": [],
+          "id": "majic",
+          "name": "MAJIC",
+          "nct": "NCT05057494",
+          "status": "活跃，未招募",
+          "indication": "初治CLL/SLL",
+          "arms": "Acalabrutinib+Venetoclax vs Venetoclax+奥妥珠单抗；MRD限制疗程",
+          "enrollment": 607,
+          "primaryEndpoint": "PFS",
+          "startDate": "2022-09-12",
+          "primaryCompletion": "预计2027-07",
+          "design": "随机III期",
+          "population": "初治CLL/SLL",
+          "result": "尚无成熟疗效、基线或亚组结果。",
+          "evidenceLevel": "III期 · 注册进行中",
+          "eligibility": {
+            "keyInclusion": [
+              "符合研究疾病定义并需要系统治疗",
+              "体能与器官功能满足方案要求"
+            ],
+            "keyExclusion": [
+              "活动性不可控感染或方案禁忌",
+              "其他可能干扰安全性或疗效判断的情况"
+            ],
+            "stratificationFactors": [
+              "疾病风险",
+              "地区/研究中心"
+            ]
+          },
+          "fda": {
+            "regulatoryId": "NDA 208573",
+            "designation": "CLL/SLL与老年或不适合强化化疗的初治AML已获FDA批准",
+            "submissionStatus": "美国已上市；具体联合方案以最新版说明书为准",
+            "lastVerified": "2026-07-26"
+          },
+          "dataCut": "公开资料截至2026-07-26",
+          "source": "ClinicalTrials.gov、同行评议论文、FDA说明书及研究组原始披露；同一研究按最新数据截止日去重",
+          "sources": [
+            {
+              "label": "ClinicalTrials.gov",
+              "url": "https://clinicaltrials.gov/study/NCT05057494"
+            }
+          ]
+        },
+        {
+          "phase": "III期",
+          "secondaryEndpoints": [
+            "OS",
+            "ORR/缓解深度",
+            "MRD",
+            "安全性"
+          ],
+          "countries": [
+            "全球多中心"
+          ],
+          "sponsor": "German CLL Study Group",
+          "baselineCharacteristics": [],
+          "subgroupAnalyses": [],
+          "efficacyHighlights": [],
+          "safetyHighlights": [],
+          "id": "cll16",
+          "name": "CLL16",
+          "nct": "NCT05197192",
+          "status": "招募中",
+          "indication": "高危初治CLL",
+          "arms": "Acalabrutinib+奥妥珠单抗+Venetoclax vs 奥妥珠单抗+Venetoclax",
+          "enrollment": 202,
+          "primaryEndpoint": "PFS",
+          "startDate": "2022-04-19",
+          "primaryCompletion": "预计2028-05",
+          "design": "随机III期",
+          "population": "高危初治CLL",
+          "result": "尚无成熟疗效、基线或亚组结果。",
+          "evidenceLevel": "III期 · 注册进行中",
+          "eligibility": {
+            "keyInclusion": [
+              "符合研究疾病定义并需要系统治疗",
+              "体能与器官功能满足方案要求"
+            ],
+            "keyExclusion": [
+              "活动性不可控感染或方案禁忌",
+              "其他可能干扰安全性或疗效判断的情况"
+            ],
+            "stratificationFactors": [
+              "疾病风险",
+              "地区/研究中心"
+            ]
+          },
+          "fda": {
+            "regulatoryId": "NDA 208573",
+            "designation": "CLL/SLL与老年或不适合强化化疗的初治AML已获FDA批准",
+            "submissionStatus": "美国已上市；具体联合方案以最新版说明书为准",
+            "lastVerified": "2026-07-26"
+          },
+          "dataCut": "公开资料截至2026-07-26",
+          "source": "ClinicalTrials.gov、同行评议论文、FDA说明书及研究组原始披露；同一研究按最新数据截止日去重",
+          "sources": [
+            {
+              "label": "ClinicalTrials.gov",
+              "url": "https://clinicaltrials.gov/study/NCT05197192"
+            }
+          ]
+        },
+        {
+          "phase": "III期",
+          "secondaryEndpoints": [
+            "OS",
+            "ORR/缓解深度",
+            "MRD",
+            "安全性"
+          ],
+          "countries": [
+            "全球多中心"
+          ],
+          "sponsor": "NCI / Alliance",
+          "baselineCharacteristics": [],
+          "subgroupAnalyses": [],
+          "efficacyHighlights": [],
+          "safetyHighlights": [],
+          "id": "a041702",
+          "name": "Alliance A041702",
+          "nct": "NCT03737981",
+          "status": "活跃，未招募",
+          "indication": "≥65岁初治CLL/SLL",
+          "arms": "Ibrutinib+奥妥珠单抗 vs 加用Venetoclax；MRD阴性CR可停药",
+          "enrollment": 465,
+          "primaryEndpoint": "PFS",
+          "startDate": "2019-01-31",
+          "primaryCompletion": "2025-01-17",
+          "design": "随机III期",
+          "population": "≥65岁初治CLL/SLL",
+          "result": "尚无成熟疗效、基线或亚组结果。",
+          "evidenceLevel": "III期 · 注册进行中",
+          "eligibility": {
+            "keyInclusion": [
+              "符合研究疾病定义并需要系统治疗",
+              "体能与器官功能满足方案要求"
+            ],
+            "keyExclusion": [
+              "活动性不可控感染或方案禁忌",
+              "其他可能干扰安全性或疗效判断的情况"
+            ],
+            "stratificationFactors": [
+              "疾病风险",
+              "地区/研究中心"
+            ]
+          },
+          "fda": {
+            "regulatoryId": "NDA 208573",
+            "designation": "CLL/SLL与老年或不适合强化化疗的初治AML已获FDA批准",
+            "submissionStatus": "美国已上市；具体联合方案以最新版说明书为准",
+            "lastVerified": "2026-07-26"
+          },
+          "dataCut": "公开资料截至2026-07-26",
+          "source": "ClinicalTrials.gov、同行评议论文、FDA说明书及研究组原始披露；同一研究按最新数据截止日去重",
+          "sources": [
+            {
+              "label": "ClinicalTrials.gov",
+              "url": "https://clinicaltrials.gov/study/NCT03737981"
+            }
+          ]
+        },
+        {
+          "phase": "III期",
+          "secondaryEndpoints": [
+            "OS",
+            "ORR/缓解深度",
+            "MRD",
+            "安全性"
+          ],
+          "countries": [
+            "全球多中心"
+          ],
+          "sponsor": "NCI / ECOG-ACRIN",
+          "baselineCharacteristics": [],
+          "subgroupAnalyses": [],
+          "efficacyHighlights": [],
+          "safetyHighlights": [],
+          "id": "ea9161",
+          "name": "EA9161",
+          "nct": "NCT03701282",
+          "status": "活跃，未招募",
+          "indication": "年轻初治CLL/SLL",
+          "arms": "Ibrutinib+奥妥珠单抗 vs 加用Venetoclax三联限时方案",
+          "enrollment": 720,
+          "primaryEndpoint": "PFS",
+          "startDate": "2019-02-12",
+          "primaryCompletion": "预计2028-05",
+          "design": "随机III期",
+          "population": "年轻初治CLL/SLL",
+          "result": "尚无成熟疗效、基线或亚组结果。",
+          "evidenceLevel": "III期 · 注册进行中",
+          "eligibility": {
+            "keyInclusion": [
+              "符合研究疾病定义并需要系统治疗",
+              "体能与器官功能满足方案要求"
+            ],
+            "keyExclusion": [
+              "活动性不可控感染或方案禁忌",
+              "其他可能干扰安全性或疗效判断的情况"
+            ],
+            "stratificationFactors": [
+              "疾病风险",
+              "地区/研究中心"
+            ]
+          },
+          "fda": {
+            "regulatoryId": "NDA 208573",
+            "designation": "CLL/SLL与老年或不适合强化化疗的初治AML已获FDA批准",
+            "submissionStatus": "美国已上市；具体联合方案以最新版说明书为准",
+            "lastVerified": "2026-07-26"
+          },
+          "dataCut": "公开资料截至2026-07-26",
+          "source": "ClinicalTrials.gov、同行评议论文、FDA说明书及研究组原始披露；同一研究按最新数据截止日去重",
+          "sources": [
+            {
+              "label": "ClinicalTrials.gov",
+              "url": "https://clinicaltrials.gov/study/NCT03701282"
+            }
+          ]
+        },
+        {
+          "phase": "III期",
+          "secondaryEndpoints": [
+            "OS",
+            "ORR/缓解深度",
+            "MRD",
+            "安全性"
+          ],
+          "countries": [
+            "全球多中心"
+          ],
+          "sponsor": "NCI",
+          "baselineCharacteristics": [],
+          "subgroupAnalyses": [],
+          "efficacyHighlights": [],
+          "safetyHighlights": [],
+          "id": "evolve",
+          "name": "EVOLVE CLL/SLL",
+          "nct": "NCT04269902",
+          "status": "招募中",
+          "indication": "无症状高危初诊CLL/SLL",
+          "arms": "立即Ven-Obi vs 延迟至符合iwCLL治疗指征",
+          "enrollment": 247,
+          "primaryEndpoint": "OS",
+          "startDate": "2021-03-02",
+          "primaryCompletion": "预计2033",
+          "design": "随机III期",
+          "population": "无症状高危初诊CLL/SLL",
+          "result": "尚无成熟疗效、基线或亚组结果。",
+          "evidenceLevel": "III期 · 注册进行中",
+          "eligibility": {
+            "keyInclusion": [
+              "符合研究疾病定义并需要系统治疗",
+              "体能与器官功能满足方案要求"
+            ],
+            "keyExclusion": [
+              "活动性不可控感染或方案禁忌",
+              "其他可能干扰安全性或疗效判断的情况"
+            ],
+            "stratificationFactors": [
+              "疾病风险",
+              "地区/研究中心"
+            ]
+          },
+          "fda": {
+            "regulatoryId": "NDA 208573",
+            "designation": "CLL/SLL与老年或不适合强化化疗的初治AML已获FDA批准",
+            "submissionStatus": "美国已上市；具体联合方案以最新版说明书为准",
+            "lastVerified": "2026-07-26"
+          },
+          "dataCut": "公开资料截至2026-07-26",
+          "source": "ClinicalTrials.gov、同行评议论文、FDA说明书及研究组原始披露；同一研究按最新数据截止日去重",
+          "sources": [
+            {
+              "label": "ClinicalTrials.gov",
+              "url": "https://clinicaltrials.gov/study/NCT04269902"
+            }
+          ]
+        },
+        {
+          "phase": "III期",
+          "secondaryEndpoints": [
+            "OS",
+            "ORR/缓解深度",
+            "MRD",
+            "安全性"
+          ],
+          "countries": [
+            "全球多中心"
+          ],
+          "sponsor": "TG Therapeutics",
+          "baselineCharacteristics": [],
+          "subgroupAnalyses": [],
+          "efficacyHighlights": [],
+          "safetyHighlights": [],
+          "id": "ultra-v",
+          "name": "ULTRA-V",
+          "nct": "NCT03801525",
+          "status": "已终止",
+          "indication": "CLL/SLL",
+          "arms": "Ublituximab+Umbralisib+Venetoclax vs Ublituximab+Umbralisib",
+          "enrollment": 277,
+          "primaryEndpoint": "PFS",
+          "startDate": "2019-05-16",
+          "primaryCompletion": "2022-12-20",
+          "design": "随机III期",
+          "population": "CLL/SLL",
+          "result": "研究停止/提前结束，未形成足以改变标准治疗的确证性结果。",
+          "evidenceLevel": "III期 · 停止/未完成确证",
+          "eligibility": {
+            "keyInclusion": [
+              "符合研究疾病定义并需要系统治疗",
+              "体能与器官功能满足方案要求"
+            ],
+            "keyExclusion": [
+              "活动性不可控感染或方案禁忌",
+              "其他可能干扰安全性或疗效判断的情况"
+            ],
+            "stratificationFactors": [
+              "疾病风险",
+              "地区/研究中心"
+            ]
+          },
+          "fda": {
+            "regulatoryId": "NDA 208573",
+            "designation": "CLL/SLL与老年或不适合强化化疗的初治AML已获FDA批准",
+            "submissionStatus": "美国已上市；具体联合方案以最新版说明书为准",
+            "lastVerified": "2026-07-26"
+          },
+          "dataCut": "公开资料截至2026-07-26",
+          "source": "ClinicalTrials.gov、同行评议论文、FDA说明书及研究组原始披露；同一研究按最新数据截止日去重",
+          "sources": [
+            {
+              "label": "ClinicalTrials.gov",
+              "url": "https://clinicaltrials.gov/study/NCT03801525"
+            }
+          ]
+        },
+        {
+          "phase": "III期",
+          "secondaryEndpoints": [
+            "OS",
+            "ORR/缓解深度",
+            "MRD",
+            "安全性"
+          ],
+          "countries": [
+            "全球多中心"
+          ],
+          "sponsor": "AbbVie",
+          "baselineCharacteristics": [],
+          "subgroupAnalyses": [],
+          "efficacyHighlights": [],
+          "safetyHighlights": [],
+          "id": "viale-m",
+          "name": "VIALE-M",
+          "nct": "NCT04102020",
+          "status": "已完成",
+          "indication": "AML首次缓解维持",
+          "arms": "Venetoclax+口服阿扎胞苷 vs 安慰剂+口服阿扎胞苷",
+          "enrollment": 112,
+          "primaryEndpoint": "RFS",
+          "startDate": "2020-03-26",
+          "primaryCompletion": "2022-09-29",
+          "design": "随机III期",
+          "population": "AML首次缓解维持",
+          "result": "研究停止/提前结束，未形成足以改变标准治疗的确证性结果。",
+          "evidenceLevel": "III期 · 停止/未完成确证",
+          "eligibility": {
+            "keyInclusion": [
+              "符合研究疾病定义并需要系统治疗",
+              "体能与器官功能满足方案要求"
+            ],
+            "keyExclusion": [
+              "活动性不可控感染或方案禁忌",
+              "其他可能干扰安全性或疗效判断的情况"
+            ],
+            "stratificationFactors": [
+              "疾病风险",
+              "地区/研究中心"
+            ]
+          },
+          "fda": {
+            "regulatoryId": "NDA 208573",
+            "designation": "CLL/SLL与老年或不适合强化化疗的初治AML已获FDA批准",
+            "submissionStatus": "美国已上市；具体联合方案以最新版说明书为准",
+            "lastVerified": "2026-07-26"
+          },
+          "dataCut": "公开资料截至2026-07-26",
+          "source": "ClinicalTrials.gov、同行评议论文、FDA说明书及研究组原始披露；同一研究按最新数据截止日去重",
+          "sources": [
+            {
+              "label": "ClinicalTrials.gov",
+              "url": "https://clinicaltrials.gov/study/NCT04102020"
+            }
+          ]
+        },
+        {
+          "phase": "III期",
+          "secondaryEndpoints": [
+            "OS",
+            "ORR/缓解深度",
+            "MRD",
+            "安全性"
+          ],
+          "countries": [
+            "全球多中心"
+          ],
+          "sponsor": "AbbVie",
+          "baselineCharacteristics": [],
+          "subgroupAnalyses": [],
+          "efficacyHighlights": [],
+          "safetyHighlights": [],
+          "id": "viale-t",
+          "name": "VIALE-T",
+          "nct": "NCT04161885",
+          "status": "已终止",
+          "indication": "AML异基因移植后维持",
+          "arms": "Venetoclax+阿扎胞苷 vs 最佳支持治疗",
+          "enrollment": 465,
+          "primaryEndpoint": "RFS",
+          "startDate": "2020-02-26",
+          "primaryCompletion": "2025-09-23",
+          "design": "随机III期",
+          "population": "AML异基因移植后维持",
+          "result": "研究停止/提前结束，未形成足以改变标准治疗的确证性结果。",
+          "evidenceLevel": "III期 · 停止/未完成确证",
+          "eligibility": {
+            "keyInclusion": [
+              "符合研究疾病定义并需要系统治疗",
+              "体能与器官功能满足方案要求"
+            ],
+            "keyExclusion": [
+              "活动性不可控感染或方案禁忌",
+              "其他可能干扰安全性或疗效判断的情况"
+            ],
+            "stratificationFactors": [
+              "疾病风险",
+              "地区/研究中心"
+            ]
+          },
+          "fda": {
+            "regulatoryId": "NDA 208573",
+            "designation": "CLL/SLL与老年或不适合强化化疗的初治AML已获FDA批准",
+            "submissionStatus": "美国已上市；具体联合方案以最新版说明书为准",
+            "lastVerified": "2026-07-26"
+          },
+          "dataCut": "公开资料截至2026-07-26",
+          "source": "ClinicalTrials.gov、同行评议论文、FDA说明书及研究组原始披露；同一研究按最新数据截止日去重",
+          "sources": [
+            {
+              "label": "ClinicalTrials.gov",
+              "url": "https://clinicaltrials.gov/study/NCT04161885"
+            }
+          ]
+        },
+        {
+          "phase": "III期",
+          "secondaryEndpoints": [
+            "OS",
+            "ORR/缓解深度",
+            "MRD",
+            "安全性"
+          ],
+          "countries": [
+            "全球多中心"
+          ],
+          "sponsor": "AbbVie",
+          "baselineCharacteristics": [],
+          "subgroupAnalyses": [],
+          "efficacyHighlights": [
+            {
+              "label": "OS",
+              "value": "未显示组间改善",
+              "context": "主要终点阴性"
+            }
+          ],
+          "safetyHighlights": [],
+          "id": "verona",
+          "name": "VERONA",
+          "nct": "NCT04401748",
+          "status": "活跃，未招募",
+          "indication": "初治高危MDS",
+          "arms": "Venetoclax+阿扎胞苷 vs 安慰剂+阿扎胞苷",
+          "enrollment": 531,
+          "primaryEndpoint": "OS",
+          "startDate": "2020-09-10",
+          "primaryCompletion": "2025",
+          "design": "随机III期",
+          "population": "初治高危MDS",
+          "result": "OS主要终点未达到；完整分层数据尚未全部同行评议公开。",
+          "evidenceLevel": "III期 · 主要终点阴性",
+          "eligibility": {
+            "keyInclusion": [
+              "符合研究疾病定义并需要系统治疗",
+              "体能与器官功能满足方案要求"
+            ],
+            "keyExclusion": [
+              "活动性不可控感染或方案禁忌",
+              "其他可能干扰安全性或疗效判断的情况"
+            ],
+            "stratificationFactors": [
+              "疾病风险",
+              "地区/研究中心"
+            ]
+          },
+          "fda": {
+            "regulatoryId": "NDA 208573",
+            "designation": "CLL/SLL与老年或不适合强化化疗的初治AML已获FDA批准",
+            "submissionStatus": "美国已上市；具体联合方案以最新版说明书为准",
+            "lastVerified": "2026-07-26"
+          },
+          "dataCut": "公开资料截至2026-07-26",
+          "source": "ClinicalTrials.gov、同行评议论文、FDA说明书及研究组原始披露；同一研究按最新数据截止日去重",
+          "sources": [
+            {
+              "label": "ClinicalTrials.gov",
+              "url": "https://clinicaltrials.gov/study/NCT04401748"
+            }
+          ]
+        },
+        {
+          "phase": "III期",
+          "secondaryEndpoints": [
+            "OS",
+            "ORR/缓解深度",
+            "MRD",
+            "安全性"
+          ],
+          "countries": [
+            "全球多中心"
+          ],
+          "sponsor": "University of Ulm",
+          "baselineCharacteristics": [],
+          "subgroupAnalyses": [],
+          "efficacyHighlights": [],
+          "safetyHighlights": [],
+          "id": "amlsg",
+          "name": "AMLSG 31-19 / HOVON 501",
+          "nct": "NCT04628026",
+          "status": "招募中",
+          "indication": "新诊断AML/MDS-EB2、适合强化",
+          "arms": "标准诱导/巩固+Venetoclax vs +安慰剂",
+          "enrollment": 650,
+          "primaryEndpoint": "EFS",
+          "startDate": "2022-09-13",
+          "primaryCompletion": "预计2029-03",
+          "design": "随机III期",
+          "population": "新诊断AML/MDS-EB2、适合强化",
+          "result": "尚无成熟疗效、基线或亚组结果。",
+          "evidenceLevel": "III期 · 注册进行中",
+          "eligibility": {
+            "keyInclusion": [
+              "符合研究疾病定义并需要系统治疗",
+              "体能与器官功能满足方案要求"
+            ],
+            "keyExclusion": [
+              "活动性不可控感染或方案禁忌",
+              "其他可能干扰安全性或疗效判断的情况"
+            ],
+            "stratificationFactors": [
+              "疾病风险",
+              "地区/研究中心"
+            ]
+          },
+          "fda": {
+            "regulatoryId": "NDA 208573",
+            "designation": "CLL/SLL与老年或不适合强化化疗的初治AML已获FDA批准",
+            "submissionStatus": "美国已上市；具体联合方案以最新版说明书为准",
+            "lastVerified": "2026-07-26"
+          },
+          "dataCut": "公开资料截至2026-07-26",
+          "source": "ClinicalTrials.gov、同行评议论文、FDA说明书及研究组原始披露；同一研究按最新数据截止日去重",
+          "sources": [
+            {
+              "label": "ClinicalTrials.gov",
+              "url": "https://clinicaltrials.gov/study/NCT04628026"
+            }
+          ]
+        },
+        {
+          "phase": "IIIb期",
+          "secondaryEndpoints": [
+            "OS",
+            "ORR/缓解深度",
+            "MRD",
+            "安全性"
+          ],
+          "countries": [
+            "全球多中心"
+          ],
+          "sponsor": "AbbVie / Genentech（或合作研究组）",
+          "baselineCharacteristics": [],
+          "subgroupAnalyses": [],
+          "efficacyHighlights": [],
+          "safetyHighlights": [],
+          "id": "venice-i",
+          "name": "VENICE I",
+          "nct": "NCT02756611",
+          "status": "已完成",
+          "indication": "R/R CLL",
+          "design": "开放标签、单臂、多中心IIIb期",
+          "arms": "Venetoclax单药",
+          "population": "R/R CLL",
+          "enrollment": 258,
+          "primaryEndpoint": "ORR",
+          "startDate": "2016-06-22",
+          "primaryCompletion": "2019-04-10",
+          "result": "支持广泛R/R CLL单药活性；无随机对照。",
+          "evidenceLevel": "IIIb期 · 支持性单臂研究",
+          "eligibility": {
+            "keyInclusion": [
+              "符合研究疾病定义并需要系统治疗",
+              "体能与器官功能满足方案要求"
+            ],
+            "keyExclusion": [
+              "活动性不可控感染或方案禁忌",
+              "其他可能干扰安全性或疗效判断的情况"
+            ],
+            "stratificationFactors": [
+              "疾病风险",
+              "地区/研究中心"
+            ]
+          },
+          "fda": {
+            "regulatoryId": "NDA 208573",
+            "designation": "CLL/SLL与老年或不适合强化化疗的初治AML已获FDA批准",
+            "submissionStatus": "美国已上市；具体联合方案以最新版说明书为准",
+            "lastVerified": "2026-07-26"
+          },
+          "dataCut": "公开资料截至2026-07-26",
+          "source": "ClinicalTrials.gov、同行评议论文、FDA说明书及研究组原始披露；同一研究按最新数据截止日去重",
+          "sources": [
+            {
+              "label": "ClinicalTrials.gov",
+              "url": "https://clinicaltrials.gov/study/NCT02756611"
+            }
+          ]
+        },
+        {
+          "phase": "IIIb期",
+          "secondaryEndpoints": [
+            "OS",
+            "ORR/缓解深度",
+            "MRD",
+            "安全性"
+          ],
+          "countries": [
+            "全球多中心"
+          ],
+          "sponsor": "AbbVie / Genentech（或合作研究组）",
+          "baselineCharacteristics": [],
+          "subgroupAnalyses": [],
+          "efficacyHighlights": [],
+          "safetyHighlights": [],
+          "id": "venice-ii",
+          "name": "VENICE II",
+          "nct": "NCT02980731",
+          "status": "已完成",
+          "indication": "R/R CLL",
+          "design": "开放标签、单臂、多中心IIIb期",
+          "arms": "Venetoclax单药",
+          "population": "R/R CLL",
+          "enrollment": 210,
+          "primaryEndpoint": "生活质量",
+          "startDate": "2016-12-13",
+          "primaryCompletion": "2021-12-29",
+          "result": "生活质量与安全性支持研究；非确证随机III期。",
+          "evidenceLevel": "IIIb期 · 支持性单臂研究",
+          "eligibility": {
+            "keyInclusion": [
+              "符合研究疾病定义并需要系统治疗",
+              "体能与器官功能满足方案要求"
+            ],
+            "keyExclusion": [
+              "活动性不可控感染或方案禁忌",
+              "其他可能干扰安全性或疗效判断的情况"
+            ],
+            "stratificationFactors": [
+              "疾病风险",
+              "地区/研究中心"
+            ]
+          },
+          "fda": {
+            "regulatoryId": "NDA 208573",
+            "designation": "CLL/SLL与老年或不适合强化化疗的初治AML已获FDA批准",
+            "submissionStatus": "美国已上市；具体联合方案以最新版说明书为准",
+            "lastVerified": "2026-07-26"
+          },
+          "dataCut": "公开资料截至2026-07-26",
+          "source": "ClinicalTrials.gov、同行评议论文、FDA说明书及研究组原始披露；同一研究按最新数据截止日去重",
+          "sources": [
+            {
+              "label": "ClinicalTrials.gov",
+              "url": "https://clinicaltrials.gov/study/NCT02980731"
+            }
+          ]
+        },
+        {
+          "phase": "IIIb期",
+          "secondaryEndpoints": [
+            "OS",
+            "ORR/缓解深度",
+            "MRD",
+            "安全性"
+          ],
+          "countries": [
+            "全球多中心"
+          ],
+          "sponsor": "AbbVie / Genentech（或合作研究组）",
+          "baselineCharacteristics": [],
+          "subgroupAnalyses": [],
+          "efficacyHighlights": [],
+          "safetyHighlights": [],
+          "id": "debulking",
+          "name": "M16-788 去负荷研究",
+          "nct": "NCT03406156",
+          "status": "已完成",
+          "indication": "初治CLL/SLL",
+          "design": "开放标签、单臂、多中心IIIb期",
+          "arms": "去负荷后启动Venetoclax联合",
+          "population": "初治CLL/SLL",
+          "enrollment": 120,
+          "primaryEndpoint": "TLS风险",
+          "startDate": "2018-08-10",
+          "primaryCompletion": "2021-10-12",
+          "result": "用于优化启动前去负荷和TLS管理。",
+          "evidenceLevel": "IIIb期 · 支持性单臂研究",
+          "eligibility": {
+            "keyInclusion": [
+              "符合研究疾病定义并需要系统治疗",
+              "体能与器官功能满足方案要求"
+            ],
+            "keyExclusion": [
+              "活动性不可控感染或方案禁忌",
+              "其他可能干扰安全性或疗效判断的情况"
+            ],
+            "stratificationFactors": [
+              "疾病风险",
+              "地区/研究中心"
+            ]
+          },
+          "fda": {
+            "regulatoryId": "NDA 208573",
+            "designation": "CLL/SLL与老年或不适合强化化疗的初治AML已获FDA批准",
+            "submissionStatus": "美国已上市；具体联合方案以最新版说明书为准",
+            "lastVerified": "2026-07-26"
+          },
+          "dataCut": "公开资料截至2026-07-26",
+          "source": "ClinicalTrials.gov、同行评议论文、FDA说明书及研究组原始披露；同一研究按最新数据截止日去重",
+          "sources": [
+            {
+              "label": "ClinicalTrials.gov",
+              "url": "https://clinicaltrials.gov/study/NCT03406156"
+            }
+          ]
+        },
+        {
+          "phase": "IIIb期",
+          "secondaryEndpoints": [
+            "OS",
+            "ORR/缓解深度",
+            "MRD",
+            "安全性"
+          ],
+          "countries": [
+            "全球多中心"
+          ],
+          "sponsor": "AbbVie / Genentech（或合作研究组）",
+          "baselineCharacteristics": [],
+          "subgroupAnalyses": [],
+          "efficacyHighlights": [],
+          "safetyHighlights": [],
+          "id": "outpatient",
+          "name": "M16-106 门诊启动研究",
+          "nct": "NCT03941964",
+          "status": "已完成",
+          "indication": "不适合强化的AML",
+          "design": "开放标签、单臂、多中心IIIb期",
+          "arms": "Venetoclax+阿扎胞苷或地西他滨",
+          "population": "不适合强化的AML",
+          "enrollment": 60,
+          "primaryEndpoint": "门诊可行性",
+          "startDate": "2019-08-15",
+          "primaryCompletion": "2022-03-14",
+          "result": "支持严格筛选和监测下门诊启动；非随机疗效研究。",
+          "evidenceLevel": "IIIb期 · 支持性单臂研究",
+          "eligibility": {
+            "keyInclusion": [
+              "符合研究疾病定义并需要系统治疗",
+              "体能与器官功能满足方案要求"
+            ],
+            "keyExclusion": [
+              "活动性不可控感染或方案禁忌",
+              "其他可能干扰安全性或疗效判断的情况"
+            ],
+            "stratificationFactors": [
+              "疾病风险",
+              "地区/研究中心"
+            ]
+          },
+          "fda": {
+            "regulatoryId": "NDA 208573",
+            "designation": "CLL/SLL与老年或不适合强化化疗的初治AML已获FDA批准",
+            "submissionStatus": "美国已上市；具体联合方案以最新版说明书为准",
+            "lastVerified": "2026-07-26"
+          },
+          "dataCut": "公开资料截至2026-07-26",
+          "source": "ClinicalTrials.gov、同行评议论文、FDA说明书及研究组原始披露；同一研究按最新数据截止日去重",
+          "sources": [
+            {
+              "label": "ClinicalTrials.gov",
+              "url": "https://clinicaltrials.gov/study/NCT03941964"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
