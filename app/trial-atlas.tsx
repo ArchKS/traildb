@@ -646,6 +646,7 @@ function PipelinePage({
   onBack: () => void;
   onCompare: () => void;
 }) {
+  const [indicationFilter, setIndicationFilter] = useState("all");
   const found = allPipelines.find((item) => item.id === pipelineId) ?? allPipelines[0];
   const pipeline = found as Pipeline & { company: Company };
   const sortedTrials = [...pipeline.trials].sort(compareTrialOrder);
@@ -654,6 +655,14 @@ function PipelinePage({
     counts.set(indication, (counts.get(indication) ?? 0) + 1);
     return counts;
   }, new Map<string, number>());
+  const indicationOptions = [...indicationCounts.entries()];
+  const visibleTrials = indicationFilter === "all"
+    ? sortedTrials
+    : sortedTrials.filter((trial) => canonicalIndication(trial.indication) === indicationFilter);
+
+  useEffect(() => {
+    setIndicationFilter("all");
+  }, [pipeline.id]);
 
   return (
     <main className="pipeline-page">
@@ -690,6 +699,26 @@ function PipelinePage({
           </button>
         </div>
 
+        <div className="indication-filters" aria-label="按适应症筛选临床">
+          <button
+            className={indicationFilter === "all" ? "active" : ""}
+            aria-pressed={indicationFilter === "all"}
+            onClick={() => setIndicationFilter("all")}
+          >
+            全部 <span>({sortedTrials.length})</span>
+          </button>
+          {indicationOptions.map(([indication, count]) => (
+            <button
+              key={indication}
+              className={indicationFilter === indication ? "active" : ""}
+              aria-pressed={indicationFilter === indication}
+              onClick={() => setIndicationFilter(indication)}
+            >
+              {indication} <span>({count})</span>
+            </button>
+          ))}
+        </div>
+
         <div className="trial-table">
           <div className="trial-table-head">
             <span>试验 / 注册号</span>
@@ -700,10 +729,10 @@ function PipelinePage({
             <span>入组</span>
             <span />
           </div>
-          {sortedTrials.map((trial, index) => {
+          {visibleTrials.map((trial, index) => {
             const indication = canonicalIndication(trial.indication);
             const previousIndication = index > 0
-              ? canonicalIndication(sortedTrials[index - 1].indication)
+              ? canonicalIndication(visibleTrials[index - 1].indication)
               : null;
             return (
               <Fragment key={trial.id}>
