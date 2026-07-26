@@ -6,6 +6,8 @@ import akesoCompany from "./akeso.json";
 import lisaftoclaxCompany from "./lisaftoclax.json";
 import venetoclaxCompany from "./venetoclax.json";
 import pembrolizumabCompany from "./pembrolizumab.json";
+import sonrotoclaxCompany from "./sonrotoclax.json";
+import mesutoclaxCompany from "./mesutoclax.json";
 
 type FDA = {
   regulatoryId: string;
@@ -110,6 +112,8 @@ const companies = [
   lisaftoclaxCompany as Company,
   venetoclaxCompany as Company,
   pembrolizumabCompany as Company,
+  sonrotoclaxCompany as Company,
+  mesutoclaxCompany as Company,
 ];
 const allPipelines = companies.flatMap((company) =>
   company.pipelines.map((pipeline) => ({ ...pipeline, company }))
@@ -144,6 +148,14 @@ const indicationOrder = [
   "尿路上皮癌",
   "肾细胞癌",
   "肝细胞癌",
+  "华氏巨球蛋白血症",
+  "滤泡性淋巴瘤",
+  "边缘区淋巴瘤",
+  "大B细胞淋巴瘤",
+  "Richter转化",
+  "AL型淀粉样变性",
+  "混合表型急性白血病",
+  "健康受试者",
 ];
 
 const canonicalIndication = (indication: string) => {
@@ -174,6 +186,14 @@ const canonicalIndication = (indication: string) => {
   if (normalized.includes("尿路上皮癌") || normalized.includes("UROTHELIAL")) return "尿路上皮癌";
   if (normalized.includes("肾细胞癌") || normalized.includes("RCC")) return "肾细胞癌";
   if (normalized.includes("肝细胞癌") || normalized.includes("HCC")) return "肝细胞癌";
+  if (normalized.includes("华氏巨球蛋白") || normalized.includes("WALDENSTR")) return "华氏巨球蛋白血症";
+  if (normalized.includes("滤泡性淋巴瘤") || /\bFL\b/.test(normalized)) return "滤泡性淋巴瘤";
+  if (normalized.includes("边缘区淋巴瘤") || /\bMZL\b/.test(normalized)) return "边缘区淋巴瘤";
+  if (normalized.includes("大B细胞淋巴瘤") || normalized.includes("DLBCL") || normalized.includes("LBCL")) return "大B细胞淋巴瘤";
+  if (normalized.includes("RICHTER")) return "Richter转化";
+  if (normalized.includes("淀粉样变性") || normalized.includes("AMYLOIDOSIS")) return "AL型淀粉样变性";
+  if (normalized.includes("混合表型急性白血病")) return "混合表型急性白血病";
+  if (normalized.includes("健康受试者") || normalized.includes("HEALTHY")) return "健康受试者";
   return indication;
 };
 

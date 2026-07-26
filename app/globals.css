@@ -235,6 +235,9 @@ button { color: inherit; }
 .avatar-1 { background: #dff4ea; color: #205a47; }
 .avatar-2 { background: #e7e3fb; color: #524592; }
 .avatar-3 { background: #ffeadc; color: #a34822; }
+.avatar-4 { background: #dce9f7; color: #2e5f88; }
+.avatar-5 { background: #f7e4e8; color: #8a3d51; }
+.avatar-6 { background: #e8edda; color: #5b672d; }
 .company-head h3 { margin: 0 0 5px; font-size: 15px; }
 .company-head p { margin: 0; font-size: 9px; color: var(--muted); }
 .pipeline-count { margin-left: auto; font-family: var(--font-geist-mono); color: #819088; font-size: 8px; letter-spacing: .1em; }

@@ -1,0 +1,650 @@
+{
+  "id": "innocare",
+  "name": "诺诚健华",
+  "ticker": "9969.HK / 688428.SH",
+  "focus": "血液肿瘤与自身免疫创新药",
+  "pipelines": [
+    {
+      "id": "mesutoclax",
+      "code": "ICP-248 / Mesutoclax",
+      "genericName": "Mesutoclax（ICP-248）",
+      "target": "BCL-2",
+      "modality": "高选择性口服BCL-2抑制剂",
+      "stage": "III期 / 注册性开发",
+      "indications": [
+        "套细胞淋巴瘤",
+        "MDS",
+        "CLL/SLL",
+        "B细胞恶性肿瘤"
+      ],
+      "trials": [
+        {
+          "id": "mesutoclax-nct07082686",
+          "name": "ICP-CL-01206 / 复发/难治性套细胞淋巴瘤",
+          "nct": "NCT07082686",
+          "phase": "II期",
+          "status": "招募中",
+          "indication": "复发/难治性套细胞淋巴瘤",
+          "design": "NA；SINGLE GROUP；NONE；TREATMENT",
+          "arms": "ICP-248Tablets：",
+          "population": "≥ 18 years old.；Histopathologically confirmed MCL expressing Cyclin D1 and/or t (11;14) chromosomal translocation.Formalin-fixed paraffin-embedded (FFPE) tissues or sections for diagnosis must be provided. It is for the approval of pathological diagnosis by the central pathology laboratory.；The patient was diagnosed with relapsed or refractory mantle cell lymphoma, and the previous treatment needs to meet the following requirements:；Failure of at least one adequate prior line of anti-CD20-containing therapy;",
+          "eligibility": {
+            "keyInclusion": [
+              "≥ 18 years old.",
+              "Histopathologically confirmed MCL expressing Cyclin D1 and/or t (11;14) chromosomal translocation.Formalin-fixed paraffin-embedded (FFPE) tissues or sections for diagnosis must be provided. It is for the approval of pathological diagnosis by the central pathology laboratory.",
+              "The patient was diagnosed with relapsed or refractory mantle cell lymphoma, and the previous treatment needs to meet the following requirements:",
+              "Failure of at least one adequate prior line of anti-CD20-containing therapy;",
+              "Failure of at least one adequate prior line of BTK inhibitor (BTKi)-containing therapy.",
+              "Failure of the last line of therapy.",
+              "At least one measurable lesion according to the Lugano 2014 criteria,.",
+              "ECOG performance status of 0-2 . Exclusion Criteria",
+              "Current or prior history of central nervous system (CNS) lymphoma.",
+              "Prior use of BCL-2 inhibitors (e.g., venetoclax/ABT-199, etc.)."
+            ],
+            "keyExclusion": [
+              "详见ClinicalTrials.gov完整方案"
+            ],
+            "stratificationFactors": [
+              "若为随机研究，具体分层因素以完整研究方案/SAP为准；注册摘要未披露时不作推断"
+            ]
+          },
+          "subgroupAnalyses": [
+            {
+              "dimension": "公开结果状态",
+              "subgroup": "预设队列/亚组",
+              "n": "尚未公开",
+              "endpoint": "Overall response rate (ORR) according to Lugano 2014 assessed by the independent review committee (IRC)",
+              "effect": "尚无可核验的公开亚组结果",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "研究尚未读出或结果未公开，不以计划入组特征替代实际亚组分析"
+            }
+          ],
+          "enrollment": 75,
+          "primaryEndpoint": "Overall response rate (ORR) according to Lugano 2014 assessed by the independent review committee (IRC)",
+          "secondaryEndpoints": [
+            "According to Lugano 2014: IRC and investigator assessed complete response rate (CRR)",
+            "Investigator-assessed ORR",
+            "According to Lugano 2014: IRC and investigator assessed disease control rate (DCR).",
+            "According to Lugano 2014: IRC and investigator assessed duration of response (DOR).",
+            "According to Lugano 2014: IRC and investigator assessed time to initial response (TTR).",
+            "According to Lugano 2014: IRC and investigator assessed progression-free survival (PFS) .",
+            "Overall survival (OS)",
+            "Adverse event (AE) assessed according to CTCAE v5.0 criteria",
+            "Functional Assessment Of Cancer Therapy-Lymphoma (Fact-Lym) and European Quality Of Life Five Dimension Five Level Scale Questionnaire (Eq-5D-5L).",
+            "Area under the plasma concentration versus time curve (AUC)",
+            "minimal residual disease （MRD） status",
+            "Peak Plasma Concentration (Cmax)"
+          ],
+          "startDate": "2025-08-21",
+          "primaryCompletion": "2027-12",
+          "countries": [
+            "China"
+          ],
+          "sponsor": "Beijing InnoCare Pharma Tech Co., Ltd.",
+          "fda": {
+            "regulatoryId": "尚无FDA批准编号",
+            "designation": "中国NMPA突破性治疗品种（BTKi治疗后R/R MCL）",
+            "submissionStatus": "在研；尚未获FDA/NMPA上市批准",
+            "lastVerified": "2026-07-26"
+          },
+          "result": "尚无可核验的公开临床结果；保留注册设计、入组人群和时间轴，待正式读出后更新。",
+          "source": "ClinicalTrials.gov官方注册记录；公司官方披露/监管文件仅在可对应到具体研究时补充。数据按NCT号去重。",
+          "dataCut": "注册状态核对：2026-07-26",
+          "evidenceLevel": "II期 · 注册设计（暂无公开结果）",
+          "baselineCharacteristics": [
+            {
+              "label": "实际入组基线",
+              "value": "尚未在注册库发布结构化结果；不以计划入组标准代替实际基线"
+            }
+          ],
+          "efficacyHighlights": [
+            {
+              "label": "疗效结果",
+              "value": "尚未公开"
+            }
+          ],
+          "safetyHighlights": [
+            {
+              "label": "安全性结果",
+              "value": "尚未公开；仅列方案监测终点不等同于实际发生率"
+            }
+          ],
+          "sources": [
+            {
+              "label": "ClinicalTrials.gov",
+              "url": "https://clinicaltrials.gov/study/NCT07082686"
+            }
+          ]
+        },
+        {
+          "id": "mesutoclax-nct06656494",
+          "name": "ICP-CL-01205 / MDS",
+          "nct": "NCT06656494",
+          "phase": "I期",
+          "status": "招募中",
+          "indication": "MDS",
+          "design": "NA；SINGLE GROUP；NONE；TREATMENT",
+          "arms": "ICP-248 in combination with azacitidine：",
+          "population": "Eligible subjects must meet all of the following criteria:；Subject must have confirmation of diagnosis of AML (except for acute promyelocytic leukemia \\[APL\\]) or MDS per 2016 World Health Organization (WHO) criteria.；For AML (except for APL) cohort:；Previously treated relapsed/refractory AML subjects",
+          "eligibility": {
+            "keyInclusion": [
+              "Eligible subjects must meet all of the following criteria:",
+              "Subject must have confirmation of diagnosis of AML (except for acute promyelocytic leukemia \\[APL\\]) or MDS per 2016 World Health Organization (WHO) criteria.",
+              "For AML (except for APL) cohort:",
+              "Previously treated relapsed/refractory AML subjects",
+              "Treatment-naïve AML subjects should be: ≥60 years of age OR ≥18 years and \\<60 years will be eligible if the subject has at least one of the following co-morbidities, which make the subject unfit for intensive chemotherapy",
+              "For MDS cohort: Adult TN MDS and R/R MDS: revised International Prognostic Scoring System (IPSS-R) score \\> 3 and bone marrow blasts ≥ 5%.",
+              "Subject must have a projected life expectancy of at least 12 weeks.",
+              "Subject must have adequate renal function as demonstrated by a creatinine clearance ≥ 30 mL/min; determined via urine collection for 24-hour creatinine clearance or by the Cockcroft-Gault formula.",
+              "Subject must have adequate liver function"
+            ],
+            "keyExclusion": [
+              "R/R AML or R/R MDS with no response or intolerance to post azacitidine or BCL-2i.",
+              "Subject has acute promyelocytic leukemia (French-American-British Class M3 AML) .",
+              "Subject has known central nervous system (CNS) leukemia.",
+              "Suggest patients with active hepatitis B or C virus infection",
+              "History of immunodeficiency, including a positive human immunodeficiency virus (HIV) antibody test.",
+              "Subjects have another active malignancy within the past 2 years before study entry, except for curatively treated."
+            ],
+            "stratificationFactors": [
+              "若为随机研究，具体分层因素以完整研究方案/SAP为准；注册摘要未披露时不作推断"
+            ]
+          },
+          "subgroupAnalyses": [
+            {
+              "dimension": "疾病类型",
+              "subgroup": "初治AML vs 初治MDS",
+              "n": "AML/MDS分队列",
+              "endpoint": "cCR/ORR",
+              "effect": "AML cCR 81.8%；MDS ORR 100%",
+              "ci": "详见原始披露",
+              "interactionP": "未报告",
+              "conclusion": "早期或探索性亚组；未报告交互检验时不能推断亚组间治疗效应差异"
+            }
+          ],
+          "enrollment": 266,
+          "primaryEndpoint": "Incidence, type, and severity of dose-limiting toxicity (DLT).；Recommended phase II dose (RP2D) and/or maximum tolerated dose (MTD).；The incidence, nature, and severity of adverse events (AEs) as assessed per National Cancer Institute-Common Terminology Criteria for Adverse Events (NCI-CTCAE v5.0) criteria.；AML cohort:Composite complete remission rate by Investigator per ELN 2017 criteria.；AML cohort：Composite complete remission rate by completion of cycle 2 by Investigator per ELN 2017 criteria.；MDS cohort：mOR rate, including CR, mCR, and PR, assessed by Investigator at any time point during the study per revised IWG 2006 MDS Criteria.",
+          "secondaryEndpoints": [
+            "AML cohort：Composite complete remission rate: The proportion of subjects with complete remission (CR) and CR with incomplete hematologic recovery (CRi) by Investigator per European Leukemia Net (ELN) 2017 criteria.",
+            "AML cohort：Composite complete remission rate by completion of cycle 2 by Investigator per ELN 2017 criteria.",
+            "The incidence, nature, and severity of adverse events (AEs) as assessed per NCI-CTCAE v5.0 criteria.",
+            "Maximum concentration (Cmax)of ICP-248.",
+            "Area under the curve (AUC) of ICP-248.",
+            "Time of maximum observed plasma(Tmax)of ICP-248.",
+            "Trough concentration(Ctrough) of ICP-248.",
+            "Apparent clearance (CL/F) of ICP-248.",
+            "AML cohort：Partial Response (PR) by investigator per ELN 2017 criteria.",
+            "AML cohort：Overall survival (OS) by investigator per ELN 2017 criteria.",
+            "AML cohort：Duration of Response (DOR) by investigator per ELN 2017 criteria.",
+            "AML cohort：Event-free Survival (EFS) by investigator per ELN 2017 criteria."
+          ],
+          "startDate": "2024-12-18",
+          "primaryCompletion": "2027-06",
+          "countries": [
+            "United States",
+            "Australia",
+            "China"
+          ],
+          "sponsor": "Beijing InnoCare Pharma Tech Co., Ltd.",
+          "fda": {
+            "regulatoryId": "尚无FDA批准编号",
+            "designation": "未见该研究对应FDA特殊资格公开披露",
+            "submissionStatus": "在研；尚未获FDA/NMPA上市批准",
+            "lastVerified": "2026-07-26"
+          },
+          "result": "Mesutoclax+阿扎胞苷：初治MDS可评估患者ORR 100%；初治AML cCR 81.8%，其中MRD阴性率86.5%。数据仍属I期非随机研究。",
+          "source": "ClinicalTrials.gov官方注册记录；公司官方披露/监管文件仅在可对应到具体研究时补充。数据按NCT号去重。",
+          "dataCut": "最新公开披露截至2026-07-26",
+          "evidenceLevel": "I期 · 官方披露/监管结果",
+          "baselineCharacteristics": [
+            {
+              "label": "实际入组基线",
+              "value": "尚未在注册库发布结构化结果；不以计划入组标准代替实际基线"
+            }
+          ],
+          "efficacyHighlights": [
+            {
+              "label": "初治MDS ORR",
+              "value": "100%"
+            },
+            {
+              "label": "初治MDS CR",
+              "value": "40%（IWG 2006）"
+            },
+            {
+              "label": "初治AML cCR",
+              "value": "81.8%"
+            },
+            {
+              "label": "AML cCR患者MRD阴性",
+              "value": "86.5%"
+            }
+          ],
+          "safetyHighlights": [
+            {
+              "label": "总体安全性",
+              "value": "早期披露未见DLT或TLS；长期骨髓抑制数据仍需成熟"
+            }
+          ],
+          "sources": [
+            {
+              "label": "ClinicalTrials.gov",
+              "url": "https://clinicaltrials.gov/study/NCT06656494"
+            },
+            {
+              "label": "对应公开结果",
+              "url": "https://www.innocarepharma.com/en/news/activity/en020260603"
+            }
+          ]
+        },
+        {
+          "id": "mesutoclax-nct06378138",
+          "name": "ICP-CL-01203 / 初治CLL/SLL",
+          "nct": "NCT06378138",
+          "phase": "II/III期",
+          "status": "已完成入组（随访中）",
+          "indication": "初治CLL/SLL",
+          "design": "NA；SINGLE GROUP；NONE；TREATMENT",
+          "arms": "ICP-248 in combination with Orelabrutinib：",
+          "population": "Age ≥ 18 and ≤ 80 years.；CLL/SLL is diagnosed by histopathology and/or flow cytometry according to the 2016 World Health Organization (WHO) classification criteria for lymphohematopoietic neoplasms or meeting the criteria of 2018 International Workshop on Chronic Lymphocytic Leukemia (iwCLL 2018):；Having an indication for treatment that meets the criteria for iwCLL 2018；Subjects must have measurable lesion according to the Lugano 2014 Assessment Criteria.",
+          "eligibility": {
+            "keyInclusion": [
+              "Age ≥ 18 and ≤ 80 years.",
+              "CLL/SLL is diagnosed by histopathology and/or flow cytometry according to the 2016 World Health Organization (WHO) classification criteria for lymphohematopoietic neoplasms or meeting the criteria of 2018 International Workshop on Chronic Lymphocytic Leukemia (iwCLL 2018):",
+              "Having an indication for treatment that meets the criteria for iwCLL 2018",
+              "Subjects must have measurable lesion according to the Lugano 2014 Assessment Criteria.",
+              "Patients with an Eastern Cooperative Oncology Group (ECOG) performance status (PS) score of ≤ 2 and a life expectancy of ≥ 6 months.",
+              "Adequate hematologic function",
+              "Patients with basically normal coagulation function",
+              "Patients with adequate hepatic, renal, pulmonary and cardiac functions",
+              "Subjects are able to communicate with the investigator well and to complete the study as specified in the study.",
+              "Before the trial, the subjects shall understand the nature, significance, possible benefits, inconveniences and potential risks, as well as the study procedures of the trial in detail and voluntarily sign the written Informed Consent Form (ICF)."
+            ],
+            "keyExclusion": [
+              "Central nervous system involvement.",
+              "Concomitant Richter transformation.",
+              "Prior systemic treatment, excluding emergency pretreatment to reduce white blood cells and relieve leukostasis.",
+              "Requireing continuous glucocorticoid support or glucocorticoid therapy within 5 days.",
+              "History of allogeneic stem cell transplantation.",
+              "Major organ surgery (excluding aspiration biopsy) or significant trauma within 28 days prior to the first dose of the investigational drug or require elective surgery during the trial.",
+              "Presence of active infection that requires intravenous anti-infective therapy.",
+              "Hepatitis B or C virus infection.",
+              "History of immunodeficiency disease or Significant cardiovascular disease",
+              "Central nervous system disorders or Severe bleeding disorder"
+            ],
+            "stratificationFactors": [
+              "若为随机研究，具体分层因素以完整研究方案/SAP为准；注册摘要未披露时不作推断"
+            ]
+          },
+          "subgroupAnalyses": [
+            {
+              "dimension": "剂量/时间",
+              "subgroup": "100 mg或125 mg；36周MRD检查点",
+              "n": "n=42",
+              "endpoint": "ORR/CR/uMRD",
+              "effect": "100% / 57.1% / 65%",
+              "ci": "详见原始披露",
+              "interactionP": "未报告",
+              "conclusion": "早期或探索性亚组；未报告交互检验时不能推断亚组间治疗效应差异"
+            }
+          ],
+          "enrollment": 226,
+          "primaryEndpoint": "Adverse events (AEs) and serious adverse events (SAEs) evaluation according to CTCAE V5.0 or iwCLL 2018 criteria；Changes from baseline in pulse.；Changes from baseline in blood pressure.；Changes from baseline in ECG QRS interval.；Changes from baseline in ECG QT interval.",
+          "secondaryEndpoints": [
+            "注册库尚未列出"
+          ],
+          "startDate": "2024-05-15",
+          "primaryCompletion": "2030-11-25",
+          "countries": [
+            "China"
+          ],
+          "sponsor": "Beijing InnoCare Pharma Tech Co., Ltd.",
+          "fda": {
+            "regulatoryId": "尚无FDA批准编号",
+            "designation": "未见该研究对应FDA特殊资格公开披露",
+            "submissionStatus": "在研；尚未获FDA/NMPA上市批准",
+            "lastVerified": "2026-07-26"
+          },
+          "result": "初治CLL/SLL的Mesutoclax+奥布替尼固定疗程：ORR 100%、靶病灶CR 57.1%、36周外周血uMRD 65%，未观察到TLS。",
+          "source": "ClinicalTrials.gov官方注册记录；公司官方披露/监管文件仅在可对应到具体研究时补充。数据按NCT号去重。",
+          "dataCut": "最新公开披露截至2026-07-26",
+          "evidenceLevel": "II/III期 · 官方披露/监管结果",
+          "baselineCharacteristics": [
+            {
+              "label": "实际入组基线",
+              "value": "尚未在注册库发布结构化结果；不以计划入组标准代替实际基线"
+            }
+          ],
+          "efficacyHighlights": [
+            {
+              "label": "ORR",
+              "value": "100%"
+            },
+            {
+              "label": "靶病灶CR",
+              "value": "57.1%"
+            },
+            {
+              "label": "36周外周血uMRD",
+              "value": "65%"
+            }
+          ],
+          "safetyHighlights": [
+            {
+              "label": "TLS",
+              "value": "0例（n=42早期队列）"
+            }
+          ],
+          "sources": [
+            {
+              "label": "ClinicalTrials.gov",
+              "url": "https://clinicaltrials.gov/study/NCT06378138"
+            },
+            {
+              "label": "对应公开结果",
+              "url": "https://www.innocarepharma.com/uploads/2026-04-23/InnoCare-2026-Q1-Results-NDR_EN.pdf"
+            }
+          ]
+        },
+        {
+          "id": "mesutoclax-nct06351527",
+          "name": "ICP-CL-01202 / B细胞恶性肿瘤",
+          "nct": "NCT06351527",
+          "phase": "I期",
+          "status": "招募中",
+          "indication": "B细胞恶性肿瘤",
+          "design": "NON RANDOMIZED；SINGLE GROUP；NONE；TREATMENT",
+          "arms": "Dose-Escalation Cohort - CLL/SLL and MCL：Participants will receive ICP-248 daily from an initial dose of 5/10 mg to the target dose. Cycles will comprise 28 days.；Dose-Expansion Cohort A - CLL/SLL：Participants will receive ICP-248 daily from an initial dose of 5/10 mg to the target dose and obinutuzumab for 6 cycles. Cycles will comprise 28 days.；Dose-Expansion Cohort B - MCL：Participants will receive ICP-248 daily from an initial dose of 5/10 mg to the target dose. Cycles will comprise 28 days.；Dose-Expansion Cohort C - MCL：Participants will receive ICP-248 daily from an initial dose of 5/10 mg to the target dose and Rituximab for 18 cycles. Cycles will comprise 28 days.",
+          "population": "1. Age ≥ 18.；Subjects with histopathologically and/or flow cytometry-confirmed diseases according to the 2016 World Health Organization (WHO) classification criteria for lymphohematopoietic neoplasms or meeting the International Workshop on Chronic Lymphocytic Leukemia (iwCLL) criteria: relapsed or refractory CLL/SLL, relapsed or refractory MCL. Patients must have received at least two prior lines of adequate systemic therapy before study entry, and at least one prior systemic therapy should include Bruton's kinase inhibitor (BTKi).；For subjects with R/R MCL: Patients must have measurable disease per the Lugano 2014 criteria.；Patients with an Eastern Cooperative Oncology Group (ECOG) performance status (PS) score of ≤ 1 and a life expectancy of ≥ 6 months.",
+          "eligibility": {
+            "keyInclusion": [
+              "1. Age ≥ 18.",
+              "Subjects with histopathologically and/or flow cytometry-confirmed diseases according to the 2016 World Health Organization (WHO) classification criteria for lymphohematopoietic neoplasms or meeting the International Workshop on Chronic Lymphocytic Leukemia (iwCLL) criteria: relapsed or refractory CLL/SLL, relapsed or refractory MCL. Patients must have received at least two prior lines of adequate systemic therapy before study entry, and at least one prior systemic therapy should include Bruton's kinase inhibitor (BTKi).",
+              "For subjects with R/R MCL: Patients must have measurable disease per the Lugano 2014 criteria.",
+              "Patients with an Eastern Cooperative Oncology Group (ECOG) performance status (PS) score of ≤ 1 and a life expectancy of ≥ 6 months.",
+              "Adequate hematologic, hepatic, renal, pulmonary and cardiac function",
+              "Patients with basically normal coagulation function",
+              "Patients with fertility potential and their partners need contraception",
+              "Subjects can communicate with the investigator well and to complete the study as specified in the study."
+            ],
+            "keyExclusion": [
+              "Known central nervous system involvement by lymphoma/leukemia.",
+              "Known or suspected history of Richter's transformation.",
+              "Prior autologous stem cell transplant (unless ≥ 3 months since transplant); or prior chimeric cell therapy (unless ≥ 3 months since cell infusion).",
+              "A history of allogeneic stem cell transplantation.",
+              "An interval of less than 5 half-lives from the last dose of a strong CYP3A or CYP2C8 inhibitor or inducer (chemical agent, herbal medicine and dietary supplement) to the first dose of the investigational product, or a plan to use concurrently medications, dietary supplements or food (e.g., grapefruit or grapefruit juice) with strong CYP3A or CYP2C8 inhibitory or inductive effect during study participation",
+              "Presence of active infection that currently requires intravenous systemic anti-infective therapy.",
+              "History of immunodeficiency, including a positive human immunodeficiency virus (HIV) antibody test.",
+              "History of significant cardiovascular disease",
+              "Patients with previous or concomitant central nervous system disorders",
+              "Grade 2 or above toxicity due to prior anti-cancer therapy at screening"
+            ],
+            "stratificationFactors": [
+              "若为随机研究，具体分层因素以完整研究方案/SAP为准；注册摘要未披露时不作推断"
+            ]
+          },
+          "subgroupAnalyses": [
+            {
+              "dimension": "公开结果状态",
+              "subgroup": "预设队列/亚组",
+              "n": "尚未公开",
+              "endpoint": "DLT；Safety and tolerability of ICP-248 at different doses in B-cell malignancies",
+              "effect": "尚无可核验的公开亚组结果",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "研究尚未读出或结果未公开，不以计划入组特征替代实际亚组分析"
+            }
+          ],
+          "enrollment": 78,
+          "primaryEndpoint": "DLT；Safety and tolerability of ICP-248 at different doses in B-cell malignancies",
+          "secondaryEndpoints": [
+            "Cmax, ss of ICP-248",
+            "Ctrough, ss of ICP-248",
+            "Preliminary efficacy of ICP-248 monotherapy in patients with B-cell malignancy"
+          ],
+          "startDate": "2024-04-23",
+          "primaryCompletion": "2027-06-25",
+          "countries": [
+            "United States",
+            "Puerto Rico",
+            "Ukraine"
+          ],
+          "sponsor": "InnoCare Pharma Inc.",
+          "fda": {
+            "regulatoryId": "尚无FDA批准编号",
+            "designation": "未见该研究对应FDA特殊资格公开披露",
+            "submissionStatus": "在研；尚未获FDA/NMPA上市批准",
+            "lastVerified": "2026-07-26"
+          },
+          "result": "尚无可核验的公开临床结果；保留注册设计、入组人群和时间轴，待正式读出后更新。",
+          "source": "ClinicalTrials.gov官方注册记录；公司官方披露/监管文件仅在可对应到具体研究时补充。数据按NCT号去重。",
+          "dataCut": "注册状态核对：2026-07-26",
+          "evidenceLevel": "I期 · 注册设计（暂无公开结果）",
+          "baselineCharacteristics": [
+            {
+              "label": "实际入组基线",
+              "value": "尚未在注册库发布结构化结果；不以计划入组标准代替实际基线"
+            }
+          ],
+          "efficacyHighlights": [
+            {
+              "label": "疗效结果",
+              "value": "尚未公开"
+            }
+          ],
+          "safetyHighlights": [
+            {
+              "label": "安全性结果",
+              "value": "尚未公开；仅列方案监测终点不等同于实际发生率"
+            }
+          ],
+          "sources": [
+            {
+              "label": "ClinicalTrials.gov",
+              "url": "https://clinicaltrials.gov/study/NCT06351527"
+            }
+          ]
+        },
+        {
+          "id": "mesutoclax-nct05728658",
+          "name": "ICP-CL-01201 / B细胞恶性肿瘤",
+          "nct": "NCT05728658",
+          "phase": "I期",
+          "status": "招募中",
+          "indication": "B细胞恶性肿瘤",
+          "design": "NON RANDOMIZED；SINGLE GROUP；SINGLE；TREATMENT",
+          "arms": "Dose-Escalation Cohort - R/R CLL/SLL and R/R MCL：ICP-248 was divided into 6 dose groups, and each dose group was given progressively；Dose-Expansion Cohort A/B/C/D/E/F (R/R CLL/SLL、R/R MCL、R/R B-NHL)：Participants will receive ICP-248 daily with a weekly ramp-up schedule from Cycle 1 day 1.；Dose-Expansion Cohort G(R/R MCL)：Participants will receive ICP-248 daily with a ramp-up phase, and will receive Orelabrutinib 150 mg daily, until progressive disease (PD),intolerable toxicity,withdrawal of consent, loss to follow-up, initiation of other anti-cancer therapy, death,or end of study,whichever occurs first.；Dose-Expansion Cohort H(R/R MZL)：Participants will receive ICP-248 daily with a weekly ramp-up schedule and Orelabrutinib 150 mg daily from Cycle 1 day 1, until progressive disease (PD),intolerable toxicity,withdrawal of consent, loss to follow-up, initiation of other anti-cancer therapy, death,or end of study,whichever occurs first.；Dose-Expansion Cohort I(R/R CLL/SLL)：Participants will receive ICP-248 daily with a weekly ramp-up schedule from Cycle 1 day 1, and will receive 375 mg/m2 Rituximab on day 1 of each cycle from C1 to C6,or until progressive disease (PD),intolerable toxicity,withdrawal of consent, loss to follow-up, initiation of other anti-cancer therapy, death,or end of study,whichever occurs first.；Dose-Expansion Cohort J(R/R CLL/SLL)：Participants will receive Orelabrutinib 150 mg daily from cycle 1 day 1, and will receive ICP-248 daily with a daily ramp-up schedule from Cycle 3 day 1, until progressive disease (PD),intolerable toxicity,withdrawal of consent, loss to follow-up, initiation of other anti-cancer therapy, death,or end of study,whichever occurs first.；Dose-Expansion Cohort K(MCL)：Participants will receive Orelabrutinib 150 mg daily from cycle 1 ",
+          "population": "Age ≥ 18 and ≤ 80 years.；One of the following histopathologically and/or flow cytometry-confirmed diseases according to the 2016 World Health Organization (WHO) classification criteria for lymphohematopoietic neoplasms or meeting the International Workshop on Chronic Lymphocytic Leukemia (iwCLL) criteria: Histopathologically and/or flow cytometry-confirmed CLL/SLL; Pathologically confirmed MCL; Pathologically confirmed B-NHL, including diffuse large B-cell lymphoma (DLBCL), follicular lymphoma (FL), marginal zone lymphoma (MZL), and lymphoplasmacytic lymphoma (LPL).；Relapsed disease or refractory disease；For subjects with B-NHL: Patients must have measurable diseasePatients with an Eastern Cooperative Oncology Group (ECOG) performance status (PS) score of ≤ 2 and a life expectancy of ≥ 6 months.",
+          "eligibility": {
+            "keyInclusion": [
+              "Age ≥ 18 and ≤ 80 years.",
+              "One of the following histopathologically and/or flow cytometry-confirmed diseases according to the 2016 World Health Organization (WHO) classification criteria for lymphohematopoietic neoplasms or meeting the International Workshop on Chronic Lymphocytic Leukemia (iwCLL) criteria: Histopathologically and/or flow cytometry-confirmed CLL/SLL; Pathologically confirmed MCL; Pathologically confirmed B-NHL, including diffuse large B-cell lymphoma (DLBCL), follicular lymphoma (FL), marginal zone lymphoma (MZL), and lymphoplasmacytic lymphoma (LPL).",
+              "Relapsed disease or refractory disease",
+              "For subjects with B-NHL: Patients must have measurable diseasePatients with an Eastern Cooperative Oncology Group (ECOG) performance status (PS) score of ≤ 2 and a life expectancy of ≥ 6 months.",
+              "Adequate hematologic function.",
+              "Patients with basically normal coagulation function.",
+              "Patients with adequate hepatic, renal, pulmonary and cardiac functions.",
+              "CLL/SLL Patients with an absolute lymphocyte count ≥ 50 x 109/L and any lymph nodes ≥ 5 cm in the long diameter or CLL/SLL or B-NHL patients with any lymph nodes ≥ 10 cm in the long diameter will be enrolled in the study after weighing the risks and benefits with the sponsor's MM.",
+              "Female patients of childbearing potential must have a negative blood pregnancy test within 7 days prior to the first dose of the investigational product; patients of childbearing potential (males and females) must agree to use a reliable birth control method (hormonal or barrier method or abstinence) with their partners from signing the ICF until 90 days after the last dose.The last ICP- 248 dose or within one month after the last dose of Orelabrutinib Or within 12 months after the last dose of Rituximab (whichever is longer).",
+              "Subjects are able to communicate with the investigator well and to complete the study as specified in the study."
+            ],
+            "keyExclusion": [
+              "Prior malignancy (other than the disease under study) within 2 years before study entryKnown",
+              "Central nervous system involvement by lymphoma/leukemia",
+              "Underlying medical conditions that, in the investigator's opinion, will render the administration of the investigational product hazardous or obscure the interpretation of the safety or efficacy results.",
+              "Prior autologous stem cell transplant (unless ≥ 3 months after transplant); or prior chimeric cell therapy (unless ≥ 3 months after cell infusion).",
+              "Received a BCL-2 inhibitor prior to initial use of the investigational drug and did not achieve disease remission or disease recurrence/progression on treatment; Disease recurrence/progression after stopping or ending BCL-2 inhibitor therapy is acceptable.",
+              "A history of allogeneic stem cell transplantation.",
+              "Anti-cancer therapy within 14 days prior to the first dose of the investigational product",
+              "An interval of less than 5 half-lives from the last dose of a strong CYP3A inhibitor or inducer (chemical agent, traditional Chinese medicine and dietary supplement) to the first dose of the investigational product, or a plan to use concurrently medications, dietary supplements or food (e.g., grapefruit or grapefruit juice) with strong CYP3A inhibitory or inductive effect during study participation.",
+              "Patients who have undergone major organ surgery (excluding aspiration biopsy) or significant trauma within 28 days prior to the first dose of the investigational product, or who require elective surgery during the trial.",
+              "Patients who have received a live attenuated vaccine within 28 days prior to the first dose of the investigational product (except for vaccination to prevent a major public health event)."
+            ],
+            "stratificationFactors": [
+              "若为随机研究，具体分层因素以完整研究方案/SAP为准；注册摘要未披露时不作推断"
+            ]
+          },
+          "subgroupAnalyses": [
+            {
+              "dimension": "既往BTKi反应",
+              "subgroup": "BTKi难治R/R MCL",
+              "n": "n=25",
+              "endpoint": "ORR/CR",
+              "effect": "84% / 36%",
+              "ci": "详见原始披露",
+              "interactionP": "未报告",
+              "conclusion": "早期或探索性亚组；未报告交互检验时不能推断亚组间治疗效应差异"
+            }
+          ],
+          "enrollment": 191,
+          "primaryEndpoint": "Maximum tolerated dose and recommended Phase 2 dose；To investigate the incidence, nature and severity of adverse events (AE) according to NCI-CTCAE V5.0 or iwCLL2018 evaluation criteria.；To evaluate the investigator-assessed overall response rate (ORR) of ICP-248 monotherapy or combination therapy at the recommended phase II dose (RP2D) .",
+          "secondaryEndpoints": [
+            "Pharmacokinetic (PK) profile - Area under curve (AUC0-t)",
+            "Pharmacokinetic (PK) profile - Maximum Concentration (Cmax)",
+            "Pharmacokinetic (PK) profile - Time to maximum concentration (Tmax)",
+            "Pharmacokinetic (PK) profile - Apparent clearance (CL/F)",
+            "Preliminary efficacy - Complete response rate (CRR)",
+            "Preliminary efficacy - Progression-free survival (PFS)",
+            "Preliminary efficacy - Duration of response (DOR)",
+            "Preliminary efficacy - Overall survival (OS)",
+            "AUC of ICP-248 under different feeding conditions",
+            "Maximum Concentration (Cmax) of ICP-248 under different feeding conditions",
+            "Time to maximum concentration (Tmax) of ICP-248 under different feeding conditions"
+          ],
+          "startDate": "2023-03-09",
+          "primaryCompletion": "2025-08-30",
+          "countries": [
+            "China"
+          ],
+          "sponsor": "Beijing InnoCare Pharma Tech Co., Ltd.",
+          "fda": {
+            "regulatoryId": "尚无FDA批准编号",
+            "designation": "未见该研究对应FDA特殊资格公开披露",
+            "submissionStatus": "在研；尚未获FDA/NMPA上市批准",
+            "lastVerified": "2026-07-26"
+          },
+          "result": "Mesutoclax单药/联合早期研究：BTKi难治R/R MCL亚组ORR 84%、CR 36%；R/R CLL/SLL与MCL多个队列显示活性。",
+          "source": "ClinicalTrials.gov官方注册记录；公司官方披露/监管文件仅在可对应到具体研究时补充。数据按NCT号去重。",
+          "dataCut": "最新公开披露截至2026-07-26",
+          "evidenceLevel": "I期 · 官方披露/监管结果",
+          "baselineCharacteristics": [
+            {
+              "label": "实际入组基线",
+              "value": "尚未在注册库发布结构化结果；不以计划入组标准代替实际基线"
+            }
+          ],
+          "efficacyHighlights": [
+            {
+              "label": "BTKi难治R/R MCL ORR",
+              "value": "84%"
+            },
+            {
+              "label": "BTKi难治R/R MCL CR",
+              "value": "36%"
+            },
+            {
+              "label": "R/R CLL/SLL ORR",
+              "value": "100%（早期小样本）"
+            }
+          ],
+          "safetyHighlights": [
+            {
+              "label": "总体安全性",
+              "value": "公司披露为耐受性和PK特征良好；TLS采用剂量爬坡管理"
+            }
+          ],
+          "sources": [
+            {
+              "label": "ClinicalTrials.gov",
+              "url": "https://clinicaltrials.gov/study/NCT05728658"
+            },
+            {
+              "label": "对应公开结果",
+              "url": "https://www.innocarepharma.com/en/news/activity/en020260325-InnoCare-2025-Annual-Results"
+            }
+          ]
+        },
+        {
+          "id": "mesutoclax-rrmcl-phase3-cn",
+          "name": "ICP-248 R/R MCL随机III期 / 登记号待公开",
+          "nct": "中国登记号待公开",
+          "phase": "III期",
+          "status": "已获准启动（登记号待公开）",
+          "indication": "复发/难治性套细胞淋巴瘤",
+          "design": "随机、双盲、多中心、III期；中国研究",
+          "arms": "Mesutoclax联合奥布替尼 vs Pirtobrutinib；最终方案以公开登记为准",
+          "population": "复发/难治性MCL；公司披露计划开展头对头研究，完整入排标准尚未公开",
+          "eligibility": {
+            "keyInclusion": [
+              "复发/难治性MCL；其他标准待中国临床试验登记公开"
+            ],
+            "keyExclusion": [
+              "尚未公开"
+            ],
+            "stratificationFactors": [
+              "尚未公开"
+            ]
+          },
+          "subgroupAnalyses": [
+            {
+              "dimension": "公开结果状态",
+              "subgroup": "预设亚组",
+              "n": "尚未公开",
+              "endpoint": "尚未公开",
+              "effect": "研究尚未读出",
+              "ci": "未报告",
+              "interactionP": "未报告",
+              "conclusion": "仅纳入公司已正式披露的研究；登记号和方案公开后应替换本占位记录"
+            }
+          ],
+          "enrollment": "尚未公开",
+          "primaryEndpoint": "尚未公开",
+          "secondaryEndpoints": [
+            "尚未公开"
+          ],
+          "startDate": "2026（计划/启动阶段）",
+          "primaryCompletion": "尚未公开",
+          "countries": [
+            "中国"
+          ],
+          "sponsor": "北京诺诚健华医药科技有限公司",
+          "fda": {
+            "regulatoryId": "尚无FDA批准编号",
+            "designation": "中国NMPA突破性治疗品种覆盖BTKi治疗后R/R MCL开发方向",
+            "submissionStatus": "III期已获准启动；公开登记待更新",
+            "lastVerified": "2026-07-26"
+          },
+          "result": "尚无公开结果。",
+          "source": "诺诚健华2025年年报及2026年一季度披露；未编造尚未公布的登记号或方案字段。",
+          "dataCut": "2026-07-26",
+          "evidenceLevel": "III期 · 公司正式披露（登记待公开）",
+          "baselineCharacteristics": [
+            {
+              "label": "实际入组基线",
+              "value": "尚未公开"
+            }
+          ],
+          "efficacyHighlights": [
+            {
+              "label": "疗效结果",
+              "value": "尚未公开"
+            }
+          ],
+          "safetyHighlights": [
+            {
+              "label": "安全性结果",
+              "value": "尚未公开"
+            }
+          ],
+          "sources": [
+            {
+              "label": "诺诚健华2025年年报",
+              "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0325/2026032501166.pdf"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
